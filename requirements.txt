@@ -1,0 +1,5 @@
+pygments
+sphinx
+sphinx-autobuild
+sphinxcontrib-phpdomain
+sphinxcontrib-manpage
