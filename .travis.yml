@@ -34,7 +34,8 @@ script:
   - make $BUILD
 # Buanglah sampah pada tempatnya
 after_script:
-  - make publish clean
+  - if [ '$TRAVIS_PULL_REQUEST' = 'false' ]; then make publish; fi
+  - make clean
 branches:
   only:
     - master
