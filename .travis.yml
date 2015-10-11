@@ -35,3 +35,7 @@ script:
 # Buanglah sampah pada tempatnya
 after_script:
   - make publish clean
+branches:
+  only:
+    - master
+    - /^contrib\/.+$/
