@@ -1,6 +1,6 @@
-################################
-Getting Started With CodeIgniter
-################################
+##########################
+Memulai dengan CodeIgniter
+##########################
 
 Any software application requires some effort to learn. We've done our
 best to minimize the learning curve while making the process as

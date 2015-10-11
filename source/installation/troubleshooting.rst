@@ -1,6 +1,6 @@
-###############
-Troubleshooting
-###############
+####################
+Penyelesaian Masalah
+####################
 
 If you find that no matter what you put in your URL only your default
 page is loading, it might be that your server does not support the

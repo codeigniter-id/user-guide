@@ -1,6 +1,6 @@
-###########################
-Using CodeIgniter Libraries
-###########################
+###############################
+Menggunakan Pustaka CodeIgniter
+###############################
 
 All of the available libraries are located in your *system/libraries/*
 directory. In most cases, to use one of these classes involves initializing

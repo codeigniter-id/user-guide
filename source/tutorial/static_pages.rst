@@ -1,6 +1,6 @@
-############
-Static pages
-############
+##############
+Halaman Statik
+##############
 
 **Note:** This tutorial assumes you've downloaded CodeIgniter and
 :doc:`installed the framework <../installation/index>` in your
@@ -29,10 +29,10 @@ code.
 
 ::
 
-	<?php 
-	class Pages extends CI_Controller { 
+	<?php
+	class Pages extends CI_Controller {
 
-		public function view($page = 'home') 
+		public function view($page = 'home')
 		{
 	        }
 	}

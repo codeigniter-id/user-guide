@@ -1,5 +1,5 @@
 ####################################
-Upgrading From Beta 1.0 to Final 1.2
+Upgrade Dari Beta 1.0 ke Final 1.2
 ####################################
 
 To upgrade to Version 1.2 please replace the following directories with

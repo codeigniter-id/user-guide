@@ -1,6 +1,6 @@
-##############
-Error Handling
-##############
+################
+Penanganan Error
+################
 
 CodeIgniter lets you build error reporting into your applications using
 the functions described below. In addition, it has an error logging

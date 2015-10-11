@@ -1,6 +1,6 @@
-####################
-CodeIgniter Features
-####################
+######################
+Keunggulan CodeIgniter
+######################
 
 Features in and of themselves are a very poor way to judge an
 application since they tell you nothing about the user experience, or

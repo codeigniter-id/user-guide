@@ -1,5 +1,5 @@
 ##############################
-Design and Architectural Goals
+Desain and Sasaran Arsitektur
 ##############################
 
 Our goal for CodeIgniter is maximum performance, capability, and

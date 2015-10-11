@@ -1,9 +1,9 @@
-#########
-Libraries
-#########
+################
+Refrensi Pustaka
+################
 
 .. toctree::
 	:glob:
 	:titlesonly:
-	
+
 	*

@@ -1,6 +1,6 @@
-############################
-Creating Core System Classes
-############################
+#########################
+Membuat Class Inti Sistem
+#########################
 
 Every time CodeIgniter runs there are several base classes that are
 initialized automatically as part of the core framework. It is possible,
