@@ -1,0 +1,42 @@
+language: python
+sudo: false
+python:
+  - "2.7"
+cache:
+  - pip
+  - apt
+matrix:
+  fast_finish: true
+addons:
+  apt:
+    packages:
+    # - pdflatex
+    # - giflib-tools
+    - texlive-latex-recommended
+    - texlive-fonts-recommended
+    - texlive-latex-extra
+# Pisah tiap build environment
+env:
+  - BUILD=html
+  # - BUILD=dirhtml
+  - BUILD=singlehtml
+  # - BUILD=htmlhelp
+  - BUILD=epub
+  - BUILD=latex
+  # - BUILD=latexpdf # Disable dulu, masih error
+# Install semua dependensi
+install:
+  - pip install --upgrade pip
+  - pip install -q -r requirements.txt
+  - easy_install cilexer
+# Build the things
+script:
+  - make $BUILD
+# Buanglah sampah pada tempatnya
+after_script:
+  - if [ '$TRAVIS_PULL_REQUEST' != 'false' ]; then make publish; fi
+  - make clean
+branches:
+  only:
+    - master
+    - /^contrib\/.+$/

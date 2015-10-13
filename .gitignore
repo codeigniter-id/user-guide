@@ -1,0 +1,24 @@
+# Generic
+# ------------------------
+Thumbs.db
+Desktop.ini
+Icon?
+.DS_Store
+.directory
+*.cache
+*.old
+*~
+*.zip
+
+# Build directory
+# ------------------------
+/build/
+
+# IDE Files
+#-------------------------
+nbproject/
+.idea/
+.settings/
+.idea/
+.project
+*.sublime-*
