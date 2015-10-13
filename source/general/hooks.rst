@@ -1,6 +1,6 @@
-####################################
-Hooks - Extending the Framework Core
-####################################
+#################################
+Hooks - Memperluas Inti Framework
+#################################
 
 CodeIgniter's Hooks feature provides a means to tap into and modify the
 inner workings of the framework without hacking the core files. When

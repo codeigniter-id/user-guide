@@ -1,6 +1,6 @@
-###################################
-Alternate PHP Syntax for View Files
-###################################
+#####################################
+Syntax PHP alternatif untuk file View
+#####################################
 
 If you do not utilize CodeIgniter's :doc:`template
 engine <../libraries/parser>`, you'll be using pure PHP in your

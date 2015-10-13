@@ -1,15 +1,15 @@
 ####################
-CodeIgniter Overview
+Ikhtisar CodeIgniter
 ####################
 
 The following pages describe the broad concepts behind CodeIgniter:
 
 .. toctree::
 	:titlesonly:
-	
-	Getting Started <getting_started>
-	CodeIgniter at a Glance <at_a_glance>
-	Supported Features <features>
-	Application Flow Chart <appflow>
+
+	Memulai dengan CodeIgniter <getting_started>
+	Sekilas Tentang CodeIgniter <at_a_glance>
+	Fitur yang Didukung <features>
+	Alur Aplikasi <appflow>
 	Model-View-Controller <mvc>
-	Architectural Goals <goals>
+	Desain and Sasaran Arsitektur <goals>

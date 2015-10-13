@@ -25,9 +25,9 @@ Info Dasar
 - :doc:`general/requirements`
 - :doc:`general/credits`
 
-*********
-Instalasi
-*********
+*******************
+Instruksi Instalasi
+*******************
 .. toctree::
 	:includehidden:
 	:maxdepth: 2
@@ -54,9 +54,9 @@ Tutorial
 
 	tutorial/index
 
-***************************
-Kontribusi ke CodeIgniter
-***************************
+****************************
+Berkontribusi ke CodeIgniter
+****************************
 
 .. toctree::
 	:glob:
@@ -64,9 +64,9 @@ Kontribusi ke CodeIgniter
 
 	contributing/index
 
-**********
-Topik Umum
-**********
+***************
+Pembahasan Umum
+***************
 
 .. toctree::
 	:glob:

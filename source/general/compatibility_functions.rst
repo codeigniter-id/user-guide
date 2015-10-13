@@ -1,6 +1,6 @@
-#######################
-Compatibility Functions
-#######################
+############################
+Fungsi-fungsi Kompatibilitas
+############################
 
 CodeIgniter provides a set of compatibility functions that enable
 you to use functions what are otherwise natively available in PHP,

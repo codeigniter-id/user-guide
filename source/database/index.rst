@@ -1,6 +1,6 @@
-##################
-Database Reference
-##################
+#################
+Refrensi Database
+#################
 
 CodeIgniter comes with a full-featured and very fast abstracted database
 class that supports both traditional structures and Query Builder
@@ -8,7 +8,7 @@ patterns. The database functions offer clear, simple syntax.
 
 .. toctree::
 	:titlesonly:
-	
+
 	Quick Start: Usage Examples <examples>
 	Database Configuration <configuration>
 	Connecting to a Database <connecting>

@@ -1,6 +1,6 @@
-######################
-Application Flow Chart
-######################
+#############
+Alur Aplikasi
+#############
 
 The following graphic illustrates how data flows throughout the system:
 

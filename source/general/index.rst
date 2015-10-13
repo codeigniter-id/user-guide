@@ -1,10 +1,10 @@
-##############
-General Topics
-##############
+###############
+Pembahasan Umum
+###############
 
 .. toctree::
 	:titlesonly:
-	
+
 	urls
 	controllers
 	reserved_names

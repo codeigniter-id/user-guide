@@ -1,5 +1,5 @@
 ###################
-Server Requirements
+Kebutuhan Server
 ###################
 
 `PHP <http://php.net/>`_ version 5.4 or newer is recommended.

@@ -1,6 +1,6 @@
-######################
-Database Configuration
-######################
+####################
+Konfigurasi Database
+####################
 
 CodeIgniter has a config file that lets you store your database
 connection values (username, password, database name, etc.). The config
@@ -182,7 +182,7 @@ Explanation of Values:
 
 			  - 'mysql' (deprecated), 'sqlsrv' and 'pdo/sqlsrv' drivers accept TRUE/FALSE
 			  - 'mysqli' and 'pdo/mysql' drivers accept an array with the following options:
-			  
+
 			    - 'ssl_key'    - Path to the private key file
 			    - 'ssl_cert'   - Path to the public key certificate file
 			    - 'ssl_ca'     - Path to the certificate authority file
