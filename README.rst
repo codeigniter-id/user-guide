@@ -2,8 +2,10 @@
 Panduan Pengguna Codeigniter Indonesia
 ######################################
 
-.. image:: https://travis-ci.org/codeigniter-id/user-guide.svg?branch=master
+.. image:: https://img.shields.io/travis/codeigniter-id/user-guide/master.svg?style=flat-square
     :target: https://travis-ci.org/codeigniter-id/user-guide
+.. image:: https://img.shields.io/badge/GITTER-join%20chat-green.svg?style=flat-square
+    :target: https://gitter.im/codeigniter-id
 
 ******************
 Panduan Persiapan
