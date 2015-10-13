@@ -34,7 +34,7 @@ script:
   - make $BUILD
 # Buanglah sampah pada tempatnya
 after_script:
-  - if [ '$TRAVIS_PULL_REQUEST' != false ] && [ -z '$GH_REPO_TOKEN' ]; then make publish; fi
+  - if [[ $GH_REPO_TOKEN != '' ]]; then make publish; fi
   - make clean
 branches:
   only:
