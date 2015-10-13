@@ -214,7 +214,7 @@ latex_documents = [
 #latex_show_urls = False
 
 # Additional stuff for the LaTeX preamble.
-latex_preamble = "\usepackage{graphicx} \DeclareGraphicsRule{.gif}{eps}{.gif.bb}{`convert #1 'eps:-' }"
+latex_preamble = "\usepackage{graphicx} \DeclareGraphicsRule{.gif}{eps}{.gif.bb}{`convert #1 `dirname #1`/`basename #1`-gif-converted-to.gif.bb}"
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
