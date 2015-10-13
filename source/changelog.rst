@@ -9,7 +9,7 @@ Release Date: Not Released
 
 
 Version 3.0.3-dev
-=============
+=================
 
 Release Date: Not Released
 

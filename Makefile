@@ -7,9 +7,8 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
 
-# Author identity.
-AUTHOR_NAME  = "Fery Wardiyanto"
-AUTHOR_EMAIL = "ferywardiyanto@gmail.com"
+# Repository.
+GH_REPO_REV  = `git rev-parse --short HEAD`
 GH_REPO_URL  = "https://$(GH_REPO_TOKEN):@github.com/$(TRAVIS_REPO_SLUG)"
 
 # Internal variables.
@@ -43,14 +42,14 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 publish:
-	@git config --global user.name $(AUTHOR_NAME)
-	@git config --global user.email $(AUTHOR_EMAIL)
+	@if [[ $(AUTHOR_NAME) != '' ]]; then git config --global user.name $(AUTHOR_NAME); fi
+	@if [[ $(AUTHOR_EMAIL) != '' ]]; then git config --global user.email $(AUTHOR_EMAIL); fi
 	@git clone $(GH_REPO_URL) -b gh-pages $(BUILDDIR)/gh-pages
 	@if [ '$(BUILD)' = 'html' ]; then cp -r $(BUILDDIR)/html/* $(BUILDDIR)/gh-pages/; fi
 	@if [ '$(BUILD)' = 'singlehtml' ]; then cp -r $(BUILDDIR)/singlehtml/index.html $(BUILDDIR)/gh-pages/all.html; fi
 	@if [ '$(BUILD)' = 'epub' ]; then cp -r $(BUILDDIR)/epub/CodeIgniter.epub $(BUILDDIR)/gh-pages/CodeIgniter.epub; fi
 	@cd $(PWD)/$(BUILDDIR)/gh-pages; \
-	git add -A . && git commit -am "[Build `git rev-parse --short HEAD`]"; \
+	git add -A . && git commit -am "[Build $(BUILD) for $(GH_REPO_REV)]"; \
 	git push -q $(GH_REPO_URL) gh-pages
 
 html:
