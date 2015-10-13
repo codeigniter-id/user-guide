@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Change Log &mdash; CodeIgniter 3.1.0-dev documentation</title>
+  <title>Change Log &mdash; CodeIgniter 3.0.3-dev documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.1.0-dev documentation" href="index.html"/>
+    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="index.html"/>
         <link rel="next" title="The MIT License (MIT)" href="license.html"/>
         <link rel="prev" title="Developer’s Certificate of Origin 1.1" href="DCO.html"/> 
 
@@ -426,12 +426,31 @@
 <h2>Version 3.1.0<a class="headerlink" href="#version-3-1-0" title="Permalink to this headline">¶</a></h2>
 <p>Release Date: Not Released</p>
 </div>
-<div class="section" id="version-3-0-2">
-<h2>Version 3.0.2<a class="headerlink" href="#version-3-0-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="version-3-0-3-dev">
+<h2>Version 3.0.3-dev<a class="headerlink" href="#version-3-0-3-dev" title="Permalink to this headline">¶</a></h2>
 <p>Release Date: Not Released</p>
 <ul class="simple">
+<li>Database<ul>
+<li>Optimized <a class="reference internal" href="database/utilities.html"><em>Database Utility</em></a> method <code class="docutils literal"><span class="pre">csv_from_result()</span></code> for speed with larger result sets.</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="bug-fixes-for-3-0-3">
+<h3>Bug fixes for 3.0.3<a class="headerlink" href="#bug-fixes-for-3-0-3" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="version-3-0-2">
+<h2>Version 3.0.2<a class="headerlink" href="#version-3-0-2" title="Permalink to this headline">¶</a></h2>
+<p>Release Date: October 8, 2015</p>
+<ul class="simple">
+<li><strong>Security</strong><ul>
+<li>Fixed a number of XSS attack vectors in <a class="reference internal" href="libraries/security.html"><em>Security Library</em></a> method <code class="docutils literal"><span class="pre">xss_clean()</span></code>  (thanks to Frans Rosén from <a class="reference external" href="https://detectify.com/">Detectify</a>).</li>
+</ul>
+</li>
 <li>General Changes<ul>
 <li>Updated the <em>application/config/constants.php</em> file to check if constants aren&#8217;t already defined before doing that.</li>
+<li>Changed <a class="reference internal" href="libraries/loader.html"><em>Loader Library</em></a> method <code class="docutils literal"><span class="pre">model()</span></code> to only apply <code class="docutils literal"><span class="pre">ucfirst()</span></code> and not <code class="docutils literal"><span class="pre">strtolower()</span></code> to the requested class name.</li>
+<li>Changed <a class="reference internal" href="libraries/config.html"><em>Config Library</em></a> methods <code class="docutils literal"><span class="pre">base_url()</span></code>, <code class="docutils literal"><span class="pre">site_url()</span></code> to allow protocol-relative URLs by passing an empty string as the protocol.</li>
 </ul>
 </li>
 </ul>
@@ -440,6 +459,23 @@
 <ul class="simple">
 <li>Fixed a bug (#2284) - <a class="reference internal" href="database/index.html"><em>Database</em></a> method <code class="docutils literal"><span class="pre">protect_identifiers()</span></code> breaks when <a class="reference internal" href="database/query_builder.html"><em>Query Builder</em></a> isn&#8217;t enabled.</li>
 <li>Fixed a bug (#4052) - <a class="reference internal" href="general/routing.html"><em>Routing</em></a> with anonymous functions didn&#8217;t work for routes that don&#8217;t use regular expressions.</li>
+<li>Fixed a bug (#4056) - <a class="reference internal" href="libraries/input.html"><em>Input Library</em></a> method <code class="docutils literal"><span class="pre">get_request_header()</span></code> could not return a value unless <code class="docutils literal"><span class="pre">request_headers()</span></code> was called beforehand.</li>
+<li>Fixed a bug where the <a class="reference internal" href="database/index.html"><em>Database Class</em></a> entered an endless loop if it fails to connect with the &#8216;sqlsrv&#8217; driver.</li>
+<li>Fixed a bug (#4065) - <a class="reference internal" href="database/index.html"><em>Database</em></a> method <code class="docutils literal"><span class="pre">protect_identifiers()</span></code> treats a traling space as an alias separator if the input doesn&#8217;t contain &#8216; AS &#8216;.</li>
+<li>Fixed a bug (#4066) - <a class="reference internal" href="libraries/caching.html"><em>Cache Library</em></a> couldn&#8217;t fallback to a backup driver if the primary one is Memcache(d) or Redis.</li>
+<li>Fixed a bug (#4073) - <a class="reference internal" href="libraries/email.html"><em>Email Library</em></a> method <code class="docutils literal"><span class="pre">send()</span></code> could return TRUE in case of an actual failure when an SMTP command fails.</li>
+<li>Fixed a bug (#4086) - <a class="reference internal" href="database/query_builder.html"><em>Query Builder</em></a> didn&#8217;t apply <em>dbprefix</em> to LIKE conditions if the pattern included spaces.</li>
+<li>Fixed a bug (#4091) - <a class="reference internal" href="libraries/caching.html"><em>Cache Library</em></a> &#8216;file&#8217; driver could be tricked into accepting empty cache item IDs.</li>
+<li>Fixed a bug (#4093) - <a class="reference internal" href="database/query_builder.html"><em>Query Builder</em></a> modified string values containing &#8216;AND&#8217;, &#8216;OR&#8217; while compiling WHERE conditions.</li>
+<li>Fixed a bug (#4096) - <a class="reference internal" href="database/query_builder.html"><em>Query Builder</em></a> didn&#8217;t apply <em>dbprefix</em> when compiling BETWEEN conditions.</li>
+<li>Fixed a bug (#4105) - <a class="reference internal" href="libraries/form_validation.html"><em>Form Validation Library</em></a> didn&#8217;t allow pipe characters inside &#8220;bracket parameters&#8221; when using a string ruleset.</li>
+<li>Fixed a bug (#4109) - <a class="reference internal" href="general/routing.html"><em>Routing</em></a> to <em>default_controller</em> didn&#8217;t work when <em>enable_query_strings</em> is set to TRUE.</li>
+<li>Fixed a bug (#4044) - <a class="reference internal" href="libraries/caching.html"><em>Cache Library</em></a> &#8216;redis&#8217; driver didn&#8217;t catch <code class="docutils literal"><span class="pre">RedisException</span></code> that could be thrown during authentication.</li>
+<li>Fixed a bug (#4120) - <a class="reference internal" href="database/index.html"><em>Database</em></a> method <code class="docutils literal"><span class="pre">error()</span></code> didn&#8217;t return error info when called after <code class="docutils literal"><span class="pre">query()</span></code> with the &#8216;mssql&#8217; driver.</li>
+<li>Fixed a bug (#4116) - <a class="reference internal" href="libraries/pagination.html"><em>Pagination Library</em></a> set the wrong page number on the &#8220;data-ci-pagination-page&#8221; attribute in generated links.</li>
+<li>Fixed a bug where <a class="reference internal" href="libraries/pagination.html"><em>Pagination Library</em></a> added the &#8216;rel=&#8221;start&#8221;&#8217; attribute to the first displayed link even if it&#8217;s not actually linking the first page.</li>
+<li>Fixed a bug (#4137) - <a class="reference internal" href="general/errors.html"><em>Error Handling</em></a> breaks for the new <code class="docutils literal"><span class="pre">Error</span></code> exceptions under PHP 7.</li>
+<li>Fixed a bug (#4126) - <a class="reference internal" href="libraries/form_validation.html"><em>Form Validation Library</em></a> method <code class="docutils literal"><span class="pre">reset_validation()</span></code> discarded validation rules from config files.</li>
 </ul>
 </div>
 </div>
@@ -3674,7 +3710,7 @@ and fixed various typos.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'3.1.0-dev',
+            VERSION:'3.0.3-dev',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false
