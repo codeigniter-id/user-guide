@@ -75,7 +75,7 @@ process that allows you to be the only one who is able to decrypt data
 that you've decided to hide from the eyes of the public.
 After one key is used to encrypt data, that same key provides the **only**
 means to decrypt it, so not only must you chose one carefully, but you
-must not lose it or you will also use the encrypted data.
+must not lose it or you will also lose access to the data.
 
 It must be noted that to ensure maximum security, such key *should* not
 only be as strong as possible, but also often changed. Such behavior
@@ -297,7 +297,7 @@ Option   Possible values
 driver   'mcrypt', 'openssl'
 cipher   Cipher name (see :ref:`ciphers-and-modes`)
 mode     Encryption mode (see :ref:`encryption-modes`)
-key      Encryption key 
+key      Encryption key
 ======== ===============================================
 
 For example, if you were to change the encryption algorithm and

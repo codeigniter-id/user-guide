@@ -598,7 +598,6 @@ For MySQL::
 		`ip_address` varchar(45) NOT NULL,
 		`timestamp` int(10) unsigned DEFAULT 0 NOT NULL,
 		`data` blob NOT NULL,
-		PRIMARY KEY (id),
 		KEY `ci_sessions_timestamp` (`timestamp`)
 	);
 
@@ -608,17 +607,22 @@ For PostgreSQL::
 		"id" varchar(40) NOT NULL,
 		"ip_address" varchar(45) NOT NULL,
 		"timestamp" bigint DEFAULT 0 NOT NULL,
-		"data" text DEFAULT '' NOT NULL,
-		PRIMARY KEY ("id")
+		"data" text DEFAULT '' NOT NULL
 	);
 
 	CREATE INDEX "ci_sessions_timestamp" ON "ci_sessions" ("timestamp");
 
-However, if you want to turn on the *sess_match_ip* setting, you should
-also do the following, after creating the table::
+You will also need to add a PRIMARY KEY **depending on your 'sess_match_ip'
+setting**. The examples below work both on MySQL and PostgreSQL::
 
-	// Works both on MySQL and PostgreSQL
-	ALTER TABLE ci_sessions ADD CONSTRAINT ci_sessions_id_ip UNIQUE (id, ip_address);
+	// When sess_match_ip = TRUE
+	ALTER TABLE ci_sessions ADD PRIMARY KEY (id, ip_address);
+
+	// When sess_match_ip = FALSE
+	ALTER TABLE ci_sessions ADD PRIMARY KEY (id);
+
+	// To drop a previously created primary key (use when changing the setting)
+	ALTER TABLE ci_sessions DROP PRIMARY KEY;
 
 .. important:: Only MySQL and PostgreSQL databases are officially
 	supported, due to lack of advisory locking mechanisms on other
@@ -822,7 +826,7 @@ Class Reference
 
 		Gets the value for a specific ``$_SESSION`` item, or an
 		array of all "userdata" items if not key was specified.
-	
+
 		.. note:: This is a legacy method kept only for backwards
 			compatibility with older applications. You should
 			directly access ``$_SESSION`` instead.
@@ -918,7 +922,7 @@ Class Reference
 		Gets the value for a specific ``$_SESSION`` item that has
 		been marked as "flashdata", or an array of all "flashdata"
 		items if no key was specified.
-	
+
 		.. note:: This is a legacy method kept only for backwards
 			compatibility with older applications. You should
 			directly access ``$_SESSION`` instead.
@@ -983,7 +987,7 @@ Class Reference
 		Gets the value for a specific ``$_SESSION`` item that has
 		been marked as "tempdata", or an array of all "tempdata"
 		items if no key was specified.
-	
+
 		.. note:: This is a legacy method kept only for backwards
 			compatibility with older applications. You should
 			directly access ``$_SESSION`` instead.
