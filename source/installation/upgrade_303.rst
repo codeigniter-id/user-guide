@@ -1,5 +1,5 @@
 #############################
-Upgrading from 3.0.x to 3.1.x
+Upgrading from 3.0.2 to 3.0.3
 #############################
 
 Before performing an update you should take your site offline by
