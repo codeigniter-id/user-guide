@@ -63,7 +63,7 @@ encryption and authentication is a bad practice.
 Because of that, two separate keys are derived from your already configured
 *encryption_key*: one for encryption and one for authentication. This is
 done via a technique called `HMAC-based Key Derivation Function
-<http://en.wikipedia.org/wiki/HKDF>`_ (HKDF).
+<https://en.wikipedia.org/wiki/HKDF>`_ (HKDF).
 
 Setting your encryption_key
 ===========================

@@ -31,7 +31,7 @@ it to determine which class/method should be called to process the
 request. Once processed, the server will then send back a response
 message.
 
-For detailed specifications, you can visit the `XML-RPC <http://www.xmlrpc.com/>`_ site.
+For detailed specifications, you can visit the `XML-RPC <http://xmlrpc.scripting.com/>`_ site.
 
 ***********************
 Using the XML-RPC Class
@@ -128,7 +128,7 @@ with the data type in the second position::
 		array('Doe', 'string'),
 		array(FALSE, 'boolean'),
 		array(12345, 'int')
-	); 
+	);
 	$this->xmlrpc->request($request);
 
 The `Data Types <#datatypes>`_ section below has a full list of data
@@ -440,7 +440,7 @@ the Server.
 Data Types
 ==========
 
-According to the `XML-RPC spec <http://www.xmlrpc.com/spec>`_ there are
+According to the `XML-RPC spec <http://xmlrpc.scripting.com/spec.html>`_ there are
 seven types of values that you can send via XML-RPC:
 
 -  *int* or *i4*

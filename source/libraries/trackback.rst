@@ -6,7 +6,7 @@ The Trackback Class provides functions that enable you to send and
 receive Trackback data.
 
 If you are not familiar with Trackbacks you'll find more information
-`here <http://en.wikipedia.org/wiki/Trackback>`_.
+`here <https://en.wikipedia.org/wiki/Trackback>`_.
 
 .. contents::
   :local:
@@ -67,7 +67,7 @@ Description of array data:
 -  **blog_name** - The name of your weblog.
 -  **charset** - The character encoding your weblog is written in. If omitted, UTF-8 will be used.
 
-.. note:: The Trackback class will automatically send only the first 500 characters of your 
+.. note:: The Trackback class will automatically send only the first 500 characters of your
 	entry. It will also strip all HTML.
 
 The Trackback sending method returns TRUE/FALSE (boolean) on success
