@@ -13,25 +13,29 @@ Panduan penggunaan Codeigniter menggunakan Sphinx untuk mengelola dokumentasi da
 menghasilkan ke berbagai macam format. Setiap halaman ditulis dalam
 `ReStructured Text <http://sphinx.pocoo.org/rest.html>`_ *human-readable* format.
 
-*************
+*********
 Prasyarat
-*************
+*********
+
 Sphinx membutuhkan Python, yang sudah terinstall jika Anda menggunakan OS X.
 Anda dapat mengkonfirmasi di *terminal window* dengan menjalankan perintah ``python``
-tanpa parameter apapun. Jika Python telah terinstall, maka akan muncul versi Phython
+tanpa parameter apapun. Jika Python telah terinstall, maka akan muncul versi Python
 yang Anda gunakan di `Terminal window`. Jika versi Python Anda bukan 2.7+, maka kunjungi
 http://python.org/download/releases/2.7.2/ dan install versi 2.7.2
 
-************
-Instalasi
-************
+********************
+Instalasi (opsional)
+********************
 
-1. Install `easy_install <http://peak.telecommunity.com/DevCenter/EasyInstall#installing-easy-install>`_
-2. Jalankan perintah ``easy_install "sphinx==1.2.3"``
-3. Lalu, jalankan perintah ``easy_install sphinxcontrib-phpdomain``
-4. Install CI Lexer untuk PHP, HTML, CSS, and JavaScript *syntax highlighting* di contoh (lihat di ``cilexer/README``)
-5. Jalankan perintah ``cd user_guide_src``
+1. Install `python pip <https://pip.pypa.io/en/latest/installing/>`_
+2. Masuk ke direktori tempat anda meng-*clone* repositori ini ``cd ci-user-guide-id``
+3. Jalankan perintah ``pip install --upgrade pip`` untuk update ke versi ``pip`` terbaru (opsional)
+4. Lalu, Jalankan perintah ``pip install -r requirements.txt`` untuk menginstall semua dependensi yang dibutuhkan
+5. Install CI Lexer untuk PHP, HTML, CSS, and JavaScript *syntax highlighting* di contoh (lihat di ``cilexer/README``) atau agar lebih mudah jalankan perintah ``easy_install cilexer``
 6. Terakhir, jalankan perintah ``make html``
+
+**Catatan:** Anda tidak harus meng-*install* semua kebutuhan diatas jika anda hanya ingin berkontribusi alih bahasa saja,
+kecuali jika anda juga ingin melihat hasil html dari *compile*.
 
 ********************************
 Mengubah dan Membuat Dokumentasi
@@ -54,7 +58,8 @@ Anda akan melihat proses *compile* yang nanti akan otomatis membuat folder
 ``build/html`` dan menyimpan file-file HTML ke folder tersebut. Jika file HTML telah dibuat
 dan jika Anda ingin *generate* file HTML yang baru, setiap kali proses *generate* berhasil
 hanya *generate* ulang file yang diubah untuk menghemat waktu.
-Jika Anda ingin *reset* file HTML Anda, cukup hapus folder ``build`` dan *generate* ulang seperti proses sebelumnya.
+Jika Anda ingin *reset* file HTML Anda, cukup hapus folder ``build`` atau dapat anda lakukan dengan
+menjalankan perintah ``make clean`` dan *generate* ulang seperti proses sebelumnya.
 
 ***************
 Panduan Styling
