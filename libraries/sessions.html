@@ -1094,7 +1094,6 @@ removed in the future.</p>
         <span class="sb">`ip_address`</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
         <span class="sb">`timestamp`</span> <span class="nx">int</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="nx">unsigned</span> <span class="k">DEFAULT</span> <span class="mi">0</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
         <span class="sb">`data`</span> <span class="nx">blob</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
-        <span class="nx">PRIMARY</span> <span class="nx">KEY</span> <span class="p">(</span><span class="nx">id</span><span class="p">),</span>
         <span class="nx">KEY</span> <span class="sb">`ci_sessions_timestamp`</span> <span class="p">(</span><span class="sb">`timestamp`</span><span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
@@ -1104,17 +1103,22 @@ removed in the future.</p>
         <span class="s2">&quot;id&quot;</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
         <span class="s2">&quot;ip_address&quot;</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
         <span class="s2">&quot;timestamp&quot;</span> <span class="nx">bigint</span> <span class="k">DEFAULT</span> <span class="mi">0</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
-        <span class="s2">&quot;data&quot;</span> <span class="nx">text</span> <span class="k">DEFAULT</span> <span class="s1">&#39;&#39;</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
-        <span class="nx">PRIMARY</span> <span class="nx">KEY</span> <span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span>
+        <span class="s2">&quot;data&quot;</span> <span class="nx">text</span> <span class="k">DEFAULT</span> <span class="s1">&#39;&#39;</span> <span class="k">NOT</span> <span class="k">NULL</span>
 <span class="p">);</span>
 
 <span class="nx">CREATE</span> <span class="nx">INDEX</span> <span class="s2">&quot;ci_sessions_timestamp&quot;</span> <span class="nx">ON</span> <span class="s2">&quot;ci_sessions&quot;</span> <span class="p">(</span><span class="s2">&quot;timestamp&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>However, if you want to turn on the <em>sess_match_ip</em> setting, you should
-also do the following, after creating the table:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Works both on MySQL and PostgreSQL</span>
-<span class="nx">ALTER</span> <span class="nx">TABLE</span> <span class="nx">ci_sessions</span> <span class="nx">ADD</span> <span class="nx">CONSTRAINT</span> <span class="nx">ci_sessions_id_ip</span> <span class="nx">UNIQUE</span> <span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">ip_address</span><span class="p">);</span>
+<p>You will also need to add a PRIMARY KEY <strong>depending on your &#8216;sess_match_ip&#8217;
+setting</strong>. The examples below work both on MySQL and PostgreSQL:</p>
+<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// When sess_match_ip = TRUE</span>
+<span class="nx">ALTER</span> <span class="nx">TABLE</span> <span class="nx">ci_sessions</span> <span class="nx">ADD</span> <span class="nx">PRIMARY</span> <span class="nx">KEY</span> <span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">ip_address</span><span class="p">);</span>
+
+<span class="c1">// When sess_match_ip = FALSE</span>
+<span class="nx">ALTER</span> <span class="nx">TABLE</span> <span class="nx">ci_sessions</span> <span class="nx">ADD</span> <span class="nx">PRIMARY</span> <span class="nx">KEY</span> <span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+
+<span class="c1">// To drop a previously created primary key (use when changing the setting)</span>
+<span class="nx">ALTER</span> <span class="nx">TABLE</span> <span class="nx">ci_sessions</span> <span class="nx">DROP</span> <span class="nx">PRIMARY</span> <span class="nx">KEY</span><span class="p">;</span>
 </pre></div>
 </div>
 <div class="admonition important">

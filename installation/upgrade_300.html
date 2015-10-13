@@ -652,8 +652,7 @@ cause your &#8216;Main&#8217; controller to be loaded.</p>
 <p>However, what happens if you have an <em>application/controllers/admin/</em>
 directory and the user visits <code class="docutils literal"><span class="pre">http://example.com/admin/</span></code>?
 In CodeIgniter 3, the router will look for a &#8216;Main&#8217; controller under the
-admin/ directory as well. If not found, it will fallback to the parent
-(<em>application/controllers/</em>) directory, like in version 2.x.</p>
+admin/ directory as well. If not found, a Not Found (404) will be triggered.</p>
 <p>The same rule applies to the &#8216;404_override&#8217; setting.</p>
 </div>
 </div>

@@ -436,18 +436,11 @@ application, processing input data for security.</p>
 </div>
 <div class="custom-index container"></div><div class="section" id="xss-filtering">
 <h2><a class="toc-backref" href="#id1">XSS Filtering</a><a class="headerlink" href="#xss-filtering" title="Permalink to this headline">¶</a></h2>
-<p>CodeIgniter comes with a Cross Site Scripting Hack prevention filter
-which can either run automatically to filter all POST and COOKIE data
-that is encountered, or you can run it on a per item basis. By default
-it does <strong>not</strong> run globally since it requires a bit of processing
-overhead, and since you may not need it in all cases.</p>
-<p>The XSS filter looks for commonly used techniques to trigger Javascript
-or other types of code that attempt to hijack cookies or do other
-malicious things. If anything disallowed is encountered it is rendered
-safe by converting the data to character entities.</p>
-<p>Note: This function should only be used to deal with data upon
-submission. It&#8217;s not something that should be used for general runtime
-processing since it requires a fair amount of processing overhead.</p>
+<p>CodeIgniter comes with a Cross Site Scripting prevention filter, which
++looks for commonly used techniques to trigger JavaScript or other types
++of code that attempt to hijack cookies or do other malicious things.
++If anything disallowed is encountered it is rendered safe by converting
++the data to character entities.</p>
 <p>To filter data through the XSS filter use the <code class="docutils literal"><span class="pre">xss_clean()</span></code> method:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$data</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">security</span><span class="o">-&gt;</span><span class="na">xss_clean</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
 </pre></div>

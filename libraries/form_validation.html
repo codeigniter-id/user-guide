@@ -995,7 +995,10 @@ the second element of an array, with the first one being the rule name:</p>
 <p>All of the native error messages are located in the following language
 file: <strong>system/language/english/form_validation_lang.php</strong></p>
 <p>To set your own global custom message for a rule, you can either
-edit that file, or use the following method:</p>
+extend/override the language file by creating your own in
+<strong>application/language/english/form_validation_lang.php</strong> (read more
+about this in the <a class="reference internal" href="language.html"><em>Language Class</em></a> documentation),
+or use the following method:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">form_validation</span><span class="o">-&gt;</span><span class="na">set_message</span><span class="p">(</span><span class="s1">&#39;rule&#39;</span><span class="p">,</span> <span class="s1">&#39;Error Message&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
