@@ -1,6 +1,6 @@
-##########################
-Profiling Your Application
-##########################
+#######################
+Profiling Aplikasi Anda
+#######################
 
 The Profiler Class will display benchmark results, queries you have run,
 and ``$_POST`` data at the bottom of your pages. This information can be

@@ -1,6 +1,6 @@
-###################
-Instruksi Instalasi
-###################
+#################
+Panduan Instalasi
+#################
 
 CodeIgniter is installed in four steps:
 

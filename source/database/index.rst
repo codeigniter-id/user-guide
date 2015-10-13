@@ -1,6 +1,6 @@
-#################
-Refrensi Database
-#################
+##################
+Referensi Database
+##################
 
 CodeIgniter comes with a full-featured and very fast abstracted database
 class that supports both traditional structures and Query Builder
@@ -9,17 +9,17 @@ patterns. The database functions offer clear, simple syntax.
 .. toctree::
 	:titlesonly:
 
-	Quick Start: Usage Examples <examples>
-	Database Configuration <configuration>
-	Connecting to a Database <connecting>
-	Running Queries <queries>
-	Generating Query Results <results>
-	Query Helper Functions <helpers>
+	Quick Start: Contoh Penggunaan <examples>
+	Konfigurasi Database <configuration>
+	Menghubungkan ke Database <connecting>
+	Menjalankan Queries <queries>
+	Menampilkan Hasil Query <results>
+	Fungsi-fungsi Query Helper <helpers>
 	Query Builder Class <query_builder>
 	Transactions <transactions>
-	Getting MetaData <metadata>
-	Custom Function Calls <call_function>
+	Mendapatkan MetaData <metadata>
+	Memanggil Custom Functions <call_function>
 	Query Caching <caching>
-	Database Manipulation with Database Forge <forge>
+	Manipulasi Database dengan Database Forge <forge>
 	Database Utilities Class <utilities>
-	Database Driver Reference <db_driver_reference>
+	Referensi Database Driver <db_driver_reference>

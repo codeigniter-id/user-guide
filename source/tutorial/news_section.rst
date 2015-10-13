@@ -1,6 +1,6 @@
-############
-News section
-############
+#############
+Bagian Berita
+#############
 
 In the last section, we went over some basic concepts of the framework
 by writing a class that includes static pages. We cleaned up the URI by
