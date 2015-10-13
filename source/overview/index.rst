@@ -2,7 +2,7 @@
 Ikhtisar CodeIgniter
 ####################
 
-The following pages describe the broad concepts behind CodeIgniter:
+Halaman-halaman berikut menggambarkan konsep luas CodeIgniter:
 
 .. toctree::
 	:titlesonly:

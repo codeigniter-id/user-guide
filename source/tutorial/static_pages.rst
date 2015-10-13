@@ -1,5 +1,5 @@
 ##############
-Halaman Statik
+Halaman Statis
 ##############
 
 **Note:** This tutorial assumes you've downloaded CodeIgniter and

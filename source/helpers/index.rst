@@ -1,6 +1,6 @@
-###############
-Refrensi Helper
-###############
+################
+Referensi Helper
+################
 
 .. toctree::
 	:glob:

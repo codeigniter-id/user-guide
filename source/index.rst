@@ -25,9 +25,9 @@ Info Dasar
 - :doc:`general/requirements`
 - :doc:`general/credits`
 
-*******************
-Instruksi Instalasi
-*******************
+*****************
+Panduan Instalasi
+*****************
 .. toctree::
 	:includehidden:
 	:maxdepth: 2
@@ -74,9 +74,9 @@ Pembahasan Umum
 
 	general/index
 
-****************
-Refrensi Pustaka
-****************
+*****************
+Referensi Library
+*****************
 
 .. toctree::
 	:glob:
@@ -84,9 +84,9 @@ Refrensi Pustaka
 
 	libraries/index
 
-*****************
-Refrensi Database
-*****************
+******************
+Referensi Database
+******************
 
 .. toctree::
 	:glob:
@@ -94,9 +94,9 @@ Refrensi Database
 
 	database/index
 
-***************
-Refrensi Helper
-***************
+****************
+Referensi Helper
+****************
 
 .. toctree::
 	:glob:

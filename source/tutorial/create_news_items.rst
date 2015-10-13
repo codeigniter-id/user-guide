@@ -1,5 +1,5 @@
 ###################
-Membuat item berita
+Membuat Item Berita
 ###################
 
 You now know how you can read data from a database using CodeIgniter, but

@@ -1,5 +1,5 @@
 #####################################
-Syntax PHP alternatif untuk file View
+Alternatif Syntax PHP untuk File View
 #####################################
 
 If you do not utilize CodeIgniter's :doc:`template

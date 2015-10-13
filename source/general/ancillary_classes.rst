@@ -1,6 +1,6 @@
-##########################
-Creating Ancillary Classes
-##########################
+######################
+Membuat Class Tambahan
+######################
 
 In some cases you may want to develop classes that exist apart from your
 controllers but have the ability to utilize all of CodeIgniter's

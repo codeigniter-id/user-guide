@@ -1,6 +1,6 @@
-##########################
-Managing your Applications
-##########################
+#######################
+Mengelola Aplikasi Anda
+#######################
 
 By default it is assumed that you only intend to use CodeIgniter to
 manage one application, which you will build in your *application/*

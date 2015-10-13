@@ -1,6 +1,6 @@
-################
-Refrensi Pustaka
-################
+#################
+Referensi Library
+#################
 
 .. toctree::
 	:glob:

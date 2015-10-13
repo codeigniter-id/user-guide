@@ -1,5 +1,5 @@
 ###############################
-Menggunakan Pustaka CodeIgniter
+Menggunakan Library CodeIgniter
 ###############################
 
 All of the available libraries are located in your *system/libraries/*
