@@ -67,7 +67,7 @@ overlines.  Other headings just use underlines, with the following hierarchy::
 	^ for subsubsubsections
 	" for subsubsubsubsections (!)
 
-The :download:`TextMate ELDocs Bundle <./ELDocs.tmbundle.zip>` can help you
+The `TextMate ELDocs Bundle <http://codeigniter.com/user_guide/_downloads/ELDocs.tmbundle.zip>`_ can help you
 create these with the following tab triggers::
 
 	title->
