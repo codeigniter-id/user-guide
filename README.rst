@@ -2,8 +2,8 @@
 Panduan Pengguna Codeigniter Indonesia
 ######################################
 
-.. image:: https://travis-ci.org/feryardiant/ci-user-guide-id.svg?branch=source
-    :target: https://travis-ci.org/feryardiant/ci-user-guide-id
+.. image:: https://travis-ci.org/codeigniter-id/user-guide.svg?branch=source
+    :target: https://travis-ci.org/codeigniter-id/user-guide
 
 ******************
 Setup Instructions
