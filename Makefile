@@ -7,9 +7,8 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
 
-# Author identity.
-AUTHOR_NAME  = "Fery Wardiyanto"
-AUTHOR_EMAIL = "ferywardiyanto@gmail.com"
+# Repository.
+GH_REPO_REV  = `git rev-parse --short HEAD`
 GH_REPO_URL  = "https://$(GH_REPO_TOKEN):@github.com/$(TRAVIS_REPO_SLUG)"
 
 # Internal variables.
@@ -17,7 +16,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -34,6 +33,7 @@ help:
 	@echo "  latexpdf   to make LaTeX files and run them through pdflatex"
 	@echo "  text       to make text files"
 	@echo "  man        to make manual pages"
+	@echo "  gettext    to make PO message catalogs"
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
@@ -43,14 +43,14 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 publish:
-	@git config --global user.name $(AUTHOR_NAME)
-	@git config --global user.email $(AUTHOR_EMAIL)
+	@if [[ $(AUTHOR_NAME) != '' ]]; then git config --global user.name $(AUTHOR_NAME); fi
+	@if [[ $(AUTHOR_EMAIL) != '' ]]; then git config --global user.email $(AUTHOR_EMAIL); fi
 	@git clone $(GH_REPO_URL) -b gh-pages $(BUILDDIR)/gh-pages
 	@if [ '$(BUILD)' = 'html' ]; then cp -r $(BUILDDIR)/html/* $(BUILDDIR)/gh-pages/; fi
 	@if [ '$(BUILD)' = 'singlehtml' ]; then cp -r $(BUILDDIR)/singlehtml/index.html $(BUILDDIR)/gh-pages/all.html; fi
 	@if [ '$(BUILD)' = 'epub' ]; then cp -r $(BUILDDIR)/epub/CodeIgniter.epub $(BUILDDIR)/gh-pages/CodeIgniter.epub; fi
 	@cd $(PWD)/$(BUILDDIR)/gh-pages; \
-	git add -A . && git commit -am "[Build `git rev-parse --short HEAD`]"; \
+	git add -A . && git commit -am "[Build $(BUILD) for $(GH_REPO_REV)]"; \
 	git push -q $(GH_REPO_URL) gh-pages
 
 html:
@@ -129,6 +129,11 @@ man:
 	$(SPHINXBUILD) -b man $(ALLSPHINXOPTS) $(BUILDDIR)/man
 	@echo
 	@echo "Build finished. The manual pages are in $(BUILDDIR)/man."
+
+gettext:
+	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
+	@echo
+	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
 
 changes:
 	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) $(BUILDDIR)/changes

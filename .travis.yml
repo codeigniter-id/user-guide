@@ -12,6 +12,7 @@ addons:
     packages:
     # - pdflatex
     # - giflib-tools
+    - texlive-lang-other
     - texlive-latex-recommended
     - texlive-fonts-recommended
     - texlive-latex-extra

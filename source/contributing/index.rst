@@ -76,7 +76,7 @@ PHP Style
 All code must meet the `Style Guide
 <http://www.codeigniter.com/userguide3/general/styleguide.html>`_, which is
 essentially the `Allman indent style
-<http://en.wikipedia.org/wiki/Indent_style#Allman_style>`_, underscores and
+<https://en.wikipedia.org/wiki/Indent_style#Allman_style>`_, underscores and
 readable operators. This makes certain that all code is the same format as the
 existing code and means it will be as readable as possible.
 
