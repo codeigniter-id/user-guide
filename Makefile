@@ -8,7 +8,7 @@ PAPER         =
 BUILDDIR      = build
 
 # Repository.
-GH_REPO_REV  = `git rev-parse --short HEAD`
+# GH_REPO_REV  = `git rev-parse --short HEAD`
 GH_REPO_URL  = "https://$(GH_REPO_TOKEN):@github.com/$(TRAVIS_REPO_SLUG)"
 
 # Internal variables.
