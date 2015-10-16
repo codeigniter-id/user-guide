@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>URI Routing &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>URI Routing &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Penanganan Error" href="errors.html"/>
         <link rel="prev" title="Fungsi-fungsi Kompatibilitas" href="compatibility_functions.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="uri-routing">
-<h1>URI Routing<a class="headerlink" href="#uri-routing" title="Permalink to this headline">¶</a></h1>
+<h1>URI Routing<a class="headerlink" href="#uri-routing" title="Link permanen untuk headline ini">¶</a></h1>
 <p>Typically there is a one-to-one relationship between a URL string and
 its corresponding controller class/method. The segments in a URI
 normally follow this pattern:</p>
@@ -445,14 +445,14 @@ corresponding to the URL.</p>
 name, but in the example above it instead has a product ID. To
 overcome this, CodeIgniter allows you to remap the URI handler.</p>
 <div class="section" id="setting-your-own-routing-rules">
-<h2>Setting your own routing rules<a class="headerlink" href="#setting-your-own-routing-rules" title="Permalink to this headline">¶</a></h2>
+<h2>Setting your own routing rules<a class="headerlink" href="#setting-your-own-routing-rules" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Routing rules are defined in your <em>application/config/routes.php</em> file.
 In it you&#8217;ll see an array called <code class="docutils literal"><span class="pre">$route</span></code> that permits you to specify
 your own routing criteria. Routes can either be specified using wildcards
 or Regular Expressions.</p>
 </div>
 <div class="section" id="wildcards">
-<h2>Wildcards<a class="headerlink" href="#wildcards" title="Permalink to this headline">¶</a></h2>
+<h2>Wildcards<a class="headerlink" href="#wildcards" title="Link permanen untuk headline ini">¶</a></h2>
 <p>A typical wildcard route might look something like this:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;product/:num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;catalog/product_lookup&#39;</span><span class="p">;</span>
 </pre></div>
@@ -466,18 +466,18 @@ segment of the URL, and a number is found in the second segment, the
 <p><strong>(:num)</strong> will match a segment containing only numbers.
 <strong>(:any)</strong> will match a segment containing any character (except for &#8216;/&#8217;, which is the segment delimiter).</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Wildcards are actually aliases for regular expressions, with
 <strong>:any</strong> being translated to <strong>[^/]+</strong> and <strong>:num</strong> to <strong>[0-9]+</strong>,
 respectively.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Routes will run in the order they are defined. Higher routes
 will always take precedence over lower ones.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Route rules are not filters! Setting a rule of e.g.
 &#8216;foo/bar/(:num)&#8217; will not prevent controller <em>Foo</em> and method
 <em>bar</em> to be called with a non-numeric value if that is a valid
@@ -485,7 +485,7 @@ route.</p>
 </div>
 </div>
 <div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Here are a few routing examples:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;journals&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;blogs&#39;</span><span class="p">;</span>
 </pre></div>
@@ -511,16 +511,16 @@ will be remapped to the &#8220;catalog&#8221; class and the
 &#8220;product_lookup_by_id&#8221; method passing in the match as a variable to
 the method.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Do not use leading/trailing slashes.</p>
 </div>
 </div>
 <div class="section" id="regular-expressions">
-<h2>Regular Expressions<a class="headerlink" href="#regular-expressions" title="Permalink to this headline">¶</a></h2>
+<h2>Regular Expressions<a class="headerlink" href="#regular-expressions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you prefer you can use regular expressions to define your routing
 rules. Any valid regular expression is allowed, as are back-references.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If you use back-references you must use the dollar syntax
 rather than the double backslash syntax.</p>
 </div>
@@ -543,12 +543,12 @@ page after they log in, you may find this example useful:</p>
 more about them, <cite>regular-expressions.info &lt;http://www.regular-expressions.info/&gt;</cite>
 might be a good starting point.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">You can also mix and match wildcards with regular expressions.</p>
 </div>
 </div>
 <div class="section" id="callbacks">
-<h2>Callbacks<a class="headerlink" href="#callbacks" title="Permalink to this headline">¶</a></h2>
+<h2>Callbacks<a class="headerlink" href="#callbacks" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you are using PHP &gt;= 5.3 you can use callbacks in place of the normal
 routing rules to process the back-references. Example:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;products/([a-zA-Z]+)/edit/(\d+)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$product_type</span><span class="p">,</span> <span class="nv">$id</span><span class="p">)</span>
@@ -559,7 +559,7 @@ routing rules to process the back-references. Example:</p>
 </div>
 </div>
 <div class="section" id="using-http-verbs-in-routes">
-<h2>Using HTTP verbs in routes<a class="headerlink" href="#using-http-verbs-in-routes" title="Permalink to this headline">¶</a></h2>
+<h2>Using HTTP verbs in routes<a class="headerlink" href="#using-http-verbs-in-routes" title="Link permanen untuk headline ini">¶</a></h2>
 <p>It is possible to use HTTP verbs (request method) to define your routing rules.
 This is particularly useful when building RESTful applications. You can use standard HTTP
 verbs (GET, PUT, POST, DELETE, PATCH) or a custom one such (e.g. PURGE). HTTP verb rules
@@ -578,7 +578,7 @@ mapped to the <code class="docutils literal"><span class="pre">Product::delete()
 <p>Using HTTP verbs is of course, optional.</p>
 </div>
 <div class="section" id="reserved-routes">
-<h2>Reserved Routes<a class="headerlink" href="#reserved-routes" title="Permalink to this headline">¶</a></h2>
+<h2>Reserved Routes<a class="headerlink" href="#reserved-routes" title="Link permanen untuk headline ini">¶</a></h2>
 <p>There are three reserved routes:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;default_controller&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;welcome&#39;</span><span class="p">;</span>
 </pre></div>
@@ -606,7 +606,7 @@ additional route entries if you need to do that.
 This is required, because the dash isn&#8217;t a valid class or method name
 character and would cause a fatal error if you try to use it.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">The reserved routes must come before any wildcard or
 regular expression routes.</p>
 </div>
@@ -632,7 +632,7 @@ regular expression routes.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -662,6 +662,7 @@ regular expression routes.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

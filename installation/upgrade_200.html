@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Upgrading from 1.7.2 to 2.0.0 &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Upgrading from 1.7.2 to 2.0.0 &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Upgrade Dari Versi Sebelumnya" href="upgrading.html"/>
         <link rel="next" title="Upgrading from 1.7.1 to 1.7.2" href="upgrade_172.html"/>
         <link rel="prev" title="Upgrading from 2.0.0 to 2.0.1" href="upgrade_201.html"/> 
@@ -426,23 +426,23 @@
           <div role="main" class="document">
             
   <div class="section" id="upgrading-from-1-7-2-to-2-0-0">
-<h1>Upgrading from 1.7.2 to 2.0.0<a class="headerlink" href="#upgrading-from-1-7-2-to-2-0-0" title="Permalink to this headline">¶</a></h1>
+<h1>Upgrading from 1.7.2 to 2.0.0<a class="headerlink" href="#upgrading-from-1-7-2-to-2-0-0" title="Link permanen untuk headline ini">¶</a></h1>
 <p>Before performing an update you should take your site offline by
 replacing the index.php file with a static one.</p>
 <div class="section" id="update-instructions">
-<h2>Update Instructions<a class="headerlink" href="#update-instructions" title="Permalink to this headline">¶</a></h2>
+<h2>Update Instructions<a class="headerlink" href="#update-instructions" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="step-1-update-your-codeigniter-files">
-<h3>Step 1: Update your CodeIgniter files<a class="headerlink" href="#step-1-update-your-codeigniter-files" title="Permalink to this headline">¶</a></h3>
+<h3>Step 1: Update your CodeIgniter files<a class="headerlink" href="#step-1-update-your-codeigniter-files" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Replace all files and directories in your &#8220;system&#8221; folder <strong>except</strong>
 your application folder.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If you have any custom developed files in these folders please
 make copies of them first.</p>
 </div>
 </div>
 <div class="section" id="step-2-adjust-get-dir-file-info-where-necessary">
-<h3>Step 2: Adjust get_dir_file_info() where necessary<a class="headerlink" href="#step-2-adjust-get-dir-file-info-where-necessary" title="Permalink to this headline">¶</a></h3>
+<h3>Step 2: Adjust get_dir_file_info() where necessary<a class="headerlink" href="#step-2-adjust-get-dir-file-info-where-necessary" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Version 2.0.0 brings a non-backwards compatible change to
 get_dir_file_info() in the <a class="reference internal" href="../helpers/file_helper.html"><em>File
 Helper</em></a>. Non-backwards compatible changes
@@ -456,7 +456,7 @@ to FALSE:</p>
 </div>
 </div>
 <div class="section" id="step-3-convert-your-plugins-to-helpers">
-<h3>Step 3: Convert your Plugins to Helpers<a class="headerlink" href="#step-3-convert-your-plugins-to-helpers" title="Permalink to this headline">¶</a></h3>
+<h3>Step 3: Convert your Plugins to Helpers<a class="headerlink" href="#step-3-convert-your-plugins-to-helpers" title="Link permanen untuk headline ini">¶</a></h3>
 <p>2.0.0 gets rid of the &#8220;Plugin&#8221; system as their functionality was
 identical to Helpers, but non-extensible. You will need to rename your
 plugin files from filename_pi.php to filename_helper.php, move them to
@@ -470,9 +470,9 @@ your helpers folder, and change all instances of:</p>
 </div>
 </div>
 <div class="section" id="step-4-update-stored-encrypted-data">
-<h3>Step 4: Update stored encrypted data<a class="headerlink" href="#step-4-update-stored-encrypted-data" title="Permalink to this headline">¶</a></h3>
+<h3>Step 4: Update stored encrypted data<a class="headerlink" href="#step-4-update-stored-encrypted-data" title="Link permanen untuk headline ini">¶</a></h3>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If your application does not use the Encrypt library, does
 not store Encrypted data permanently, or is on an environment that does
 not support Mcrypt, you may skip this step.</p>
@@ -491,35 +491,35 @@ method</em></a> in the Encrypt library
 documentation.</p>
 </div>
 <div class="section" id="step-5-remove-loading-calls-for-the-compatibility-helper">
-<h3>Step 5: Remove loading calls for the compatibility helper.<a class="headerlink" href="#step-5-remove-loading-calls-for-the-compatibility-helper" title="Permalink to this headline">¶</a></h3>
+<h3>Step 5: Remove loading calls for the compatibility helper.<a class="headerlink" href="#step-5-remove-loading-calls-for-the-compatibility-helper" title="Link permanen untuk headline ini">¶</a></h3>
 <p>The compatibility helper has been removed from the CodeIgniter core. All
 methods in it should be natively available in supported PHP versions.</p>
 </div>
 <div class="section" id="step-6-update-class-extension">
-<h3>Step 6: Update Class extension<a class="headerlink" href="#step-6-update-class-extension" title="Permalink to this headline">¶</a></h3>
+<h3>Step 6: Update Class extension<a class="headerlink" href="#step-6-update-class-extension" title="Link permanen untuk headline ini">¶</a></h3>
 <p>All core classes are now prefixed with CI_. Update Models and
 Controllers to extend CI_Model and CI_Controller, respectively.</p>
 </div>
 <div class="section" id="step-7-update-parent-constructor-calls">
-<h3>Step 7: Update Parent Constructor calls<a class="headerlink" href="#step-7-update-parent-constructor-calls" title="Permalink to this headline">¶</a></h3>
+<h3>Step 7: Update Parent Constructor calls<a class="headerlink" href="#step-7-update-parent-constructor-calls" title="Link permanen untuk headline ini">¶</a></h3>
 <p>All native CodeIgniter classes now use the PHP 5 __construct()
 convention. Please update extended libraries to call
 parent::__construct().</p>
 </div>
 <div class="section" id="step-8-move-any-core-extensions-to-application-core">
-<h3>Step 8: Move any core extensions to application/core<a class="headerlink" href="#step-8-move-any-core-extensions-to-application-core" title="Permalink to this headline">¶</a></h3>
+<h3>Step 8: Move any core extensions to application/core<a class="headerlink" href="#step-8-move-any-core-extensions-to-application-core" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Any extensions to core classes (e.g. MY_Controller.php) in your
 application/libraries folder must be moved to the new
 application/core folder.</p>
 </div>
 <div class="section" id="step-9-update-your-user-guide">
-<h3>Step 9: Update your user guide<a class="headerlink" href="#step-9-update-your-user-guide" title="Permalink to this headline">¶</a></h3>
+<h3>Step 9: Update your user guide<a class="headerlink" href="#step-9-update-your-user-guide" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Please replace your local copy of the user guide with the new version,
 including the image files.</p>
 </div>
 </div>
 <div class="section" id="update-notes">
-<h2>Update Notes<a class="headerlink" href="#update-notes" title="Permalink to this headline">¶</a></h2>
+<h2>Update Notes<a class="headerlink" href="#update-notes" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Please refer to the <a class="reference internal" href="../changelog.html#changelog"><span>2.0.0 Change Log</span></a> for full
 details, but here are some of the larger changes that are more likely to
 impact your code:</p>
@@ -545,7 +545,7 @@ from the db utility drivers.</li>
 has been renamed to <code class="docutils literal"><span class="pre">do_hash()</span></code> for naming consistency.</li>
 </ul>
 <div class="section" id="the-config-folder">
-<h3>The config folder<a class="headerlink" href="#the-config-folder" title="Permalink to this headline">¶</a></h3>
+<h3>The config folder<a class="headerlink" href="#the-config-folder" title="Link permanen untuk headline ini">¶</a></h3>
 <p>The following files have been changed:</p>
 <ul class="simple">
 <li>config.php</li>
@@ -582,7 +582,7 @@ has been renamed to <code class="docutils literal"><span class="pre">do_hash()</
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -612,6 +612,7 @@ has been renamed to <code class="docutils literal"><span class="pre">do_hash()</
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

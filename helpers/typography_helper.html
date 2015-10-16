@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Typography Helper &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Typography Helper &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Helper" href="index.html"/>
         <link rel="next" title="URL Helper" href="url_helper.html"/>
         <link rel="prev" title="Text Helper" href="text_helper.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="typography-helper">
-<h1>Typography Helper<a class="headerlink" href="#typography-helper" title="Permalink to this headline">¶</a></h1>
+<h1>Typography Helper<a class="headerlink" href="#typography-helper" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Typography Helper file contains functions that help your format text
 in semantically relevant ways.</p>
 <div class="contents local topic" id="contents">
@@ -434,29 +434,29 @@ in semantically relevant ways.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
-<h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This helper is loaded using the following code:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;typography&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="available-functions">
-<h2><a class="toc-backref" href="#id2">Available Functions</a><a class="headerlink" href="#available-functions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Available Functions</a><a class="headerlink" href="#available-functions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The following functions are available:</p>
 <dl class="function">
 <dt id="auto_typography">
-<code class="descname">auto_typography</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$reduce_linebreaks = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#auto_typography" title="Permalink to this definition">¶</a></dt>
+<code class="descname">auto_typography</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$reduce_linebreaks = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#auto_typography" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$reduce_linebreaks</strong> (<em>bool</em>) &#8211; Whether to reduce multiple instances of double newlines to two</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">HTML-formatted typography-safe string</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">HTML-formatted typography-safe string</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -473,7 +473,7 @@ For more info, please see the <a class="reference internal" href="../libraries/t
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Typographic formatting can be processor intensive, particularly if
 you have a lot of content being formatted. If you choose to use this
 function you may want to consider <cite>caching &lt;../general/caching&gt;</cite> your
@@ -483,17 +483,17 @@ pages.</p>
 
 <dl class="function">
 <dt id="nl2br_except_pre">
-<code class="descname">nl2br_except_pre</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#nl2br_except_pre" title="Permalink to this definition">¶</a></dt>
+<code class="descname">nl2br_except_pre</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#nl2br_except_pre" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">String with HTML-formatted line breaks</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">String with HTML-formatted line breaks</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -512,18 +512,18 @@ except that it ignores &lt;pre&gt; tags.</p>
 
 <dl class="function">
 <dt id="entity_decode">
-<code class="descname">entity_decode</code><span class="sig-paren">(</span><em>$str</em>, <em>$charset = NULL</em><span class="sig-paren">)</span><a class="headerlink" href="#entity_decode" title="Permalink to this definition">¶</a></dt>
+<code class="descname">entity_decode</code><span class="sig-paren">(</span><em>$str</em>, <em>$charset = NULL</em><span class="sig-paren">)</span><a class="headerlink" href="#entity_decode" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$charset</strong> (<em>string</em>) &#8211; Character set</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">String with decoded HTML entities</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">String with decoded HTML entities</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -557,7 +557,7 @@ Fore more info, please see the <a class="reference internal" href="../libraries/
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -587,6 +587,7 @@ Fore more info, please see the <a class="reference internal" href="../libraries/
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

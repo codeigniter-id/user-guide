@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Encryption Library &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Encryption Library &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="File Uploading Class" href="file_uploading.html"/>
         <link rel="prev" title="Encrypt Class" href="encrypt.html"/> 
@@ -424,9 +424,9 @@
           <div role="main" class="document">
             
   <div class="section" id="encryption-library">
-<h1>Encryption Library<a class="headerlink" href="#encryption-library" title="Permalink to this headline">¶</a></h1>
+<h1>Encryption Library<a class="headerlink" href="#encryption-library" title="Link permanen untuk headline ini">¶</a></h1>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">DO NOT use this or any other <em>encryption</em> library for
 user password storage! Passwords must be <em>hashed</em> instead, and you
 should do that via PHP&#8217;s own <a class="reference external" href="http://php.net/password">Password Hashing extension</a>.</p>
@@ -469,9 +469,9 @@ for proper cryptography.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="using-the-encryption-library">
-<h2><a class="toc-backref" href="#id2">Using the Encryption Library</a><a class="headerlink" href="#using-the-encryption-library" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Using the Encryption Library</a><a class="headerlink" href="#using-the-encryption-library" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="initializing-the-class">
-<h3><a class="toc-backref" href="#id3">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Like most other classes in CodeIgniter, the Encryption library is
 initialized in your controller using the <code class="docutils literal"><span class="pre">$this-&gt;load-&gt;library()</span></code>
 method:</p>
@@ -484,11 +484,11 @@ method:</p>
 </div>
 </div>
 <div class="section" id="default-behavior">
-<h3><a class="toc-backref" href="#id4">Default behavior</a><a class="headerlink" href="#default-behavior" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Default behavior</a><a class="headerlink" href="#default-behavior" title="Link permanen untuk headline ini">¶</a></h3>
 <p>By default, the Encryption Library will use the AES-128 cipher in CBC
 mode, using your configured <em>encryption_key</em> and SHA512 HMAC authentication.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">AES-128 is chosen both because it is proven to be strong and
 because of its wide availability across different cryptographic
 software and programming languages&#8217; APIs.</p>
@@ -499,10 +499,10 @@ that a HMAC also requires a secret key and using the same key for both
 encryption and authentication is a bad practice.</p>
 <p>Because of that, two separate keys are derived from your already configured
 <em>encryption_key</em>: one for encryption and one for authentication. This is
-done via a technique called <a class="reference external" href="http://en.wikipedia.org/wiki/HKDF">HMAC-based Key Derivation Function</a> (HKDF).</p>
+done via a technique called <a class="reference external" href="https://en.wikipedia.org/wiki/HKDF">HMAC-based Key Derivation Function</a> (HKDF).</p>
 </div>
 <div class="section" id="setting-your-encryption-key">
-<h3><a class="toc-backref" href="#id5">Setting your encryption_key</a><a class="headerlink" href="#setting-your-encryption-key" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Setting your encryption_key</a><a class="headerlink" href="#setting-your-encryption-key" title="Link permanen untuk headline ini">¶</a></h3>
 <p>An <em>encryption key</em> is a piece of information that controls the
 cryptographic process and permits a plain-text string to be encrypted,
 and afterwards - decrypted. It is the secret &#8220;ingredient&#8221; in the whole
@@ -554,13 +554,13 @@ a more friendly manner. For example:</p>
 </div>
 </div>
 <div class="section" id="supported-encryption-ciphers-and-modes">
-<span id="ciphers-and-modes"></span><h3><a class="toc-backref" href="#id6">Supported encryption ciphers and modes</a><a class="headerlink" href="#supported-encryption-ciphers-and-modes" title="Permalink to this headline">¶</a></h3>
+<span id="ciphers-and-modes"></span><h3><a class="toc-backref" href="#id6">Supported encryption ciphers and modes</a><a class="headerlink" href="#supported-encryption-ciphers-and-modes" title="Link permanen untuk headline ini">¶</a></h3>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The terms &#8216;cipher&#8217; and &#8216;encryption algorithm&#8217; are interchangeable.</p>
 </div>
 <div class="section" id="portable-ciphers">
-<h4><a class="toc-backref" href="#id7">Portable ciphers</a><a class="headerlink" href="#portable-ciphers" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id7">Portable ciphers</a><a class="headerlink" href="#portable-ciphers" title="Link permanen untuk headline ini">¶</a></h4>
 <p>Because MCrypt and OpenSSL (also called drivers throughout this document)
 each support different sets of encryption algorithms and often implement
 them in different ways, our Encryption library is designed to use them in
@@ -629,26 +629,26 @@ Encryption library to use that cipher:</p>
 </tbody>
 </table>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Because of how MCrypt works, if you fail to provide a key
 with the appropriate length, you might end up using a different
 algorithm than the one configured, so be really careful with that!</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">In case it isn&#8217;t clear from the above table, Blowfish, CAST5
 and RC4 support variable length keys. That is, any number in the
 shown ranges is valid, although in bit terms that only happens
 in 8-bit increments.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Even though CAST5 supports key lengths lower than 128 bits
 (16 bytes), in fact they will just be zero-padded to the
 maximum length, as specified in <a class="reference external" href="http://tools.ietf.org/rfc/rfc2144.txt">RFC 2144</a>.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Blowfish supports key lengths as small as 32 bits (4 bytes), but
 our tests have shown that only lengths of 128 bits (16 bytes) or
 higher are properly supported by both MCrypt and OpenSSL. It is
@@ -656,7 +656,7 @@ also a bad practice to use such low-length keys anyway.</p>
 </div>
 </div>
 <div class="section" id="driver-specific-ciphers">
-<h4><a class="toc-backref" href="#id8">Driver-specific ciphers</a><a class="headerlink" href="#driver-specific-ciphers" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id8">Driver-specific ciphers</a><a class="headerlink" href="#driver-specific-ciphers" title="Link permanen untuk headline ini">¶</a></h4>
 <p>As noted above, MCrypt and OpenSSL support different sets of encryption
 ciphers. For portability reasons and because we haven&#8217;t tested them
 properly, we do not advise you to use the ones that are driver-specific,
@@ -779,12 +779,12 @@ but regardless, here&#8217;s a list of most of them:</p>
 </tbody>
 </table>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If you wish to use one of those ciphers, you&#8217;d have to pass
 its name in lower-case to the Encryption library.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">You&#8217;ve probably noticed that all AES cipers (and Rijndael-128)
 are also listed in the portable ciphers list. This is because
 drivers support different modes for these ciphers. Also, it is
@@ -792,14 +792,14 @@ important to note that AES-128 and Rijndael-128 are actually
 the same cipher, but <strong>only</strong> when used with a 128-bit key.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">CAST-128 / CAST-5 is also listed in both the portable and
 driver-specific ciphers list. This is because OpenSSL&#8217;s
 implementation doesn&#8217;t appear to be working correctly with
 key sizes of 80 bits and lower.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">RC2 is listed as supported by both MCrypt and OpenSSL.
 However, both drivers implement them differently and they
 are not portable. It is probably worth noting that we only
@@ -808,7 +808,7 @@ is not properly implementing it.</p>
 </div>
 </div>
 <div class="section" id="encryption-modes">
-<span id="id1"></span><h4><a class="toc-backref" href="#id9">Encryption modes</a><a class="headerlink" href="#encryption-modes" title="Permalink to this headline">¶</a></h4>
+<span id="id1"></span><h4><a class="toc-backref" href="#id9">Encryption modes</a><a class="headerlink" href="#encryption-modes" title="Link permanen untuk headline ini">¶</a></h4>
 <p>Different modes of encryption have different characteristics and serve
 for different purposes. Some are stronger than others, some are faster
 and some offer extra features.
@@ -882,7 +882,7 @@ general purposes.</p>
 </div>
 </div>
 <div class="section" id="message-length">
-<h3><a class="toc-backref" href="#id10">Message Length</a><a class="headerlink" href="#message-length" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Message Length</a><a class="headerlink" href="#message-length" title="Link permanen untuk headline ini">¶</a></h3>
 <p>It&#8217;s probably important for you to know that an encrypted string is usually
 longer than the original, plain-text string (depending on the cipher).</p>
 <p>This is influenced by the cipher algorithm itself, the IV prepended to the
@@ -893,7 +893,7 @@ for storage and transmission, regardless of a possible character set in use.</p>
 Cookies, for example, can only hold 4K of information.</p>
 </div>
 <div class="section" id="configuring-the-library">
-<span id="configuration"></span><h3><a class="toc-backref" href="#id11">Configuring the library</a><a class="headerlink" href="#configuring-the-library" title="Permalink to this headline">¶</a></h3>
+<span id="configuration"></span><h3><a class="toc-backref" href="#id11">Configuring the library</a><a class="headerlink" href="#configuring-the-library" title="Link permanen untuk headline ini">¶</a></h3>
 <p>For usability, performance, but also historical reasons tied to our old
 <a class="reference internal" href="encrypt.html"><em>Encrypt Class</em></a>, the Encryption library is designed to
 use repeatedly the same driver, encryption cipher, mode and key.</p>
@@ -953,7 +953,7 @@ have both, but want to use MCrypt instead of OpenSSL:</p>
 </div>
 </div>
 <div class="section" id="encrypting-and-decrypting-data">
-<h3><a class="toc-backref" href="#id12">Encrypting and decrypting data</a><a class="headerlink" href="#encrypting-and-decrypting-data" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Encrypting and decrypting data</a><a class="headerlink" href="#encrypting-and-decrypting-data" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Encrypting and decrypting data with the already configured library
 settings is simple. As simple as just passing the string to the
 <code class="docutils literal"><span class="pre">encrypt()</span></code> and/or <code class="docutils literal"><span class="pre">decrypt()</span></code> methods:</p>
@@ -968,14 +968,14 @@ settings is simple. As simple as just passing the string to the
 for the whole process to be cryptographically secure out-of-the-box.
 You don&#8217;t need to worry about it.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Both methods will return FALSE in case of an error.
 While for <code class="docutils literal"><span class="pre">encrypt()</span></code> this can only mean incorrect
 configuration, you should always check the return value
 of <code class="docutils literal"><span class="pre">decrypt()</span></code> in production code.</p>
 </div>
 <div class="section" id="how-it-works">
-<h4><a class="toc-backref" href="#id13">How it works</a><a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id13">How it works</a><a class="headerlink" href="#how-it-works" title="Link permanen untuk headline ini">¶</a></h4>
 <p>If you must know how the process works, here&#8217;s what happens under
 the hood:</p>
 <ul class="simple">
@@ -1012,7 +1012,7 @@ cipher-text using that IV and the derived encryption key.</li>
 </ul>
 </div>
 <div class="section" id="using-custom-parameters">
-<span id="custom-parameters"></span><h4><a class="toc-backref" href="#id14">Using custom parameters</a><a class="headerlink" href="#using-custom-parameters" title="Permalink to this headline">¶</a></h4>
+<span id="custom-parameters"></span><h4><a class="toc-backref" href="#id14">Using custom parameters</a><a class="headerlink" href="#using-custom-parameters" title="Link permanen untuk headline ini">¶</a></h4>
 <p>Let&#8217;s say you have to interact with another system that is out
 of your control and uses another method to encrypt data. A
 method that will most certainly not match the above-described
@@ -1021,7 +1021,7 @@ sequence and probably not use all of the steps either.</p>
 and decryption processes work, so that you can easily tailor a
 custom solution for such situations.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">It is possible to use the library in this way, without
 setting an <em>encryption_key</em> in your configuration file.</p>
 </div>
@@ -1047,7 +1047,7 @@ Here&#8217;s an example:</p>
 using the Blowfish cipher in CBC mode and authenticated via a SHA-256
 HMAC.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Note that both &#8216;key&#8217; and &#8216;hmac_key&#8217; are used in this
 example. When using custom parameters, encryption and HMAC keys
 are not derived like the default behavior of the library is.</p>
@@ -1114,7 +1114,7 @@ be a hexadecimal string.</td>
 </tbody>
 </table>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last"><code class="docutils literal"><span class="pre">encrypt()</span></code> and <code class="docutils literal"><span class="pre">decrypt()</span></code> will return FALSE if
 a mandatory parameter is not provided or if a provided
 value is incorrect. This includes <em>hmac_key</em>, unless <em>hmac</em>
@@ -1122,7 +1122,7 @@ is set to FALSE.</p>
 </div>
 </div>
 <div class="section" id="supported-hmac-authentication-algorithms">
-<span id="digests"></span><h4><a class="toc-backref" href="#id15">Supported HMAC authentication algorithms</a><a class="headerlink" href="#supported-hmac-authentication-algorithms" title="Permalink to this headline">¶</a></h4>
+<span id="digests"></span><h4><a class="toc-backref" href="#id15">Supported HMAC authentication algorithms</a><a class="headerlink" href="#supported-hmac-authentication-algorithms" title="Link permanen untuk headline ini">¶</a></h4>
 <p>For HMAC message authentication, the Encryption library supports
 usage of the SHA-2 family of algorithms:</p>
 <table border="1" class="docutils">
@@ -1167,23 +1167,23 @@ appear and become widely available.</p>
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id16">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id16">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Encryption">
-<em class="property">class </em><code class="descname">CI_Encryption</code><a class="headerlink" href="#CI_Encryption" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Encryption</code><a class="headerlink" href="#CI_Encryption" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_Encryption::initialize">
-<code class="descname">initialize</code><span class="sig-paren">(</span><em>$params</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::initialize" title="Permalink to this definition">¶</a></dt>
+<code class="descname">initialize</code><span class="sig-paren">(</span><em>$params</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::initialize" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$params</strong> (<em>array</em>) &#8211; Configuration parameters</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Encryption instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Encryption instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Encryption</p>
@@ -1204,18 +1204,18 @@ driver, cipher, mode or key.</p>
 
 <dl class="method">
 <dt id="CI_Encryption::encrypt">
-<code class="descname">encrypt</code><span class="sig-paren">(</span><em>$data</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::encrypt" title="Permalink to this definition">¶</a></dt>
+<code class="descname">encrypt</code><span class="sig-paren">(</span><em>$data</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::encrypt" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$data</strong> (<em>string</em>) &#8211; Data to encrypt</li>
 <li><strong>$params</strong> (<em>array</em>) &#8211; Optional parameters</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Encrypted data or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Encrypted data or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1234,18 +1234,18 @@ on the optional parameters.</p>
 
 <dl class="method">
 <dt id="CI_Encryption::decrypt">
-<code class="descname">decrypt</code><span class="sig-paren">(</span><em>$data</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::decrypt" title="Permalink to this definition">¶</a></dt>
+<code class="descname">decrypt</code><span class="sig-paren">(</span><em>$data</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::decrypt" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$data</strong> (<em>string</em>) &#8211; Data to decrypt</li>
 <li><strong>$params</strong> (<em>array</em>) &#8211; Optional parameters</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Decrypted data or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Decrypted data or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1264,17 +1264,17 @@ on the optional parameters.</p>
 
 <dl class="method">
 <dt id="CI_Encryption::create_key">
-<code class="descname">create_key</code><span class="sig-paren">(</span><em>$length</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::create_key" title="Permalink to this definition">¶</a></dt>
+<code class="descname">create_key</code><span class="sig-paren">(</span><em>$length</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::create_key" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$length</strong> (<em>int</em>) &#8211; Output length</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A pseudo-random cryptographic key with the specified length, or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">A pseudo-random cryptographic key with the specified length, or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1288,12 +1288,12 @@ the operating system&#8217;s sources (i.e. /dev/urandom).</p>
 
 <dl class="method">
 <dt id="CI_Encryption::hkdf">
-<code class="descname">hkdf</code><span class="sig-paren">(</span><em>$key</em><span class="optional">[</span>, <em>$digest = 'sha512'</em><span class="optional">[</span>, <em>$salt = NULL</em><span class="optional">[</span>, <em>$length = NULL</em><span class="optional">[</span>, <em>$info = ''</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::hkdf" title="Permalink to this definition">¶</a></dt>
+<code class="descname">hkdf</code><span class="sig-paren">(</span><em>$key</em><span class="optional">[</span>, <em>$digest = 'sha512'</em><span class="optional">[</span>, <em>$salt = NULL</em><span class="optional">[</span>, <em>$length = NULL</em><span class="optional">[</span>, <em>$info = ''</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Encryption::hkdf" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>string</em>) &#8211; Input key material</li>
 <li><strong>$digest</strong> (<em>string</em>) &#8211; A SHA-2 family digest algorithm</li>
 <li><strong>$salt</strong> (<em>string</em>) &#8211; Optional salt</li>
@@ -1302,7 +1302,7 @@ the operating system&#8217;s sources (i.e. /dev/urandom).</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A pseudo-random key or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">A pseudo-random key or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1355,7 +1355,7 @@ doesn&#8217;t support SHA1.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -1385,6 +1385,7 @@ doesn&#8217;t support SHA1.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

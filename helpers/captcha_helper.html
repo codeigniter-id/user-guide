@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CAPTCHA Helper &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>CAPTCHA Helper &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Helper" href="index.html"/>
         <link rel="next" title="Cookie Helper" href="cookie_helper.html"/>
         <link rel="prev" title="Array Helper" href="array_helper.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="captcha-helper">
-<h1>CAPTCHA Helper<a class="headerlink" href="#captcha-helper" title="Permalink to this headline">¶</a></h1>
+<h1>CAPTCHA Helper<a class="headerlink" href="#captcha-helper" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The CAPTCHA Helper file contains functions that assist in creating
 CAPTCHA images.</p>
 <div class="contents local topic" id="contents">
@@ -438,14 +438,14 @@ CAPTCHA images.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
-<h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This helper is loaded using the following code:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;captcha&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="using-the-captcha-helper">
-<h2><a class="toc-backref" href="#id2">Using the CAPTCHA helper</a><a class="headerlink" href="#using-the-captcha-helper" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Using the CAPTCHA helper</a><a class="headerlink" href="#using-the-captcha-helper" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Once loaded you can generate a CAPTCHA like this:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$vals</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;word&#39;</span>          <span class="o">=&gt;</span> <span class="s1">&#39;Random word&#39;</span><span class="p">,</span>
@@ -491,7 +491,7 @@ hours.</li>
 <li>If any of the <strong>colors</strong> values is missing, it will be replaced by the default.</li>
 </ul>
 <div class="section" id="adding-a-database">
-<h3><a class="toc-backref" href="#id3">Adding a Database</a><a class="headerlink" href="#adding-a-database" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Adding a Database</a><a class="headerlink" href="#adding-a-database" title="Link permanen untuk headline ini">¶</a></h3>
 <p>In order for the captcha function to prevent someone from submitting,
 you will need to add the information returned from <code class="docutils literal"><span class="pre">create_captcha()</span></code>
 to your database. Then, when the data from the form is submitted by
@@ -553,16 +553,16 @@ this:</p>
 </div>
 </div>
 <div class="section" id="available-functions">
-<h2><a class="toc-backref" href="#id4">Available Functions</a><a class="headerlink" href="#available-functions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Available Functions</a><a class="headerlink" href="#available-functions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The following functions are available:</p>
 <dl class="function">
 <dt id="create_captcha">
-<code class="descname">create_captcha</code><span class="sig-paren">(</span><span class="optional">[</span><em>$data = ''</em><span class="optional">[</span>, <em>$img_path = ''</em><span class="optional">[</span>, <em>$img_url = ''</em><span class="optional">[</span>, <em>$font_path = ''</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#create_captcha" title="Permalink to this definition">¶</a></dt>
+<code class="descname">create_captcha</code><span class="sig-paren">(</span><span class="optional">[</span><em>$data = ''</em><span class="optional">[</span>, <em>$img_path = ''</em><span class="optional">[</span>, <em>$img_url = ''</em><span class="optional">[</span>, <em>$font_path = ''</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#create_captcha" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$data</strong> (<em>array</em>) &#8211; Array of data for the CAPTCHA</li>
 <li><strong>$img_path</strong> (<em>string</em>) &#8211; Path to create the image in</li>
 <li><strong>$img_url</strong> (<em>string</em>) &#8211; URL to the CAPTCHA image folder</li>
@@ -570,7 +570,7 @@ this:</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">array(&#8216;word&#8217; =&gt; $word, &#8216;time&#8217; =&gt; $now, &#8216;image&#8217; =&gt; $img)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">array(&#8216;word&#8217; =&gt; $word, &#8216;time&#8217; =&gt; $now, &#8216;image&#8217; =&gt; $img)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -620,7 +620,7 @@ supplied to the function, will be a random string.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -650,6 +650,7 @@ supplied to the function, will be a random string.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

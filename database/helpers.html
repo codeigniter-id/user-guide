@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Query Helper Methods &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Query Helper Methods &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Database" href="index.html"/>
         <link rel="next" title="Query Builder Class" href="query_builder.html"/>
         <link rel="prev" title="Generating Query Results" href="results.html"/> 
@@ -424,13 +424,13 @@
           <div role="main" class="document">
             
   <div class="section" id="query-helper-methods">
-<h1>Query Helper Methods<a class="headerlink" href="#query-helper-methods" title="Permalink to this headline">¶</a></h1>
+<h1>Query Helper Methods<a class="headerlink" href="#query-helper-methods" title="Link permanen untuk headline ini">¶</a></h1>
 <div class="section" id="information-from-executing-a-query">
-<h2>Information From Executing a Query<a class="headerlink" href="#information-from-executing-a-query" title="Permalink to this headline">¶</a></h2>
+<h2>Information From Executing a Query<a class="headerlink" href="#information-from-executing-a-query" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$this-&gt;db-&gt;insert_id()</strong></p>
 <p>The insert ID number when performing database inserts.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If using the PDO driver with PostgreSQL, or using the Interbase
 driver, this function requires a $name parameter, which specifies the
 appropriate sequence to check for the insert id.</p>
@@ -439,7 +439,7 @@ appropriate sequence to check for the insert id.</p>
 <p>Displays the number of affected rows, when doing &#8220;write&#8221; type queries
 (insert, update, etc.).</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">In MySQL &#8220;DELETE FROM TABLE&#8221; returns 0 affected rows. The database
 class has a small hack that allows it to return the correct number of
 affected rows. By default this hack is enabled but it can be turned off
@@ -454,13 +454,13 @@ Example:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Disabling the <strong>save_queries</strong> setting in your database
 configuration will render this function useless.</p>
 </div>
 </div>
 <div class="section" id="information-about-your-database">
-<h2>Information About Your Database<a class="headerlink" href="#information-about-your-database" title="Permalink to this headline">¶</a></h2>
+<h2>Information About Your Database<a class="headerlink" href="#information-about-your-database" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$this-&gt;db-&gt;count_all()</strong></p>
 <p>Permits you to determine the number of rows in a particular table.
 Submit the table name in the first parameter. Example:</p>
@@ -482,7 +482,7 @@ etc...):</p>
 </div>
 </div>
 <div class="section" id="making-your-queries-easier">
-<h2>Making Your Queries Easier<a class="headerlink" href="#making-your-queries-easier" title="Permalink to this headline">¶</a></h2>
+<h2>Making Your Queries Easier<a class="headerlink" href="#making-your-queries-easier" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$this-&gt;db-&gt;insert_string()</strong></p>
 <p>This function simplifies the process of writing database inserts. It
 returns a correctly formatted SQL insert string. Example:</p>
@@ -497,7 +497,7 @@ array with the data to be inserted. The above example produces:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Values are automatically escaped, producing safer queries.</p>
 </div>
 <p><strong>$this-&gt;db-&gt;update_string()</strong></p>
@@ -517,7 +517,7 @@ array with the data to be updated, and the third parameter is the
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Values are automatically escaped, producing safer queries.</p>
 </div>
 </div>
@@ -542,7 +542,7 @@ array with the data to be updated, and the third parameter is the
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -572,6 +572,7 @@ array with the data to be updated, and the third parameter is the
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

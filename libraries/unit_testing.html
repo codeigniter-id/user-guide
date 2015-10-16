@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Unit Testing Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Unit Testing Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="URI Class" href="uri.html"/>
         <link rel="prev" title="Typography Class" href="typography.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="unit-testing-class">
-<h1>Unit Testing Class<a class="headerlink" href="#unit-testing-class" title="Permalink to this headline">¶</a></h1>
+<h1>Unit Testing Class<a class="headerlink" href="#unit-testing-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>Unit testing is an approach to software development in which tests are
 written for each function in your application. If you are not familiar
 with the concept you might do a little googling on the subject.</p>
@@ -451,9 +451,9 @@ code to determine if it is producing the correct data type and result.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="using-the-unit-testing-library">
-<h2><a class="toc-backref" href="#id1">Using the Unit Testing Library</a><a class="headerlink" href="#using-the-unit-testing-library" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Using the Unit Testing Library</a><a class="headerlink" href="#using-the-unit-testing-library" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="initializing-the-class">
-<h3><a class="toc-backref" href="#id2">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Like most other classes in CodeIgniter, the Unit Test class is
 initialized in your controller using the $this-&gt;load-&gt;library function:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;unit_test&#39;</span><span class="p">);</span>
@@ -462,7 +462,7 @@ initialized in your controller using the $this-&gt;load-&gt;library function:</p
 <p>Once loaded, the Unit Test object will be available using <code class="docutils literal"><span class="pre">$this-&gt;unit</span></code></p>
 </div>
 <div class="section" id="running-tests">
-<h3><a class="toc-backref" href="#id3">Running Tests</a><a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Running Tests</a><a class="headerlink" href="#running-tests" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Running a test involves supplying a test and an expected result in the
 following way:</p>
 <blockquote>
@@ -507,7 +507,7 @@ result. Here is a list of allowed comparison types:</p>
 </ul>
 </div>
 <div class="section" id="generating-reports">
-<h3><a class="toc-backref" href="#id4">Generating Reports</a><a class="headerlink" href="#generating-reports" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Generating Reports</a><a class="headerlink" href="#generating-reports" title="Link permanen untuk headline ini">¶</a></h3>
 <p>You can either display results after each test, or your can run several
 tests and generate a report at the end. To show a report directly simply
 echo or return the run function:</p>
@@ -525,7 +525,7 @@ the raw data you can retrieve an array using:</p>
 </div>
 </div>
 <div class="section" id="strict-mode">
-<h3><a class="toc-backref" href="#id5">Strict Mode</a><a class="headerlink" href="#strict-mode" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Strict Mode</a><a class="headerlink" href="#strict-mode" title="Link permanen untuk headline ini">¶</a></h3>
 <p>By default the unit test class evaluates literal matches loosely.
 Consider this example:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">unit</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">);</span>
@@ -548,7 +548,7 @@ will compare the data type as well as the value:</p>
 </div>
 </div>
 <div class="section" id="enabling-disabling-unit-testing">
-<h3><a class="toc-backref" href="#id6">Enabling/Disabling Unit Testing</a><a class="headerlink" href="#enabling-disabling-unit-testing" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Enabling/Disabling Unit Testing</a><a class="headerlink" href="#enabling-disabling-unit-testing" title="Link permanen untuk headline ini">¶</a></h3>
 <p>If you would like to leave some testing in place in your scripts, but
 not have it run unless you need it, you can disable unit testing using:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">unit</span><span class="o">-&gt;</span><span class="na">active</span><span class="p">(</span><span class="k">FALSE</span><span class="p">);</span>
@@ -556,7 +556,7 @@ not have it run unless you need it, you can disable unit testing using:</p>
 </div>
 </div>
 <div class="section" id="unit-test-display">
-<h3><a class="toc-backref" href="#id7">Unit Test Display</a><a class="headerlink" href="#unit-test-display" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Unit Test Display</a><a class="headerlink" href="#unit-test-display" title="Link permanen untuk headline ini">¶</a></h3>
 <p>When your unit test results display, the following items show by
 default:</p>
 <ul class="simple">
@@ -572,13 +572,13 @@ default:</p>
 $this-&gt;unit-&gt;set_test_items(). For example, if you only wanted the test name
 and the result displayed:</p>
 <div class="section" id="customizing-displayed-tests">
-<h4><a class="toc-backref" href="#id8">Customizing displayed tests</a><a class="headerlink" href="#customizing-displayed-tests" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id8">Customizing displayed tests</a><a class="headerlink" href="#customizing-displayed-tests" title="Link permanen untuk headline ini">¶</a></h4>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">unit</span><span class="o">-&gt;</span><span class="na">set_test_items</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;test_name&#39;</span><span class="p">,</span> <span class="s1">&#39;result&#39;</span><span class="p">));</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="creating-a-template">
-<h4><a class="toc-backref" href="#id9">Creating a Template</a><a class="headerlink" href="#creating-a-template" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id9">Creating a Template</a><a class="headerlink" href="#creating-a-template" title="Link permanen untuk headline ini">¶</a></h4>
 <p>If you would like your test results formatted differently then the
 default you can set your own template. Here is an example of a simple
 template. Note the required pseudo-variables:</p>
@@ -596,7 +596,7 @@ template. Note the required pseudo-variables:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Your template must be declared <strong>before</strong> running the unit
 test process.</p>
 </div>
@@ -604,23 +604,23 @@ test process.</p>
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id10">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Unit_test">
-<em class="property">class </em><code class="descname">CI_Unit_test</code><a class="headerlink" href="#CI_Unit_test" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Unit_test</code><a class="headerlink" href="#CI_Unit_test" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_Unit_test::set_test_items">
-<code class="descname">set_test_items</code><span class="sig-paren">(</span><em>$items</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::set_test_items" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_test_items</code><span class="sig-paren">(</span><em>$items</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::set_test_items" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$items</strong> (<em>array</em>) &#8211; List of visible test items</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first last">void</p>
 </td>
 </tr>
 </tbody>
@@ -642,12 +642,12 @@ Valid options are:</p>
 
 <dl class="method">
 <dt id="CI_Unit_test::run">
-<code class="descname">run</code><span class="sig-paren">(</span><em>$test</em><span class="optional">[</span>, <em>$expected = TRUE</em><span class="optional">[</span>, <em>$test_name = 'undefined'</em><span class="optional">[</span>, <em>$notes = ''</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::run" title="Permalink to this definition">¶</a></dt>
+<code class="descname">run</code><span class="sig-paren">(</span><em>$test</em><span class="optional">[</span>, <em>$expected = TRUE</em><span class="optional">[</span>, <em>$test_name = 'undefined'</em><span class="optional">[</span>, <em>$notes = ''</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::run" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$test</strong> (<em>mixed</em>) &#8211; Test data</li>
 <li><strong>$expected</strong> (<em>mixed</em>) &#8211; Expected result</li>
 <li><strong>$test_name</strong> (<em>string</em>) &#8211; Test name</li>
@@ -655,7 +655,7 @@ Valid options are:</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Test report</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Test report</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -668,17 +668,17 @@ Valid options are:</p>
 
 <dl class="method">
 <dt id="CI_Unit_test::report">
-<code class="descname">report</code><span class="sig-paren">(</span><span class="optional">[</span><em>$result = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::report" title="Permalink to this definition">¶</a></dt>
+<code class="descname">report</code><span class="sig-paren">(</span><span class="optional">[</span><em>$result = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::report" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$result</strong> (<em>array</em>) &#8211; Array containing tests results</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Test report</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Test report</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -691,12 +691,12 @@ Valid options are:</p>
 
 <dl class="method">
 <dt id="CI_Unit_test::use_strict">
-<code class="descname">use_strict</code><span class="sig-paren">(</span><span class="optional">[</span><em>$state = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::use_strict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">use_strict</code><span class="sig-paren">(</span><span class="optional">[</span><em>$state = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::use_strict" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$state</strong> (<em>bool</em>) &#8211; Strict state flag</li>
 </ul>
 </td>
@@ -711,12 +711,12 @@ Valid options are:</p>
 
 <dl class="method">
 <dt id="CI_Unit_test::active">
-<code class="descname">active</code><span class="sig-paren">(</span><span class="optional">[</span><em>$state = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::active" title="Permalink to this definition">¶</a></dt>
+<code class="descname">active</code><span class="sig-paren">(</span><span class="optional">[</span><em>$state = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::active" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$state</strong> (<em>bool</em>) &#8211; Whether to enable testing</li>
 </ul>
 </td>
@@ -731,17 +731,17 @@ Valid options are:</p>
 
 <dl class="method">
 <dt id="CI_Unit_test::result">
-<code class="descname">result</code><span class="sig-paren">(</span><span class="optional">[</span><em>$results = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::result" title="Permalink to this definition">¶</a></dt>
+<code class="descname">result</code><span class="sig-paren">(</span><span class="optional">[</span><em>$results = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::result" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$results</strong> (<em>array</em>) &#8211; Tests results list</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Array of raw result data</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Array of raw result data</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -754,12 +754,12 @@ Valid options are:</p>
 
 <dl class="method">
 <dt id="CI_Unit_test::set_template">
-<code class="descname">set_template</code><span class="sig-paren">(</span><em>$template</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::set_template" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_template</code><span class="sig-paren">(</span><em>$template</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Unit_test::set_template" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$template</strong> (<em>string</em>) &#8211; Test result template</li>
 </ul>
 </td>
@@ -796,7 +796,7 @@ Valid options are:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -826,6 +826,7 @@ Valid options are:</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

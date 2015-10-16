@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FTP Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>FTP Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Image Manipulation Class" href="image_lib.html"/>
         <link rel="prev" title="Form Validation" href="form_validation.html"/> 
@@ -424,13 +424,13 @@
           <div role="main" class="document">
             
   <div class="section" id="ftp-class">
-<h1>FTP Class<a class="headerlink" href="#ftp-class" title="Permalink to this headline">¶</a></h1>
+<h1>FTP Class<a class="headerlink" href="#ftp-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>CodeIgniter&#8217;s FTP Class permits files to be transfered to a remote
 server. Remote files can also be moved, renamed, and deleted. The FTP
 class also includes a &#8220;mirroring&#8221; function that permits an entire local
 directory to be recreated remotely via FTP.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">SFTP and SSL FTP protocols are not supported, only standard
 FTP.</p>
 </div>
@@ -445,9 +445,9 @@ FTP.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="working-with-the-ftp-class">
-<h2><a class="toc-backref" href="#id1">Working with the FTP Class</a><a class="headerlink" href="#working-with-the-ftp-class" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Working with the FTP Class</a><a class="headerlink" href="#working-with-the-ftp-class" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="initializing-the-class">
-<h3><a class="toc-backref" href="#id2">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Like most other classes in CodeIgniter, the FTP class is initialized in
 your controller using the $this-&gt;load-&gt;library function:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;ftp&#39;</span><span class="p">);</span>
@@ -456,7 +456,7 @@ your controller using the $this-&gt;load-&gt;library function:</p>
 <p>Once loaded, the FTP object will be available using: $this-&gt;ftp</p>
 </div>
 <div class="section" id="usage-examples">
-<h3><a class="toc-backref" href="#id3">Usage Examples</a><a class="headerlink" href="#usage-examples" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Usage Examples</a><a class="headerlink" href="#usage-examples" title="Link permanen untuk headline ini">¶</a></h3>
 <p>In this example a connection is opened to the FTP server, and a local
 file is read and uploaded in ASCII mode. The file permissions are set to
 755.</p>
@@ -509,23 +509,23 @@ file is read and uploaded in ASCII mode. The file permissions are set to
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id4">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_FTP">
-<em class="property">class </em><code class="descname">CI_FTP</code><a class="headerlink" href="#CI_FTP" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_FTP</code><a class="headerlink" href="#CI_FTP" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_FTP::connect">
-<code class="descname">connect</code><span class="sig-paren">(</span><span class="optional">[</span><em>$config = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::connect" title="Permalink to this definition">¶</a></dt>
+<code class="descname">connect</code><span class="sig-paren">(</span><span class="optional">[</span><em>$config = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::connect" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$config</strong> (<em>array</em>) &#8211; Connection values</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -598,12 +598,12 @@ will be used automatically.</p>
 
 <dl class="method">
 <dt id="CI_FTP::upload">
-<code class="descname">upload</code><span class="sig-paren">(</span><em>$locpath</em>, <em>$rempath</em><span class="optional">[</span>, <em>$mode = 'auto'</em><span class="optional">[</span>, <em>$permissions = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::upload" title="Permalink to this definition">¶</a></dt>
+<code class="descname">upload</code><span class="sig-paren">(</span><em>$locpath</em>, <em>$rempath</em><span class="optional">[</span>, <em>$mode = 'auto'</em><span class="optional">[</span>, <em>$permissions = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::upload" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$locpath</strong> (<em>string</em>) &#8211; Local file path</li>
 <li><strong>$rempath</strong> (<em>string</em>) &#8211; Remote file path</li>
 <li><strong>$mode</strong> (<em>string</em>) &#8211; FTP mode, defaults to &#8216;auto&#8217; (options are: &#8216;auto&#8217;, &#8216;binary&#8217;, &#8216;ascii&#8217;)</li>
@@ -611,7 +611,7 @@ will be used automatically.</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -631,19 +631,19 @@ Example:</p>
 
 <dl class="method">
 <dt id="CI_FTP::download">
-<code class="descname">download</code><span class="sig-paren">(</span><em>$rempath</em>, <em>$locpath</em><span class="optional">[</span>, <em>$mode = 'auto'</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::download" title="Permalink to this definition">¶</a></dt>
+<code class="descname">download</code><span class="sig-paren">(</span><em>$rempath</em>, <em>$locpath</em><span class="optional">[</span>, <em>$mode = 'auto'</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::download" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$rempath</strong> (<em>string</em>) &#8211; Remote file path</li>
 <li><strong>$locpath</strong> (<em>string</em>) &#8211; Local file path</li>
 <li><strong>$mode</strong> (<em>string</em>) &#8211; FTP mode, defaults to &#8216;auto&#8217; (options are: &#8216;auto&#8217;, &#8216;binary&#8217;, &#8216;ascii&#8217;)</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -663,19 +663,19 @@ the local path, and you can optionally set the mode. Example:</p>
 
 <dl class="method">
 <dt id="CI_FTP::rename">
-<code class="descname">rename</code><span class="sig-paren">(</span><em>$old_file</em>, <em>$new_file</em><span class="optional">[</span>, <em>$move = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::rename" title="Permalink to this definition">¶</a></dt>
+<code class="descname">rename</code><span class="sig-paren">(</span><em>$old_file</em>, <em>$new_file</em><span class="optional">[</span>, <em>$move = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::rename" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$old_file</strong> (<em>string</em>) &#8211; Old file name</li>
 <li><strong>$new_file</strong> (<em>string</em>) &#8211; New file name</li>
 <li><strong>$move</strong> (<em>bool</em>) &#8211; Whether a move is being performed</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -692,18 +692,18 @@ the local path, and you can optionally set the mode. Example:</p>
 
 <dl class="method">
 <dt id="CI_FTP::move">
-<code class="descname">move</code><span class="sig-paren">(</span><em>$old_file</em>, <em>$new_file</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::move" title="Permalink to this definition">¶</a></dt>
+<code class="descname">move</code><span class="sig-paren">(</span><em>$old_file</em>, <em>$new_file</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::move" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$old_file</strong> (<em>string</em>) &#8211; Old file name</li>
 <li><strong>$new_file</strong> (<em>string</em>) &#8211; New file name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -717,24 +717,24 @@ the local path, and you can optionally set the mode. Example:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If the destination file name is different the file will be renamed.</p>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="CI_FTP::delete_file">
-<code class="descname">delete_file</code><span class="sig-paren">(</span><em>$filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::delete_file" title="Permalink to this definition">¶</a></dt>
+<code class="descname">delete_file</code><span class="sig-paren">(</span><em>$filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::delete_file" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$filepath</strong> (<em>string</em>) &#8211; Path to file to delete</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -750,17 +750,17 @@ the local path, and you can optionally set the mode. Example:</p>
 
 <dl class="method">
 <dt id="CI_FTP::delete_dir">
-<code class="descname">delete_dir</code><span class="sig-paren">(</span><em>$filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::delete_dir" title="Permalink to this definition">¶</a></dt>
+<code class="descname">delete_dir</code><span class="sig-paren">(</span><em>$filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::delete_dir" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$filepath</strong> (<em>string</em>) &#8211; Path to directory to delete</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -771,7 +771,7 @@ the local path, and you can optionally set the mode. Example:</p>
 <p>Lets you delete a directory and everything it contains. Supply the
 source path to the directory with a trailing slash.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Be VERY careful with this method!
 It will recursively delete <strong>everything</strong> within the supplied path,
 including sub-folders and all files. Make absolutely sure your path
@@ -784,17 +784,17 @@ is correct. Try using <code class="docutils literal"><span class="pre">list_file
 
 <dl class="method">
 <dt id="CI_FTP::list_files">
-<code class="descname">list_files</code><span class="sig-paren">(</span><span class="optional">[</span><em>$path = '.'</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::list_files" title="Permalink to this definition">¶</a></dt>
+<code class="descname">list_files</code><span class="sig-paren">(</span><span class="optional">[</span><em>$path = '.'</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::list_files" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; Directory path</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An array list of files or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">An array list of files or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -812,18 +812,18 @@ array. You must supply the path to the desired directory.</p>
 
 <dl class="method">
 <dt id="CI_FTP::mirror">
-<code class="descname">mirror</code><span class="sig-paren">(</span><em>$locpath</em>, <em>$rempath</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::mirror" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mirror</code><span class="sig-paren">(</span><em>$locpath</em>, <em>$rempath</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::mirror" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$locpath</strong> (<em>string</em>) &#8211; Local path</li>
 <li><strong>$rempath</strong> (<em>string</em>) &#8211; Remote path</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -842,18 +842,18 @@ server. You must supply a source path and a destination path:</p>
 
 <dl class="method">
 <dt id="CI_FTP::mkdir">
-<code class="descname">mkdir</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$permissions = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::mkdir" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mkdir</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$permissions = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::mkdir" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; Path to directory to create</li>
 <li><strong>$permissions</strong> (<em>int</em>) &#8211; Permissions (octal)</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -872,18 +872,18 @@ the folder name you wish to create, with a trailing slash.</p>
 
 <dl class="method">
 <dt id="CI_FTP::chmod">
-<code class="descname">chmod</code><span class="sig-paren">(</span><em>$path</em>, <em>$perm</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::chmod" title="Permalink to this definition">¶</a></dt>
+<code class="descname">chmod</code><span class="sig-paren">(</span><em>$path</em>, <em>$perm</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::chmod" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; Path to alter permissions for</li>
 <li><strong>$perm</strong> (<em>int</em>) &#8211; Permissions (octal)</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -901,18 +901,18 @@ directory you wish to alter permissions on:</p>
 
 <dl class="method">
 <dt id="CI_FTP::changedir">
-<code class="descname">changedir</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$suppress_debug = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::changedir" title="Permalink to this definition">¶</a></dt>
+<code class="descname">changedir</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$suppress_debug = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::changedir" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; Directory path</li>
 <li><strong>$suppress_debug</strong> (<em>bool</em>) &#8211; Whether to turn off debug messages for this command</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -927,12 +927,12 @@ as an <code class="docutils literal"><span class="pre">is_dir()</span></code> al
 
 <dl class="method">
 <dt id="CI_FTP::close">
-<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::close" title="Permalink to this definition">¶</a></dt>
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_FTP::close" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TRUE on success, FALSE on failure</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">TRUE on success, FALSE on failure</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
@@ -966,7 +966,7 @@ when you are finished uploading.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -996,6 +996,7 @@ when you are finished uploading.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

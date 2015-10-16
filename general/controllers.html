@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Controllers &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Controllers &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Reserved Names" href="reserved_names.html"/>
         <link rel="prev" title="CodeIgniter URLs" href="urls.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="controllers">
-<h1><a class="toc-backref" href="#id1">Controllers</a><a class="headerlink" href="#controllers" title="Permalink to this headline">¶</a></h1>
+<h1><a class="toc-backref" href="#id1">Controllers</a><a class="headerlink" href="#controllers" title="Link permanen untuk headline ini">¶</a></h1>
 <p>Controllers are the heart of your application, as they determine how
 HTTP requests should be handled.</p>
 <div class="contents topic" id="page-contents">
@@ -448,7 +448,7 @@ HTTP requests should be handled.</p>
 </ul>
 </div>
 <div class="section" id="what-is-a-controller">
-<h2><a class="toc-backref" href="#id2">What is a Controller?</a><a class="headerlink" href="#what-is-a-controller" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">What is a Controller?</a><a class="headerlink" href="#what-is-a-controller" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>A Controller is simply a class file that is named in a way that can be
 associated with a URI.</strong></p>
 <p>Consider this URI:</p>
@@ -461,7 +461,7 @@ named Blog.php and load it.</p>
 be loaded.</strong></p>
 </div>
 <div class="section" id="let-s-try-it-hello-world">
-<h2><a class="toc-backref" href="#id3">Let&#8217;s try it: Hello World!</a><a class="headerlink" href="#let-s-try-it-hello-world" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Let&#8217;s try it: Hello World!</a><a class="headerlink" href="#let-s-try-it-hello-world" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Let&#8217;s create a simple controller so you can see it in action. Using your
 text editor, create a file called Blog.php, and put the following code
 in it:</p>
@@ -477,7 +477,7 @@ in it:</p>
 </div>
 <p>Then save the file to your <em>application/controllers/</em> directory.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">The file must be called &#8216;Blog.php&#8217;, with a capital &#8216;B&#8217;.</p>
 </div>
 <p>Now visit the your site using a URL similar to this:</p>
@@ -488,7 +488,7 @@ in it:</p>
 <blockquote>
 <div>Hello World!</div></blockquote>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Class names must start with an uppercase letter.</p>
 </div>
 <p>This is valid:</p>
@@ -509,7 +509,7 @@ in it:</p>
 class so that it can inherit all its methods.</p>
 </div>
 <div class="section" id="methods">
-<h2><a class="toc-backref" href="#id4">Methods</a><a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Methods</a><a class="headerlink" href="#methods" title="Link permanen untuk headline ini">¶</a></h2>
 <p>In the above example the method name is <code class="docutils literal"><span class="pre">index()</span></code>. The &#8220;index&#8221; method
 is always loaded by default if the <strong>second segment</strong> of the URI is
 empty. Another way to show your &#8220;Hello World&#8221; message would be this:</p>
@@ -541,7 +541,7 @@ controller gets called.</strong></p>
 <p>You should see your new message.</p>
 </div>
 <div class="section" id="passing-uri-segments-to-your-methods">
-<h2><a class="toc-backref" href="#id5">Passing URI Segments to your methods</a><a class="headerlink" href="#passing-uri-segments-to-your-methods" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Passing URI Segments to your methods</a><a class="headerlink" href="#passing-uri-segments-to-your-methods" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If your URI contains more than two segments they will be passed to your
 method as parameters.</p>
 <p>For example, let&#8217;s say you have a URI like this:</p>
@@ -561,14 +561,14 @@ method as parameters.</p>
 </pre></div>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">If you are using the <a class="reference internal" href="routing.html"><em>URI Routing</em></a>
 feature, the segments passed to your method will be the re-routed
 ones.</p>
 </div>
 </div>
 <div class="section" id="defining-a-default-controller">
-<h2><a class="toc-backref" href="#id6">Defining a Default Controller</a><a class="headerlink" href="#defining-a-default-controller" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Defining a Default Controller</a><a class="headerlink" href="#defining-a-default-controller" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter can be told to load a default controller when a URI is not
 present, as will be the case when only your site root URL is requested.
 To specify a default controller, open your <strong>application/config/routes.php</strong>
@@ -581,7 +581,7 @@ load your main index.php file without specifying any URI segments you&#8217;ll
 see your Hello World message by default.</p>
 </div>
 <div class="section" id="remapping-method-calls">
-<h2><a class="toc-backref" href="#id7">Remapping Method Calls</a><a class="headerlink" href="#remapping-method-calls" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Remapping Method Calls</a><a class="headerlink" href="#remapping-method-calls" title="Link permanen untuk headline ini">¶</a></h2>
 <p>As noted above, the second segment of the URI typically determines which
 method in the controller gets called. CodeIgniter permits you to override
 this behavior through the use of the <code class="docutils literal"><span class="pre">_remap()</span></code> method:</p>
@@ -592,7 +592,7 @@ this behavior through the use of the <code class="docutils literal"><span class=
 </pre></div>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">If your controller contains a method named _remap(),
 it will <strong>always</strong> get called regardless of what your URI contains. It
 overrides the normal behavior in which the URI determines which method
@@ -631,7 +631,7 @@ to emulate CodeIgniter&#8217;s default behavior.</p>
 </div>
 </div>
 <div class="section" id="processing-output">
-<h2><a class="toc-backref" href="#id8">Processing Output</a><a class="headerlink" href="#processing-output" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Processing Output</a><a class="headerlink" href="#processing-output" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter has an output class that takes care of sending your final
 rendered data to the web browser automatically. More information on this
 can be found in the <a class="reference internal" href="views.html"><em>Views</em></a> and <a class="reference internal" href="../libraries/output.html"><em>Output Class</em></a> pages. In some cases, however, you might want to
@@ -639,7 +639,7 @@ post-process the finalized data in some way and send it to the browser
 yourself. CodeIgniter permits you to add a method named <code class="docutils literal"><span class="pre">_output()</span></code>
 to your controller that will receive the finalized output data.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">If your controller contains a method named <code class="docutils literal"><span class="pre">_output()</span></code>,
 it will <strong>always</strong> be called by the output class instead of
 echoing the finalized data directly. The first parameter of the
@@ -653,7 +653,7 @@ method will contain the finalized output.</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p>Please note that your <code class="docutils literal"><span class="pre">_output()</span></code> method will receive the
 data in its finalized state. Benchmark and memory usage data
 will be rendered, cache files written (if you have caching
@@ -677,7 +677,7 @@ in the <a class="reference internal" href="../libraries/output.html"><em>Output 
 </div>
 </div>
 <div class="section" id="private-methods">
-<h2><a class="toc-backref" href="#id9">Private methods</a><a class="headerlink" href="#private-methods" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Private methods</a><a class="headerlink" href="#private-methods" title="Link permanen untuk headline ini">¶</a></h2>
 <p>In some cases you may want certain methods hidden from public access.
 In order to achieve this, simply declare the method as being private
 or protected and it will not be served via a URL request. For example,
@@ -693,21 +693,21 @@ if you were to have a method like this:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Prefixing method names with an underscore will also prevent
 them from being called. This is a legacy feature that is left
 for backwards-compatibility.</p>
 </div>
 </div>
 <div class="section" id="organizing-your-controllers-into-sub-directories">
-<h2><a class="toc-backref" href="#id10">Organizing Your Controllers into Sub-directories</a><a class="headerlink" href="#organizing-your-controllers-into-sub-directories" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Organizing Your Controllers into Sub-directories</a><a class="headerlink" href="#organizing-your-controllers-into-sub-directories" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you are building a large application you might find it convenient to
 organize your controllers into sub-directories. CodeIgniter permits you
 to do this.</p>
 <p>Simply create folders within your <em>application/controllers/</em> directory
 and place your controller classes within them.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p>When using this feature the first segment of your URI must
 specify the folder. For example, let&#8217;s say you have a controller located
 here:</p>
@@ -726,7 +726,7 @@ controller as specified in your <em>application/config/routes.php</em> file.</p>
 Routing</em></a> feature.</p>
 </div>
 <div class="section" id="class-constructors">
-<h2><a class="toc-backref" href="#id11">Class Constructors</a><a class="headerlink" href="#class-constructors" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Class Constructors</a><a class="headerlink" href="#class-constructors" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you intend to use a constructor in any of your Controllers, you
 <strong>MUST</strong> place the following line of code in it:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
@@ -752,14 +752,14 @@ default process when your class is instantiated. Constructors can&#8217;t
 return a value, but they can do some default work.</p>
 </div>
 <div class="section" id="reserved-method-names">
-<h2><a class="toc-backref" href="#id12">Reserved method names</a><a class="headerlink" href="#reserved-method-names" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Reserved method names</a><a class="headerlink" href="#reserved-method-names" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Since your controller classes will extend the main application
 controller you must be careful not to name your methods identically to
 the ones used by that class, otherwise your local functions will
 override them. See <a class="reference internal" href="reserved_names.html"><em>Reserved Names</em></a> for a full
 list.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">You should also never have a method named identically
 to its class name. If you do, and there is no <code class="docutils literal"><span class="pre">__construct()</span></code>
 method in the same class, then your e.g. <code class="docutils literal"><span class="pre">Index::index()</span></code>
@@ -768,7 +768,7 @@ backwards-compatibility feature.</p>
 </div>
 </div>
 <div class="section" id="that-s-it">
-<h2><a class="toc-backref" href="#id13">That&#8217;s it!</a><a class="headerlink" href="#that-s-it" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">That&#8217;s it!</a><a class="headerlink" href="#that-s-it" title="Link permanen untuk headline ini">¶</a></h2>
 <p>That, in a nutshell, is all there is to know about controllers.</p>
 </div>
 </div>
@@ -792,7 +792,7 @@ backwards-compatibility feature.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -822,6 +822,7 @@ backwards-compatibility feature.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

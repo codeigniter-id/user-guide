@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Hooks - Mengembangkan Inti Framework &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Hooks - Mengembangkan Inti Framework &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Auto-loading Resources" href="autoloader.html"/>
         <link rel="prev" title="Membuat Class Tambahan" href="ancillary_classes.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="hooks-mengembangkan-inti-framework">
-<h1>Hooks - Mengembangkan Inti Framework<a class="headerlink" href="#hooks-mengembangkan-inti-framework" title="Permalink to this headline">¶</a></h1>
+<h1>Hooks - Mengembangkan Inti Framework<a class="headerlink" href="#hooks-mengembangkan-inti-framework" title="Link permanen untuk headline ini">¶</a></h1>
 <p>CodeIgniter&#8217;s Hooks feature provides a means to tap into and modify the
 inner workings of the framework without hacking the core files. When
 CodeIgniter runs it follows a specific execution process, diagramed in
@@ -435,7 +435,7 @@ want to run a script right before your controllers get loaded, or right
 after, or you might want to trigger one of your own scripts in some
 other location.</p>
 <div class="section" id="enabling-hooks">
-<h2>Enabling Hooks<a class="headerlink" href="#enabling-hooks" title="Permalink to this headline">¶</a></h2>
+<h2>Enabling Hooks<a class="headerlink" href="#enabling-hooks" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The hooks feature can be globally enabled/disabled by setting the
 following item in the <strong>application/config/config.php</strong> file:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;enable_hooks&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
@@ -443,7 +443,7 @@ following item in the <strong>application/config/config.php</strong> file:</p>
 </div>
 </div>
 <div class="section" id="defining-a-hook">
-<h2>Defining a Hook<a class="headerlink" href="#defining-a-hook" title="Permalink to this headline">¶</a></h2>
+<h2>Defining a Hook<a class="headerlink" href="#defining-a-hook" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Hooks are defined in the <strong>application/config/hooks.php</strong> file.
 Each hook is specified as an array with this prototype:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$hook</span><span class="p">[</span><span class="s1">&#39;pre_controller&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
@@ -486,7 +486,7 @@ is optional.</li>
 </div>
 </div>
 <div class="section" id="multiple-calls-to-the-same-hook">
-<h2>Multiple Calls to the Same Hook<a class="headerlink" href="#multiple-calls-to-the-same-hook" title="Permalink to this headline">¶</a></h2>
+<h2>Multiple Calls to the Same Hook<a class="headerlink" href="#multiple-calls-to-the-same-hook" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If want to use the same hook point with more than one script, simply
 make your array declaration multi-dimensional, like this:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$hook</span><span class="p">[</span><span class="s1">&#39;pre_controller&#39;</span><span class="p">][]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
@@ -514,7 +514,7 @@ make your array declaration multi-dimensional, like this:</p>
 order you define your array will be the execution order.</p>
 </div>
 <div class="section" id="hook-points">
-<h2>Hook Points<a class="headerlink" href="#hook-points" title="Permalink to this headline">¶</a></h2>
+<h2>Hook Points<a class="headerlink" href="#hook-points" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The following is a list of available hook points.</p>
 <ul class="simple">
 <li><strong>pre_system</strong>
@@ -567,7 +567,7 @@ browser.</li>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -597,6 +597,7 @@ browser.</li>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Shopping Cart Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Shopping Cart Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Config Class" href="config.html"/>
         <link rel="prev" title="Calendaring Class" href="calendar.html"/> 
@@ -424,13 +424,13 @@
           <div role="main" class="document">
             
   <div class="section" id="shopping-cart-class">
-<h1>Shopping Cart Class<a class="headerlink" href="#shopping-cart-class" title="Permalink to this headline">¶</a></h1>
+<h1>Shopping Cart Class<a class="headerlink" href="#shopping-cart-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Cart Class permits items to be added to a session that stays active
 while a user is browsing your site. These items can be retrieved and
 displayed in a standard &#8220;shopping cart&#8221; format, allowing the user to
 update the quantity or remove items from the cart.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">The Cart library is DEPRECATED and should not be used.
 It is currently only kept for backwards compatibility.</p>
 </div>
@@ -454,11 +454,11 @@ or other processing components.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="using-the-cart-class">
-<h2><a class="toc-backref" href="#id1">Using the Cart Class</a><a class="headerlink" href="#using-the-cart-class" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Using the Cart Class</a><a class="headerlink" href="#using-the-cart-class" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="initializing-the-shopping-cart-class">
-<h3><a class="toc-backref" href="#id2">Initializing the Shopping Cart Class</a><a class="headerlink" href="#initializing-the-shopping-cart-class" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2">Initializing the Shopping Cart Class</a><a class="headerlink" href="#initializing-the-shopping-cart-class" title="Link permanen untuk headline ini">¶</a></h3>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">The Cart class utilizes CodeIgniter&#8217;s <a class="reference internal" href="sessions.html"><em>Session
 Class</em></a> to save the cart information to a database, so
 before using the Cart class you must set up a database table as
@@ -476,14 +476,14 @@ use the <code class="docutils literal"><span class="pre">$this-&gt;load-&gt;libr
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The Cart Class will load and initialize the Session Class
 automatically, so unless you are using sessions elsewhere in your
 application, you do not need to load the Session class.</p>
 </div>
 </div>
 <div class="section" id="adding-an-item-to-the-cart">
-<h3><a class="toc-backref" href="#id3">Adding an Item to The Cart</a><a class="headerlink" href="#adding-an-item-to-the-cart" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Adding an Item to The Cart</a><a class="headerlink" href="#adding-an-item-to-the-cart" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To add an item to the shopping cart, simply pass an array with the
 product information to the <code class="docutils literal"><span class="pre">$this-&gt;cart-&gt;insert()</span></code> method, as shown
 below:</p>
@@ -499,7 +499,7 @@ below:</p>
 </pre></div>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">The first four array indexes above (id, qty, price, and
 name) are <strong>required</strong>. If you omit any of them the data will not be
 saved to the cart. The fifth index (options) is optional. It is intended
@@ -539,7 +539,7 @@ information in a table easier.</p>
 single item.</p>
 </div>
 <div class="section" id="adding-multiple-items-to-the-cart">
-<h3><a class="toc-backref" href="#id4">Adding Multiple Items to The Cart</a><a class="headerlink" href="#adding-multiple-items-to-the-cart" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Adding Multiple Items to The Cart</a><a class="headerlink" href="#adding-multiple-items-to-the-cart" title="Link permanen untuk headline ini">¶</a></h3>
 <p>By using a multi-dimensional array, as shown below, it is possible to
 add multiple products to the cart in one action. This is useful in cases
 where you wish to allow people to select from among several items on the
@@ -571,7 +571,7 @@ same page.</p>
 </div>
 </div>
 <div class="section" id="displaying-the-cart">
-<h3><a class="toc-backref" href="#id5">Displaying the Cart</a><a class="headerlink" href="#displaying-the-cart" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Displaying the Cart</a><a class="headerlink" href="#displaying-the-cart" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To display the cart you will create a <a class="reference internal" href="../general/views.html"><em>view
 file</em></a> with code similar to the one shown below.</p>
 <p>Please note that this example uses the <a class="reference internal" href="../helpers/form_helper.html"><em>form
@@ -632,12 +632,12 @@ helper</em></a>.</p>
 </div>
 </div>
 <div class="section" id="updating-the-cart">
-<h3><a class="toc-backref" href="#id6">Updating The Cart</a><a class="headerlink" href="#updating-the-cart" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Updating The Cart</a><a class="headerlink" href="#updating-the-cart" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To update the information in your cart, you must pass an array
 containing the Row ID and one or more pre-defined properties to the
 <code class="docutils literal"><span class="pre">$this-&gt;cart-&gt;update()</span></code> method.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If the quantity is set to zero, the item will be removed from
 the cart.</p>
 </div>
@@ -681,7 +681,7 @@ inserting the item such as options, price or other custom fields.</p>
 </pre></div>
 </div>
 <div class="section" id="what-is-a-row-id">
-<h4><a class="toc-backref" href="#id7">What is a Row ID?</a><a class="headerlink" href="#what-is-a-row-id" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id7">What is a Row ID?</a><a class="headerlink" href="#what-is-a-row-id" title="Link permanen untuk headline ini">¶</a></h4>
 <p>The row ID is a unique identifier that is generated by the cart code
 when an item is added to the cart. The reason a unique ID is created
 is so that identical products with different options can be managed
@@ -704,10 +704,10 @@ the update form is submitted. Please examine the construction of the
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id8">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Cart">
-<em class="property">class </em><code class="descname">CI_Cart</code><a class="headerlink" href="#CI_Cart" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Cart</code><a class="headerlink" href="#CI_Cart" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="attribute">
 <dt>
 <code class="descname">$product_id_rules = '.a-z0-9_-'</code></dt>
@@ -730,17 +730,17 @@ default</p>
 
 <dl class="method">
 <dt id="CI_Cart::insert">
-<code class="descname">insert</code><span class="sig-paren">(</span><span class="optional">[</span><em>$items = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::insert" title="Permalink to this definition">¶</a></dt>
+<code class="descname">insert</code><span class="sig-paren">(</span><span class="optional">[</span><em>$items = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::insert" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$items</strong> (<em>array</em>) &#8211; Items to insert into the cart</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -754,17 +754,17 @@ on success and FALSE on failure.</p>
 
 <dl class="method">
 <dt id="CI_Cart::update">
-<code class="descname">update</code><span class="sig-paren">(</span><span class="optional">[</span><em>$items = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::update" title="Permalink to this definition">¶</a></dt>
+<code class="descname">update</code><span class="sig-paren">(</span><span class="optional">[</span><em>$items = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::update" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$items</strong> (<em>array</em>) &#8211; Items to update in the cart</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -780,17 +780,17 @@ for each item.</p>
 
 <dl class="method">
 <dt id="CI_Cart::remove">
-<code class="descname">remove</code><span class="sig-paren">(</span><em>$rowid</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::remove" title="Permalink to this definition">¶</a></dt>
+<code class="descname">remove</code><span class="sig-paren">(</span><em>$rowid</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::remove" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$rowid</strong> (<em>int</em>) &#8211; ID of the item to remove from the cart</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -804,12 +804,12 @@ for each item.</p>
 
 <dl class="method">
 <dt id="CI_Cart::total">
-<code class="descname">total</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::total" title="Permalink to this definition">¶</a></dt>
+<code class="descname">total</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::total" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Total amount</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Total amount</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
 </tr>
@@ -820,12 +820,12 @@ for each item.</p>
 
 <dl class="method">
 <dt id="CI_Cart::total_items">
-<code class="descname">total_items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::total_items" title="Permalink to this definition">¶</a></dt>
+<code class="descname">total_items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::total_items" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Total amount of items in the cart</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Total amount of items in the cart</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
 </tr>
@@ -836,17 +836,17 @@ for each item.</p>
 
 <dl class="method">
 <dt id="CI_Cart::contents">
-<code class="descname">contents</code><span class="sig-paren">(</span><span class="optional">[</span><em>$newest_first = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::contents" title="Permalink to this definition">¶</a></dt>
+<code class="descname">contents</code><span class="sig-paren">(</span><span class="optional">[</span><em>$newest_first = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::contents" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$newest_first</strong> (<em>bool</em>) &#8211; Whether to order the array with newest items first</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An array of cart contents</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">An array of cart contents</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -862,17 +862,17 @@ to newest.</p>
 
 <dl class="method">
 <dt id="CI_Cart::get_item">
-<code class="descname">get_item</code><span class="sig-paren">(</span><em>$row_id</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::get_item" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_item</code><span class="sig-paren">(</span><em>$row_id</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::get_item" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$row_id</strong> (<em>int</em>) &#8211; Row ID to retrieve</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Array of item data</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Array of item data</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -886,17 +886,17 @@ ID, or FALSE if no such item exists.</p>
 
 <dl class="method">
 <dt id="CI_Cart::has_options">
-<code class="descname">has_options</code><span class="sig-paren">(</span><em>$row_id = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::has_options" title="Permalink to this definition">¶</a></dt>
+<code class="descname">has_options</code><span class="sig-paren">(</span><em>$row_id = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::has_options" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$row_id</strong> (<em>int</em>) &#8211; Row ID to inspect</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE if options exist, FALSE otherwise</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE if options exist, FALSE otherwise</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -912,17 +912,17 @@ the Cart example above.</p>
 
 <dl class="method">
 <dt id="CI_Cart::product_options">
-<code class="descname">product_options</code><span class="sig-paren">(</span><span class="optional">[</span><em>$row_id = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::product_options" title="Permalink to this definition">¶</a></dt>
+<code class="descname">product_options</code><span class="sig-paren">(</span><span class="optional">[</span><em>$row_id = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::product_options" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$row_id</strong> (<em>int</em>) &#8211; Row ID</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Array of product options</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Array of product options</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -938,7 +938,7 @@ Cart example above.</p>
 
 <dl class="method">
 <dt id="CI_Cart::destroy">
-<code class="descname">destroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::destroy" title="Permalink to this definition">¶</a></dt>
+<code class="descname">destroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Cart::destroy" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -975,7 +975,7 @@ when you are finished processing the customer&#8217;s order.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -1005,6 +1005,7 @@ when you are finished processing the customer&#8217;s order.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

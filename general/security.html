@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Keamanan &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Keamanan &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Panduan Penggaya PHP" href="styleguide.html"/>
         <link rel="prev" title="Alternatif Syntax PHP untuk File View" href="alternative_php.html"/> 
@@ -424,11 +424,11 @@
           <div role="main" class="document">
             
   <div class="section" id="keamanan">
-<h1>Keamanan<a class="headerlink" href="#keamanan" title="Permalink to this headline">¶</a></h1>
+<h1>Keamanan<a class="headerlink" href="#keamanan" title="Link permanen untuk headline ini">¶</a></h1>
 <p>This page describes some &#8220;best practices&#8221; regarding web security, and
 details CodeIgniter&#8217;s internal security features.</p>
 <div class="section" id="uri-security">
-<h2>URI Security<a class="headerlink" href="#uri-security" title="Permalink to this headline">¶</a></h2>
+<h2>URI Security<a class="headerlink" href="#uri-security" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter is fairly restrictive regarding which characters it allows
 in your URI strings in order to help minimize the possibility that
 malicious data can be passed to your application. URIs may only contain
@@ -445,13 +445,13 @@ the following:</p>
 </ul>
 </div>
 <div class="section" id="register-globals">
-<h2>Register_globals<a class="headerlink" href="#register-globals" title="Permalink to this headline">¶</a></h2>
+<h2>Register_globals<a class="headerlink" href="#register-globals" title="Link permanen untuk headline ini">¶</a></h2>
 <p>During system initialization all global variables that are found to exist
 in the <code class="docutils literal"><span class="pre">$_GET</span></code>, <code class="docutils literal"><span class="pre">$_POST</span></code>, <code class="docutils literal"><span class="pre">$_REQUEST</span></code> and <code class="docutils literal"><span class="pre">$_COOKIE</span></code> are unset.</p>
 <p>The unsetting routine is effectively the same as <em>register_globals = off</em>.</p>
 </div>
 <div class="section" id="display-errors">
-<h2>display_errors<a class="headerlink" href="#display-errors" title="Permalink to this headline">¶</a></h2>
+<h2>display_errors<a class="headerlink" href="#display-errors" title="Link permanen untuk headline ini">¶</a></h2>
 <p>In production environments, it is typically desirable to &#8220;disable&#8221; PHP&#8217;s
 error reporting by setting the internal <em>display_errors</em> flag to a value
 of 0. This disables native PHP errors from being rendered as output,
@@ -463,12 +463,12 @@ about differentiating between environments can be found on the
 <a class="reference internal" href="environments.html"><em>Handling Environments</em></a> page.</p>
 </div>
 <div class="section" id="magic-quotes-runtime">
-<h2>magic_quotes_runtime<a class="headerlink" href="#magic-quotes-runtime" title="Permalink to this headline">¶</a></h2>
+<h2>magic_quotes_runtime<a class="headerlink" href="#magic-quotes-runtime" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The <em>magic_quotes_runtime</em> directive is turned off during system
 initialization so that you don&#8217;t have to remove slashes when retrieving
 data from your database.</p>
 <div class="section" id="best-practices">
-<h3>Best Practices<a class="headerlink" href="#best-practices" title="Permalink to this headline">¶</a></h3>
+<h3>Best Practices<a class="headerlink" href="#best-practices" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Before accepting any data into your application, whether it be POST data
 from a form submission, COOKIE data, URI data, XML-RPC data, or even
 data from the SERVER array, you are encouraged to practice this three
@@ -485,14 +485,14 @@ in this process:</p>
 </div>
 </div>
 <div class="section" id="xss-filtering">
-<h2>XSS Filtering<a class="headerlink" href="#xss-filtering" title="Permalink to this headline">¶</a></h2>
+<h2>XSS Filtering<a class="headerlink" href="#xss-filtering" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter comes with a Cross Site Scripting filter. This filter
 looks for commonly used techniques to embed malicious JavaScript into
 your data, or other types of code that attempt to hijack cookies or
 do other malicious things. The XSS Filter is described
 <a class="reference internal" href="../libraries/security.html"><em>here</em></a>.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">XSS filtering should <em>only be performed on output</em>. Filtering
 input data may modify the data in undesirable ways, including
 stripping special characters from passwords, which reduces
@@ -500,7 +500,7 @@ security instead of improving it.</p>
 </div>
 </div>
 <div class="section" id="csrf-protection">
-<h2>CSRF protection<a class="headerlink" href="#csrf-protection" title="Permalink to this headline">¶</a></h2>
+<h2>CSRF protection<a class="headerlink" href="#csrf-protection" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CSRF stands for Cross-Site Request Forgery, which is the process of an
 attacker tricking their victim into unknowingly submitting a request.</p>
 <p>CodeIgniter provides CSRF protection out of the box, which will get
@@ -509,7 +509,7 @@ you to create your submit forms in a certain way. This is explained in
 the <a class="reference internal" href="../libraries/security.html"><em>Security Library</em></a> documentation.</p>
 </div>
 <div class="section" id="password-handling">
-<h2>Password handling<a class="headerlink" href="#password-handling" title="Permalink to this headline">¶</a></h2>
+<h2>Password handling<a class="headerlink" href="#password-handling" title="Link permanen untuk headline ini">¶</a></h2>
 <p>It is <em>critical</em> that you handle passwords in your application properly.</p>
 <p>Unfortunately, many developers don&#8217;t know how to do that, and the web is
 full of outdated or otherwise wrongful advices, which doesn&#8217;t help.</p>
@@ -559,7 +559,7 @@ no (practical) storage constraints apply once you&#8217;ve hashed them, none!</p
 </ul>
 </div>
 <div class="section" id="validate-input-data">
-<h2>Validate input data<a class="headerlink" href="#validate-input-data" title="Permalink to this headline">¶</a></h2>
+<h2>Validate input data<a class="headerlink" href="#validate-input-data" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter has a <a class="reference internal" href="../libraries/form_validation.html"><em>Form Validation Library</em></a> that assists you in
 validating, filtering, and prepping your data.</p>
 <p>Even if that doesn&#8217;t work for your use case however, be sure to always
@@ -572,12 +572,12 @@ variables, but also cookies, the user-agent string and basically
 <em>all data that is not created directly by your own code</em>.</p>
 </div>
 <div class="section" id="escape-all-data-before-database-insertion">
-<h2>Escape all data before database insertion<a class="headerlink" href="#escape-all-data-before-database-insertion" title="Permalink to this headline">¶</a></h2>
+<h2>Escape all data before database insertion<a class="headerlink" href="#escape-all-data-before-database-insertion" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Never insert information into your database without escaping it.
 Please see the section that discusses <a class="reference internal" href="../database/queries.html"><em>database queries</em></a> for more information.</p>
 </div>
 <div class="section" id="hide-your-files">
-<h2>Hide your files<a class="headerlink" href="#hide-your-files" title="Permalink to this headline">¶</a></h2>
+<h2>Hide your files<a class="headerlink" href="#hide-your-files" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Another good security practice is to only leave your <em>index.php</em>
 and &#8220;assets&#8221; (e.g. .js, css and image files) under your server&#8217;s
 <em>webroot</em> directory (most commonly named &#8220;htdocs/&#8221;). These are
@@ -612,7 +612,7 @@ attacker.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -642,6 +642,7 @@ attacker.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

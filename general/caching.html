@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Web Page Caching &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Web Page Caching &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Profiling Aplikasi Anda" href="profiling.html"/>
         <link rel="prev" title="Penanganan Error" href="errors.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="web-page-caching">
-<h1>Web Page Caching<a class="headerlink" href="#web-page-caching" title="Permalink to this headline">¶</a></h1>
+<h1>Web Page Caching<a class="headerlink" href="#web-page-caching" title="Link permanen untuk headline ini">¶</a></h1>
 <p>CodeIgniter lets you cache your pages in order to achieve maximum
 performance.</p>
 <p>Although CodeIgniter is quite fast, the amount of dynamic information
@@ -434,7 +434,7 @@ page load speeds. By caching your pages, since they are saved in their
 fully rendered state, you can achieve performance that nears that of
 static web pages.</p>
 <div class="section" id="how-does-caching-work">
-<h2>How Does Caching Work?<a class="headerlink" href="#how-does-caching-work" title="Permalink to this headline">¶</a></h2>
+<h2>How Does Caching Work?<a class="headerlink" href="#how-does-caching-work" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Caching can be enabled on a per-page basis, and you can set the length
 of time that a page should remain cached before being refreshed. When a
 page is loaded for the first time, the cache file will be written to
@@ -444,7 +444,7 @@ expired, it will be deleted and refreshed before being sent to the
 browser.</p>
 </div>
 <div class="section" id="enabling-caching">
-<h2>Enabling Caching<a class="headerlink" href="#enabling-caching" title="Permalink to this headline">¶</a></h2>
+<h2>Enabling Caching<a class="headerlink" href="#enabling-caching" title="Link permanen untuk headline ini">¶</a></h2>
 <p>To enable caching, put the following tag in any of your controller
 methods:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">output</span><span class="o">-&gt;</span><span class="na">cache</span><span class="p">(</span><span class="nv">$n</span><span class="p">);</span>
@@ -456,29 +456,29 @@ cached between refreshes.</p>
 the order that it appears, so place it wherever it seems most logical to
 you. Once the tag is in place, your pages will begin being cached.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Because of the way CodeIgniter stores content for output,
 caching will only work if you are generating display for your
 controller with a <a class="reference internal" href="views.html"><em>view</em></a>.</p>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">If you change configuration options that might affect
 your output, you have to manually delete your cache files.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Before the cache files can be written you must set the file
 permissions on your <em>application/cache/</em> directory such that
 it is writable.</p>
 </div>
 </div>
 <div class="section" id="deleting-caches">
-<h2>Deleting Caches<a class="headerlink" href="#deleting-caches" title="Permalink to this headline">¶</a></h2>
+<h2>Deleting Caches<a class="headerlink" href="#deleting-caches" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you no longer wish to cache a file you can remove the caching tag and
 it will no longer be refreshed when it expires.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Removing the tag will not delete the cache immediately. It will
 have to expire normally.</p>
 </div>
@@ -513,7 +513,7 @@ method:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -543,6 +543,7 @@ method:</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

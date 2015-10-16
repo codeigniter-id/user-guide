@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Views &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Views &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Models" href="models.html"/>
         <link rel="prev" title="Reserved Names" href="reserved_names.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="views">
-<h1>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h1>
+<h1>Views<a class="headerlink" href="#views" title="Link permanen untuk headline ini">¶</a></h1>
 <p>A view is simply a web page, or a page fragment, like a header, footer,
 sidebar, etc. In fact, views can flexibly be embedded within other views
 (within other views, etc., etc.) if you need this type of hierarchy.</p>
@@ -437,7 +437,7 @@ continuing.</p>
 <p>Using the example controller you created in the
 <a class="reference internal" href="controllers.html"><em>controller</em></a> page, let&#8217;s add a view to it.</p>
 <div class="section" id="creating-a-view">
-<h2>Creating a View<a class="headerlink" href="#creating-a-view" title="Permalink to this headline">¶</a></h2>
+<h2>Creating a View<a class="headerlink" href="#creating-a-view" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Using your text editor, create a file called blogview.php, and put this
 in it:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">html</span><span class="o">&gt;</span>
@@ -453,14 +453,14 @@ in it:</p>
 <p>Then save the file in your <em>application/views/</em> directory.</p>
 </div>
 <div class="section" id="loading-a-view">
-<h2>Loading a View<a class="headerlink" href="#loading-a-view" title="Permalink to this headline">¶</a></h2>
+<h2>Loading a View<a class="headerlink" href="#loading-a-view" title="Link permanen untuk headline ini">¶</a></h2>
 <p>To load a particular view file you will use the following method:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Where name is the name of your view file.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The .php file extension does not need to be specified
 unless you use something other than .php.</p>
 </div>
@@ -483,7 +483,7 @@ new view. The URL was similar to this:</p>
 </div>
 </div>
 <div class="section" id="loading-multiple-views">
-<h2>Loading multiple views<a class="headerlink" href="#loading-multiple-views" title="Permalink to this headline">¶</a></h2>
+<h2>Loading multiple views<a class="headerlink" href="#loading-multiple-views" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter will intelligently handle multiple calls to
 <code class="docutils literal"><span class="pre">$this-&gt;load-&gt;view()</span></code> from within a controller. If more than one call
 happens they will be appended together. For example, you may wish to
@@ -509,7 +509,7 @@ might look something like this:</p>
 will see below.</p>
 </div>
 <div class="section" id="storing-views-within-sub-directories">
-<h2>Storing Views within Sub-directories<a class="headerlink" href="#storing-views-within-sub-directories" title="Permalink to this headline">¶</a></h2>
+<h2>Storing Views within Sub-directories<a class="headerlink" href="#storing-views-within-sub-directories" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Your view files can also be stored within sub-directories if you prefer
 that type of organization. When doing so you will need to include the
 directory name loading the view. Example:</p>
@@ -518,7 +518,7 @@ directory name loading the view. Example:</p>
 </div>
 </div>
 <div class="section" id="adding-dynamic-data-to-the-view">
-<h2>Adding Dynamic Data to the View<a class="headerlink" href="#adding-dynamic-data-to-the-view" title="Permalink to this headline">¶</a></h2>
+<h2>Adding Dynamic Data to the View<a class="headerlink" href="#adding-dynamic-data-to-the-view" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Data is passed from the controller to the view by way of an <strong>array</strong> or
 an <strong>object</strong> in the second parameter of the view loading method. Here
 is an example using an array:</p>
@@ -537,7 +537,7 @@ is an example using an array:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If you use an object, the class variables will be turned
 into array elements.</p>
 </div>
@@ -571,7 +571,7 @@ to the array keys in your data:</p>
 variables replaced.</p>
 </div>
 <div class="section" id="creating-loops">
-<h2>Creating Loops<a class="headerlink" href="#creating-loops" title="Permalink to this headline">¶</a></h2>
+<h2>Creating Loops<a class="headerlink" href="#creating-loops" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The data array you pass to your view files is not limited to simple
 variables. You can pass multi dimensional arrays, which can be looped to
 generate multiple rows. For example, if you pull data from your database
@@ -615,14 +615,14 @@ it will typically be in the form of a multi-dimensional array.</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">You&#8217;ll notice that in the example above we are using PHP&#8217;s
 alternative syntax. If you are not familiar with it you can read about
 it <a class="reference internal" href="alternative_php.html"><em>here</em></a>.</p>
 </div>
 </div>
 <div class="section" id="returning-views-as-data">
-<h2>Returning views as data<a class="headerlink" href="#returning-views-as-data" title="Permalink to this headline">¶</a></h2>
+<h2>Returning views as data<a class="headerlink" href="#returning-views-as-data" title="Link permanen untuk headline ini">¶</a></h2>
 <p>There is a third <strong>optional</strong> parameter lets you change the behavior of
 the method so that it returns data as a string rather than sending it
 to your browser. This can be useful if you want to process the data in
@@ -654,7 +654,7 @@ Remember to assign it to a variable if you want the data returned:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -684,6 +684,7 @@ Remember to assign it to a variable if you want the data returned:</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

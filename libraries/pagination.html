@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Pagination Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Pagination Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Template Parser Class" href="parser.html"/>
         <link rel="prev" title="Output Class" href="output.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="pagination-class">
-<h1>Pagination Class<a class="headerlink" href="#pagination-class" title="Permalink to this headline">¶</a></h1>
+<h1>Pagination Class<a class="headerlink" href="#pagination-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>CodeIgniter&#8217;s Pagination class is very easy to use, and it is 100%
 customizable, either dynamically or via stored preferences.</p>
 <div class="contents local topic" id="contents">
@@ -454,7 +454,7 @@ that allows you to navigate from page to page, like this:</p>
 </pre></div>
 </div>
 <div class="section" id="example">
-<h2><a class="toc-backref" href="#id1">Example</a><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Example</a><a class="headerlink" href="#example" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Here is a simple example showing how to create pagination in one of your
 <a class="reference internal" href="../general/controllers.html"><em>controller</em></a> methods:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;pagination&#39;</span><span class="p">);</span>
@@ -469,7 +469,7 @@ that allows you to navigate from page to page, like this:</p>
 </pre></div>
 </div>
 <div class="section" id="notes">
-<h3><a class="toc-backref" href="#id2">Notes</a><a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2">Notes</a><a class="headerlink" href="#notes" title="Link permanen untuk headline ini">¶</a></h3>
 <p>The <code class="docutils literal"><span class="pre">$config</span></code> array contains your configuration variables. It is passed to
 the <code class="docutils literal"><span class="pre">$this-&gt;pagination-&gt;initialize()</span></code> method as shown above. Although
 there are some twenty items you can configure, at minimum you need the
@@ -490,7 +490,7 @@ above example, you would be showing 20 items per page.</li>
 pagination to show.</p>
 </div>
 <div class="section" id="setting-preferences-in-a-config-file">
-<h3><a class="toc-backref" href="#id3">Setting preferences in a config file</a><a class="headerlink" href="#setting-preferences-in-a-config-file" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Setting preferences in a config file</a><a class="headerlink" href="#setting-preferences-in-a-config-file" title="Link permanen untuk headline ini">¶</a></h3>
 <p>If you prefer not to set preferences using the above method, you can
 instead put them into a config file. Simply create a new file called
 pagination.php, add the <code class="docutils literal"><span class="pre">$config</span></code> array in that file. Then save the file
@@ -500,7 +500,7 @@ your preferences in a config file.</p>
 </div>
 </div>
 <div class="section" id="customizing-the-pagination">
-<h2><a class="toc-backref" href="#id4">Customizing the Pagination</a><a class="headerlink" href="#customizing-the-pagination" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Customizing the Pagination</a><a class="headerlink" href="#customizing-the-pagination" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The following is a list of all the preferences you can pass to the
 initialization function to tailor the display.</p>
 <p><strong>$config[&#8216;uri_segment&#8217;] = 3;</strong></p>
@@ -553,7 +553,7 @@ instead set it to the one that you have in <code class="docutils literal"><span 
 your <strong>application/config/config.php</strong> file.</p>
 </div>
 <div class="section" id="adding-enclosing-markup">
-<h2><a class="toc-backref" href="#id5">Adding Enclosing Markup</a><a class="headerlink" href="#adding-enclosing-markup" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Adding Enclosing Markup</a><a class="headerlink" href="#adding-enclosing-markup" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you would like to surround the entire pagination with some markup you
 can do it with these two preferences:</p>
 <p><strong>$config[&#8216;full_tag_open&#8217;] = &#8216;&lt;p&gt;&#8217;;</strong></p>
@@ -562,12 +562,12 @@ can do it with these two preferences:</p>
 <p>The closing tag placed on the right side of the entire result.</p>
 </div>
 <div class="section" id="customizing-the-first-link">
-<h2><a class="toc-backref" href="#id6">Customizing the First Link</a><a class="headerlink" href="#customizing-the-first-link" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Customizing the First Link</a><a class="headerlink" href="#customizing-the-first-link" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$config[&#8216;first_link&#8217;] = &#8216;First&#8217;;</strong></p>
 <p>The text you would like shown in the &#8220;first&#8221; link on the left. If you do
 not want this link rendered, you can set its value to FALSE.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This value can also be translated via a language file.</p>
 </div>
 <p><strong>$config[&#8216;first_tag_open&#8217;] = &#8216;&lt;div&gt;&#8217;;</strong></p>
@@ -578,12 +578,12 @@ not want this link rendered, you can set its value to FALSE.</p>
 <p>An alternative URL to use for the &#8220;first page&#8221; link.</p>
 </div>
 <div class="section" id="customizing-the-last-link">
-<h2><a class="toc-backref" href="#id7">Customizing the Last Link</a><a class="headerlink" href="#customizing-the-last-link" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Customizing the Last Link</a><a class="headerlink" href="#customizing-the-last-link" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$config[&#8216;last_link&#8217;] = &#8216;Last&#8217;;</strong></p>
 <p>The text you would like shown in the &#8220;last&#8221; link on the right. If you do
 not want this link rendered, you can set its value to FALSE.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This value can also be translated via a language file.</p>
 </div>
 <p><strong>$config[&#8216;last_tag_open&#8217;] = &#8216;&lt;div&gt;&#8217;;</strong></p>
@@ -592,12 +592,12 @@ not want this link rendered, you can set its value to FALSE.</p>
 <p>The closing tag for the &#8220;last&#8221; link.</p>
 </div>
 <div class="section" id="customizing-the-next-link">
-<h2><a class="toc-backref" href="#id8">Customizing the &#8220;Next&#8221; Link</a><a class="headerlink" href="#customizing-the-next-link" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Customizing the &#8220;Next&#8221; Link</a><a class="headerlink" href="#customizing-the-next-link" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$config[&#8216;next_link&#8217;] = &#8216;&amp;gt;&#8217;;</strong></p>
 <p>The text you would like shown in the &#8220;next&#8221; page link. If you do not
 want this link rendered, you can set its value to FALSE.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This value can also be translated via a language file.</p>
 </div>
 <p><strong>$config[&#8216;next_tag_open&#8217;] = &#8216;&lt;div&gt;&#8217;;</strong></p>
@@ -606,12 +606,12 @@ want this link rendered, you can set its value to FALSE.</p>
 <p>The closing tag for the &#8220;next&#8221; link.</p>
 </div>
 <div class="section" id="customizing-the-previous-link">
-<h2><a class="toc-backref" href="#id9">Customizing the &#8220;Previous&#8221; Link</a><a class="headerlink" href="#customizing-the-previous-link" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Customizing the &#8220;Previous&#8221; Link</a><a class="headerlink" href="#customizing-the-previous-link" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$config[&#8216;prev_link&#8217;] = &#8216;&amp;lt;&#8217;;</strong></p>
 <p>The text you would like shown in the &#8220;previous&#8221; page link. If you do not
 want this link rendered, you can set its value to FALSE.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This value can also be translated via a language file.</p>
 </div>
 <p><strong>$config[&#8216;prev_tag_open&#8217;] = &#8216;&lt;div&gt;&#8217;;</strong></p>
@@ -620,21 +620,21 @@ want this link rendered, you can set its value to FALSE.</p>
 <p>The closing tag for the &#8220;previous&#8221; link.</p>
 </div>
 <div class="section" id="customizing-the-current-page-link">
-<h2><a class="toc-backref" href="#id10">Customizing the &#8220;Current Page&#8221; Link</a><a class="headerlink" href="#customizing-the-current-page-link" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Customizing the &#8220;Current Page&#8221; Link</a><a class="headerlink" href="#customizing-the-current-page-link" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$config[&#8216;cur_tag_open&#8217;] = &#8216;&lt;b&gt;&#8217;;</strong></p>
 <p>The opening tag for the &#8220;current&#8221; link.</p>
 <p><strong>$config[&#8216;cur_tag_close&#8217;] = &#8216;&lt;/b&gt;&#8217;;</strong></p>
 <p>The closing tag for the &#8220;current&#8221; link.</p>
 </div>
 <div class="section" id="customizing-the-digit-link">
-<h2><a class="toc-backref" href="#id11">Customizing the &#8220;Digit&#8221; Link</a><a class="headerlink" href="#customizing-the-digit-link" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Customizing the &#8220;Digit&#8221; Link</a><a class="headerlink" href="#customizing-the-digit-link" title="Link permanen untuk headline ini">¶</a></h2>
 <p><strong>$config[&#8216;num_tag_open&#8217;] = &#8216;&lt;div&gt;&#8217;;</strong></p>
 <p>The opening tag for the &#8220;digit&#8221; link.</p>
 <p><strong>$config[&#8216;num_tag_close&#8217;] = &#8216;&lt;/div&gt;&#8217;;</strong></p>
 <p>The closing tag for the &#8220;digit&#8221; link.</p>
 </div>
 <div class="section" id="hiding-the-pages">
-<h2><a class="toc-backref" href="#id12">Hiding the Pages</a><a class="headerlink" href="#hiding-the-pages" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Hiding the Pages</a><a class="headerlink" href="#hiding-the-pages" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you wanted to not list the specific pages (for example, you only want
 &#8220;next&#8221; and &#8220;previous&#8221; links), you can suppress their rendering by
 adding:</p>
@@ -643,7 +643,7 @@ adding:</p>
 </div>
 </div>
 <div class="section" id="adding-attributes-to-anchors">
-<h2><a class="toc-backref" href="#id13">Adding attributes to anchors</a><a class="headerlink" href="#adding-attributes-to-anchors" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Adding attributes to anchors</a><a class="headerlink" href="#adding-attributes-to-anchors" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you want to add an extra attribute to be added to every link rendered
 by the pagination class, you can set them as key/value pairs in the
 &#8220;attributes&#8221; config:</p>
@@ -652,13 +652,13 @@ by the pagination class, you can set them as key/value pairs in the
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Usage of the old method of setting classes via &#8220;anchor_class&#8221;
 is deprecated.</p>
 </div>
 </div>
 <div class="section" id="disabling-the-rel-attribute">
-<h2><a class="toc-backref" href="#id14">Disabling the &#8220;rel&#8221; attribute</a><a class="headerlink" href="#disabling-the-rel-attribute" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">Disabling the &#8220;rel&#8221; attribute</a><a class="headerlink" href="#disabling-the-rel-attribute" title="Link permanen untuk headline ini">¶</a></h2>
 <p>By default the rel attribute is dynamically generated and appended to
 the appropriate anchors. If for some reason you want to turn it off,
 you can pass boolean FALSE as a regular attribute</p>
@@ -667,23 +667,23 @@ you can pass boolean FALSE as a regular attribute</p>
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id15">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id15">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Pagination">
-<em class="property">class </em><code class="descname">CI_Pagination</code><a class="headerlink" href="#CI_Pagination" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Pagination</code><a class="headerlink" href="#CI_Pagination" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_Pagination::initialize">
-<code class="descname">initialize</code><span class="sig-paren">(</span><span class="optional">[</span><em>$params = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Pagination::initialize" title="Permalink to this definition">¶</a></dt>
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="optional">[</span><em>$params = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Pagination::initialize" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$params</strong> (<em>array</em>) &#8211; Configuration parameters</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Pagination instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Pagination instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Pagination</p>
@@ -696,12 +696,12 @@ you can pass boolean FALSE as a regular attribute</p>
 
 <dl class="method">
 <dt id="CI_Pagination::create_links">
-<code class="descname">create_links</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Pagination::create_links" title="Permalink to this definition">¶</a></dt>
+<code class="descname">create_links</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Pagination::create_links" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">HTML-formatted pagination</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">HTML-formatted pagination</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -734,7 +734,7 @@ you can pass boolean FALSE as a regular attribute</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -764,6 +764,7 @@ you can pass boolean FALSE as a regular attribute</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

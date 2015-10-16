@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Calendaring Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Calendaring Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Shopping Cart Class" href="cart.html"/>
         <link rel="prev" title="Caching Driver" href="caching.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="calendaring-class">
-<h1>Calendaring Class<a class="headerlink" href="#calendaring-class" title="Permalink to this headline">¶</a></h1>
+<h1>Calendaring Class<a class="headerlink" href="#calendaring-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Calendar class enables you to dynamically create calendars. Your
 calendars can be formatted through the use of a calendar template,
 allowing 100% control over every aspect of its design. In addition, you
@@ -444,9 +444,9 @@ can pass data to your calendar cells.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="using-the-calendaring-class">
-<h2><a class="toc-backref" href="#id1">Using the Calendaring Class</a><a class="headerlink" href="#using-the-calendaring-class" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Using the Calendaring Class</a><a class="headerlink" href="#using-the-calendaring-class" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="initializing-the-class">
-<h3><a class="toc-backref" href="#id2">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2">Initializing the Class</a><a class="headerlink" href="#initializing-the-class" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Like most other classes in CodeIgniter, the Calendar class is
 initialized in your controller using the $this-&gt;load-&gt;library function:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;calendar&#39;</span><span class="p">);</span>
@@ -458,7 +458,7 @@ initialized in your controller using the $this-&gt;load-&gt;library function:</p
 </div>
 </div>
 <div class="section" id="displaying-a-calendar">
-<h3><a class="toc-backref" href="#id3">Displaying a Calendar</a><a class="headerlink" href="#displaying-a-calendar" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Displaying a Calendar</a><a class="headerlink" href="#displaying-a-calendar" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Here is a very simple example showing how you can display a calendar:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;calendar&#39;</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">calendar</span><span class="o">-&gt;</span><span class="na">generate</span><span class="p">();</span>
@@ -476,7 +476,7 @@ you will pass this information to the calendar generating function:</p>
 specifies the month.</p>
 </div>
 <div class="section" id="passing-data-to-your-calendar-cells">
-<h3><a class="toc-backref" href="#id4">Passing Data to your Calendar Cells</a><a class="headerlink" href="#passing-data-to-your-calendar-cells" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Passing Data to your Calendar Cells</a><a class="headerlink" href="#passing-data-to-your-calendar-cells" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To add data to your calendar cells involves creating an associative
 array in which the keys correspond to the days you wish to populate and
 the array value contains the data. The array is passed to the third
@@ -496,7 +496,7 @@ parameter of the calendar generating function. Consider this example:</p>
 <p>Using the above example, day numbers 3, 7, 13, and 26 will become links
 pointing to the URLs you&#8217;ve provided.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">By default it is assumed that your array will contain links.
 In the section that explains the calendar template below you&#8217;ll see how
 you can customize how data passed to your cells is handled so you can
@@ -504,7 +504,7 @@ pass different types of information.</p>
 </div>
 </div>
 <div class="section" id="setting-display-preferences">
-<h3><a class="toc-backref" href="#id5">Setting Display Preferences</a><a class="headerlink" href="#setting-display-preferences" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Setting Display Preferences</a><a class="headerlink" href="#setting-display-preferences" title="Link permanen untuk headline ini">¶</a></h3>
 <p>There are seven preferences you can set to control various aspects of
 the calendar. Preferences are set by passing an array of preferences in
 the second parameter of the loading function. Here is an example:</p>
@@ -601,7 +601,7 @@ preferences below.</p>
 </table>
 </div>
 <div class="section" id="showing-next-previous-month-links">
-<h3><a class="toc-backref" href="#id6">Showing Next/Previous Month Links</a><a class="headerlink" href="#showing-next-previous-month-links" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Showing Next/Previous Month Links</a><a class="headerlink" href="#showing-next-previous-month-links" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To allow your calendar to dynamically increment/decrement via the
 next/previous links requires that you set up your calendar code similar
 to this example:</p>
@@ -628,7 +628,7 @@ provide.).</li>
 </ul>
 </div>
 <div class="section" id="creating-a-calendar-template">
-<h3><a class="toc-backref" href="#id7">Creating a Calendar Template</a><a class="headerlink" href="#creating-a-calendar-template" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Creating a Calendar Template</a><a class="headerlink" href="#creating-a-calendar-template" title="Link permanen untuk headline ini">¶</a></h3>
 <p>By creating a calendar template you have 100% control over the design of
 your calendar. Using the string method, each component of your calendar
 will be placed within a pair of pseudo-variables as shown here:</p>
@@ -694,23 +694,23 @@ inherited in the calendar class.</p>
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id8">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Calendar">
-<em class="property">class </em><code class="descname">CI_Calendar</code><a class="headerlink" href="#CI_Calendar" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Calendar</code><a class="headerlink" href="#CI_Calendar" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_Calendar::initialize">
-<code class="descname">initialize</code><span class="sig-paren">(</span><span class="optional">[</span><em>$config = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::initialize" title="Permalink to this definition">¶</a></dt>
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="optional">[</span><em>$config = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::initialize" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$config</strong> (<em>array</em>) &#8211; Configuration parameters</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Calendar instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Calendar instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Calendar</p>
@@ -723,19 +723,19 @@ inherited in the calendar class.</p>
 
 <dl class="method">
 <dt id="CI_Calendar::generate">
-<code class="descname">generate</code><span class="sig-paren">(</span><span class="optional">[</span><em>$year = ''</em><span class="optional">[</span>, <em>$month = ''</em><span class="optional">[</span>, <em>$data = array()</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::generate" title="Permalink to this definition">¶</a></dt>
+<code class="descname">generate</code><span class="sig-paren">(</span><span class="optional">[</span><em>$year = ''</em><span class="optional">[</span>, <em>$month = ''</em><span class="optional">[</span>, <em>$data = array()</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::generate" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$year</strong> (<em>int</em>) &#8211; Year</li>
 <li><strong>$month</strong> (<em>int</em>) &#8211; Month</li>
 <li><strong>$data</strong> (<em>array</em>) &#8211; Data to be shown in the calendar cells</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">HTML-formatted calendar</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">HTML-formatted calendar</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -748,17 +748,17 @@ inherited in the calendar class.</p>
 
 <dl class="method">
 <dt id="CI_Calendar::get_month_name">
-<code class="descname">get_month_name</code><span class="sig-paren">(</span><em>$month</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::get_month_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_month_name</code><span class="sig-paren">(</span><em>$month</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::get_month_name" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$month</strong> (<em>int</em>) &#8211; Month</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Month name</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Month name</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -771,17 +771,17 @@ inherited in the calendar class.</p>
 
 <dl class="method">
 <dt id="CI_Calendar::get_day_names">
-<code class="descname">get_day_names</code><span class="sig-paren">(</span><em>$day_type = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::get_day_names" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_day_names</code><span class="sig-paren">(</span><em>$day_type = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::get_day_names" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$day_type</strong> (<em>string</em>) &#8211; &#8216;long&#8217;, &#8216;short&#8217;, or &#8216;abr&#8217;</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Array of day names</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Array of day names</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -797,18 +797,18 @@ style.</p>
 
 <dl class="method">
 <dt id="CI_Calendar::adjust_date">
-<code class="descname">adjust_date</code><span class="sig-paren">(</span><em>$month</em>, <em>$year</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::adjust_date" title="Permalink to this definition">¶</a></dt>
+<code class="descname">adjust_date</code><span class="sig-paren">(</span><em>$month</em>, <em>$year</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::adjust_date" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$month</strong> (<em>int</em>) &#8211; Month</li>
 <li><strong>$year</strong> (<em>int</em>) &#8211; Year</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An associative array containing month and year</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">An associative array containing month and year</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -834,18 +834,18 @@ become January:</p>
 
 <dl class="method">
 <dt id="CI_Calendar::get_total_days">
-<code class="descname">get_total_days</code><span class="sig-paren">(</span><em>$month</em>, <em>$year</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::get_total_days" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_total_days</code><span class="sig-paren">(</span><em>$month</em>, <em>$year</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::get_total_days" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$month</strong> (<em>int</em>) &#8211; Month</li>
 <li><strong>$year</strong> (<em>int</em>) &#8211; Year</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Count of days in the specified month</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Count of days in the specified month</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int</p>
@@ -859,19 +859,19 @@ become January:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This method is an alias for <a class="reference internal" href="../helpers/date_helper.html"><em>Date Helper</em></a> function <a class="reference internal" href="../helpers/date_helper.html#days_in_month" title="days_in_month"><code class="xref php php-func docutils literal"><span class="pre">days_in_month()</span></code></a>.</p>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="CI_Calendar::default_template">
-<code class="descname">default_template</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::default_template" title="Permalink to this definition">¶</a></dt>
+<code class="descname">default_template</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::default_template" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">An array of template values</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">An array of template values</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">array</td>
 </tr>
@@ -883,12 +883,12 @@ your own template.</p>
 
 <dl class="method">
 <dt id="CI_Calendar::parse_template">
-<code class="descname">parse_template</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::parse_template" title="Permalink to this definition">¶</a></dt>
+<code class="descname">parse_template</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Calendar::parse_template" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">CI_Calendar instance (method chaining)</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">CI_Calendar instance (method chaining)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">CI_Calendar</td>
 </tr>
@@ -922,7 +922,7 @@ display the calendar.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -952,6 +952,7 @@ display the calendar.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

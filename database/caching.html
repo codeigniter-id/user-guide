@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Database Caching Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Database Caching Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Database" href="index.html"/>
         <link rel="next" title="Database Forge Class" href="forge.html"/>
         <link rel="prev" title="Custom Function Calls" href="call_function.html"/> 
@@ -424,21 +424,21 @@
           <div role="main" class="document">
             
   <div class="section" id="database-caching-class">
-<h1>Database Caching Class<a class="headerlink" href="#database-caching-class" title="Permalink to this headline">¶</a></h1>
+<h1>Database Caching Class<a class="headerlink" href="#database-caching-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Database Caching Class permits you to cache your queries as text
 files for reduced database load.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">This class is initialized automatically by the database
 driver when caching is enabled. Do NOT load this class manually.</p>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Not all query result functions are available when you
 use caching. Please read this page carefully.</p>
 </div>
 <div class="section" id="enabling-caching">
-<h2>Enabling Caching<a class="headerlink" href="#enabling-caching" title="Permalink to this headline">¶</a></h2>
+<h2>Enabling Caching<a class="headerlink" href="#enabling-caching" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Caching is enabled in three steps:</p>
 <ul class="simple">
 <li>Create a writable directory on your server where the cache files can
@@ -453,7 +453,7 @@ described below.</li>
 loaded that contains database queries.</p>
 </div>
 <div class="section" id="how-does-caching-work">
-<h2>How Does Caching Work?<a class="headerlink" href="#how-does-caching-work" title="Permalink to this headline">¶</a></h2>
+<h2>How Does Caching Work?<a class="headerlink" href="#how-does-caching-work" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter&#8217;s query caching system happens dynamically when your pages
 are viewed. When caching is enabled, the first time a web page is
 loaded, the query result object will be serialized and stored in a text
@@ -472,7 +472,7 @@ functions described below to delete cache files after certain events
 take place, like when you&#8217;ve added new information to your database.</p>
 </div>
 <div class="section" id="will-caching-improve-your-site-s-performance">
-<h2>Will Caching Improve Your Site&#8217;s Performance?<a class="headerlink" href="#will-caching-improve-your-site-s-performance" title="Permalink to this headline">¶</a></h2>
+<h2>Will Caching Improve Your Site&#8217;s Performance?<a class="headerlink" href="#will-caching-improve-your-site-s-performance" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Getting a performance gain as a result of caching depends on many
 factors. If you have a highly optimized database under very little load,
 you probably won&#8217;t see a performance boost. If your database is under
@@ -487,7 +487,7 @@ Unfortunately there is no single answer to the question of whether you
 should cache your database. It really depends on your situation.</p>
 </div>
 <div class="section" id="how-are-cache-files-stored">
-<h2>How are Cache Files Stored?<a class="headerlink" href="#how-are-cache-files-stored" title="Permalink to this headline">¶</a></h2>
+<h2>How are Cache Files Stored?<a class="headerlink" href="#how-are-cache-files-stored" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter places the result of EACH query into its own cache file.
 Sets of cache files are further organized into sub-folders corresponding
 to your controller functions. To be precise, the sub-folders are named
@@ -503,7 +503,7 @@ produce its own cache file. It&#8217;s possible, therefore, to end up with
 many times more cache files than you have queries.</p>
 </div>
 <div class="section" id="managing-your-cache-files">
-<h2>Managing your Cache Files<a class="headerlink" href="#managing-your-cache-files" title="Permalink to this headline">¶</a></h2>
+<h2>Managing your Cache Files<a class="headerlink" href="#managing-your-cache-files" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Since cache files do not expire, you&#8217;ll need to build deletion routines
 into your application. For example, let&#8217;s say you have a blog that
 allows user commenting. Whenever a new comment is submitted you&#8217;ll want
@@ -512,7 +512,7 @@ serves up your comments. You&#8217;ll find two delete functions described
 below that help you clear data.</p>
 </div>
 <div class="section" id="not-all-database-functions-work-with-caching">
-<h2>Not All Database Functions Work with Caching<a class="headerlink" href="#not-all-database-functions-work-with-caching" title="Permalink to this headline">¶</a></h2>
+<h2>Not All Database Functions Work with Caching<a class="headerlink" href="#not-all-database-functions-work-with-caching" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Lastly, we need to point out that the result object that is cached is a
 simplified version of the full result object. For that reason, some of
 the query result functions are not available for use.</p>
@@ -528,11 +528,11 @@ object:</p>
 available when caching, since result resources only pertain to run-time
 operations.</p>
 <div class="section" id="function-reference">
-<h3>Function Reference<a class="headerlink" href="#function-reference" title="Permalink to this headline">¶</a></h3>
+<h3>Function Reference<a class="headerlink" href="#function-reference" title="Link permanen untuk headline ini">¶</a></h3>
 </div>
 </div>
 <div class="section" id="this-db-cache-on-this-db-cache-off">
-<h2>$this-&gt;db-&gt;cache_on() / $this-&gt;db-&gt;cache_off()<a class="headerlink" href="#this-db-cache-on-this-db-cache-off" title="Permalink to this headline">¶</a></h2>
+<h2>$this-&gt;db-&gt;cache_on() / $this-&gt;db-&gt;cache_off()<a class="headerlink" href="#this-db-cache-on-this-db-cache-off" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Manually enables/disables caching. This can be useful if you want to
 keep certain queries from being cached. Example:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Turn caching on</span>
@@ -550,7 +550,7 @@ keep certain queries from being cached. Example:</p>
 </div>
 </div>
 <div class="section" id="this-db-cache-delete">
-<h2>$this-&gt;db-&gt;cache_delete()<a class="headerlink" href="#this-db-cache-delete" title="Permalink to this headline">¶</a></h2>
+<h2>$this-&gt;db-&gt;cache_delete()<a class="headerlink" href="#this-db-cache-delete" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Deletes the cache files associated with a particular page. This is
 useful if you need to clear caching after you update your database.</p>
 <p>The caching system saves your cache files to folders that correspond to
@@ -565,7 +565,7 @@ delete those particular cache files you will use:</p>
 determining what should be cleared.</p>
 </div>
 <div class="section" id="this-db-cache-delete-all">
-<h2>$this-&gt;db-&gt;cache_delete_all()<a class="headerlink" href="#this-db-cache-delete-all" title="Permalink to this headline">¶</a></h2>
+<h2>$this-&gt;db-&gt;cache_delete_all()<a class="headerlink" href="#this-db-cache-delete-all" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Clears all existing cache files. Example:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">cache_delete_all</span><span class="p">();</span>
 </pre></div>
@@ -592,7 +592,7 @@ determining what should be cleared.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -622,6 +622,7 @@ determining what should be cleared.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

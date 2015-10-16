@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Database Quick Start: Contoh Code &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Database Quick Start: Contoh Code &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Database" href="index.html"/>
         <link rel="next" title="Konfigurasi Database" href="configuration.html"/>
         <link rel="prev" title="Referensi Database" href="index.html"/> 
@@ -424,12 +424,12 @@
           <div role="main" class="document">
             
   <div class="section" id="database-quick-start-contoh-code">
-<h1>Database Quick Start: Contoh Code<a class="headerlink" href="#database-quick-start-contoh-code" title="Permalink to this headline">¶</a></h1>
+<h1>Database Quick Start: Contoh Code<a class="headerlink" href="#database-quick-start-contoh-code" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The following page contains example code showing how the database class
 is used. For complete details please read the individual pages
 describing each function.</p>
 <div class="section" id="initializing-the-database-class">
-<h2>Initializing the Database Class<a class="headerlink" href="#initializing-the-database-class" title="Permalink to this headline">¶</a></h2>
+<h2>Initializing the Database Class<a class="headerlink" href="#initializing-the-database-class" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The following code loads and initializes the database class based on
 your <a class="reference internal" href="configuration.html"><em>configuration</em></a> settings:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">database</span><span class="p">();</span>
@@ -440,7 +440,7 @@ your <a class="reference internal" href="configuration.html"><em>configuration</
 automatically. See the <a class="reference internal" href="connecting.html"><em>connecting</em></a> page for details.</p>
 </div>
 <div class="section" id="standard-query-with-multiple-results-object-version">
-<h2>Standard Query With Multiple Results (Object Version)<a class="headerlink" href="#standard-query-with-multiple-results-object-version" title="Permalink to this headline">¶</a></h2>
+<h2>Standard Query With Multiple Results (Object Version)<a class="headerlink" href="#standard-query-with-multiple-results-object-version" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;SELECT name, title, email FROM my_table&#39;</span><span class="p">);</span>
 
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$query</span><span class="o">-&gt;</span><span class="na">result</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$row</span><span class="p">)</span>
@@ -457,7 +457,7 @@ automatically. See the <a class="reference internal" href="connecting.html"><em>
 $row-&gt;title</p>
 </div>
 <div class="section" id="standard-query-with-multiple-results-array-version">
-<h2>Standard Query With Multiple Results (Array Version)<a class="headerlink" href="#standard-query-with-multiple-results-array-version" title="Permalink to this headline">¶</a></h2>
+<h2>Standard Query With Multiple Results (Array Version)<a class="headerlink" href="#standard-query-with-multiple-results-array-version" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;SELECT name, title, email FROM my_table&#39;</span><span class="p">);</span>
 
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$query</span><span class="o">-&gt;</span><span class="na">result_array</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$row</span><span class="p">)</span>
@@ -472,7 +472,7 @@ $row-&gt;title</p>
 indexes. Example: $row[&#8216;title&#8217;]</p>
 </div>
 <div class="section" id="testing-for-results">
-<h2>Testing for Results<a class="headerlink" href="#testing-for-results" title="Permalink to this headline">¶</a></h2>
+<h2>Testing for Results<a class="headerlink" href="#testing-for-results" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you run queries that might <strong>not</strong> produce a result, you are
 encouraged to test for a result first using the num_rows() function:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">&quot;YOUR QUERY&quot;</span><span class="p">);</span>
@@ -489,7 +489,7 @@ encouraged to test for a result first using the num_rows() function:</p>
 </div>
 </div>
 <div class="section" id="standard-query-with-single-result">
-<h2>Standard Query With Single Result<a class="headerlink" href="#standard-query-with-single-result" title="Permalink to this headline">¶</a></h2>
+<h2>Standard Query With Single Result<a class="headerlink" href="#standard-query-with-single-result" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;SELECT name FROM my_table LIMIT 1&#39;</span><span class="p">);</span>
 <span class="nv">$row</span> <span class="o">=</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">row</span><span class="p">();</span>
 <span class="k">echo</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
@@ -498,7 +498,7 @@ encouraged to test for a result first using the num_rows() function:</p>
 <p>The above row() function returns an <strong>object</strong>. Example: $row-&gt;name</p>
 </div>
 <div class="section" id="standard-query-with-single-result-array-version">
-<h2>Standard Query With Single Result (Array version)<a class="headerlink" href="#standard-query-with-single-result-array-version" title="Permalink to this headline">¶</a></h2>
+<h2>Standard Query With Single Result (Array version)<a class="headerlink" href="#standard-query-with-single-result-array-version" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;SELECT name FROM my_table LIMIT 1&#39;</span><span class="p">);</span>
 <span class="nv">$row</span> <span class="o">=</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">row_array</span><span class="p">();</span>
 <span class="k">echo</span> <span class="nv">$row</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
@@ -508,7 +508,7 @@ encouraged to test for a result first using the num_rows() function:</p>
 $row[&#8216;name&#8217;]</p>
 </div>
 <div class="section" id="standard-insert">
-<h2>Standard Insert<a class="headerlink" href="#standard-insert" title="Permalink to this headline">¶</a></h2>
+<h2>Standard Insert<a class="headerlink" href="#standard-insert" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$sql</span> <span class="o">=</span> <span class="s2">&quot;INSERT INTO mytable (title, name) VALUES (&quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">escape</span><span class="p">(</span><span class="nv">$title</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">escape</span><span class="p">(</span><span class="nv">$name</span><span class="p">)</span><span class="o">.</span><span class="s2">&quot;)&quot;</span><span class="p">;</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">affected_rows</span><span class="p">();</span>
@@ -516,7 +516,7 @@ $row[&#8216;name&#8217;]</p>
 </div>
 </div>
 <div class="section" id="query-builder-query">
-<h2>Query Builder Query<a class="headerlink" href="#query-builder-query" title="Permalink to this headline">¶</a></h2>
+<h2>Query Builder Query<a class="headerlink" href="#query-builder-query" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The <a class="reference internal" href="query_builder.html"><em>Query Builder Pattern</em></a> gives you a simplified
 means of retrieving data:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;table_name&#39;</span><span class="p">);</span>
@@ -532,7 +532,7 @@ table. The <a class="reference internal" href="query_builder.html"><em>Query Bui
 compliment of functions for working with data.</p>
 </div>
 <div class="section" id="query-builder-insert">
-<h2>Query Builder Insert<a class="headerlink" href="#query-builder-insert" title="Permalink to this headline">¶</a></h2>
+<h2>Query Builder Insert<a class="headerlink" href="#query-builder-insert" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="nv">$title</span><span class="p">,</span>
         <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$name</span><span class="p">,</span>
@@ -564,7 +564,7 @@ compliment of functions for working with data.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -594,6 +594,7 @@ compliment of functions for working with data.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

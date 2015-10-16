@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Config Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Config Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Email Class" href="email.html"/>
         <link rel="prev" title="Shopping Cart Class" href="cart.html"/> 
@@ -424,12 +424,12 @@
           <div role="main" class="document">
             
   <div class="section" id="config-class">
-<h1>Config Class<a class="headerlink" href="#config-class" title="Permalink to this headline">¶</a></h1>
+<h1>Config Class<a class="headerlink" href="#config-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Config class provides a means to retrieve configuration preferences.
 These preferences can come from the default config file
 (application/config/config.php) or from your own custom config files.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This class is initialized automatically by the system so there
 is no need to do it manually.</p>
 </div>
@@ -451,9 +451,9 @@ is no need to do it manually.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="working-with-the-config-class">
-<h2><a class="toc-backref" href="#id1">Working with the Config Class</a><a class="headerlink" href="#working-with-the-config-class" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Working with the Config Class</a><a class="headerlink" href="#working-with-the-config-class" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="anatomy-of-a-config-file">
-<h3><a class="toc-backref" href="#id2">Anatomy of a Config File</a><a class="headerlink" href="#anatomy-of-a-config-file" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2">Anatomy of a Config File</a><a class="headerlink" href="#anatomy-of-a-config-file" title="Link permanen untuk headline ini">¶</a></h3>
 <p>By default, CodeIgniter has one primary config file, located at
 application/config/config.php. If you open the file using your text
 editor you&#8217;ll see that config items are stored in an array called
@@ -462,7 +462,7 @@ $config.</p>
 your configuration items separate (assuming you even need config items),
 simply create your own file and save it in config folder.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If you do create your own config files use the same format as
 the primary one, storing your items in an array called $config.
 CodeIgniter will intelligently manage these files so there will be no
@@ -471,16 +471,16 @@ index is not named the same as another).</p>
 </div>
 </div>
 <div class="section" id="loading-a-config-file">
-<h3><a class="toc-backref" href="#id3">Loading a Config File</a><a class="headerlink" href="#loading-a-config-file" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Loading a Config File</a><a class="headerlink" href="#loading-a-config-file" title="Link permanen untuk headline ini">¶</a></h3>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">CodeIgniter automatically loads the primary config file
 (application/config/config.php), so you will only need to load a config
 file if you have created your own.</p>
 </div>
 <p>There are two ways to load a config file:</p>
 <div class="section" id="manual-loading">
-<h4><a class="toc-backref" href="#id4">Manual Loading</a><a class="headerlink" href="#manual-loading" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id4">Manual Loading</a><a class="headerlink" href="#manual-loading" title="Link permanen untuk headline ini">¶</a></h4>
 <p>To load one of your custom config files you will use the following
 function within the <a class="reference internal" href="../general/controllers.html"><em>controller</em></a> that
 needs it:</p>
@@ -508,7 +508,7 @@ config file does not exist:</p>
 </div>
 </div>
 <div class="section" id="auto-loading">
-<h4><a class="toc-backref" href="#id5">Auto-loading</a><a class="headerlink" href="#auto-loading" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id5">Auto-loading</a><a class="headerlink" href="#auto-loading" title="Link permanen untuk headline ini">¶</a></h4>
 <p>If you find that you need a particular config file globally, you can
 have it loaded automatically by the system. To do this, open the
 <strong>autoload.php</strong> file, located at application/config/autoload.php,
@@ -516,7 +516,7 @@ and add your config file as indicated in the file.</p>
 </div>
 </div>
 <div class="section" id="fetching-config-items">
-<h3><a class="toc-backref" href="#id6">Fetching Config Items</a><a class="headerlink" href="#fetching-config-items" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Fetching Config Items</a><a class="headerlink" href="#fetching-config-items" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To retrieve an item from your config file, use the following function:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">config</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;item_name&#39;</span><span class="p">);</span>
 </pre></div>
@@ -545,7 +545,7 @@ the $this-&gt;config-&gt;item() function. Example:</p>
 </div>
 </div>
 <div class="section" id="setting-a-config-item">
-<h3><a class="toc-backref" href="#id7">Setting a Config Item</a><a class="headerlink" href="#setting-a-config-item" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Setting a Config Item</a><a class="headerlink" href="#setting-a-config-item" title="Link permanen untuk headline ini">¶</a></h3>
 <p>If you would like to dynamically set a config item or change an existing
 one, you can do so using:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">config</span><span class="o">-&gt;</span><span class="na">set_item</span><span class="p">(</span><span class="s1">&#39;item_name&#39;</span><span class="p">,</span> <span class="s1">&#39;item_value&#39;</span><span class="p">);</span>
@@ -555,7 +555,7 @@ one, you can do so using:</p>
 item_value is its value.</p>
 </div>
 <div class="section" id="environments">
-<span id="config-environments"></span><h3><a class="toc-backref" href="#id8">Environments</a><a class="headerlink" href="#environments" title="Permalink to this headline">¶</a></h3>
+<span id="config-environments"></span><h3><a class="toc-backref" href="#id8">Environments</a><a class="headerlink" href="#environments" title="Link permanen untuk headline ini">¶</a></h3>
 <p>You may load different configuration files depending on the current
 environment. The ENVIRONMENT constant is defined in index.php, and is
 described in detail in the <a class="reference internal" href="../general/environments.html"><em>Handling
@@ -578,7 +578,7 @@ folders:</p>
 <li>Your own custom configuration files</li>
 </ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">CodeIgniter always loads the global config file first (i.e., the one in application/config/),
 then tries to load the configuration files for the current environment.
 This means you are not obligated to place <strong>all</strong> of your configuration files in an
@@ -590,10 +590,10 @@ folders always overwrite those in your global config files.</p>
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id9">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Config">
-<em class="property">class </em><code class="descname">CI_Config</code><a class="headerlink" href="#CI_Config" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Config</code><a class="headerlink" href="#CI_Config" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="attribute">
 <dt>
 <code class="descname">$config</code></dt>
@@ -608,18 +608,18 @@ folders always overwrite those in your global config files.</p>
 
 <dl class="method">
 <dt id="CI_Config::item">
-<code class="descname">item</code><span class="sig-paren">(</span><em>$item</em><span class="optional">[</span>, <em>$index=''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::item" title="Permalink to this definition">¶</a></dt>
+<code class="descname">item</code><span class="sig-paren">(</span><em>$item</em><span class="optional">[</span>, <em>$index=''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::item" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$item</strong> (<em>string</em>) &#8211; Config item name</li>
 <li><strong>$index</strong> (<em>string</em>) &#8211; Index name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Config item value or NULL if not found</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Config item value or NULL if not found</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -632,12 +632,12 @@ folders always overwrite those in your global config files.</p>
 
 <dl class="method">
 <dt id="CI_Config::set_item">
-<code class="descname">set_item</code><span class="sig-paren">(</span><em>$item</em>, <em>$value</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::set_item" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_item</code><span class="sig-paren">(</span><em>$item</em>, <em>$value</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::set_item" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$item</strong> (<em>string</em>) &#8211; Config item name</li>
 <li><strong>$value</strong> (<em>string</em>) &#8211; Config item value</li>
 </ul>
@@ -653,17 +653,17 @@ folders always overwrite those in your global config files.</p>
 
 <dl class="method">
 <dt id="CI_Config::slash_item">
-<code class="descname">slash_item</code><span class="sig-paren">(</span><em>$item</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::slash_item" title="Permalink to this definition">¶</a></dt>
+<code class="descname">slash_item</code><span class="sig-paren">(</span><em>$item</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::slash_item" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$item</strong> (<em>string</em>) &#8211; config item name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Config item value with a trailing forward slash or NULL if not found</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Config item value with a trailing forward slash or NULL if not found</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -677,19 +677,19 @@ slash to the end of the item, if it exists.</p>
 
 <dl class="method">
 <dt id="CI_Config::load">
-<code class="descname">load</code><span class="sig-paren">(</span><span class="optional">[</span><em>$file = ''</em><span class="optional">[</span>, <em>$use_sections = FALSE</em><span class="optional">[</span>, <em>$fail_gracefully = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::load" title="Permalink to this definition">¶</a></dt>
+<code class="descname">load</code><span class="sig-paren">(</span><span class="optional">[</span><em>$file = ''</em><span class="optional">[</span>, <em>$use_sections = FALSE</em><span class="optional">[</span>, <em>$fail_gracefully = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::load" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$file</strong> (<em>string</em>) &#8211; Configuration file name</li>
 <li><strong>$use_sections</strong> (<em>bool</em>) &#8211; Whether config values shoud be loaded into their own section (index of the main config array)</li>
 <li><strong>$fail_gracefully</strong> (<em>bool</em>) &#8211; Whether to return FALSE or to display an error message</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -702,12 +702,12 @@ slash to the end of the item, if it exists.</p>
 
 <dl class="method">
 <dt id="CI_Config::site_url">
-<code class="descname">site_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::site_url" title="Permalink to this definition">¶</a></dt>
+<code class="descname">site_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::site_url" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Site URL</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Site URL</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -721,12 +721,12 @@ you&#8217;ve specified in the config file.</p>
 
 <dl class="method">
 <dt id="CI_Config::base_url">
-<code class="descname">base_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::base_url" title="Permalink to this definition">¶</a></dt>
+<code class="descname">base_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::base_url" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Base URL</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Base URL</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -740,12 +740,12 @@ as to a stylesheet or image.</p>
 
 <dl class="method">
 <dt id="CI_Config::system_url">
-<code class="descname">system_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::system_url" title="Permalink to this definition">¶</a></dt>
+<code class="descname">system_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Config::system_url" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">URL pointing at your CI system/ directory</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">URL pointing at your CI system/ directory</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -753,7 +753,7 @@ as to a stylesheet or image.</p>
 </table>
 <p>This method retrieves the URL to your CodeIgniter system/ directory.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This method is DEPRECATED because it encourages usage of
 insecure coding practices. Your <em>system/</em> directory shouldn&#8217;t
 be publicly accessible.</p>
@@ -784,7 +784,7 @@ be publicly accessible.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -814,6 +814,7 @@ be publicly accessible.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

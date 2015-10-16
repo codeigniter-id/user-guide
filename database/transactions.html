@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Transaksi &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Transaksi &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Database" href="index.html"/>
         <link rel="next" title="Database Metadata" href="metadata.html"/>
         <link rel="prev" title="Query Builder Class" href="query_builder.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="transaksi">
-<h1>Transaksi<a class="headerlink" href="#transaksi" title="Permalink to this headline">¶</a></h1>
+<h1>Transaksi<a class="headerlink" href="#transaksi" title="Link permanen untuk headline ini">¶</a></h1>
 <p>CodeIgniter&#8217;s database abstraction allows you to use transactions with
 databases that support transaction-safe table types. In MySQL, you&#8217;ll
 need to be running InnoDB or BDB table types rather than the more common
@@ -434,7 +434,7 @@ online resource to learn about them for your particular database. The
 information below assumes you have a basic understanding of
 transactions.</p>
 <div class="section" id="codeigniter-s-approach-to-transactions">
-<h2>CodeIgniter&#8217;s Approach to Transactions<a class="headerlink" href="#codeigniter-s-approach-to-transactions" title="Permalink to this headline">¶</a></h2>
+<h2>CodeIgniter&#8217;s Approach to Transactions<a class="headerlink" href="#codeigniter-s-approach-to-transactions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter utilizes an approach to transactions that is very similar to
 the process used by the popular database class ADODB. We&#8217;ve chosen that
 approach because it greatly simplifies the process of running
@@ -448,7 +448,7 @@ this for you automatically (you can also manage your transactions
 manually if you choose to, but there&#8217;s really no benefit).</p>
 </div>
 <div class="section" id="running-transactions">
-<h2>Running Transactions<a class="headerlink" href="#running-transactions" title="Permalink to this headline">¶</a></h2>
+<h2>Running Transactions<a class="headerlink" href="#running-transactions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>To run your queries using transactions you will use the
 $this-&gt;db-&gt;trans_start() and $this-&gt;db-&gt;trans_complete() functions as
 follows:</p>
@@ -464,7 +464,7 @@ functions and they will all be committed or rolled back based on success
 or failure of any given query.</p>
 </div>
 <div class="section" id="strict-mode">
-<h2>Strict Mode<a class="headerlink" href="#strict-mode" title="Permalink to this headline">¶</a></h2>
+<h2>Strict Mode<a class="headerlink" href="#strict-mode" title="Link permanen untuk headline ini">¶</a></h2>
 <p>By default CodeIgniter runs all transactions in Strict Mode. When strict
 mode is enabled, if you are running multiple groups of transactions, if
 one group fails all groups will be rolled back. If strict mode is
@@ -476,7 +476,7 @@ group will not affect any others.</p>
 </div>
 </div>
 <div class="section" id="managing-errors">
-<h2>Managing Errors<a class="headerlink" href="#managing-errors" title="Permalink to this headline">¶</a></h2>
+<h2>Managing Errors<a class="headerlink" href="#managing-errors" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you have error reporting enabled in your config/database.php file
 you&#8217;ll see a standard error message if the commit was unsuccessful. If
 debugging is turned off, you can manage your own errors like this:</p>
@@ -493,7 +493,7 @@ debugging is turned off, you can manage your own errors like this:</p>
 </div>
 </div>
 <div class="section" id="enabling-transactions">
-<h2>Enabling Transactions<a class="headerlink" href="#enabling-transactions" title="Permalink to this headline">¶</a></h2>
+<h2>Enabling Transactions<a class="headerlink" href="#enabling-transactions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Transactions are enabled automatically the moment you use
 $this-&gt;db-&gt;trans_start(). If you would like to disable transactions you
 can do so using $this-&gt;db-&gt;trans_off():</p>
@@ -508,7 +508,7 @@ can do so using $this-&gt;db-&gt;trans_off():</p>
 as they are when running queries without transactions.</p>
 </div>
 <div class="section" id="test-mode">
-<h2>Test Mode<a class="headerlink" href="#test-mode" title="Permalink to this headline">¶</a></h2>
+<h2>Test Mode<a class="headerlink" href="#test-mode" title="Link permanen untuk headline ini">¶</a></h2>
 <p>You can optionally put the transaction system into &#8220;test mode&#8221;, which
 will cause your queries to be rolled back &#8211; even if the queries produce
 a valid result. To use test mode simply set the first parameter in the
@@ -520,7 +520,7 @@ $this-&gt;db-&gt;trans_start() function to TRUE:</p>
 </div>
 </div>
 <div class="section" id="running-transactions-manually">
-<h2>Running Transactions Manually<a class="headerlink" href="#running-transactions-manually" title="Permalink to this headline">¶</a></h2>
+<h2>Running Transactions Manually<a class="headerlink" href="#running-transactions-manually" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you would like to run transactions manually you can do so as follows:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">trans_begin</span><span class="p">();</span>
 
@@ -539,7 +539,7 @@ $this-&gt;db-&gt;trans_start() function to TRUE:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Make sure to use $this-&gt;db-&gt;trans_begin() when running manual
 transactions, <strong>NOT</strong> $this-&gt;db-&gt;trans_start().</p>
 </div>
@@ -565,7 +565,7 @@ transactions, <strong>NOT</strong> $this-&gt;db-&gt;trans_start().</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -595,6 +595,7 @@ transactions, <strong>NOT</strong> $this-&gt;db-&gt;trans_start().</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

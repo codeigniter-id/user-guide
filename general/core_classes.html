@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Membuat Class Inti Sistem &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Membuat Class Inti Sistem &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Membuat Class Tambahan" href="ancillary_classes.html"/>
         <link rel="prev" title="Membuat Driver" href="creating_drivers.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="membuat-class-inti-sistem">
-<h1>Membuat Class Inti Sistem<a class="headerlink" href="#membuat-class-inti-sistem" title="Permalink to this headline">¶</a></h1>
+<h1>Membuat Class Inti Sistem<a class="headerlink" href="#membuat-class-inti-sistem" title="Link permanen untuk headline ini">¶</a></h1>
 <p>Every time CodeIgniter runs there are several base classes that are
 initialized automatically as part of the core framework. It is possible,
 however, to swap any of the core system classes with your own versions
@@ -433,12 +433,12 @@ or even extend the core versions.</p>
 replace or extend them does exist for those who would like to
 significantly alter the CodeIgniter core.</strong></p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Messing with a core system class has a lot of implications, so
 make sure you know what you are doing before attempting it.</p>
 </div>
 <div class="section" id="system-class-list">
-<h2>System Class List<a class="headerlink" href="#system-class-list" title="Permalink to this headline">¶</a></h2>
+<h2>System Class List<a class="headerlink" href="#system-class-list" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The following is a list of the core system files that are invoked every
 time CodeIgniter runs:</p>
 <ul class="simple">
@@ -459,7 +459,7 @@ time CodeIgniter runs:</p>
 </ul>
 </div>
 <div class="section" id="replacing-core-classes">
-<h2>Replacing Core Classes<a class="headerlink" href="#replacing-core-classes" title="Permalink to this headline">¶</a></h2>
+<h2>Replacing Core Classes<a class="headerlink" href="#replacing-core-classes" title="Link permanen untuk headline ini">¶</a></h2>
 <p>To use one of your own system classes instead of a default one simply
 place your version inside your local <em>application/core/</em> directory:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nx">application</span><span class="o">/</span><span class="nx">core</span><span class="o">/</span><span class="nx">some_class</span><span class="o">.</span><span class="nx">php</span>
@@ -477,7 +477,7 @@ your file is named Input.php the class will be named:</p>
 </div>
 </div>
 <div class="section" id="extending-core-class">
-<h2>Extending Core Class<a class="headerlink" href="#extending-core-class" title="Permalink to this headline">¶</a></h2>
+<h2>Extending Core Class<a class="headerlink" href="#extending-core-class" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If all you need to do is add some functionality to an existing library -
 perhaps add a method or two - then it&#8217;s overkill to replace the entire
 library with your version. In this case it&#8217;s better to simply extend the
@@ -496,7 +496,7 @@ application/core/MY_Input.php, and declare your class with:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p>If you need to use a constructor in your class make sure you
 extend the parent constructor:</p>
 <div class="last highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MY_Input</span> <span class="k">extends</span> <span class="nx">CI_Input</span> <span class="p">{</span>
@@ -530,7 +530,7 @@ your new class in your application controller&#8217;s constructors.</p>
 </pre></div>
 </div>
 <div class="section" id="setting-your-own-prefix">
-<h3>Setting Your Own Prefix<a class="headerlink" href="#setting-your-own-prefix" title="Permalink to this headline">¶</a></h3>
+<h3>Setting Your Own Prefix<a class="headerlink" href="#setting-your-own-prefix" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To set your own sub-class prefix, open your
 <em>application/config/config.php</em> file and look for this item:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
@@ -561,7 +561,7 @@ with CI_ so DO NOT use that as your prefix.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -591,6 +591,7 @@ with CI_ so DO NOT use that as your prefix.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

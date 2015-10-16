@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Membuat Library &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Membuat Library &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Using CodeIgniter Drivers" href="drivers.html"/>
         <link rel="prev" title="Menggunakan Library CodeIgniter" href="libraries.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="membuat-library">
-<h1>Membuat Library<a class="headerlink" href="#membuat-library" title="Permalink to this headline">¶</a></h1>
+<h1>Membuat Library<a class="headerlink" href="#membuat-library" title="Link permanen untuk headline ini">¶</a></h1>
 <p>When we use the term &#8220;Libraries&#8221; we are normally referring to the
 classes that are located in the libraries directory and described in the
 Class Reference of this user guide. In this case, however, we will
@@ -443,18 +443,18 @@ identically named versions in your <em>application/libraries</em> directory.</p>
 </ul>
 <p>The page below explains these three concepts in detail.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The Database classes can not be extended or replaced with your
 own classes. All other classes are able to be replaced/extended.</p>
 </div>
 <div class="section" id="storage">
-<h2>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h2>
+<h2>Storage<a class="headerlink" href="#storage" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Your library classes should be placed within your <em>application/libraries</em>
 directory, as this is where CodeIgniter will look for them when they are
 initialized.</p>
 </div>
 <div class="section" id="naming-conventions">
-<h2>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h2>
+<h2>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Link permanen untuk headline ini">¶</a></h2>
 <ul class="simple">
 <li>File names must be capitalized. For example: Myclass.php</li>
 <li>Class declarations must be capitalized. For example: class Myclass</li>
@@ -462,7 +462,7 @@ initialized.</p>
 </ul>
 </div>
 <div class="section" id="the-class-file">
-<h2>The Class File<a class="headerlink" href="#the-class-file" title="Permalink to this headline">¶</a></h2>
+<h2>The Class File<a class="headerlink" href="#the-class-file" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Classes should have this basic prototype:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">)</span> <span class="k">OR</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
@@ -476,12 +476,12 @@ initialized.</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">We are using the name Someclass purely as an example.</p>
 </div>
 </div>
 <div class="section" id="using-your-class">
-<h2>Using Your Class<a class="headerlink" href="#using-your-class" title="Permalink to this headline">¶</a></h2>
+<h2>Using Your Class<a class="headerlink" href="#using-your-class" title="Link permanen untuk headline ini">¶</a></h2>
 <p>From within any of your <a class="reference internal" href="controllers.html"><em>Controller</em></a> methods you
 can initialize your class using the standard:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;someclass&#39;</span><span class="p">);</span>
@@ -496,7 +496,7 @@ doesn&#8217;t care.</p>
 </div>
 </div>
 <div class="section" id="passing-parameters-when-initializing-your-class">
-<h2>Passing Parameters When Initializing Your Class<a class="headerlink" href="#passing-parameters-when-initializing-your-class" title="Permalink to this headline">¶</a></h2>
+<h2>Passing Parameters When Initializing Your Class<a class="headerlink" href="#passing-parameters-when-initializing-your-class" title="Link permanen untuk headline ini">¶</a></h2>
 <p>In the library loading method you can dynamically pass data as an
 array via the second parameter and it will be passed to your class
 constructor:</p>
@@ -525,7 +525,7 @@ parameters as described above, the config file option will not be
 available.</p>
 </div>
 <div class="section" id="utilizing-codeigniter-resources-within-your-library">
-<h2>Utilizing CodeIgniter Resources within Your Library<a class="headerlink" href="#utilizing-codeigniter-resources-within-your-library" title="Permalink to this headline">¶</a></h2>
+<h2>Utilizing CodeIgniter Resources within Your Library<a class="headerlink" href="#utilizing-codeigniter-resources-within-your-library" title="Link permanen untuk headline ini">¶</a></h2>
 <p>To access CodeIgniter&#8217;s native resources within your library use the
 <code class="docutils literal"><span class="pre">get_instance()</span></code> method. This method returns the CodeIgniter super
 object.</p>
@@ -555,7 +555,7 @@ from within your own custom classes you can do so as follows:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p>You&#8217;ll notice that the above <code class="docutils literal"><span class="pre">get_instance()</span></code> function is being
 passed by reference:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$CI</span> <span class="o">=&amp;</span> <span class="nx">get_instance</span><span class="p">();</span>
@@ -596,7 +596,7 @@ methods, you&#8217;re encouraged to assign it to a property instead:</p>
 </div>
 </div>
 <div class="section" id="replacing-native-libraries-with-your-versions">
-<h2>Replacing Native Libraries with Your Versions<a class="headerlink" href="#replacing-native-libraries-with-your-versions" title="Permalink to this headline">¶</a></h2>
+<h2>Replacing Native Libraries with Your Versions<a class="headerlink" href="#replacing-native-libraries-with-your-versions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Simply by naming your class files identically to a native library will
 cause CodeIgniter to use it instead of the native one. To use this
 feature you must name the file and the class declaration exactly the
@@ -614,13 +614,13 @@ and declare your class with:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">At this time the Database classes can not be replaced with
 your own versions.</p>
 </div>
 </div>
 <div class="section" id="extending-native-libraries">
-<h2>Extending Native Libraries<a class="headerlink" href="#extending-native-libraries" title="Permalink to this headline">¶</a></h2>
+<h2>Extending Native Libraries<a class="headerlink" href="#extending-native-libraries" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If all you need to do is add some functionality to an existing library -
 perhaps add a method or two - then it&#8217;s overkill to replace the entire
 library with your version. In this case it&#8217;s better to simply extend the
@@ -651,13 +651,13 @@ extend the parent constructor:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Not all of the libraries have the same (or any) parameters
 in their constructor. Take a look at the library that you&#8217;re
 extending first to see how it should be implemented.</p>
 </div>
 <div class="section" id="loading-your-sub-class">
-<h3>Loading Your Sub-class<a class="headerlink" href="#loading-your-sub-class" title="Permalink to this headline">¶</a></h3>
+<h3>Loading Your Sub-class<a class="headerlink" href="#loading-your-sub-class" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To load your sub-class you&#8217;ll use the standard syntax normally used. DO
 NOT include your prefix. For example, to load the example above, which
 extends the Email class, you will use:</p>
@@ -672,7 +672,7 @@ will use:</p>
 </div>
 </div>
 <div class="section" id="setting-your-own-prefix">
-<h3>Setting Your Own Prefix<a class="headerlink" href="#setting-your-own-prefix" title="Permalink to this headline">¶</a></h3>
+<h3>Setting Your Own Prefix<a class="headerlink" href="#setting-your-own-prefix" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To set your own sub-class prefix, open your
 <em>application/config/config.php</em> file and look for this item:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
@@ -703,7 +703,7 @@ so DO NOT use that as your prefix.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -733,6 +733,7 @@ so DO NOT use that as your prefix.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

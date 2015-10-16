@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Output Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Output Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Pagination Class" href="pagination.html"/>
         <link rel="prev" title="Migrations Class" href="migration.html"/> 
@@ -424,13 +424,13 @@
           <div role="main" class="document">
             
   <div class="section" id="output-class">
-<h1>Output Class<a class="headerlink" href="#output-class" title="Permalink to this headline">¶</a></h1>
+<h1>Output Class<a class="headerlink" href="#output-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Output class is a core class with one main function: To send the
 finalized web page to the requesting browser. It is also responsible for
 <a class="reference internal" href="../general/caching.html"><em>caching</em></a> your web pages, if you use that
 feature.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This class is initialized automatically by the system so there
 is no need to do it manually.</p>
 </div>
@@ -447,10 +447,10 @@ need to.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id1">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Output">
-<em class="property">class </em><code class="descname">CI_Output</code><a class="headerlink" href="#CI_Output" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Output</code><a class="headerlink" href="#CI_Output" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="attribute">
 <dt>
 <code class="descname">$parse_exec_vars = TRUE;</code></dt>
@@ -464,17 +464,17 @@ this property to FALSE in your controller.</p>
 
 <dl class="method">
 <dt id="CI_Output::set_output">
-<code class="descname">set_output</code><span class="sig-paren">(</span><em>$output</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_output" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_output</code><span class="sig-paren">(</span><em>$output</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_output" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$output</strong> (<em>string</em>) &#8211; String to set the output to</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -487,7 +487,7 @@ this property to FALSE in your controller.</p>
 </pre></div>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">If you do set your output manually, it must be the last thing done
 in the function you call it from. For example, if you build a page in one
 of your controller methods, don&#8217;t set the output until the end.</p>
@@ -496,18 +496,18 @@ of your controller methods, don&#8217;t set the output until the end.</p>
 
 <dl class="method">
 <dt id="CI_Output::set_content_type">
-<code class="descname">set_content_type</code><span class="sig-paren">(</span><em>$mime_type</em><span class="optional">[</span>, <em>$charset = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_content_type" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_content_type</code><span class="sig-paren">(</span><em>$mime_type</em><span class="optional">[</span>, <em>$charset = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_content_type" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$mime_type</strong> (<em>string</em>) &#8211; MIME Type idenitifer string</li>
 <li><strong>$charset</strong> (<em>string</em>) &#8211; Character set</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -526,7 +526,7 @@ of your controller methods, don&#8217;t set the output until the end.</p>
 </pre></div>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Make sure any non-mime string you pass to this method
 exists in <em>application/config/mimes.php</em> or it will have no effect.</p>
 </div>
@@ -538,12 +538,12 @@ exists in <em>application/config/mimes.php</em> or it will have no effect.</p>
 
 <dl class="method">
 <dt id="CI_Output::get_content_type">
-<code class="descname">get_content_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::get_content_type" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_content_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::get_content_type" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Content-Type string</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Content-Type string</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -554,24 +554,24 @@ exists in <em>application/config/mimes.php</em> or it will have no effect.</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If not set, the default return value is &#8216;text/html&#8217;.</p>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="CI_Output::get_header">
-<code class="descname">get_header</code><span class="sig-paren">(</span><em>$header</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::get_header" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_header</code><span class="sig-paren">(</span><em>$header</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::get_header" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$header</strong> (<em>string</em>) &#8211; HTTP header name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">HTTP response header or NULL if not found</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">HTTP response header or NULL if not found</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -587,23 +587,23 @@ Example:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The header name is compared in a case-insensitive manner.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Raw headers sent via PHP&#8217;s native <code class="docutils literal"><span class="pre">header()</span></code> function are also detected.</p>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="CI_Output::get_output">
-<code class="descname">get_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::get_output" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::get_output" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Output string</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Output string</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -621,17 +621,17 @@ functions like <code class="docutils literal"><span class="pre">$this-&gt;load-&
 
 <dl class="method">
 <dt id="CI_Output::append_output">
-<code class="descname">append_output</code><span class="sig-paren">(</span><em>$output</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::append_output" title="Permalink to this definition">¶</a></dt>
+<code class="descname">append_output</code><span class="sig-paren">(</span><em>$output</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::append_output" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$output</strong> (<em>string</em>) &#8211; Additional output data to append</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -647,18 +647,18 @@ functions like <code class="docutils literal"><span class="pre">$this-&gt;load-&
 
 <dl class="method">
 <dt id="CI_Output::set_header">
-<code class="descname">set_header</code><span class="sig-paren">(</span><em>$header</em><span class="optional">[</span>, <em>$replace = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_header" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_header</code><span class="sig-paren">(</span><em>$header</em><span class="optional">[</span>, <em>$replace = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_header" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$header</strong> (<em>string</em>) &#8211; HTTP response header</li>
 <li><strong>$replace</strong> (<em>bool</em>) &#8211; Whether to replace the old header value, if it is already set</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -680,18 +680,18 @@ send for you when outputting the final rendered display. Example:</p>
 
 <dl class="method">
 <dt id="CI_Output::set_status_header">
-<code class="descname">set_status_header</code><span class="sig-paren">(</span><span class="optional">[</span><em>$code = 200</em><span class="optional">[</span>, <em>$text = ''</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_status_header" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_status_header</code><span class="sig-paren">(</span><span class="optional">[</span><em>$code = 200</em><span class="optional">[</span>, <em>$text = ''</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_status_header" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$code</strong> (<em>int</em>) &#8211; HTTP status code</li>
 <li><strong>$text</strong> (<em>string</em>) &#8211; Optional message</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -706,7 +706,7 @@ send for you when outputting the final rendered display. Example:</p>
 </div>
 <p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">See here</a> for a full list of headers.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This method is an alias for <a class="reference internal" href="../general/common_functions.html"><em>Common function</em></a>
 <code class="xref py py-func docutils literal"><span class="pre">set_status_header()</span></code>.</p>
 </div>
@@ -714,17 +714,17 @@ send for you when outputting the final rendered display. Example:</p>
 
 <dl class="method">
 <dt id="CI_Output::enable_profiler">
-<code class="descname">enable_profiler</code><span class="sig-paren">(</span><span class="optional">[</span><em>$val = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::enable_profiler" title="Permalink to this definition">¶</a></dt>
+<code class="descname">enable_profiler</code><span class="sig-paren">(</span><span class="optional">[</span><em>$val = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::enable_profiler" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$val</strong> (<em>bool</em>) &#8211; Whether to enable or disable the Profiler</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -748,17 +748,17 @@ and other data at the bottom of your pages for debugging and optimization purpos
 
 <dl class="method">
 <dt id="CI_Output::set_profiler_sections">
-<code class="descname">set_profiler_sections</code><span class="sig-paren">(</span><em>$sections</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_profiler_sections" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_profiler_sections</code><span class="sig-paren">(</span><em>$sections</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::set_profiler_sections" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$sections</strong> (<em>array</em>) &#8211; Profiler sections</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -772,17 +772,17 @@ Please refer to the <a class="reference internal" href="../general/profiling.htm
 
 <dl class="method">
 <dt id="CI_Output::cache">
-<code class="descname">cache</code><span class="sig-paren">(</span><em>$time</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::cache" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache</code><span class="sig-paren">(</span><em>$time</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::cache" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$time</strong> (<em>int</em>) &#8211; Cache expiration time in seconds</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Output instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Output</p>
@@ -796,17 +796,17 @@ Please refer to the <a class="reference internal" href="../general/profiling.htm
 
 <dl class="method">
 <dt id="CI_Output::_display">
-<code class="descname">_display</code><span class="sig-paren">(</span><span class="optional">[</span><em>$output = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::_display" title="Permalink to this definition">¶</a></dt>
+<code class="descname">_display</code><span class="sig-paren">(</span><span class="optional">[</span><em>$output = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Output::_display" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$output</strong> (<em>string</em>) &#8211; Output data override</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">void</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">void</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
@@ -817,7 +817,7 @@ Please refer to the <a class="reference internal" href="../general/profiling.htm
 <p>Sends finalized output data to the browser along with any server headers. It also stops benchmark
 timers.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This method is called automatically at the end of script execution, you won&#8217;t need to
 call it manually unless you are aborting script execution using <code class="docutils literal"><span class="pre">exit()</span></code> or <code class="docutils literal"><span class="pre">die()</span></code> in your code.</p>
 </div>
@@ -833,7 +833,7 @@ call it manually unless you are aborting script execution using <code class="doc
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Calling this method manually without aborting script execution will result in duplicated output.</p>
 </div>
 </dd></dl>
@@ -862,7 +862,7 @@ call it manually unless you are aborting script execution using <code class="doc
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -892,6 +892,7 @@ call it manually unless you are aborting script execution using <code class="doc
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Penanganan Error &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Penanganan Error &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Web Page Caching" href="caching.html"/>
         <link rel="prev" title="URI Routing" href="routing.html"/> 
@@ -424,13 +424,13 @@
           <div role="main" class="document">
             
   <div class="section" id="penanganan-error">
-<h1>Penanganan Error<a class="headerlink" href="#penanganan-error" title="Permalink to this headline">¶</a></h1>
+<h1>Penanganan Error<a class="headerlink" href="#penanganan-error" title="Link permanen untuk headline ini">¶</a></h1>
 <p>CodeIgniter lets you build error reporting into your applications using
 the functions described below. In addition, it has an error logging
 class that permits error and debugging messages to be saved as text
 files.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">By default, CodeIgniter displays all PHP errors. You might
 wish to change this behavior once your development is complete. You&#8217;ll
 find the error_reporting() function located at the top of your main
@@ -452,12 +452,12 @@ software keep track of your scripts and the health of your application.</p>
 <p>The following functions let you generate errors:</p>
 <dl class="function">
 <dt id="show_error">
-<code class="descname">show_error</code><span class="sig-paren">(</span><em>$message</em>, <em>$status_code</em>, <em>$heading = 'An Error Was Encountered'</em><span class="sig-paren">)</span><a class="headerlink" href="#show_error" title="Permalink to this definition">¶</a></dt>
+<code class="descname">show_error</code><span class="sig-paren">(</span><em>$message</em>, <em>$status_code</em>, <em>$heading = 'An Error Was Encountered'</em><span class="sig-paren">)</span><a class="headerlink" href="#show_error" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$message</strong> (<em>mixed</em>) &#8211; Error message</li>
 <li><strong>$status_code</strong> (<em>int</em>) &#8211; HTTP Response status code</li>
 <li><strong>$heading</strong> (<em>string</em>) &#8211; Error page heading</li>
@@ -489,12 +489,12 @@ You can check in <em>application/config/constants.php</em> for more detail.</p>
 
 <dl class="function">
 <dt id="show_404">
-<code class="descname">show_404</code><span class="sig-paren">(</span><em>$page = ''</em>, <em>$log_error = TRUE</em><span class="sig-paren">)</span><a class="headerlink" href="#show_404" title="Permalink to this definition">¶</a></dt>
+<code class="descname">show_404</code><span class="sig-paren">(</span><em>$page = ''</em>, <em>$log_error = TRUE</em><span class="sig-paren">)</span><a class="headerlink" href="#show_404" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$page</strong> (<em>string</em>) &#8211; URI string</li>
 <li><strong>$log_error</strong> (<em>bool</em>) &#8211; Whether to log the error</li>
 </ul>
@@ -524,12 +524,12 @@ optional second parameter to FALSE will skip logging.</p>
 
 <dl class="function">
 <dt id="log_message">
-<code class="descname">log_message</code><span class="sig-paren">(</span><em>$level</em>, <em>$message</em>, <em>$php_error = FALSE</em><span class="sig-paren">)</span><a class="headerlink" href="#log_message" title="Permalink to this definition">¶</a></dt>
+<code class="descname">log_message</code><span class="sig-paren">(</span><em>$level</em>, <em>$message</em>, <em>$php_error = FALSE</em><span class="sig-paren">)</span><a class="headerlink" href="#log_message" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$level</strong> (<em>string</em>) &#8211; Log level: &#8216;error&#8217;, &#8216;debug&#8217; or &#8216;info&#8217;</li>
 <li><strong>$message</strong> (<em>string</em>) &#8211; Message to log</li>
 <li><strong>$php_error</strong> (<em>bool</em>) &#8211; Whether we&#8217;re logging a native PHP error message</li>
@@ -569,7 +569,7 @@ debugging info.</li>
 simply giving information regarding some process.</li>
 </ol>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">In order for the log file to actually be written, the
 <em>logs/</em> directory must be writable. In addition, you must
 set the &#8220;threshold&#8221; for logging in
@@ -600,7 +600,7 @@ two types. If you set it to zero logging will be disabled.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -630,6 +630,7 @@ two types. If you set it to zero logging will be disabled.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

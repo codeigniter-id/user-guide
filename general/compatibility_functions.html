@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Fungsi-fungsi Kompatibilitas &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Fungsi-fungsi Kompatibilitas &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="URI Routing" href="routing.html"/>
         <link rel="prev" title="Fungsi-fungsi Umum" href="common_functions.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="fungsi-fungsi-kompatibilitas">
-<h1>Fungsi-fungsi Kompatibilitas<a class="headerlink" href="#fungsi-fungsi-kompatibilitas" title="Permalink to this headline">¶</a></h1>
+<h1>Fungsi-fungsi Kompatibilitas<a class="headerlink" href="#fungsi-fungsi-kompatibilitas" title="Link permanen untuk headline ini">¶</a></h1>
 <p>CodeIgniter provides a set of compatibility functions that enable
 you to use functions what are otherwise natively available in PHP,
 but only in higher versions or depending on a certain extension.</p>
@@ -432,7 +432,7 @@ but only in higher versions or depending on a certain extension.</p>
 set of dependencies on their own, but are still useful if your
 PHP setup doesn&#8217;t offer them natively.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Much like the <cite>common functions &lt;common_functions&gt;</cite>, the
 compatibility functions are always available, as long as
 their dependencies are met.</p>
@@ -463,39 +463,39 @@ their dependencies are met.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="password-hashing">
-<h2><a class="toc-backref" href="#id7">Password Hashing</a><a class="headerlink" href="#password-hashing" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Password Hashing</a><a class="headerlink" href="#password-hashing" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This set of compatibility functions offers a &#8220;backport&#8221; of PHP&#8217;s
 standard <a class="reference external" href="http://php.net/password">Password Hashing extension</a>
 that is otherwise available only since PHP 5.5.</p>
 <div class="section" id="dependencies">
-<h3><a class="toc-backref" href="#id8">Dependencies</a><a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Dependencies</a><a class="headerlink" href="#dependencies" title="Link permanen untuk headline ini">¶</a></h3>
 <ul class="simple">
 <li>PHP 5.3.7</li>
 <li><code class="docutils literal"><span class="pre">CRYPT_BLOWFISH</span></code> support for <code class="docutils literal"><span class="pre">crypt()</span></code></li>
 </ul>
 </div>
 <div class="section" id="constants">
-<h3><a class="toc-backref" href="#id9">Constants</a><a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Constants</a><a class="headerlink" href="#constants" title="Link permanen untuk headline ini">¶</a></h3>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">PASSWORD_BCRYPT</span></code></li>
 <li><code class="docutils literal"><span class="pre">PASSWORD_DEFAULT</span></code></li>
 </ul>
 </div>
 <div class="section" id="function-reference">
-<h3><a class="toc-backref" href="#id10">Function reference</a><a class="headerlink" href="#function-reference" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Function reference</a><a class="headerlink" href="#function-reference" title="Link permanen untuk headline ini">¶</a></h3>
 <dl class="function">
 <dt id="password_get_info">
-<code class="descname">password_get_info</code><span class="sig-paren">(</span><em>$hash</em><span class="sig-paren">)</span><a class="headerlink" href="#password_get_info" title="Permalink to this definition">¶</a></dt>
+<code class="descname">password_get_info</code><span class="sig-paren">(</span><em>$hash</em><span class="sig-paren">)</span><a class="headerlink" href="#password_get_info" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$hash</strong> (<em>string</em>) &#8211; Password hash</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Information about the hashed password</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Information about the hashed password</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -509,19 +509,19 @@ password_get_info()</a>.</p>
 
 <dl class="function">
 <dt id="password_hash">
-<code class="descname">password_hash</code><span class="sig-paren">(</span><em>$password</em>, <em>$algo</em><span class="optional">[</span>, <em>$options = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#password_hash" title="Permalink to this definition">¶</a></dt>
+<code class="descname">password_hash</code><span class="sig-paren">(</span><em>$password</em>, <em>$algo</em><span class="optional">[</span>, <em>$options = array()</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#password_hash" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$password</strong> (<em>string</em>) &#8211; Plain-text password</li>
 <li><strong>$algo</strong> (<em>int</em>) &#8211; Hashing algorithm</li>
 <li><strong>$options</strong> (<em>array</em>) &#8211; Hashing options</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Hashed password or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Hashed password or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -532,7 +532,7 @@ password_get_info()</a>.</p>
 <p>For more information, please refer to the <a class="reference external" href="http://php.net/password_hash">PHP manual for
 password_hash()</a>.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Unless you provide your own (and valid) salt, this function
 has a further dependency on an available CSPRNG source. Each
 of the following would satisfy that:
@@ -545,19 +545,19 @@ of the following would satisfy that:
 
 <dl class="function">
 <dt id="password_needs_rehash">
-<code class="descname">password_needs_rehash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#password_needs_rehash" title="Permalink to this definition">¶</a></dt>
+<code class="descname">password_needs_rehash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#password_needs_rehash" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$hash</strong> (<em>string</em>) &#8211; Password hash</li>
 <li><strong>$algo</strong> (<em>int</em>) &#8211; Hashing algorithm</li>
 <li><strong>$options</strong> (<em>array</em>) &#8211; Hashing options</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE if the hash should be rehashed to match the given algorithm and options, FALSE otherwise</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE if the hash should be rehashed to match the given algorithm and options, FALSE otherwise</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -571,18 +571,18 @@ password_needs_rehash()</a>.</p>
 
 <dl class="function">
 <dt id="password_verify">
-<code class="descname">password_verify</code><span class="sig-paren">(</span><em>$password</em>, <em>$hash</em><span class="sig-paren">)</span><a class="headerlink" href="#password_verify" title="Permalink to this definition">¶</a></dt>
+<code class="descname">password_verify</code><span class="sig-paren">(</span><em>$password</em>, <em>$hash</em><span class="sig-paren">)</span><a class="headerlink" href="#password_verify" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$password</strong> (<em>string</em>) &#8211; Plain-text password</li>
 <li><strong>$hash</strong> (<em>string</em>) &#8211; Password hash</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE if the password matches the hash, FALSE if not</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE if the password matches the hash, FALSE if not</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -597,32 +597,32 @@ password_verify()</a>.</p>
 </div>
 </div>
 <div class="section" id="hash-message-digest">
-<h2><a class="toc-backref" href="#id11">Hash (Message Digest)</a><a class="headerlink" href="#hash-message-digest" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Hash (Message Digest)</a><a class="headerlink" href="#hash-message-digest" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This compatibility layer contains backports for the <code class="docutils literal"><span class="pre">hash_equals()</span></code>
 and <code class="docutils literal"><span class="pre">hash_pbkdf2()</span></code> functions, which otherwise require PHP 5.6 and/or
 PHP 5.5 respectively.</p>
 <div class="section" id="id1">
-<h3><a class="toc-backref" href="#id12">Dependencies</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Dependencies</a><a class="headerlink" href="#id1" title="Link permanen untuk headline ini">¶</a></h3>
 <ul class="simple">
 <li>None</li>
 </ul>
 </div>
 <div class="section" id="id2">
-<h3><a class="toc-backref" href="#id13">Function reference</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">Function reference</a><a class="headerlink" href="#id2" title="Link permanen untuk headline ini">¶</a></h3>
 <dl class="function">
 <dt id="hash_equals">
-<code class="descname">hash_equals</code><span class="sig-paren">(</span><em>$known_string</em>, <em>$user_string</em><span class="sig-paren">)</span><a class="headerlink" href="#hash_equals" title="Permalink to this definition">¶</a></dt>
+<code class="descname">hash_equals</code><span class="sig-paren">(</span><em>$known_string</em>, <em>$user_string</em><span class="sig-paren">)</span><a class="headerlink" href="#hash_equals" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$known_string</strong> (<em>string</em>) &#8211; Known string</li>
 <li><strong>$user_string</strong> (<em>string</em>) &#8211; User-supplied string</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE if the strings match, FALSE otherwise</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE if the strings match, FALSE otherwise</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -636,12 +636,12 @@ hash_equals()</a>.</p>
 
 <dl class="function">
 <dt id="hash_pbkdf2">
-<code class="descname">hash_pbkdf2</code><span class="sig-paren">(</span><em>$algo</em>, <em>$password</em>, <em>$salt</em>, <em>$iterations</em><span class="optional">[</span>, <em>$length = 0</em><span class="optional">[</span>, <em>$raw_output = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#hash_pbkdf2" title="Permalink to this definition">¶</a></dt>
+<code class="descname">hash_pbkdf2</code><span class="sig-paren">(</span><em>$algo</em>, <em>$password</em>, <em>$salt</em>, <em>$iterations</em><span class="optional">[</span>, <em>$length = 0</em><span class="optional">[</span>, <em>$raw_output = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#hash_pbkdf2" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$algo</strong> (<em>string</em>) &#8211; Hashing algorithm</li>
 <li><strong>$password</strong> (<em>string</em>) &#8211; Password</li>
 <li><strong>$salt</strong> (<em>string</em>) &#8211; Hash salt</li>
@@ -651,7 +651,7 @@ hash_equals()</a>.</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Password-derived key or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Password-derived key or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -666,53 +666,53 @@ hash_pbkdf2()</a>.</p>
 </div>
 </div>
 <div class="section" id="multibyte-string">
-<h2><a class="toc-backref" href="#id14">Multibyte String</a><a class="headerlink" href="#multibyte-string" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">Multibyte String</a><a class="headerlink" href="#multibyte-string" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This set of compatibility functions offers limited support for PHP&#8217;s
 <a class="reference external" href="http://php.net/mbstring">Multibyte String extension</a>. Because of
 the limited alternative solutions, only a few functions are available.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">When a character set parameter is ommited,
 <code class="docutils literal"><span class="pre">$config['charset']</span></code> will be used.</p>
 </div>
 <div class="section" id="id3">
-<h3><a class="toc-backref" href="#id15">Dependencies</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id15">Dependencies</a><a class="headerlink" href="#id3" title="Link permanen untuk headline ini">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="http://php.net/iconv">iconv</a> extension</li>
 </ul>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">This dependency is optional and these functions will
 always be declared. If iconv is not available, they WILL
 fall-back to their non-mbstring versions.</p>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Where a character set is supplied, it must be
 supported by iconv and in a format that it recognizes.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">For you own dependency check on the actual mbstring
 extension, use the <code class="docutils literal"><span class="pre">MB_ENABLED</span></code> constant.</p>
 </div>
 </div>
 <div class="section" id="id4">
-<h3><a class="toc-backref" href="#id16">Function reference</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">Function reference</a><a class="headerlink" href="#id4" title="Link permanen untuk headline ini">¶</a></h3>
 <dl class="function">
 <dt id="mb_strlen">
-<code class="descname">mb_strlen</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$encoding = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#mb_strlen" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mb_strlen</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$encoding = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#mb_strlen" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$encoding</strong> (<em>string</em>) &#8211; Character set</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Number of characters in the input string or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Number of characters in the input string or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -726,12 +726,12 @@ mb_strlen()</a>.</p>
 
 <dl class="function">
 <dt id="mb_strpos">
-<code class="descname">mb_strpos</code><span class="sig-paren">(</span><em>$haystack</em>, <em>$needle</em><span class="optional">[</span>, <em>$offset = 0</em><span class="optional">[</span>, <em>$encoding = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#mb_strpos" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mb_strpos</code><span class="sig-paren">(</span><em>$haystack</em>, <em>$needle</em><span class="optional">[</span>, <em>$offset = 0</em><span class="optional">[</span>, <em>$encoding = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#mb_strpos" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$haystack</strong> (<em>string</em>) &#8211; String to search in</li>
 <li><strong>$needle</strong> (<em>string</em>) &#8211; Part of string to search for</li>
 <li><strong>$offset</strong> (<em>int</em>) &#8211; Search offset</li>
@@ -739,7 +739,7 @@ mb_strlen()</a>.</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Numeric character position of where $needle was found or FALSE if not found</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Numeric character position of where $needle was found or FALSE if not found</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -753,12 +753,12 @@ mb_strpos()</a>.</p>
 
 <dl class="function">
 <dt id="mb_substr">
-<code class="descname">mb_substr</code><span class="sig-paren">(</span><em>$str</em>, <em>$start</em><span class="optional">[</span>, <em>$length = NULL</em><span class="optional">[</span>, <em>$encoding = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#mb_substr" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mb_substr</code><span class="sig-paren">(</span><em>$str</em>, <em>$start</em><span class="optional">[</span>, <em>$length = NULL</em><span class="optional">[</span>, <em>$encoding = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#mb_substr" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$start</strong> (<em>int</em>) &#8211; Position of first character</li>
 <li><strong>$length</strong> (<em>int</em>) &#8211; Maximum number of characters</li>
@@ -766,7 +766,7 @@ mb_strpos()</a>.</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Portion of $str specified by $start and $length or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Portion of $str specified by $start and $length or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -781,32 +781,32 @@ mb_substr()</a>.</p>
 </div>
 </div>
 <div class="section" id="standard-functions">
-<h2><a class="toc-backref" href="#id17">Standard Functions</a><a class="headerlink" href="#standard-functions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id17">Standard Functions</a><a class="headerlink" href="#standard-functions" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This set of compatibility functions offers support for a few
 standard functions in PHP that otherwise require a newer PHP version.</p>
 <div class="section" id="id5">
-<h3><a class="toc-backref" href="#id18">Dependencies</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id18">Dependencies</a><a class="headerlink" href="#id5" title="Link permanen untuk headline ini">¶</a></h3>
 <ul class="simple">
 <li>None</li>
 </ul>
 </div>
 <div class="section" id="id6">
-<h3><a class="toc-backref" href="#id19">Function reference</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id19">Function reference</a><a class="headerlink" href="#id6" title="Link permanen untuk headline ini">¶</a></h3>
 <dl class="function">
 <dt id="array_column">
-<code class="descname">array_column</code><span class="sig-paren">(</span><em>array $array</em>, <em>$column_key</em><span class="optional">[</span>, <em>$index_key = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#array_column" title="Permalink to this definition">¶</a></dt>
+<code class="descname">array_column</code><span class="sig-paren">(</span><em>array $array</em>, <em>$column_key</em><span class="optional">[</span>, <em>$index_key = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#array_column" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$array</strong> (<em>array</em>) &#8211; Array to fetch results from</li>
 <li><strong>$column_key</strong> (<em>mixed</em>) &#8211; Key of the column to return values from</li>
 <li><strong>$index_key</strong> (<em>mixed</em>) &#8211; Key to use for the returned values</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An array of values representing a single column from the input array</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">An array of values representing a single column from the input array</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -820,18 +820,18 @@ array_column()</a>.</p>
 
 <dl class="function">
 <dt id="array_replace">
-<code class="descname">array_replace</code><span class="sig-paren">(</span><em>array $array1</em><span class="optional">[</span>, <em>...</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#array_replace" title="Permalink to this definition">¶</a></dt>
+<code class="descname">array_replace</code><span class="sig-paren">(</span><em>array $array1</em><span class="optional">[</span>, <em>...</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#array_replace" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$array1</strong> (<em>array</em>) &#8211; Array in which to replace elements</li>
 <li><strong>...</strong> (<em>array</em>) &#8211; Array (or multiple ones) from which to extract elements</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Modified array</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Modified array</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -845,18 +845,18 @@ array_replace()</a>.</p>
 
 <dl class="function">
 <dt id="array_replace_recursive">
-<code class="descname">array_replace_recursive</code><span class="sig-paren">(</span><em>array $array1</em><span class="optional">[</span>, <em>...</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#array_replace_recursive" title="Permalink to this definition">¶</a></dt>
+<code class="descname">array_replace_recursive</code><span class="sig-paren">(</span><em>array $array1</em><span class="optional">[</span>, <em>...</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#array_replace_recursive" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$array1</strong> (<em>array</em>) &#8211; Array in which to replace elements</li>
 <li><strong>...</strong> (<em>array</em>) &#8211; Array (or multiple ones) from which to extract elements</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Modified array</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Modified array</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -867,7 +867,7 @@ array_replace()</a>.</p>
 <p>For more information, please refer to the <a class="reference external" href="http://php.net/array_replace_recursive">PHP manual for
 array_replace_recursive()</a>.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Only PHP&#8217;s native function can detect endless recursion.
 Unless you are running PHP 5.3+, be careful with references!</p>
 </div>
@@ -875,17 +875,17 @@ Unless you are running PHP 5.3+, be careful with references!</p>
 
 <dl class="function">
 <dt id="hex2bin">
-<code class="descname">hex2bin</code><span class="sig-paren">(</span><em>$data</em><span class="sig-paren">)</span><a class="headerlink" href="#hex2bin" title="Permalink to this definition">¶</a></dt>
+<code class="descname">hex2bin</code><span class="sig-paren">(</span><em>$data</em><span class="sig-paren">)</span><a class="headerlink" href="#hex2bin" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$data</strong> (<em>array</em>) &#8211; Hexadecimal representation of data</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Binary representation of the given data</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Binary representation of the given data</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -898,17 +898,17 @@ Unless you are running PHP 5.3+, be careful with references!</p>
 
 <dl class="function">
 <dt id="quoted_printable_encode">
-<code class="descname">quoted_printable_encode</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#quoted_printable_encode" title="Permalink to this definition">¶</a></dt>
+<code class="descname">quoted_printable_encode</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#quoted_printable_encode" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">8bit-encoded string</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">8bit-encoded string</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -943,7 +943,7 @@ quoted_printable_encode()</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -973,6 +973,7 @@ quoted_printable_encode()</a>.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

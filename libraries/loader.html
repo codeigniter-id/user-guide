@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Loader Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Loader Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Migrations Class" href="migration.html"/>
         <link rel="prev" title="Language Class" href="language.html"/> 
@@ -424,14 +424,14 @@
           <div role="main" class="document">
             
   <div class="section" id="loader-class">
-<h1>Loader Class<a class="headerlink" href="#loader-class" title="Permalink to this headline">¶</a></h1>
+<h1>Loader Class<a class="headerlink" href="#loader-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>Loader, as the name suggests, is used to load elements. These elements
 can be libraries (classes) <a class="reference internal" href="../general/views.html"><em>View files</em></a>,
 <a class="reference internal" href="../general/drivers.html"><em>Drivers</em></a>,
 <a class="reference internal" href="../general/helpers.html"><em>Helpers</em></a>,
 <a class="reference internal" href="../general/models.html"><em>Models</em></a>, or your own files.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This class is initialized automatically by the system so there
 is no need to do it manually.</p>
 </div>
@@ -445,7 +445,7 @@ is no need to do it manually.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="application-packages">
-<h2><a class="toc-backref" href="#id2">Application &#8220;Packages&#8221;</a><a class="headerlink" href="#application-packages" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Application &#8220;Packages&#8221;</a><a class="headerlink" href="#application-packages" title="Link permanen untuk headline ini">¶</a></h2>
 <p>An application package allows for the easy distribution of complete sets
 of resources in a single directory, complete with its own libraries,
 models, helpers, config, and language files. It is recommended that
@@ -468,7 +468,7 @@ these resources in your controllers, you first need to tell the Loader
 that you are going to be loading resources from a package, by adding the
 package path via the <code class="docutils literal"><span class="pre">add_package_path()</span></code> method.</p>
 <div class="section" id="package-view-files">
-<h3><a class="toc-backref" href="#id3">Package view files</a><a class="headerlink" href="#package-view-files" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Package view files</a><a class="headerlink" href="#package-view-files" title="Link permanen untuk headline ini">¶</a></h3>
 <p>By Default, package view files paths are set when <code class="docutils literal"><span class="pre">add_package_path()</span></code>
 is called. View paths are looped through, and once a match is
 encountered that view is loaded.</p>
@@ -492,25 +492,25 @@ calling <code class="docutils literal"><span class="pre">add_package_path()</spa
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id4">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Loader">
-<em class="property">class </em><code class="descname">CI_Loader</code><a class="headerlink" href="#CI_Loader" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Loader</code><a class="headerlink" href="#CI_Loader" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_Loader::library">
-<code class="descname">library</code><span class="sig-paren">(</span><em>$library</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">[</span>, <em>$object_name = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::library" title="Permalink to this definition">¶</a></dt>
+<code class="descname">library</code><span class="sig-paren">(</span><em>$library</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">[</span>, <em>$object_name = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::library" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$library</strong> (<em>mixed</em>) &#8211; Library name as a string or an array with multiple libraries</li>
 <li><strong>$params</strong> (<em>array</em>) &#8211; Optional array of parameters to pass to the loaded library&#8217;s constructor</li>
 <li><strong>$object_name</strong> (<em>string</em>) &#8211; Optional object name to assign the library to</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -520,7 +520,7 @@ calling <code class="docutils literal"><span class="pre">add_package_path()</spa
 </table>
 <p>This method is used to load core classes.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">We use the terms &#8220;class&#8221; and &#8220;library&#8221; interchangeably.</p>
 </div>
 <p>For example, if you would like to send email with CodeIgniter, the first
@@ -583,19 +583,19 @@ the first parameter, this parameter is discarded.</p>
 
 <dl class="method">
 <dt id="CI_Loader::driver">
-<code class="descname">driver</code><span class="sig-paren">(</span><em>$library</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">[</span>, <em>$object_name</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::driver" title="Permalink to this definition">¶</a></dt>
+<code class="descname">driver</code><span class="sig-paren">(</span><em>$library</em><span class="optional">[</span>, <em>$params = NULL</em><span class="optional">[</span>, <em>$object_name</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::driver" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$library</strong> (<em>mixed</em>) &#8211; Library name as a string or an array with multiple libraries</li>
 <li><strong>$params</strong> (<em>array</em>) &#8211; Optional array of parameters to pass to the loaded library&#8217;s constructor</li>
 <li><strong>$object_name</strong> (<em>string</em>) &#8211; Optional object name to assign the library to</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -652,19 +652,19 @@ third parameter:</p>
 
 <dl class="method">
 <dt id="CI_Loader::view">
-<code class="descname">view</code><span class="sig-paren">(</span><em>$view</em><span class="optional">[</span>, <em>$vars = array()</em><span class="optional">[</span>, <em>return = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::view" title="Permalink to this definition">¶</a></dt>
+<code class="descname">view</code><span class="sig-paren">(</span><em>$view</em><span class="optional">[</span>, <em>$vars = array()</em><span class="optional">[</span>, <em>return = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::view" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$view</strong> (<em>string</em>) &#8211; View name</li>
 <li><strong>$vars</strong> (<em>array</em>) &#8211; An associative array of variables</li>
 <li><strong>$return</strong> (<em>bool</em>) &#8211; Whether to return the loaded view</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">View content string if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">View content string if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -679,7 +679,7 @@ typically used.</p>
 <p>The first parameter is required. It is the name of the view file you
 would like to load.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The .php file extension does not need to be specified unless
 you use something other than .php.</p>
 </div>
@@ -701,18 +701,18 @@ assign it to a variable if you want the data returned:</p>
 
 <dl class="method">
 <dt id="CI_Loader::vars">
-<code class="descname">vars</code><span class="sig-paren">(</span><em>$vars</em><span class="optional">[</span>, <em>$val = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::vars" title="Permalink to this definition">¶</a></dt>
+<code class="descname">vars</code><span class="sig-paren">(</span><em>$vars</em><span class="optional">[</span>, <em>$val = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::vars" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$vars</strong> (<em>mixed</em>) &#8211; An array of variables or a single variable name</li>
 <li><strong>$val</strong> (<em>mixed</em>) &#8211; Optional variable value</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -733,17 +733,17 @@ into one array for conversion to variables.</p>
 
 <dl class="method">
 <dt id="CI_Loader::get_var">
-<code class="descname">get_var</code><span class="sig-paren">(</span><em>$key</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::get_var" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_var</code><span class="sig-paren">(</span><em>$key</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::get_var" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$key</strong> (<em>string</em>) &#8211; Variable name key</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Value if key is found, NULL if not</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Value if key is found, NULL if not</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -758,12 +758,12 @@ or another controller method using <code class="docutils literal"><span class="p
 
 <dl class="method">
 <dt id="CI_Loader::get_vars">
-<code class="descname">get_vars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::get_vars" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_vars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::get_vars" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">An array of all assigned view variables</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">An array of all assigned view variables</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">array</td>
 </tr>
@@ -774,12 +774,12 @@ or another controller method using <code class="docutils literal"><span class="p
 
 <dl class="method">
 <dt id="CI_Loader::clear_vars">
-<code class="descname">clear_vars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::clear_vars" title="Permalink to this definition">¶</a></dt>
+<code class="descname">clear_vars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::clear_vars" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">CI_Loader instance (method chaining)</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">CI_Loader instance (method chaining)</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">CI_Loader</td>
 </tr>
@@ -790,19 +790,19 @@ or another controller method using <code class="docutils literal"><span class="p
 
 <dl class="method">
 <dt id="CI_Loader::model">
-<code class="descname">model</code><span class="sig-paren">(</span><em>$model</em><span class="optional">[</span>, <em>$name = ''</em><span class="optional">[</span>, <em>$db_conn = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::model" title="Permalink to this definition">¶</a></dt>
+<code class="descname">model</code><span class="sig-paren">(</span><em>$model</em><span class="optional">[</span>, <em>$name = ''</em><span class="optional">[</span>, <em>$db_conn = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::model" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$model</strong> (<em>mixed</em>) &#8211; Model name or an array containing multiple models</li>
 <li><strong>$name</strong> (<em>string</em>) &#8211; Optional object name to assign the model to</li>
 <li><strong>$db_conn</strong> (<em>string</em>) &#8211; Optional database configuration group to load</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -829,19 +829,19 @@ specify it via the second parameter of the loading method:</p>
 
 <dl class="method">
 <dt id="CI_Loader::database">
-<code class="descname">database</code><span class="sig-paren">(</span><span class="optional">[</span><em>$params = ''</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">[</span>, <em>$query_builder = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::database" title="Permalink to this definition">¶</a></dt>
+<code class="descname">database</code><span class="sig-paren">(</span><span class="optional">[</span><em>$params = ''</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">[</span>, <em>$query_builder = NULL</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::database" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$params</strong> (<em>mixed</em>) &#8211; Database group name or configuration options</li>
 <li><strong>$return</strong> (<em>bool</em>) &#8211; Whether to return the loaded database object</li>
 <li><strong>$query_builder</strong> (<em>bool</em>) &#8211; Whether to load the Query Builder</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded CI_DB instance or FALSE on failure if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Loaded CI_DB instance or FALSE on failure if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -856,18 +856,18 @@ section for more info.</p>
 
 <dl class="method">
 <dt id="CI_Loader::dbforge">
-<code class="descname">dbforge</code><span class="sig-paren">(</span><span class="optional">[</span><em>$db = NULL</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::dbforge" title="Permalink to this definition">¶</a></dt>
+<code class="descname">dbforge</code><span class="sig-paren">(</span><span class="optional">[</span><em>$db = NULL</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::dbforge" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$db</strong> (<em>object</em>) &#8211; Database object</li>
 <li><strong>$return</strong> (<em>bool</em>) &#8211; Whether to return the Database Forge instance</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded CI_DB_forge instance if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Loaded CI_DB_forge instance if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -881,18 +881,18 @@ to that manual for more info.</p>
 
 <dl class="method">
 <dt id="CI_Loader::dbutil">
-<code class="descname">dbutil</code><span class="sig-paren">(</span><span class="optional">[</span><em>$db = NULL</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::dbutil" title="Permalink to this definition">¶</a></dt>
+<code class="descname">dbutil</code><span class="sig-paren">(</span><span class="optional">[</span><em>$db = NULL</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::dbutil" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$db</strong> (<em>object</em>) &#8211; Database object</li>
 <li><strong>$return</strong> (<em>bool</em>) &#8211; Whether to return the Database Utilities instance</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded CI_DB_utility instance if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Loaded CI_DB_utility instance if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -906,17 +906,17 @@ refer to that manual for more info.</p>
 
 <dl class="method">
 <dt id="CI_Loader::helper">
-<code class="descname">helper</code><span class="sig-paren">(</span><em>$helpers</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::helper" title="Permalink to this definition">¶</a></dt>
+<code class="descname">helper</code><span class="sig-paren">(</span><em>$helpers</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::helper" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$helpers</strong> (<em>mixed</em>) &#8211; Helper name as a string or an array containing multiple helpers</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -930,18 +930,18 @@ file, without the _helper.php extension.</p>
 
 <dl class="method">
 <dt id="CI_Loader::file">
-<code class="descname">file</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::file" title="Permalink to this definition">¶</a></dt>
+<code class="descname">file</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$return = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::file" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; File path</li>
 <li><strong>$return</strong> (<em>bool</em>) &#8211; Whether to return the loaded file</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">File contents if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">File contents if $return is set to TRUE, otherwise CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -958,18 +958,18 @@ string.</p>
 
 <dl class="method">
 <dt id="CI_Loader::language">
-<code class="descname">language</code><span class="sig-paren">(</span><em>$files</em><span class="optional">[</span>, <em>$lang = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::language" title="Permalink to this definition">¶</a></dt>
+<code class="descname">language</code><span class="sig-paren">(</span><em>$files</em><span class="optional">[</span>, <em>$lang = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::language" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$files</strong> (<em>mixed</em>) &#8211; Language file name or an array of multiple language files</li>
 <li><strong>$lang</strong> (<em>string</em>) &#8211; Language name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -983,19 +983,19 @@ method</em></a>: <code class="docutils literal"><span class="pre">$this-&gt;lang
 
 <dl class="method">
 <dt id="CI_Loader::config">
-<code class="descname">config</code><span class="sig-paren">(</span><em>$file</em><span class="optional">[</span>, <em>$use_sections = FALSE</em><span class="optional">[</span>, <em>$fail_gracefully = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::config" title="Permalink to this definition">¶</a></dt>
+<code class="descname">config</code><span class="sig-paren">(</span><em>$file</em><span class="optional">[</span>, <em>$use_sections = FALSE</em><span class="optional">[</span>, <em>$fail_gracefully = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::config" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$file</strong> (<em>string</em>) &#8211; Configuration file name</li>
 <li><strong>$use_sections</strong> (<em>bool</em>) &#8211; Whether configuration values should be loaded into their own section</li>
 <li><strong>$fail_gracefully</strong> (<em>bool</em>) &#8211; Whether to just return FALSE in case of failure</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -1009,17 +1009,17 @@ method</em></a>: <code class="docutils literal"><span class="pre">$this-&gt;conf
 
 <dl class="method">
 <dt id="CI_Loader::is_loaded">
-<code class="descname">is_loaded</code><span class="sig-paren">(</span><em>$class</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::is_loaded" title="Permalink to this definition">¶</a></dt>
+<code class="descname">is_loaded</code><span class="sig-paren">(</span><em>$class</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::is_loaded" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$class</strong> (<em>string</em>) &#8211; Class name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Singleton property name if found, FALSE if not</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Singleton property name if found, FALSE if not</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -1029,7 +1029,7 @@ method</em></a>: <code class="docutils literal"><span class="pre">$this-&gt;conf
 </table>
 <p>Allows you to check if a class has already been loaded or not.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The word &#8220;class&#8221; here refers to libraries and drivers.</p>
 </div>
 <p>If the requested class has been loaded, the method returns its assigned
@@ -1041,7 +1041,7 @@ name in the CI Super-object and FALSE if it&#8217;s not:</p>
 </pre></div>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">If you have more than one instance of a class (assigned to
 different properties), then the first one will be returned.</p>
 </div>
@@ -1055,18 +1055,18 @@ different properties), then the first one will be returned.</p>
 
 <dl class="method">
 <dt id="CI_Loader::add_package_path">
-<code class="descname">add_package_path</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$view_cascade = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::add_package_path" title="Permalink to this definition">¶</a></dt>
+<code class="descname">add_package_path</code><span class="sig-paren">(</span><em>$path</em><span class="optional">[</span>, <em>$view_cascade = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::add_package_path" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; Path to add</li>
 <li><strong>$view_cascade</strong> (<em>bool</em>) &#8211; Whether to use cascading views</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -1086,17 +1086,17 @@ controller, we&#8217;d do the following:</p>
 
 <dl class="method">
 <dt id="CI_Loader::remove_package_path">
-<code class="descname">remove_package_path</code><span class="sig-paren">(</span><span class="optional">[</span><em>$path = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::remove_package_path" title="Permalink to this definition">¶</a></dt>
+<code class="descname">remove_package_path</code><span class="sig-paren">(</span><span class="optional">[</span><em>$path = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::remove_package_path" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; Path to remove</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">CI_Loader instance (method chaining)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">CI_Loader</p>
@@ -1118,17 +1118,17 @@ given to <code class="docutils literal"><span class="pre">add_package_path()</sp
 
 <dl class="method">
 <dt id="CI_Loader::get_package_paths">
-<code class="descname">get_package_paths</code><span class="sig-paren">(</span><span class="optional">[</span><em>$include_base = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::get_package_paths" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_package_paths</code><span class="sig-paren">(</span><span class="optional">[</span><em>$include_base = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Loader::get_package_paths" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$include_base</strong> (<em>bool</em>) &#8211; Whether to include BASEPATH</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">An array of package paths</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">An array of package paths</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -1163,7 +1163,7 @@ given to <code class="docutils literal"><span class="pre">add_package_path()</sp
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -1193,6 +1193,7 @@ given to <code class="docutils literal"><span class="pre">add_package_path()</sp
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

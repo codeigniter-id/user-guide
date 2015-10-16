@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Security Class &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Security Class &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Session Library" href="sessions.html"/>
         <link rel="prev" title="Template Parser Class" href="parser.html"/> 
@@ -424,7 +424,7 @@
           <div role="main" class="document">
             
   <div class="section" id="security-class">
-<h1>Security Class<a class="headerlink" href="#security-class" title="Permalink to this headline">¶</a></h1>
+<h1>Security Class<a class="headerlink" href="#security-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Security Class contains methods that help you create a secure
 application, processing input data for security.</p>
 <div class="contents local topic" id="contents">
@@ -435,7 +435,7 @@ application, processing input data for security.</p>
 </ul>
 </div>
 <div class="custom-index container"></div><div class="section" id="xss-filtering">
-<h2><a class="toc-backref" href="#id1">XSS Filtering</a><a class="headerlink" href="#xss-filtering" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">XSS Filtering</a><a class="headerlink" href="#xss-filtering" title="Link permanen untuk headline ini">¶</a></h2>
 <p>CodeIgniter comes with a Cross Site Scripting prevention filter, which
 +looks for commonly used techniques to trigger JavaScript or other types
 +of code that attempt to hijack cookies or do other malicious things.
@@ -459,7 +459,7 @@ browser may attempt to execute.</p>
 </div>
 </div>
 <div class="section" id="cross-site-request-forgery-csrf">
-<h2><a class="toc-backref" href="#id2">Cross-site request forgery (CSRF)</a><a class="headerlink" href="#cross-site-request-forgery-csrf" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Cross-site request forgery (CSRF)</a><a class="headerlink" href="#cross-site-request-forgery-csrf" title="Link permanen untuk headline ini">¶</a></h2>
 <p>You can enable CSRF protection by altering your <strong>application/config/config.php</strong>
 file in the following way:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;csrf_protection&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
@@ -503,23 +503,23 @@ by editing the &#8216;csrf_exclude_uris&#8217; config parameter:</p>
 </div>
 </div>
 <div class="section" id="class-reference">
-<h2><a class="toc-backref" href="#id3">Class Reference</a><a class="headerlink" href="#class-reference" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Class Reference</a><a class="headerlink" href="#class-reference" title="Link permanen untuk headline ini">¶</a></h2>
 <dl class="class">
 <dt id="CI_Security">
-<em class="property">class </em><code class="descname">CI_Security</code><a class="headerlink" href="#CI_Security" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_Security</code><a class="headerlink" href="#CI_Security" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_Security::xss_clean">
-<code class="descname">xss_clean</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$is_image = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::xss_clean" title="Permalink to this definition">¶</a></dt>
+<code class="descname">xss_clean</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$is_image = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::xss_clean" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>mixed</em>) &#8211; Input string or an array of strings</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">XSS-clean data</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">XSS-clean data</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -533,18 +533,18 @@ If the optional second parameter is set to true, it will return boolean TRUE if 
 
 <dl class="method">
 <dt id="CI_Security::sanitize_filename">
-<code class="descname">sanitize_filename</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$relative_path = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::sanitize_filename" title="Permalink to this definition">¶</a></dt>
+<code class="descname">sanitize_filename</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$relative_path = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::sanitize_filename" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; File name/path</li>
 <li><strong>$relative_path</strong> (<em>bool</em>) &#8211; Whether to preserve any directories in the file path</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Sanitized file name/path</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Sanitized file name/path</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -566,12 +566,12 @@ and other security threats, which is particularly useful for files that were sup
 
 <dl class="method">
 <dt id="CI_Security::get_csrf_token_name">
-<code class="descname">get_csrf_token_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::get_csrf_token_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_csrf_token_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::get_csrf_token_name" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">CSRF token name</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">CSRF token name</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -582,12 +582,12 @@ and other security threats, which is particularly useful for files that were sup
 
 <dl class="method">
 <dt id="CI_Security::get_csrf_hash">
-<code class="descname">get_csrf_hash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::get_csrf_hash" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_csrf_hash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::get_csrf_hash" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">CSRF hash</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">CSRF hash</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -599,18 +599,18 @@ for manually building forms or sending valid AJAX POST requests.</p>
 
 <dl class="method">
 <dt id="CI_Security::entity_decode">
-<code class="descname">entity_decode</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$charset = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::entity_decode" title="Permalink to this definition">¶</a></dt>
+<code class="descname">entity_decode</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$charset = NULL</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::entity_decode" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>string</em>) &#8211; Input string</li>
 <li><strong>$charset</strong> (<em>string</em>) &#8211; Character set of the input string</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Entity-decoded string</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Entity-decoded string</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -625,17 +625,17 @@ it tries to detect HTML entities that don&#8217;t end in a semicolon because som
 
 <dl class="method">
 <dt id="CI_Security::get_random_bytes">
-<code class="descname">get_random_bytes</code><span class="sig-paren">(</span><em>$length</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::get_random_bytes" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_random_bytes</code><span class="sig-paren">(</span><em>$length</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_Security::get_random_bytes" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$length</strong> (<em>int</em>) &#8211; Output length</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A binary stream of random bytes or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">A binary stream of random bytes or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -648,7 +648,7 @@ it tries to detect HTML entities that don&#8217;t end in a semicolon because som
 of them is available.</p>
 <p>Used for generating CSRF and XSS tokens.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The output is NOT guaranteed to be cryptographically secure,
 just the best attempt at that.</p>
 </div>
@@ -678,7 +678,7 @@ just the best attempt at that.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -708,6 +708,7 @@ just the best attempt at that.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

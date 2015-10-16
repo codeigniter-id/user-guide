@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Database Metadata &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>Database Metadata &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Database" href="index.html"/>
         <link rel="next" title="Custom Function Calls" href="call_function.html"/>
         <link rel="prev" title="Transaksi" href="transactions.html"/> 
@@ -424,12 +424,12 @@
           <div role="main" class="document">
             
   <div class="section" id="database-metadata">
-<h1>Database Metadata<a class="headerlink" href="#database-metadata" title="Permalink to this headline">¶</a></h1>
+<h1>Database Metadata<a class="headerlink" href="#database-metadata" title="Link permanen untuk headline ini">¶</a></h1>
 <div class="section" id="table-metadata">
-<h2>Table MetaData<a class="headerlink" href="#table-metadata" title="Permalink to this headline">¶</a></h2>
+<h2>Table MetaData<a class="headerlink" href="#table-metadata" title="Link permanen untuk headline ini">¶</a></h2>
 <p>These functions let you fetch table information.</p>
 <div class="section" id="list-the-tables-in-your-database">
-<h3>List the Tables in Your Database<a class="headerlink" href="#list-the-tables-in-your-database" title="Permalink to this headline">¶</a></h3>
+<h3>List the Tables in Your Database<a class="headerlink" href="#list-the-tables-in-your-database" title="Link permanen untuk headline ini">¶</a></h3>
 <p><strong>$this-&gt;db-&gt;list_tables();</strong></p>
 <p>Returns an array containing the names of all the tables in the database
 you are currently connected to. Example:</p>
@@ -443,7 +443,7 @@ you are currently connected to. Example:</p>
 </div>
 </div>
 <div class="section" id="determine-if-a-table-exists">
-<h3>Determine If a Table Exists<a class="headerlink" href="#determine-if-a-table-exists" title="Permalink to this headline">¶</a></h3>
+<h3>Determine If a Table Exists<a class="headerlink" href="#determine-if-a-table-exists" title="Link permanen untuk headline ini">¶</a></h3>
 <p><strong>$this-&gt;db-&gt;table_exists();</strong></p>
 <p>Sometimes it&#8217;s helpful to know whether a particular table exists before
 running an operation on it. Returns a boolean TRUE/FALSE. Usage example:</p>
@@ -454,15 +454,15 @@ running an operation on it. Returns a boolean TRUE/FALSE. Usage example:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Replace <em>table_name</em> with the name of the table you are looking for.</p>
 </div>
 </div>
 </div>
 <div class="section" id="field-metadata">
-<h2>Field MetaData<a class="headerlink" href="#field-metadata" title="Permalink to this headline">¶</a></h2>
+<h2>Field MetaData<a class="headerlink" href="#field-metadata" title="Link permanen untuk headline ini">¶</a></h2>
 <div class="section" id="list-the-fields-in-a-table">
-<h3>List the Fields in a Table<a class="headerlink" href="#list-the-fields-in-a-table" title="Permalink to this headline">¶</a></h3>
+<h3>List the Fields in a Table<a class="headerlink" href="#list-the-fields-in-a-table" title="Link permanen untuk headline ini">¶</a></h3>
 <p><strong>$this-&gt;db-&gt;list_fields()</strong></p>
 <p>Returns an array containing the field names. This query can be called
 two ways:</p>
@@ -488,7 +488,7 @@ calling the function from your query result object:</p>
 </div>
 </div>
 <div class="section" id="determine-if-a-field-is-present-in-a-table">
-<h3>Determine If a Field is Present in a Table<a class="headerlink" href="#determine-if-a-field-is-present-in-a-table" title="Permalink to this headline">¶</a></h3>
+<h3>Determine If a Field is Present in a Table<a class="headerlink" href="#determine-if-a-field-is-present-in-a-table" title="Link permanen untuk headline ini">¶</a></h3>
 <p><strong>$this-&gt;db-&gt;field_exists()</strong></p>
 <p>Sometimes it&#8217;s helpful to know whether a particular field exists before
 performing an action. Returns a boolean TRUE/FALSE. Usage example:</p>
@@ -499,20 +499,20 @@ performing an action. Returns a boolean TRUE/FALSE. Usage example:</p>
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Replace <em>field_name</em> with the name of the column you are looking
 for, and replace <em>table_name</em> with the name of the table you are
 looking for.</p>
 </div>
 </div>
 <div class="section" id="retrieve-field-metadata">
-<h3>Retrieve Field Metadata<a class="headerlink" href="#retrieve-field-metadata" title="Permalink to this headline">¶</a></h3>
+<h3>Retrieve Field Metadata<a class="headerlink" href="#retrieve-field-metadata" title="Link permanen untuk headline ini">¶</a></h3>
 <p><strong>$this-&gt;db-&gt;field_data()</strong></p>
 <p>Returns an array of objects containing field information.</p>
 <p>Sometimes it&#8217;s helpful to gather the field names or other metadata, like
 the column type, max length, etc.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">Not all databases provide meta-data.</p>
 </div>
 <p>Usage example:</p>
@@ -564,7 +564,7 @@ database:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -594,6 +594,7 @@ database:</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

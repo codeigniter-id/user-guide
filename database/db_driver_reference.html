@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>DB Driver Reference &mdash; CodeIgniter 3.0.3-dev documentation</title>
+  <title>DB Driver Reference &mdash; dokumentasi CodeIgniter 3.0.3-dev</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="CodeIgniter 3.0.3-dev documentation" href="../index.html"/>
+    <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Database" href="index.html"/>
         <link rel="next" title="Tutorial" href="../tutorial/index.html"/>
         <link rel="prev" title="Database Utility Class" href="utilities.html"/> 
@@ -424,29 +424,29 @@
           <div role="main" class="document">
             
   <div class="section" id="db-driver-reference">
-<h1>DB Driver Reference<a class="headerlink" href="#db-driver-reference" title="Permalink to this headline">¶</a></h1>
+<h1>DB Driver Reference<a class="headerlink" href="#db-driver-reference" title="Link permanen untuk headline ini">¶</a></h1>
 <p>This is the platform-independent base DB implementation class.
 This class will not be called directly. Rather, the adapter
 class for the specific database will extend and instantiate it.</p>
 <p>The how-to material for this has been split over several articles.
 This article is intended to be a reference for them.</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
+<p class="first admonition-title">Penting</p>
 <p class="last">Not all methods are supported by all database drivers,
 some of them may fail (and return FALSE) if the underlying
 driver does not support them.</p>
 </div>
 <dl class="class">
 <dt id="CI_DB_driver">
-<em class="property">class </em><code class="descname">CI_DB_driver</code><a class="headerlink" href="#CI_DB_driver" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">CI_DB_driver</code><a class="headerlink" href="#CI_DB_driver" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><dl class="method">
 <dt id="CI_DB_driver::initialize">
-<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::initialize" title="Permalink to this definition">¶</a></dt>
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::initialize" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TRUE on success, FALSE on failure</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">TRUE on success, FALSE on failure</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
@@ -458,17 +458,17 @@ the database.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::db_connect">
-<code class="descname">db_connect</code><span class="sig-paren">(</span><em>$persistent = TRUE</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_connect" title="Permalink to this definition">¶</a></dt>
+<code class="descname">db_connect</code><span class="sig-paren">(</span><em>$persistent = TRUE</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_connect" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$persistent</strong> (<em>bool</em>) &#8211; Whether to establish a persistent connection or a regular one</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Database connection resource/object or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Database connection resource/object or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -478,7 +478,7 @@ the database.</p>
 </table>
 <p>Establish a connection with the database.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">The returned value depends on the underlying
 driver in use. For example, a <code class="docutils literal"><span class="pre">mysqli</span></code> instance
 will be returned with the &#8216;mysqli&#8217; driver.</p>
@@ -487,12 +487,12 @@ will be returned with the &#8216;mysqli&#8217; driver.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::db_pconnect">
-<code class="descname">db_pconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_pconnect" title="Permalink to this definition">¶</a></dt>
+<code class="descname">db_pconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_pconnect" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Database connection resource/object or FALSE on failure</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Database connection resource/object or FALSE on failure</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">mixed</td>
 </tr>
@@ -500,19 +500,19 @@ will be returned with the &#8216;mysqli&#8217; driver.</p>
 </table>
 <p>Establish a persistent connection with the database.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">This method is just an alias for <code class="docutils literal"><span class="pre">db_connect(TRUE)</span></code>.</p>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="CI_DB_driver::reconnect">
-<code class="descname">reconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::reconnect" title="Permalink to this definition">¶</a></dt>
+<code class="descname">reconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::reconnect" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TRUE on success, FALSE on failure</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">TRUE on success, FALSE on failure</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
@@ -525,17 +525,17 @@ server&#8217;s idle timeout.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::db_select">
-<code class="descname">db_select</code><span class="sig-paren">(</span><span class="optional">[</span><em>$database = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_select" title="Permalink to this definition">¶</a></dt>
+<code class="descname">db_select</code><span class="sig-paren">(</span><span class="optional">[</span><em>$database = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_select" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$database</strong> (<em>string</em>) &#8211; Database name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -548,17 +548,17 @@ server&#8217;s idle timeout.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::db_set_charset">
-<code class="descname">db_set_charset</code><span class="sig-paren">(</span><em>$charset</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_set_charset" title="Permalink to this definition">¶</a></dt>
+<code class="descname">db_set_charset</code><span class="sig-paren">(</span><em>$charset</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::db_set_charset" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$charset</strong> (<em>string</em>) &#8211; Character set name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -571,12 +571,12 @@ server&#8217;s idle timeout.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::platform">
-<code class="descname">platform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::platform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">platform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::platform" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Platform name</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">Platform name</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -587,12 +587,12 @@ server&#8217;s idle timeout.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::version">
-<code class="descname">version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::version" title="Permalink to this definition">¶</a></dt>
+<code class="descname">version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::version" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The version of the database being used</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">The version of the database being used</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -608,14 +608,14 @@ server&#8217;s idle timeout.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$sql</strong> (<em>string</em>) &#8211; The SQL statement to execute</li>
 <li><strong>$binds</strong> (<em>array</em>) &#8211; An array of binding data</li>
 <li><strong>$return_object</strong> (<em>bool</em>) &#8211; Whether to return a result object or not</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE for successful &#8220;write-type&#8221; queries, CI_DB_result instance (method chaining) on &#8220;query&#8221; success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE for successful &#8220;write-type&#8221; queries, CI_DB_result instance (method chaining) on &#8220;query&#8221; success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -638,17 +638,17 @@ upon successful execution of a &#8220;read&#8221; type query.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::simple_query">
-<code class="descname">simple_query</code><span class="sig-paren">(</span><em>$sql</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::simple_query" title="Permalink to this definition">¶</a></dt>
+<code class="descname">simple_query</code><span class="sig-paren">(</span><em>$sql</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::simple_query" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$sql</strong> (<em>string</em>) &#8211; The SQL statement to execute</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Whatever the underlying driver&#8217;s &#8220;query&#8221; function returns</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Whatever the underlying driver&#8217;s &#8220;query&#8221; function returns</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -663,12 +663,12 @@ just send a query to the database and not care for the result.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::trans_strict">
-<code class="descname">trans_strict</code><span class="sig-paren">(</span><span class="optional">[</span><em>$mode = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_strict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">trans_strict</code><span class="sig-paren">(</span><span class="optional">[</span><em>$mode = TRUE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_strict" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$mode</strong> (<em>bool</em>) &#8211; Strict mode flag</li>
 </ul>
 </td>
@@ -689,7 +689,7 @@ affect any others.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::trans_off">
-<code class="descname">trans_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_off" title="Permalink to this definition">¶</a></dt>
+<code class="descname">trans_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_off" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -703,12 +703,12 @@ affect any others.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::trans_start">
-<code class="descname">trans_start</code><span class="sig-paren">(</span><span class="optional">[</span><em>$test_mode = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_start" title="Permalink to this definition">¶</a></dt>
+<code class="descname">trans_start</code><span class="sig-paren">(</span><span class="optional">[</span><em>$test_mode = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_start" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$test_mode</strong> (<em>bool</em>) &#8211; Test mode flag</li>
 </ul>
 </td>
@@ -723,7 +723,7 @@ affect any others.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::trans_complete">
-<code class="descname">trans_complete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_complete" title="Permalink to this definition">¶</a></dt>
+<code class="descname">trans_complete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_complete" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -737,12 +737,12 @@ affect any others.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::trans_status">
-<code class="descname">trans_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_status" title="Permalink to this definition">¶</a></dt>
+<code class="descname">trans_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::trans_status" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TRUE if the transaction succeeded, FALSE if it failed</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">TRUE if the transaction succeeded, FALSE if it failed</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
@@ -754,18 +754,18 @@ determine if it has failed.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::compile_binds">
-<code class="descname">compile_binds</code><span class="sig-paren">(</span><em>$sql</em>, <em>$binds</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::compile_binds" title="Permalink to this definition">¶</a></dt>
+<code class="descname">compile_binds</code><span class="sig-paren">(</span><em>$sql</em>, <em>$binds</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::compile_binds" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$sql</strong> (<em>string</em>) &#8211; The SQL statement</li>
 <li><strong>$binds</strong> (<em>array</em>) &#8211; An array of binding data</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The updated SQL statement</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The updated SQL statement</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -778,17 +778,17 @@ determine if it has failed.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::is_write_type">
-<code class="descname">is_write_type</code><span class="sig-paren">(</span><em>$sql</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::is_write_type" title="Permalink to this definition">¶</a></dt>
+<code class="descname">is_write_type</code><span class="sig-paren">(</span><em>$sql</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::is_write_type" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$sql</strong> (<em>string</em>) &#8211; The SQL statement</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE if the SQL statement is of &#8220;write type&#8221;, FALSE if not</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE if the SQL statement is of &#8220;write type&#8221;, FALSE if not</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -802,17 +802,17 @@ INSERT, UPDATE, DELETE) or &#8220;read&#8221; type (i.e. SELECT).</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::elapsed_time">
-<code class="descname">elapsed_time</code><span class="sig-paren">(</span><span class="optional">[</span><em>$decimals = 6</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::elapsed_time" title="Permalink to this definition">¶</a></dt>
+<code class="descname">elapsed_time</code><span class="sig-paren">(</span><span class="optional">[</span><em>$decimals = 6</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::elapsed_time" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$decimals</strong> (<em>int</em>) &#8211; The number of decimal places</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The aggregate query elapsed time, in microseconds</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The aggregate query elapsed time, in microseconds</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -825,12 +825,12 @@ INSERT, UPDATE, DELETE) or &#8220;read&#8221; type (i.e. SELECT).</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::total_queries">
-<code class="descname">total_queries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::total_queries" title="Permalink to this definition">¶</a></dt>
+<code class="descname">total_queries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::total_queries" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The total number of queries executed</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">The total number of queries executed</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
 </tr>
@@ -842,12 +842,12 @@ executed so far.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::last_query">
-<code class="descname">last_query</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::last_query" title="Permalink to this definition">¶</a></dt>
+<code class="descname">last_query</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::last_query" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The last query executed</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">The last query executed</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
 </tr>
@@ -858,17 +858,17 @@ executed so far.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::escape">
-<code class="descname">escape</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape" title="Permalink to this definition">¶</a></dt>
+<code class="descname">escape</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>mixed</em>) &#8211; The value to escape, or an array of multiple ones</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The escaped value(s)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The escaped value(s)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -882,18 +882,18 @@ NULLs.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::escape_str">
-<code class="descname">escape_str</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$like = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape_str" title="Permalink to this definition">¶</a></dt>
+<code class="descname">escape_str</code><span class="sig-paren">(</span><em>$str</em><span class="optional">[</span>, <em>$like = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape_str" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>mixed</em>) &#8211; A string value or array of multiple ones</li>
 <li><strong>$like</strong> (<em>bool</em>) &#8211; Whether or not the string will be used in a LIKE condition</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The escaped string(s)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The escaped string(s)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -903,7 +903,7 @@ NULLs.</p>
 </table>
 <p>Escapes string values.</p>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<p class="first admonition-title">Peringatan</p>
 <p class="last">The returned strings do NOT include quotes
 around them.</p>
 </div>
@@ -911,17 +911,17 @@ around them.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::escape_like_str">
-<code class="descname">escape_like_str</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape_like_str" title="Permalink to this definition">¶</a></dt>
+<code class="descname">escape_like_str</code><span class="sig-paren">(</span><em>$str</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape_like_str" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$str</strong> (<em>mixed</em>) &#8211; A string value or array of multiple ones</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The escaped string(s)</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The escaped string(s)</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -937,17 +937,17 @@ false-positives in LIKE conditions.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::primary">
-<code class="descname">primary</code><span class="sig-paren">(</span><em>$table</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::primary" title="Permalink to this definition">¶</a></dt>
+<code class="descname">primary</code><span class="sig-paren">(</span><em>$table</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::primary" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The primary key name, FALSE if none</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The primary key name, FALSE if none</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -957,7 +957,7 @@ false-positives in LIKE conditions.</p>
 </table>
 <p>Retrieves the primary key of a table.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Catatan</p>
 <p class="last">If the database platform does not support primary
 key detection, the first column name may be assumed
 as the primary key.</p>
@@ -966,17 +966,17 @@ as the primary key.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::count_all">
-<code class="descname">count_all</code><span class="sig-paren">(</span><span class="optional">[</span><em>$table = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::count_all" title="Permalink to this definition">¶</a></dt>
+<code class="descname">count_all</code><span class="sig-paren">(</span><span class="optional">[</span><em>$table = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::count_all" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; Table name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Row count for the specified table</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Row count for the specified table</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int</p>
@@ -990,17 +990,17 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::list_tables">
-<code class="descname">list_tables</code><span class="sig-paren">(</span><span class="optional">[</span><em>$constrain_by_prefix = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::list_tables" title="Permalink to this definition">¶</a></dt>
+<code class="descname">list_tables</code><span class="sig-paren">(</span><span class="optional">[</span><em>$constrain_by_prefix = FALSE</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::list_tables" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$constrain_by_prefix</strong> (<em>bool</em>) &#8211; TRUE to match table names by the configured dbprefix</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Array of table names or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Array of table names or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -1013,17 +1013,17 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::table_exists">
-<code class="descname">table_exists</code><span class="sig-paren">(</span><em>$table_name</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::table_exists" title="Permalink to this definition">¶</a></dt>
+<code class="descname">table_exists</code><span class="sig-paren">(</span><em>$table_name</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::table_exists" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table_name</strong> (<em>string</em>) &#8211; The table name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE if that table exists, FALSE if not</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE if that table exists, FALSE if not</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -1036,17 +1036,17 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::list_fields">
-<code class="descname">list_fields</code><span class="sig-paren">(</span><em>$table</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::list_fields" title="Permalink to this definition">¶</a></dt>
+<code class="descname">list_fields</code><span class="sig-paren">(</span><em>$table</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::list_fields" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; The table name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Array of field names or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Array of field names or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -1059,18 +1059,18 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::field_exists">
-<code class="descname">field_exists</code><span class="sig-paren">(</span><em>$field_name</em>, <em>$table_name</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::field_exists" title="Permalink to this definition">¶</a></dt>
+<code class="descname">field_exists</code><span class="sig-paren">(</span><em>$field_name</em>, <em>$table_name</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::field_exists" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table_name</strong> (<em>string</em>) &#8211; The table name</li>
 <li><strong>$field_name</strong> (<em>string</em>) &#8211; The field name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE if that field exists in that table, FALSE if not</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE if that field exists in that table, FALSE if not</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -1083,17 +1083,17 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::field_data">
-<code class="descname">field_data</code><span class="sig-paren">(</span><em>$table</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::field_data" title="Permalink to this definition">¶</a></dt>
+<code class="descname">field_data</code><span class="sig-paren">(</span><em>$table</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::field_data" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; The table name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Array of field data items or FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Array of field data items or FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array</p>
@@ -1106,17 +1106,17 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::escape_identifiers">
-<code class="descname">escape_identifiers</code><span class="sig-paren">(</span><em>$item</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape_identifiers" title="Permalink to this definition">¶</a></dt>
+<code class="descname">escape_identifiers</code><span class="sig-paren">(</span><em>$item</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::escape_identifiers" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$item</strong> (<em>mixed</em>) &#8211; The item or array of items to escape</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The input item(s), escaped</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The input item(s), escaped</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">mixed</p>
@@ -1129,18 +1129,18 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::insert_string">
-<code class="descname">insert_string</code><span class="sig-paren">(</span><em>$table</em>, <em>$data</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::insert_string" title="Permalink to this definition">¶</a></dt>
+<code class="descname">insert_string</code><span class="sig-paren">(</span><em>$table</em>, <em>$data</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::insert_string" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; The target table</li>
 <li><strong>$data</strong> (<em>array</em>) &#8211; An associative array of key/value pairs</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The SQL INSERT statement, as a string</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The SQL INSERT statement, as a string</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1153,19 +1153,19 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::update_string">
-<code class="descname">update_string</code><span class="sig-paren">(</span><em>$table</em>, <em>$data</em>, <em>$where</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::update_string" title="Permalink to this definition">¶</a></dt>
+<code class="descname">update_string</code><span class="sig-paren">(</span><em>$table</em>, <em>$data</em>, <em>$where</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::update_string" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$table</strong> (<em>string</em>) &#8211; The target table</li>
 <li><strong>$data</strong> (<em>array</em>) &#8211; An associative array of key/value pairs</li>
 <li><strong>$where</strong> (<em>mixed</em>) &#8211; The WHERE statement conditions</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The SQL UPDATE statement, as a string</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The SQL UPDATE statement, as a string</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1178,17 +1178,17 @@ table was provided.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::call_function">
-<code class="descname">call_function</code><span class="sig-paren">(</span><em>$function</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::call_function" title="Permalink to this definition">¶</a></dt>
+<code class="descname">call_function</code><span class="sig-paren">(</span><em>$function</em><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::call_function" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$function</strong> (<em>string</em>) &#8211; Function name</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The function result</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The function result</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1202,12 +1202,12 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::cache_set_path">
-<code class="descname">cache_set_path</code><span class="sig-paren">(</span><span class="optional">[</span><em>$path = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_set_path" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache_set_path</code><span class="sig-paren">(</span><span class="optional">[</span><em>$path = ''</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_set_path" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$path</strong> (<em>string</em>) &#8211; Path to the cache directory</li>
 </ul>
 </td>
@@ -1222,12 +1222,12 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::cache_on">
-<code class="descname">cache_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_on" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_on" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TRUE if caching is on, FALSE if not</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">TRUE if caching is on, FALSE if not</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
@@ -1238,12 +1238,12 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::cache_off">
-<code class="descname">cache_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_off" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_off" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TRUE if caching is on, FALSE if not</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">TRUE if caching is on, FALSE if not</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
@@ -1254,18 +1254,18 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::cache_delete">
-<code class="descname">cache_delete</code><span class="sig-paren">(</span><span class="optional">[</span><em>$segment_one = ''</em><span class="optional">[</span>, <em>$segment_two = ''</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_delete" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache_delete</code><span class="sig-paren">(</span><span class="optional">[</span><em>$segment_one = ''</em><span class="optional">[</span>, <em>$segment_two = ''</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_delete" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$segment_one</strong> (<em>string</em>) &#8211; First URI segment</li>
 <li><strong>$segment_two</strong> (<em>string</em>) &#8211; Second URI segment</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">TRUE on success, FALSE on failure</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
@@ -1278,12 +1278,12 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::cache_delete_all">
-<code class="descname">cache_delete_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_delete_all" title="Permalink to this definition">¶</a></dt>
+<code class="descname">cache_delete_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::cache_delete_all" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">TRUE on success, FALSE on failure</td>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body">TRUE on success, FALSE on failure</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
@@ -1294,7 +1294,7 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::close">
-<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::close" title="Permalink to this definition">¶</a></dt>
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::close" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1308,12 +1308,12 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::display_error">
-<code class="descname">display_error</code><span class="sig-paren">(</span><span class="optional">[</span><em>$error = ''</em><span class="optional">[</span>, <em>$swap = ''</em><span class="optional">[</span>, <em>$native = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::display_error" title="Permalink to this definition">¶</a></dt>
+<code class="descname">display_error</code><span class="sig-paren">(</span><span class="optional">[</span><em>$error = ''</em><span class="optional">[</span>, <em>$swap = ''</em><span class="optional">[</span>, <em>$native = FALSE</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::display_error" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$error</strong> (<em>string</em>) &#8211; The error message</li>
 <li><strong>$swap</strong> (<em>string</em>) &#8211; Any &#8220;swap&#8221; values</li>
 <li><strong>$native</strong> (<em>bool</em>) &#8211; Whether to localize the message</li>
@@ -1323,7 +1323,7 @@ wrapper.</p>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">void</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Displays the DB error screensends the application/views/errors/error_db.php template</p>
+<tr class="field-odd field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">Displays the DB error screensends the application/views/errors/error_db.php template</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1338,12 +1338,12 @@ wrapper.</p>
 
 <dl class="method">
 <dt id="CI_DB_driver::protect_identifiers">
-<code class="descname">protect_identifiers</code><span class="sig-paren">(</span><em>$item</em><span class="optional">[</span>, <em>$prefix_single = FALSE</em><span class="optional">[</span>, <em>$protect_identifiers = NULL</em><span class="optional">[</span>, <em>$field_exists = TRUE</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::protect_identifiers" title="Permalink to this definition">¶</a></dt>
+<code class="descname">protect_identifiers</code><span class="sig-paren">(</span><em>$item</em><span class="optional">[</span>, <em>$prefix_single = FALSE</em><span class="optional">[</span>, <em>$protect_identifiers = NULL</em><span class="optional">[</span>, <em>$field_exists = TRUE</em><span class="optional">]</span><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#CI_DB_driver::protect_identifiers" title="Link permanen untuk definisi ini">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field-odd field"><th class="field-name">Parameter:</th><td class="field-body"><ul class="first simple">
 <li><strong>$item</strong> (<em>string</em>) &#8211; The item to work with</li>
 <li><strong>$prefix_single</strong> (<em>bool</em>) &#8211; Whether to apply the dbprefix even if the input item is a single identifier</li>
 <li><strong>$protect_identifiers</strong> (<em>bool</em>) &#8211; Whether to quote identifiers</li>
@@ -1351,7 +1351,7 @@ wrapper.</p>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The modified item</p>
+<tr class="field-even field"><th class="field-name">Kembali:</th><td class="field-body"><p class="first">The modified item</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
@@ -1402,7 +1402,7 @@ position, and escape only the correct identifiers.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Last updated on Oct 13, 2015.
+      Terakhir diperbarui pada Oct 16, 2015.
     </p>
   </div>
 
@@ -1432,6 +1432,7 @@ position, and escape only the correct identifiers.</p>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 
