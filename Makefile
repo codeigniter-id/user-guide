@@ -43,8 +43,8 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 publish:
-	@if [[ $(AUTHOR_NAME) != '' ]]; then git config --global user.name $(AUTHOR_NAME); fi
-	@if [[ $(AUTHOR_EMAIL) != '' ]]; then git config --global user.email $(AUTHOR_EMAIL); fi
+	@if [ '$(AUTHOR_NAME)' != '' ]; then git config --global user.name $(AUTHOR_NAME); fi
+	@if [ '$(AUTHOR_EMAIL)' != '' ]; then git config --global user.email $(AUTHOR_EMAIL); fi
 	@git clone $(GH_REPO_URL) -b gh-pages $(BUILDDIR)/gh-pages
 	@if [ '$(BUILD)' = 'html' ]; then cp -r $(BUILDDIR)/html/* $(BUILDDIR)/gh-pages/; fi
 	@if [ '$(BUILD)' = 'singlehtml' ]; then cp -r $(BUILDDIR)/singlehtml/index.html $(BUILDDIR)/gh-pages/all.html; fi
