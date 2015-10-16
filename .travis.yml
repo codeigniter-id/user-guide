@@ -35,6 +35,7 @@ script:
   - make $BUILD
 # Buanglah sampah pada tempatnya
 after_script:
+  - export GH_REPO_REV=`git rev-parse --short HEAD`
   - if [[ $GH_REPO_TOKEN != '' ]]; then make publish; fi
   - make clean
 branches:
