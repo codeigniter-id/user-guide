@@ -422,43 +422,34 @@
             
   <div class="section" id="panduan-instalasi">
 <h1>Panduan Instalasi<a class="headerlink" href="#panduan-instalasi" title="Link permanen untuk headline ini">¶</a></h1>
-<p>CodeIgniter is installed in four steps:</p>
+<p>CodeIgniter diinstal dalam empat langkah:</p>
 <ol class="arabic simple">
-<li>Unzip the package.</li>
-<li>Upload the CodeIgniter folders and files to your server. Normally the
-index.php file will be at your root.</li>
-<li>Open the application/config/config.php file with a text editor and
-set your base URL. If you intend to use encryption or sessions, set
-your encryption key.</li>
-<li>If you intend to use a database, open the
-application/config/database.php file with a text editor and set your
-database settings.</li>
+<li>Unzip paket.</li>
+<li>Upload folder CodeIgniter dan file ke server Anda. Biasanya file <code class="docutils literal"><span class="pre">index.php</span></code> berada di <em>root folder</em> Anda.</li>
+<li>Buka <code class="docutils literal"><span class="pre">application/config/config.php</span></code> dengan teks editor dan atur URL dasar Anda. Jika Anda berniat untuk menggunakan <em>encryption</em> atau <em>session</em>, atur <em>encryption key</em> Anda.</li>
+<li>Jika Anda berniat untuk menggunakan database, buka file <code class="docutils literal"><span class="pre">application/config/database.php</span></code> dengan teks editor dan atur konfigurasi database Anda.</li>
 </ol>
-<p>If you wish to increase security by hiding the location of your
-CodeIgniter files you can rename the system and application folders to
-something more private. If you do rename them, you must open your main
-index.php file and set the $system_path and $application_folder
-variables at the top of the file with the new name you&#8217;ve chosen.</p>
-<p>For the best security, both the system and any application folders
-should be placed above web root so that they are not directly accessible
-via a browser. By default, .htaccess files are included in each folder
-to help prevent direct access, but it is best to remove them from public
-access entirely in case the web server configuration changes or doesn&#8217;t
-abide by the .htaccess.</p>
-<p>If you would like to keep your views public it is also possible to move
-the views folder out of your application folder.</p>
-<p>After moving them, open your main index.php file and set the
-$system_path, $application_folder and $view_folder variables,
-preferably with a full path, e.g. &#8216;/www/MyUser/system&#8217;.</p>
-<p>One additional measure to take in production environments is to disable
-PHP error reporting and any other development-only functionality. In
-CodeIgniter, this can be done by setting the ENVIRONMENT constant, which
-is more fully described on the <a class="reference internal" href="../general/security.html"><em>security
-page</em></a>.</p>
+<p>Jika Anda ingin meningkatkan keamanan aplikasi Anda dengan menyembunyikan lokasi
+file CodeIgniter Anda, Anda dapat mengubah nama sistem dan folder aplikasi menjadi
+sesuatu yang lebih pribadi. Jika Anda ingin mengubah namanya, Anda harus membuka
+file index.php di <em>root folder</em> dan mengatur variabel <code class="docutils literal"><span class="pre">$system_path</span></code> dan variabel <code class="docutils literal"><span class="pre">$application_folder</span></code>
+dengan nama baru yang Anda sukai.</p>
+<p>Untuk keamanan yang terbaik, baik sistem dan folder aplikasi
+harus ditempatkan di atas <em>web root</em> sehingga mereka tidak langsung dapat diakses
+melalui browser. Secara default, file .htaccess telah disertakan dalam setiap folder
+untuk membantu mencegah akses langsung, tapi yang terbaik adalah dengan menghapus mereka dari akses publik
+sepenuhnya dalam hal perubahan konfigurasi web server atau tidak mematuhi .htaccess.</p>
+<p>Jika Anda ingin <em>views</em> Anda dapat diakses secara publik, Anda dapat memindahkan folder <em>views</em> dari folder aplikasi Anda.</p>
+<p>Setelah memindah folder <em>views</em> Anda, buka file <code class="docutils literal"><span class="pre">index.php</span></code> utama Anda dan atur
+variable <code class="docutils literal"><span class="pre">$system_path</span></code>, <code class="docutils literal"><span class="pre">$application_folder</span></code> dan <code class="docutils literal"><span class="pre">$view_folder</span></code>,
+sebaiknya dengan path lengkap, misalnya <code class="docutils literal"><span class="pre">'/www/MyUser/system'</span></code>.</p>
+<p>Satu tambahan untuk lingkungan produksi adalah dengan menonaktifkan
+<em>PHP error reporting</em> dan setiap fungsi <em>development-only</em> lainnya. Di
+CodeIgniter, ini dapat dilakukan dengan menetapkan konstan <code class="docutils literal"><span class="pre">ENVIRONMENT</span></code>, yang
+lebih lengkap dijelaskan di <a class="reference internal" href="../general/security.html"><em>halaman Keamanan</em></a>.</p>
 <p>That&#8217;s it!</p>
-<p>If you&#8217;re new to CodeIgniter, please read the <a class="reference internal" href="../overview/getting_started.html"><em>Getting
-Started</em></a> section of the User Guide
-to begin learning how to build dynamic PHP applications. Enjoy!</p>
+<p>Jika Anda baru untuk CodeIgniter, silakan baca bagian <a class="reference internal" href="../overview/getting_started.html"><em>Memulai dengan Codeigniter</em></a>
+dari Panduan Pengguna untuk mulai belajar bagaimana membangun aplikasi PHP yang dinamis. Selamat menikmati!</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
