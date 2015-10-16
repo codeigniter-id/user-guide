@@ -2,9 +2,9 @@
 Alur Aplikasi
 #############
 
-The following graphic illustrates how data flows throughout the system:
+Grafik berikut menggambarkan bagaimana alur data melewati sistem:
 
-|CodeIgniter application flow|
+|Alur aplikasi Codeigniter|
 
 #. The index.php serves as the front controller, initializing the base
    resources needed to run CodeIgniter.
@@ -20,4 +20,4 @@ The following graphic illustrates how data flows throughout the system:
    seen. If caching is enabled, the view is cached first so that on
    subsequent requests it can be served.
 
-.. |CodeIgniter application flow| image:: ../images/appflowchart.gif
+.. |Alur aplikasi Codeigniter| image:: ../images/appflowchart.gif
