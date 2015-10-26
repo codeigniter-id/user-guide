@@ -7,7 +7,7 @@ aplikasi karena mereka belum memberitahu Anda apa-apa tentang pengalaman penggun
 bagaimana itu dirancang secara cerdas atau intuitif. Fitur tidak mengungkapkan apa-apa tentang kualitas kode,
 atau kinerja, atau perhatian terhadap detail, atau penerapan keamanan. Satu-satunya cara untuk benar-benar menilai
 sebuah aplikasi adalah dengan mencobanya dan mengenal kodenya.
-:doc: `Instalasi <../installation/index>` CodeIgniter sangat mudah, oleh karena itu
+:doc:`Instalasi <../installation/index>` CodeIgniter sangat mudah, oleh karena itu
 kami mendorong Anda untuk melakukan hal itu. Sementara itu, ini adalah daftar
 fitur utama CodeIgniter.
 
