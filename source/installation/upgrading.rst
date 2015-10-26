@@ -2,8 +2,7 @@
 Upgrade Dari Versi Sebelumnya
 #############################
 
-Please read the upgrade notes corresponding to the version you are
-upgrading from.
+Silakan baca catatan *upgrade* sesuai dengan dari versi yang ingin Anda *upgrade*.
 
 .. toctree::
 	:titlesonly:
