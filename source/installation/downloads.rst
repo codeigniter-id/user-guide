@@ -21,7 +21,7 @@ Downloading CodeIgniter
 ******
 GitHub
 ******
-`Git <http://git-scm.com/about>`_ adalah sebuah version control system (VCS) yang didistribusikan.
+`Git <http://git-scm.com/about>`_ adalah sebuah *version control system* (VCS) yang didistribusikan.
 
 Akses publik Git tersedia di `GitHub <https://github.com/bcit-ci/CodeIgniter>`_.
 Harap dicatat bahwa setiap usaha dilakukan untuk menjaga basis kode ini
