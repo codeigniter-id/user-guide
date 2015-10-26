@@ -2,45 +2,42 @@
 Keunggulan CodeIgniter
 ######################
 
-Features in and of themselves are a very poor way to judge an
-application since they tell you nothing about the user experience, or
-how intuitively or intelligently it is designed. Features don't reveal
-anything about the quality of the code, or the performance, or the
-attention to detail, or security practices. The only way to really judge
-an app is to try it and get to know the code.
-:doc:`Installing <../installation/index>` CodeIgniter is child's play so
-we encourage you to do just that. In the mean time here's a list of
-CodeIgniter's main features.
+Fitur dalam dan dari diri mereka sendiri adalah cara yang sangat buruk untuk
+menilai sebuah aplikasi karena mereka belum memberitahu Anda apa-apa tentang
+pengalaman pengguna, atau bagaimana itu dirancang secara cerdas atau intuitif.
+Fitur tidak mengungkapkan apa-apa tentang kualitas kode, atau kinerja, atau
+perhatian terhadap detail, atau penerapan keamanan. Satu-satunya cara untuk
+benar-benar menilai sebuah aplikasi adalah dengan mencobanya dan mengenal kodenya.
+:doc:`Instalasi <../installation/index>` CodeIgniter sangat mudah, oleh karena itu
+kami mendorong Anda untuk melakukan hal itu. Sementara itu, ini adalah daftar
+fitur utama CodeIgniter.
 
--  Model-View-Controller Based System
--  Extremely Light Weight
--  Full Featured database classes with support for several platforms.
--  Query Builder Database Support
--  Form and Data Validation
--  Security and XSS Filtering
--  Session Management
--  Email Sending Class. Supports Attachments, HTML/Text email, multiple
-   protocols (sendmail, SMTP, and Mail) and more.
--  Image Manipulation Library (cropping, resizing, rotating, etc.).
-   Supports GD, ImageMagick, and NetPBM
--  File Uploading Class
--  FTP Class
--  Localization
--  Pagination
--  Data Encryption
--  Benchmarking
--  Full Page Caching
--  Error Logging
--  Application Profiling
--  Calendaring Class
--  User Agent Class
--  Zip Encoding Class
--  Template Engine Class
--  Trackback Class
--  XML-RPC Library
--  Unit Testing Class
--  Search-engine Friendly URLs
--  Flexible URI Routing
--  Support for Hooks and Class Extensions
--  Large library of "helper" functions
-
+-  Sistem berbasis MVC
+-  Sangat ringan
+-  Database Class yang lengkap dengan dukungan untuk beberapa *platform*.
+-  Dukungan *query builder* untuk database
+-  Form dan validasi data
+-  Keamanan dan penyaringan XSS
+-  Manajemen *sessions*
+-  *Email Sending Class*. Mendukung lampiran, HTML/Text email, beberapa protokol (sendmail, SMTP, dan Mail) dan banyak lagi.
+-  *Image Manipulation Library* (*cropping*, mengubah ukuran, memutar, dll). Mendukung GD, ImageMagick, dan Netpbm
+-  *File Uploading Class*
+-  *FTP Class*
+-  *Localization*
+-  *Pagination*
+-  Enkripsi data
+-  *Benchmarking*
+-  *Full Page Caching*
+-  *Error Logging*
+-  *Application Profiling*
+-  *Calendaring Class*
+-  *User Agent Class*
+-  *Zip Encoding Class*
+-  *Template Engine Class*
+-  *Trackback Class*
+-  *XML-RPC Library*
+-  *Unit Testing Class*
+-  *Search-engine Friendly URLs*
+-  *Flexible URI Routing*
+-  Dukungan untuk Hooks dan Class Extensions
+-  Kumpulan *library* fungsi-fungsi "helper" yang besar
