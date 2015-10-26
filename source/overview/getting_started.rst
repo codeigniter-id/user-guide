@@ -2,23 +2,21 @@
 Memulai dengan CodeIgniter
 ##########################
 
-Any software application requires some effort to learn. We've done our
-best to minimize the learning curve while making the process as
-enjoyable as possible.
+Aplikasi perangkat lunak memerlukan beberapa proses untuk belajar. Kami telah memberikan
+usaha terbaik kami untuk meminimalkan proses belajar dan membuat proses belajar menjadi
+menyenangkan.
 
-The first step is to :doc:`install <../installation/index>`
-CodeIgniter, then read all the topics in the **Introduction** section of
-the Table of Contents.
+Langkah pertama adalah :doc:`menginstall <../installation/index>`
+CodeIgniter, kemudian membaca semua topik dalam **Pendahuluan** bagian dari
+Daftar Isi.
 
-Next, read each of the **General Topics** pages in order. Each topic
-builds on the previous one, and includes code examples that you are
-encouraged to try.
+Berikutnya, membaca setiap halaman-halaman di dalam **Topik Umum** secara urut. Setiap topik
+dibuat berdasarkan topik sebelumnya, dan termasuk contoh kode yang dianjurkan untuk Anda coba.
 
-Once you understand the basics you'll be ready to explore the **Class
-Reference** and **Helper Reference** pages to learn to utilize the
-native libraries and helper files.
+Setelah Anda memahami dasar-dasar Codeigniter, Anda akan siap untuk menjelajahi halaman
+**Class Reference** dan halaman **Helper Reference** untuk belajar memanfaatkan
+file *library* dan *helper*.
 
-Feel free to take advantage of our `Community
-Forums <http://forum.codeigniter.com/>`_ if you have questions or
-problems, and our `Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_ to see code
-examples posted by other users.
+Jangan ragu untuk mengunjungi `Community Forum <http://forum.codeigniter.com/>`_
+jika Anda memiliki pertanyaan atau masalah, dan `Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_ kami untuk melihat contoh kode
+yang diposting oleh pengguna lain.
