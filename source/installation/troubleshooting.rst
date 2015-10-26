@@ -2,17 +2,17 @@
 Penyelesaian Masalah
 ####################
 
-If you find that no matter what you put in your URL only your default
-page is loading, it might be that your server does not support the
-REQUEST_URI variable needed to serve search-engine friendly URLs. As a
-first step, open your application/config/config.php file and look for
-the URI Protocol information. It will recommend that you try a couple
-alternate settings. If it still doesn't work after you've tried this
-you'll need to force CodeIgniter to add a question mark to your URLs. To
-do this open your **application/config/config.php** file and change this::
+Jika Anda menemukan bahwa tidak peduli apa yang Anda masukkan ke dalam URL Anda hanya
+default halaman Anda yang sedang di *load*, mungkin server Anda tidak mendukung
+variabel REQUEST_URI yang dibutuhkan untuk melayani URL *search-engine friendly*. Sebagai
+langkah pertama, buka file ``application/config/config.php`` Anda dan cari
+informasi *URI Protocol*. Ini akan menyarankan Anda mencoba beberapa
+pengaturan alternatif. Jika masih tidak bekerja setelah Anda sudah mencoba ini,
+Anda harus memaksa CodeIgniter untuk menambahkan tanda tanya ke URL Anda. Untuk
+melakukan hal ini, buka file **application/config/config.php** Anda dan ubah bagian ini::
 
 	$config['index_page'] = "index.php";
 
-To this::
+Menjadi ini::
 
 	$config['index_page'] = "index.php?";
