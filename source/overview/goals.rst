@@ -2,31 +2,22 @@
 Desain and Sasaran Arsitektur
 ##############################
 
-Our goal for CodeIgniter is maximum performance, capability, and
-flexibility in the smallest, lightest possible package.
+Tujuan kami untuk CodeIgniter adalah kinerja yang maksimum, kemampuan, dan fleksibilitas dalam hal terkecil, *package* seringan mungkin.
 
-To meet this goal we are committed to benchmarking, re-factoring, and
-simplifying at every step of the development process, rejecting anything
-that doesn't further the stated objective.
+Untuk memenuhi tujuan ini kami berkomitmen untuk melakukan *benchmarking*, *re-factoring*, dan
+menyederhanakan setiap langkah dari proses pembangunanan, menolak semua yang tidak menjadi tujuan berikutnya.
 
-From a technical and architectural standpoint, CodeIgniter was created
-with the following objectives:
+Dari sudut pandang teknis dan arsitektur, CodeIgniter diciptakan dengan tujuan sebagai berikut:
 
--  **Dynamic Instantiation.** In CodeIgniter, components are loaded and
-   routines executed only when requested, rather than globally. No
-   assumptions are made by the system regarding what may be needed
-   beyond the minimal core resources, so the system is very light-weight
-   by default. The events, as triggered by the HTTP request, and the
-   controllers and views you design will determine what is invoked.
--  **Loose Coupling.** Coupling is the degree to which components of a
-   system rely on each other. The less components depend on each other
-   the more reusable and flexible the system becomes. Our goal was a
-   very loosely coupled system.
--  **Component Singularity.** Singularity is the degree to which
-   components have a narrowly focused purpose. In CodeIgniter, each
-   class and its functions are highly autonomous in order to allow
-   maximum usefulness.
+-  **Dynamic Instantiation.** Dalam CodeIgniter, komponen dimuat dan rutinitas dieksekusi hanya jika diminta, bukan secara global.
+   Tidak ada asumsi yang dibuat oleh sistem tentang apa yang mungkin diperlukan di luar *resource* utama minimal,
+   sehingga sistem ini sangat ringan secara *default*. *Event*, yang dipicu oleh *HTTP request*, dan *controller* dan
+   *view* yang Anda rancang akan menentukan apa yang dipanggil.
+-  **Loose Coupling.** *Coupling* adalah sejauh mana komponen-komponen dari sistem mengandalkan satu sama lain.
+   Semakin sedikit komponen yang bergantung satu sama lain, maka komponen tersebut lebih dapat digunakan kembali dan sistem menjadi fleksibel.
+   Tujuan kami adalah sistem yang sangat longgar (*very loosely coupled system*).
+-  **Component Singularity.** *Singularity* adalah sejauh mana komponen memiliki tujuan yang difokuskan secara sempit. Dalam CodeIgniter,
+   setiap *class* dan fungsinya sangat otonom supaya memungkinkan kegunaan yang maksimal.
 
-CodeIgniter is a dynamically instantiated, loosely coupled system with
-high component singularity. It strives for simplicity, flexibility, and
-high performance in a small footprint package.
+CodeIgniter itu *dynamically instantiated*, sistem yang *loosely coupled* dengan singularitas komponen yang tinggi.
+Codeigniter berusaha untuk sederhana, fleksible, dan kinerja tinggi dalam paket dengan *footprint* yang kecil.
