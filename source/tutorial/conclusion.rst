@@ -2,25 +2,25 @@
 Kesimpulan
 ##########
 
-This tutorial did not cover all of the things you might expect of a
-full-fledged content management system, but it introduced you to the
-more important topics of routing, writing controllers, and models. We
-hope this tutorial gave you an insight into some of CodeIgniter's basic
-design patterns, which you can expand upon.
+Tutorial ini tidak mencakup semua hal yang Anda harapkan dari *content
+management system*, tetapi memperkenalkan Anda ke topik yang lebih penting dari
+routing, menulis controller*, dan *model*. Kami berharap tutorial ini memberi
+Anda wawasan tentang beberapa pola desain dasar CodeIgniter, yang dapat Anda
+perluas.
 
-Now that you've completed this tutorial, we recommend you check out the
-rest of the documentation. CodeIgniter is often praised because of its
-comprehensive documentation. Use this to your advantage and read the
-"Introduction" and "General Topics" sections thoroughly. You should read
-the class and helper references when needed.
+Sekarang Anda telah menyelesaikan tutorial ini, kami sarankan Anda memeriksa
+sisa dokumentasi. CodeIgniter sering dipuji karena sifat dokumentasinya yang
+komprehensif. Gunakan ini untuk keuntungan Anda dan baca "Pengantar" dan "Topik
+Umum" secara menyeluruh. Anda harus membaca referensi *class* dan *helper* bila
+diperlukan.
 
-Every intermediate PHP programmer should be able to get the hang of
-CodeIgniter within a few days.
+Setiap programmer PHP menengah seharusnya bisa memahami CodeIgniter dalam
+beberapa hari.
 
-If you still have questions about the framework or your own CodeIgniter
-code, you can:
+Jika Anda masih memiliki pertanyaan tentang *framework* atau kode CodeIgniter
+Anda sendiri, Anda dapat:
 
--  Check out our `forums <http://forum.codeigniter.com/>`_
--  Visit our `IRC chatroom <https://github.com/bcit-ci/CodeIgniter/wiki/IRC>`_
--  Explore the `Wiki <https://github.com/bcit-ci/CodeIgniter/wiki/>`_
+-  Mengunjungi `forum kami <http://forum.codeigniter.com/>`_
+-  Mengunjungi `IRC chatroom <https://github.com/bcit-ci/CodeIgniter/wiki/IRC>`_
+-  Menjelajahi `Wiki <https://github.com/bcit-ci/CodeIgniter/wiki/>`_
 
