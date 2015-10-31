@@ -31,7 +31,9 @@ Buat file pada ``application/controllers/Pages.php`` dengan kode seperti ini.
 
 	<?php class Pages extends CI_Controller {
 
-		public function view($page = 'home') { }
+		public function view($page = 'home') {
+
+	 	}
 
 	}
 
