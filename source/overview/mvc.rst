@@ -2,26 +2,23 @@
 Model-View-Controller
 #####################
 
-CodeIgniter is based on the Model-View-Controller development pattern.
-MVC is a software approach that separates application logic from
-presentation. In practice, it permits your web pages to contain minimal
-scripting since the presentation is separate from the PHP scripting.
+CodeIgniter didasarkan pada pola pengembangan **Model-View-Controller**.
+MVC adalah pendekatan perangkat lunak yang memisahkan logika aplikasi dari
+presentasi. Dalam prakteknya, itu memungkinkan halaman web Anda memiliki
+*scripting* yang minimal karena presentasi terpisah dari *scripting* PHP.
 
--  The **Model** represents your data structures. Typically your model
-   classes will contain functions that help you retrieve, insert, and
-   update information in your database.
--  The **View** is the information that is being presented to a user. A
-   View will normally be a web page, but in CodeIgniter, a view can also
-   be a page fragment like a header or footer. It can also be an RSS
-   page, or any other type of "page".
--  The **Controller** serves as an *intermediary* between the Model, the
-   View, and any other resources needed to process the HTTP request and
-   generate a web page.
+-  **Model** mewakili struktur data Anda. Biasanya *class* model Anda akan berisi fungsi yang
+   membantu Anda mengambil, menyimpan, dan memperbarui informasi dalam database Anda.
+-  **View** adalah informasi yang disajikan kepada pengguna. *View* yang biasanya akan menjadi halaman web,
+   tetapi dalam CodeIgniter, *view* juga bisa menjadi bagian dari sebuah halaman seperti header atau footer.
+   Hal ini juga dapat menjadi halaman *RSS*, atau jenis-jenis lain dari "halaman".
+-  **Controller** berfungsi sebagai perantara antara *Model*, *View*, dan *resource* lain yang diperlukan
+   untuk memproses *HTTP request* dan menghasilkan halaman web.
 
-CodeIgniter has a fairly loose approach to MVC since Models are not
-required. If you don't need the added separation, or find that
-maintaining models requires more complexity than you want, you can
-ignore them and build your application minimally using Controllers and
-Views. CodeIgniter also enables you to incorporate your own existing
-scripts, or even develop core libraries for the system, enabling you to
-work in a way that makes the most sense to you.
+CodeIgniter memiliki pendekatan yang cukup longgar untuk MVC karena *Model* tidak
+selalu diperlukan. Jika Anda tidak perlu menambahkan pemisahan, atau menemukan bahwa
+mempertahankan sebuah *model* memerlukan kompleksitas lebih dari yang Anda inginkan, Anda bisa
+mengabaikan mereka dan membangun aplikasi Anda dengan minimal menggunakan *Controller* dan
+*View*. CodeIgniter juga memungkinkan Anda untuk memasukkan *script* Anda sendiri,
+atau bahkan mengembangkan *library* inti untuk sistem, memungkinkan Anda untuk
+bekerja dengan cara yang paling masuk akal bagi Anda.
