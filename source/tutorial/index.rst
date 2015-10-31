@@ -2,38 +2,31 @@
 Tutorial
 ########
 
-This tutorial is intended to introduce you to the CodeIgniter framework
-and the basic principles of MVC architecture. It will show you how a
-basic CodeIgniter application is constructed in step-by-step fashion.
+Tutorial ini ditujukan untuk memperkenalkan Anda *framework* CodeIgniter dan prinsip-prinsip dasar arsitektur MVC.
+Tutorial ini akan menunjukkan Anda bagaimana aplikasi CodeIgniter dasar dibangun dalam langkah demi langkah.
 
-In this tutorial, you will be creating a **basic news application**. You
-will begin by writing the code that can load static pages. Next, you
-will create a news section that reads news items from a database.
-Finally, you'll add a form to create news items in the database.
+Dalam tutorial ini, Anda akan membuat **aplikasi berita dasar** (*basic news application*).
+Anda akan mulai dengan menulis kode yang dapat memuat halaman statis. Berikutnya, Anda
+akan membuat bagian berita yang membaca berita dari *database*.
+Akhirnya, Anda akan menambahkan *form* untuk membuat berita dalam *database*.
 
-This tutorial will primarily focus on:
+Tutorial ini akan difokuskan pada:
 
--  Model-View-Controller basics
--  Routing basics
--  Form validation
--  Performing basic database queries using "Query Builder"
+- Dasar-dasar MVC
+- Dasar-dasar *routing*
+- Validasi *form*
+- Melakukan *query database* dasar menggunakan "Query Builder"
 
-The entire tutorial is split up over several pages, each explaining a
-small part of the functionality of the CodeIgniter framework. You'll go
-through the following pages:
+Seluruh tutorial ini dibagi atas beberapa halaman, masing-masing menjelaskan suatu
+sebagian kecil dari fungsi *framework* CodeIgniter. Anda akan melalui halaman-halaman berikut:
 
--  Introduction, this page, which gives you an overview of what to
-   expect.
--  :doc:`Static pages <static_pages>`, which will teach you the basics
-   of controllers, views and routing.
--  :doc:`News section <news_section>`, where you'll start using models
-   and will be doing some basic database operations.
--  :doc:`Create news items <create_news_items>`, which will introduce
-   more advanced database operations and form validation.
--  :doc:`Conclusion <conclusion>`, which will give you some pointers on
-   further reading and other resources.
+- 	Pendahuluan, halaman ini, yang memberi Anda gambaran tentang apa yang harus diharapkan.
+-	:doc:`Halaman statis <static_pages>`, yang akan mengajarkan Anda dasar-dasar *controller*, *view* dan *routing*.
+-	:doc:`Bagian Berita <news_section>`, di mana Anda akan mulai menggunakan *model* dan akan melakukan beberapa operasi *database* dasar.
+-	:doc:`Buat berita <create_news_items>`, yang akan memperkenalkan lebih lanjut tentang operasi *database* dan validasi *form*.
+-	:doc:`Kesimpulan <conclusion>`, yang akan memberi Anda beberapa petunjuk tentang  bacaan lebih lanjut dan sumber lainnya.
 
-Enjoy your exploration of the CodeIgniter framework.
+Nikmati perjalanan Anda dengan *framework* CodeIgniter.
 
 .. toctree::
 	:glob:
