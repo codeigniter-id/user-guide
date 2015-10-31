@@ -428,19 +428,12 @@
 <p>Grafik berikut menggambarkan bagaimana alur data melewati sistem:</p>
 <p><img alt="Alur aplikasi Codeigniter" src="../_images/appflowchart.gif" /></p>
 <ol class="arabic simple">
-<li>The index.php serves as the front controller, initializing the base
-resources needed to run CodeIgniter.</li>
-<li>The Router examines the HTTP request to determine what should be done
-with it.</li>
-<li>If a cache file exists, it is sent directly to the browser, bypassing
-the normal system execution.</li>
-<li>Security. Before the application controller is loaded, the HTTP
-request and any user submitted data is filtered for security.</li>
-<li>The Controller loads the model, core libraries, helpers, and any
-other resources needed to process the specific request.</li>
-<li>The finalized View is rendered then sent to the web browser to be
-seen. If caching is enabled, the view is cached first so that on
-subsequent requests it can be served.</li>
+<li>File <code class="docutils literal"><span class="pre">index.php</span></code> berfungsi sebagai <em>front controller</em>, menginisialisasi <em>resource</em> utama yang dibutuhkan untuk menjalankan CodeIgniter.</li>
+<li><em>Router</em> memeriksa <em>HTTP request</em> untuk menentukan apa yang harus dilakukan dengan itu.</li>
+<li>Jika file <em>cache</em> ada, dikirim langsung ke browser, melewati eksekusi sistem normal.</li>
+<li>Keamanan. Sebelum <em>controller</em> aplikasi dimuat, <em>HTTP request</em> dan setiap data pengguna yang di <em>submit</em> disaring terlebih dahulu untuk keamanan.</li>
+<li><em>Controller</em> memuat <em>model</em>, <em>library</em> utama, <em>helper</em>, dan setiap <em>resource</em> lainnya yang diperlukan untuk memproses permintaan khusus.</li>
+<li><em>View</em> di <em>render</em> kemudian dikirim ke web browser agar dapat dilihat. Jika <em>caching</em> diaktifkan, <em>view</em> di <em>cache</em> terlebih dahulu sehingga pada permintaan berikutnya dapat dilayani.</li>
 </ol>
 </div>
 
@@ -463,7 +456,7 @@ subsequent requests it can be served.</li>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Oct 26, 2015.
+      Terakhir diperbarui pada Oct 31, 2015.
     </p>
   </div>
 
