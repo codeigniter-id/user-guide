@@ -2,59 +2,64 @@
 Halaman Statis
 ##############
 
-**Note:** This tutorial assumes you've downloaded CodeIgniter and
-:doc:`installed the framework <../installation/index>` in your
-development environment.
+**Catatan:** Tutorial ini mengasumsikan Anda sudah download CodeIgniter dan
+*:doc:`telah terinstall <../installation/index>` di *development environment*
+Anda.
 
-The first thing you're going to do is set up a **controller** to handle
-static pages. A controller is simply a class that helps delegate work.
-It is the glue of your web application.
+Hal pertama yang akan Anda lakukan adalah membuat **controller** untuk menangani
+halaman statis. Sebuah controller hanyalah sebuah *class* yang membantu delegasi
+pekerjaan. Ini adalah perekat aplikasi web Anda.
 
-For example, when a call is made to:
+Sebagai contoh, ketika panggilan dilakukan ke:
 
 	http://example.com/news/latest/10
 
-We might imagine that there is a controller named "news". The method
-being called on news would be "latest". The news method's job could be to
-grab 10 news items, and render them on the page. Very often in MVC,
-you'll see URL patterns that match:
+Kita dapat membayangkan bahwa ada *controller* bernama "*news*". *Method* yang
+dipanggil dalam controller* "*news*" adalah "*latest*". Pekerjaan *method*
+"*latest*" pada *controller* "*news*" ini bisa untuk mengambil 10 item berita,
+dan memuat mereka ke halaman. Sangat sering di MVC, Anda akan melihat pola URL
+seperti:
 
 	http://example.com/[controller-class]/[controller-method]/[arguments]
 
-As URL schemes become more complex, this may change. But for now, this
-is all we will need to know.
+Saat skema URL menjadi lebih komples, hal ini dapat berubah. Tapi untuk saat
+ini, skema ini yang kita perlu tahu.
 
-Create a file at application/controllers/Pages.php with the following
-code.
+Buat file pada ``application/controllers/Pages.php`` dengan kode seperti ini.
 
 ::
 
 	<?php
-	class Pages extends CI_Controller {
+
+	class Pages extends CI_Controller
+	{
 
 		public function view($page = 'home')
 		{
-	        }
+
+	 	}
+
 	}
 
-You have created a class named ``Pages``, with a view method that accepts
-one argument named ``$page``. The ``Pages`` class is extending the
-``CI_Controller`` class. This means that the new pages class can access the
-methods and variables defined in the ``CI_Controller`` class
-(*system/core/Controller.php*).
+Anda telah membuat sebuah *class* bernama ``Pages``, dengan *method* bernama
+``view`` yang menerima satu argumen bernama ``$page``. *Class* ``Pages``
+memperpanjang *class* ``CI_Controller``. Ini berarti bahwa *class* ``Pages``
+dapat mengakses metode dan variabel yang didefinisikan dalam *class*
+``CI_Controller`` (*system/core/Controller.php*).
 
-The **controller is what will become the center of every request** to
-your web application. In very technical CodeIgniter discussions, it may
-be referred to as the *super object*. Like any php class, you refer to
-it within your controllers as ``$this``. Referring to ``$this`` is how
-you will load libraries, views, and generally command the framework.
+**Controller** adalah apa yang akan menjadi pusat untuk setiap permintaan di
+aplikasi web Anda. Dalam diskusi CodeIgniter yang sangat teknis, hal itu
+mungkin disebut sebagai *super object*. Seperti *class* php, Anda lihat itu
+dalam controller Anda sebagai ``$this``. Mengacu kepada ``$this`` adalah
+bagaimana Anda akan memuat *library*, *view*, dan memerintah *framework* secara
+keseluruhan.
 
-Now you've created your first method, it's time to make some basic page
-templates. We will be creating two "views" (page templates) that act as
-our page footer and header.
+Sekarang Anda telah membuat *method* pertama Anda, saatnya untuk membuat
+*template* beberapa halaman dasar. Kita akan membuat dua "*view*" (*template*
+halaman) yang bertindak sebagai footer dan header halaman kita.
 
-Create the header at *application/views/templates/header.php* and add
-the following code:
+Buat header di ``application/views/templates/header.php`` dan tambahkan kode
+berikut:
 
 ::
 
@@ -63,14 +68,12 @@ the following code:
 			<title>CodeIgniter Tutorial</title>
 		</head>
 		<body>
-
 			<h1><?php echo $title; ?></h1>
 
-The header contains the basic HTML code that you'll want to display
-before loading the main view, together with a heading. It will also
-output the ``$title`` variable, which we'll define later in the controller.
-Now, create a footer at *application/views/templates/footer.php* that
-includes the following code:
+Header berisi kode HTML dasar yang akan Anda ingin tampilkan sebelum memuat
+view* utama, bersama-sama dengan heading. Ini juga akan menampilkan variabel
+``$title``, yang akan kita tentukan kemudian di controller. Sekarang, buat
+footer di ``application/views/templates/footer.php`` yang berisi kode berikut:
 
 ::
 
@@ -78,27 +81,27 @@ includes the following code:
 		</body>
 	</html>
 
-Adding logic to the controller
-------------------------------
+Menambahkan logika ke dalam controller
+--------------------------------------
 
-Earlier you set up a controller with a ``view()`` method. The method
-accepts one parameter, which is the name of the page to be loaded. The
-static page templates will be located in the *application/views/pages/*
-directory.
+Sebelumnya Anda mengatur controller dengan *method* ``view()``. *Method* ini
+menerima satu parameter, yang merupakan nama dari halaman yang akan dimuat.
+Template* halaman statis akan ditempatkan di direktori
+``application/views/pages/``.
 
-In that directory, create two files named *home.php* and *about.php*.
-Within those files, type some text − anything you'd like − and save them.
-If you like to be particularly un-original, try "Hello World!".
+Dalam direktori tersebut, buat dua file bernama ``home.php`` dan ``about.php``.
+Dalam file-file tersebut, ketik beberapa teks - apapun yang Anda inginkan - dan
+simpan mereka. Jika Anda ingin menjadi sangat *un-original*, coba "Hello
+World!".
 
-In order to load those pages, you'll have to check whether the requested
-page actually exists:
+Untuk memuat halaman tersebut, Anda harus memeriksa apakah halaman yang diminta
+benar-benar ada:
 
 ::
 
 	public function view($page = 'home')
 	{
-	        if ( ! file_exists(APPPATH.'/views/pages/'.$page.'.php'))
-		{
+	 	if ( ! file_exists(APPPATH.'/views/pages/'.$page.'.php')) {
 			// Whoops, we don't have a page for that!
 			show_404();
 		}
@@ -110,61 +113,62 @@ page actually exists:
 		$this->load->view('templates/footer', $data);
 	}
 
-Now, when the page does exist, it is loaded, including the header and
-footer, and displayed to the user. If the page doesn't exist, a "404
-Page not found" error is shown.
+Sekarang, ketika halaman tidak ada, itu dimuat, termasuk header dan footer, dan
+ditampilkan kepada pengguna. Jika halaman tidak ada, halaman "404 Page not
+found" akan ditampilkan.
 
-The first line in this method checks whether the page actually exists.
-PHP's native ``file_exists()`` function is used to check whether the file
-is where it's expected to be. ``show_404()`` is a built-in CodeIgniter
-function that renders the default error page.
+Baris pertama dalam *method* ini memeriksa apakah halaman benar-benar ada.
+Fungsi asli PHP ``file_exists()`` digunakan untuk memeriksa apakah file tersebut
+ada. ``show_404()`` adalah fungsi *built-in* CodeIgniter yang merender halaman
+default *error*.
 
-In the header template, the ``$title`` variable was used to customize the
-page title. The value of title is defined in this method, but instead of
-assigning the value to a variable, it is assigned to the title element
-in the ``$data`` array.
+Dalam *template* header, variabel ``$title`` digunakan untukmenyesuaikan judul
+halaman. Nilai ``$title`` didefinisikan dalam *method* ini, tapi bukannya
+*assign* nilai ke variabel, itu *assign* untuk elemen *title* di *array*
+``$data``.
 
-The last thing that has to be done is loading the views in the order
-they should be displayed. The second parameter in the ``view()`` method is
-used to pass values to the view. Each value in the ``$data`` array is
-assigned to a variable with the name of its key. So the value of
-``$data['title']`` in the controller is equivalent to ``$title`` in the
-view.
+Hal terakhir yang harus dilakukan adalah memuat *view* sesuai dengan yang
+seharusnya ditampilkan. Parameter kedua dalam *method* ``view()`` digunakan
+untuk mengoper (*pass*) nilai-nilai ke *view*. Setiap nilai dalam *array*
+``$data`` di *assign* ke variabel yang sesuai dengan *key* dari *array* ``$data``.
+Jadi nilai ``$data['title']`` di controller setara dengan ``$title`` dalam
+*view*.
 
 Routing
 -------
 
-The controller is now functioning! Point your browser to
-``[your-site-url]index.php/pages/view`` to see your page. When you visit
-``index.php/pages/view/about`` you'll see the about page, again including
-the header and footer.
+*Controller* sekarang berfungsi! Arahkan browser Anda ke
+``[your-site-url]/index.php/pages/view`` untuk melihat halaman Anda. Ketika
+Anda mengunjungi ``index.php/pages/view/about`` Anda akan melihat halaman
+*about*, termasuk *header* dan *footer*.
 
-Using custom routing rules, you have the power to map any URI to any
-controller and method, and break free from the normal convention:
+Menggunakan *rule* routing kustom, Anda memiliki kekuatan untuk
+memetakan setiap URI ke *controller* apapun dan *method*, dan bebas dari
+konvensi yang normal:
 ``http://example.com/[controller-class]/[controller-method]/[arguments]``
 
-Let's do that. Open the routing file located at
-*application/config/routes.php* and add the following two lines.
-Remove all other code that sets any element in the ``$route`` array.
+Mari kita melakukan itu. Buka file *routing* yang terletak di
+``application/config/routes.php`` dan tambahkan dua baris berikut. Hapus semua
+kode lain yang mengatur setiap elemen di *array* ``$route``.
 
 ::
 
 	$route['default_controller'] = 'pages/view';
 	$route['(:any)'] = 'pages/view/$1';
 
-CodeIgniter reads its routing rules from top to bottom and routes the
-request to the first matching rule. Each rule is a regular expression
-(left-side) mapped to a controller and method name separated by slashes
-(right-side). When a request comes in, CodeIgniter looks for the first
-match, and calls the appropriate controller and method, possibly with
-arguments.
+CodeIgniter membaca *rule* routing dari atas ke bawah dan mengarahkan *request*
+ke *rule* pertama yang cocok. Setiap *rule* adalah *regular expression* (sisi
+kiri) dipetakan ke *controller* dan nama *method* dipisahkan oleh garis miring
+(sisi kanan). Ketika permintaan datang, CodeIgniter mencari *rule* yang cocok
+pertama kali, dan memanggil *controller* dan *method* yang sesuai, memungkinkan
+dengan argumen.
 
-More information about routing can be found in the URI Routing
-:doc:`documentation <../general/routing>`.
+Informasi lebih lanjut tentang routing dapat ditemukan dalam dokumentasi
+:doc:`URI Routing <../general/routing>`.
 
-Here, the second rule in the ``$routes`` array matches **any** request
-using the wildcard string ``(:any)``. and passes the parameter to the
-``view()`` method of the ``Pages`` class.
+Di sini, aturan kedua dalam *array* ``$routes`` cocok dengan **semua**
+*request* dengan menggunakan *wildcard string* ``(:any)`` dan mengoper
+(*pass*) parameter ke *method* ``view()`` di *class* ``Pages``.
 
-Now visit ``index.php/about``. Did it get routed correctly to the ``view()``
-method in the pages controller? Awesome!
+Sekarang kunjungi ``index.php/about``. Apakah itu disalurkan dengan
+benar ke *method* ``view()`` di *controller* ``Pages``? Bagus!
