@@ -76,7 +76,7 @@ untuk *model* Anda.
 Dengan kode ini Anda dapat melakukan dua *query* yang berbeda. Anda bisa
 mendapatkan semua *record* berita, atau mendapatkan sebuah berita dengan `slug
 <#>`_. Anda mungkin melihat bahwa variabel ``$slug`` tidak dibersihkan sebelum
-menjalankan query*. :doc:`Query Builder <../database/query_builder>`
+menjalankan *query*. :doc:`Query Builder <../database/query_builder>`
 melakukannya untuk anda.
 
 Menampilkan Berita
@@ -204,7 +204,7 @@ yang tersisa untuk dilakukan adalah membuat *view* yang sesuai di
 Routing
 -------
 
-Karena *rule routing wildcard* yang kita buat sebelumnya, Anda perlu route*
+Karena *rule routing wildcard* yang kita buat sebelumnya, Anda perlu *route*
 ekstra untuk melihat *controller* yang baru saja Anda buat. Modifikasi file
 *routing* (``application/config/routes.php``) sehingga terlihat sebagai berikut.
 Hal ini untuk memastikan permintaan mencapai *controller* ``News`` bukannya

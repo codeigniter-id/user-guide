@@ -3,10 +3,10 @@ Halaman Statis
 ##############
 
 **Catatan:** Tutorial ini mengasumsikan Anda sudah download CodeIgniter dan
-*:doc:`telah terinstall <../installation/index>` di *development environment*
+:doc:`telah terinstall <../installation/index>` di *development environment*
 Anda.
 
-Hal pertama yang akan Anda lakukan adalah membuat **controller** untuk menangani
+Hal pertama yang akan Anda lakukan adalah membuat *controller* untuk menangani
 halaman statis. Sebuah controller hanyalah sebuah *class* yang membantu delegasi
 pekerjaan. Ini adalah perekat aplikasi web Anda.
 
@@ -15,7 +15,7 @@ Sebagai contoh, ketika panggilan dilakukan ke:
 	http://example.com/news/latest/10
 
 Kita dapat membayangkan bahwa ada *controller* bernama "*news*". *Method* yang
-dipanggil dalam controller* "*news*" adalah "*latest*". Pekerjaan *method*
+dipanggil dalam *controller* "*news*" adalah "*latest*". Pekerjaan *method*
 "*latest*" pada *controller* "*news*" ini bisa untuk mengambil 10 item berita,
 dan memuat mereka ke halaman. Sangat sering di MVC, Anda akan melihat pola URL
 seperti:
@@ -71,7 +71,7 @@ berikut:
 			<h1><?php echo $title; ?></h1>
 
 Header berisi kode HTML dasar yang akan Anda ingin tampilkan sebelum memuat
-view* utama, bersama-sama dengan heading. Ini juga akan menampilkan variabel
+*view* utama, bersama-sama dengan heading. Ini juga akan menampilkan variabel
 ``$title``, yang akan kita tentukan kemudian di controller. Sekarang, buat
 footer di ``application/views/templates/footer.php`` yang berisi kode berikut:
 
@@ -86,7 +86,7 @@ Menambahkan logika ke dalam controller
 
 Sebelumnya Anda mengatur controller dengan *method* ``view()``. *Method* ini
 menerima satu parameter, yang merupakan nama dari halaman yang akan dimuat.
-Template* halaman statis akan ditempatkan di direktori
+*Template* halaman statis akan ditempatkan di direktori
 ``application/views/pages/``.
 
 Dalam direktori tersebut, buat dua file bernama ``home.php`` dan ``about.php``.
