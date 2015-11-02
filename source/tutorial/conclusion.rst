@@ -3,10 +3,10 @@ Kesimpulan
 ##########
 
 Tutorial ini tidak mencakup semua hal yang Anda harapkan dari *content
-management system*, tetapi memperkenalkan Anda ke topik yang lebih penting dari
-routing, menulis controller*, dan *model*. Kami berharap tutorial ini memberi
-Anda wawasan tentang beberapa pola desain dasar CodeIgniter, yang dapat Anda
-perluas.
+management system*, tetapi memperkenalkan Anda ke topik yang lebih penting
+tentang *routing*, menulis *controller*, dan *model*. Kami berharap tutorial ini
+memberi Anda wawasan tentang beberapa pola desain dasar CodeIgniter, yang dapat
+Anda perluas.
 
 Sekarang Anda telah menyelesaikan tutorial ini, kami sarankan Anda memeriksa
 sisa dokumentasi. CodeIgniter sering dipuji karena sifat dokumentasinya yang
