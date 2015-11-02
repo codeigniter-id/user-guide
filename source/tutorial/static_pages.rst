@@ -142,7 +142,7 @@ Routing
 Anda mengunjungi ``index.php/pages/view/about`` Anda akan melihat halaman
 *about*, termasuk *header* dan *footer*.
 
-Menggunakan *rule* routing kustom, Anda memiliki kekuatan untuk
+Menggunakan *rule* *routing* kustom, Anda memiliki kekuatan untuk
 memetakan setiap URI ke *controller* apapun dan *method*, dan bebas dari
 konvensi yang normal:
 ``http://example.com/[controller-class]/[controller-method]/[arguments]``
@@ -156,14 +156,14 @@ kode lain yang mengatur setiap elemen di *array* ``$route``.
 	$route['default_controller'] = 'pages/view';
 	$route['(:any)'] = 'pages/view/$1';
 
-CodeIgniter membaca *rule* routing dari atas ke bawah dan mengarahkan *request*
+CodeIgniter membaca *rule* *routing* dari atas ke bawah dan mengarahkan *request*
 ke *rule* pertama yang cocok. Setiap *rule* adalah *regular expression* (sisi
 kiri) dipetakan ke *controller* dan nama *method* dipisahkan oleh garis miring
 (sisi kanan). Ketika permintaan datang, CodeIgniter mencari *rule* yang cocok
 pertama kali, dan memanggil *controller* dan *method* yang sesuai, memungkinkan
 dengan argumen.
 
-Informasi lebih lanjut tentang routing dapat ditemukan dalam dokumentasi
+Informasi lebih lanjut tentang *routing* dapat ditemukan dalam dokumentasi
 :doc:`URI Routing <../general/routing>`.
 
 Di sini, aturan kedua dalam *array* ``$routes`` cocok dengan **semua**

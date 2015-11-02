@@ -9,8 +9,8 @@ bagaimana aplikasi CodeIgniter dasar dibangun dalam langkah demi langkah.
 Dalam tutorial ini, Anda akan membuat **aplikasi berita dasar** (*basic news
 application*). Anda akan mulai dengan menulis kode yang dapat memuat halaman
 statis. Berikutnya, Anda akan membuat bagian berita yang membaca berita dari
-database*. Akhirnya, Anda akan menambahkan *form* untuk membuat berita dalam
-database*.
+*database*. Akhirnya, Anda akan menambahkan *form* untuk membuat berita dalam
+*database*.
 
 Tutorial ini akan difokuskan pada:
 

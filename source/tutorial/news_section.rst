@@ -2,27 +2,29 @@
 Bagian Berita
 #############
 
-In the last section, we went over some basic concepts of the framework
-by writing a class that includes static pages. We cleaned up the URI by
-adding custom routing rules. Now it's time to introduce dynamic content
-and start using a database.
+Pada bagian terakhir, kita mempelajari beberapa konsep dasar dari *framework*
+dengan menulis sebuah *class* yang meliputi halaman statis. Kita membersihkan
+URI dengan menambahkan *rule* routing kustom. Sekarang saatnya untuk mengenal
+konten dinamis dan mulai menggunakan database.
 
-Setting up your model
+Menyiapkan Model Anda
 ---------------------
 
-Instead of writing database operations right in the controller, queries
-should be placed in a model, so they can easily be reused later. Models
-are the place where you retrieve, insert, and update information in your
-database or other data stores. They represent your data.
+Alih-alih menulis operasi *database* di controller, query seharusnya ditempatkan
+dalam model, sehingga mereka dapat dengan mudah digunakan kembali nanti. *Model*
+adalah tempat di mana Anda mengambil, menambahkan, dan memperbarui informasi
+Anda di *database* atau menyimpan data lainnya. Mereka mewakili data Anda.
 
-Open up the *application/models/* directory and create a new file called
-*News_model.php* and add the following code. Make sure you've configured
-your database properly as described :doc:`here <../database/configuration>`.
+Buka direktori ``application/models/`` dan buat file baru yang bernama
+``News_model.php`` dan tambahkan kode berikut. Pastikan Anda sudah
+menkonfigurasi *database* Anda dengan benar seperti yang dijelaskan
+:doc:`disini <../database/configuration>`.
 
 ::
 
 	<?php
-	class News_model extends CI_Model {
+	class News_model extends CI_Model
+	{
 
 		public function __construct()
 		{
@@ -30,14 +32,14 @@ your database properly as described :doc:`here <../database/configuration>`.
 		}
 	}
 
-This code looks similar to the controller code that was used earlier. It
-creates a new model by extending ``CI_Model`` and loads the database
-library. This will make the database class available through the
-``$this->db`` object.
+Kode ini terlihat mirip dengan kode controller yang digunakan sebelumnya. Kode
+diatas menciptakan model baru dengan memperluas ``CI_Model`` dan memuat
+*library database*. Ini akan membuat *class database* yang tersedia melalui 
+objek ``$this->db``.
 
-Before querying the database, a database schema has to be created.
-Connect to your database and run the SQL command below (MySQL).
-Also add some seed records.
+Sebelum melakukan *query* ke *database*, skema *database* harus dibuat terlebih
+dahulu. Hubungkan ke *database* Anda dan jalankan perintah SQL di bawah ini
+(MySQL). Yang juga akan menambahkan beberapa *record*.
 
 ::
 
@@ -50,20 +52,19 @@ Also add some seed records.
 		KEY slug (slug)
 	);
 
-Now that the database and a model have been set up, you'll need a method
-to get all of our posts from our database. To do this, the database
-abstraction layer that is included with CodeIgniter — 
-:doc:`Query Builder <../database/query_builder>` — is used. This makes it
-possible to write your 'queries' once and make them work on :doc:`all
-supported database systems <../general/requirements>`. Add the
-following code to your model.
+Sekarang *database* dan *model* telah diatur, Anda akan memerlukan *method*
+untuk mendapatkan semua *posting* kita dari database. Untuk melakukan hal ini,
+*database abstraction layer* yang disertakan dengan CodeIgniter - :doc:`Query
+Builder <../database/query_builder>` - digunakan. Hal ini memungkinkan Anda
+untuk menulis '*query*' sekali dan membuat mereka bekerja pada :doc:`semua
+sistem database didukung <../general/requirements>`. Tambahkan kode berikut
+untuk *model* Anda.
 
 ::
 
 	public function get_news($slug = FALSE)
 	{
-		if ($slug === FALSE)
-		{
+		if ($slug === FALSE) {
 			$query = $this->db->get('news');
 			return $query->result_array();
 		}
@@ -72,24 +73,26 @@ following code to your model.
 		return $query->row_array();
 	}
 
-With this code you can perform two different queries. You can get all
-news records, or get a news item by its `slug <#>`_. You might have
-noticed that the ``$slug`` variable wasn't sanitized before running the
-query; :doc:`Query Builder <../database/query_builder>` does this for you.
+Dengan kode ini Anda dapat melakukan dua *query* yang berbeda. Anda bisa
+mendapatkan semua *record* berita, atau mendapatkan sebuah berita dengan `slug
+<#>`_. Anda mungkin melihat bahwa variabel ``$slug`` tidak dibersihkan sebelum
+menjalankan query*. :doc:`Query Builder <../database/query_builder>`
+melakukannya untuk anda.
 
-Display the news
-----------------
+Menampilkan Berita
+------------------
 
-Now that the queries are written, the model should be tied to the views
-that are going to display the news items to the user. This could be done
-in our ``Pages`` controller created earlier, but for the sake of clarity,
-a new ``News`` controller is defined. Create the new controller at
-*application/controllers/News.php*.
+Sekarang *query* sudah ditulis, *model* harus terikat dengan *view*
+yang akan menampilkan berita kepada pengguna. Hal ini dapat dilakukan
+di *controller* ``Pages`` yang kita buat sebelumnya, tapi demi kejelasan,
+*controller* ``News`` baru telah didefinisikan. Buat *controller* baru di
+``application/controllers/News.php``.
 
 ::
 
 	<?php
-	class News extends CI_Controller {
+	class News extends CI_Controller
+	{
 
 		public function __construct()
 		{
@@ -109,21 +112,21 @@ a new ``News`` controller is defined. Create the new controller at
 		}
 	}
 
-Looking at the code, you may see some similarity with the files we
-created earlier. First, the ``__construct()`` method: it calls the
-constructor of its parent class (``CI_Controller``) and loads the model,
-so it can be used in all other methods in this controller.
-It also loads a collection of :doc:`URL Helper <../helpers/url_helper>`
-functions, because we'll use one of them in a view later.
+Melihat kode diatas, Anda dapat melihat beberapa kesamaan dengan file yang kita
+buat sebelumnya. Pertama, *method* ``__construct()``: itu memanggil konstruktor
+*class* induknya (``CI_Controller``) dan memuat *model*, sehingga dapat
+digunakan di semua *method* di dalam *controller* ini. Hal ini juga memuat
+*collection* dari fungsi :doc:`URL Helper <../helpers/url_helper>`, karena kita
+akan menggunakan salah satu dari mereka dalam *view* nanti.
 
-Next, there are two methods to view all news items and one for a specific
-news item. You can see that the ``$slug`` variable is passed to the model's
-method in the second method. The model is using this slug to identify the
-news item to be returned.
+Berikutnya, ada dua *method* untuk melihat semua berita dan satu berita untuk
+berita tertentu. Anda dapat melihat bahwa variabel ``$slug`` dilewatkan ke
+*method* *model* dalam *method* kedua. *Model* ini menggunakan *slug* untuk
+mengidentifikasi berita yang dikembalikan.
 
-Now the data is retrieved by the controller through our model, but
-nothing is displayed yet. The next thing to do is passing this data to
-the views.
+Sekarang data tersebut diambil oleh *controller* melalui *model* kami, tapi
+belum ada yang ditampilkan. Hal berikutnya yang harus dilakukan adalah
+mengoper (*passing*) data ini ke *view*.
 
 ::
 
@@ -137,11 +140,11 @@ the views.
 		$this->load->view('templates/footer');
 	}
 
-The code above gets all news records from the model and assigns it to a
-variable. The value for the title is also assigned to the ``$data['title']``
-element and all data is passed to the views. You now need to create a
-view to render the news items. Create *application/views/news/index.php*
-and add the next piece of code.
+Kode di atas berfungsi untuk mendapat semua *record* berita dari *model* dan
+*assign* ke sebuah variabel. Nilai untuk judul juga di-*assign* ke elemen
+``$data['title']`` dan semua data akan dioper ke *view*. Anda sekarang perlu
+untuk membuat *view* untuk memuat berita. Buat
+``application/views/news/index.php`` dan tambahkan potongan kode berikut.
 
 ::
 
@@ -157,16 +160,17 @@ and add the next piece of code.
 
 	<?php endforeach; ?>
 
-Here, each news item is looped and displayed to the user. You can see we
-wrote our template in PHP mixed with HTML. If you prefer to use a template
-language, you can use CodeIgniter's :doc:`Template
-Parser <../libraries/parser>` class or a third party parser.
+Di sini, setiap item berita diulang dan ditampilkan kepada pengguna. Anda dapat
+melihat kita menulis *template* kita di PHP yang dicampur dengan HTML. Jika
+Anda memilih untuk menggunakan *template language*, Anda dapat menggunakan
+CodeIgniter *class* :doc:`Template Parser <../libraries/parser>` atau
+*parser* pihak ketiga.
 
-The news overview page is now done, but a page to display individual
-news items is still absent. The model created earlier is made in such
-way that it can easily be used for this functionality. You only need to
-add some code to the controller and create a new view. Go back to the
-``News`` controller and update ``view()`` with the following:
+Halaman ikhtisar berita sekarang selesai, tetapi halaman untuk menampilkan
+berita individu masih belum. *Model* yang dibuat sebelumnya dibuat sedemikian
+rupa agar mudah digunakan untuk fungsi ini. Anda hanya perlu menambahkan
+beberapa kode untuk *controller* dan membuat *view* baru. Kembali ke
+*controller* ``News`` dan perbaiki *method* ``view()`` seperti berikut:
 
 ::
 
@@ -186,10 +190,10 @@ add some code to the controller and create a new view. Go back to the
 		$this->load->view('templates/footer');
 	}
 
-Instead of calling the ``get_news()`` method without a parameter, the
-``$slug`` variable is passed, so it will return the specific news item.
-The only things left to do is create the corresponding view at
-*application/views/news/view.php*. Put the following code in this file.
+Alih-alih memanggil *method* ``get_news()`` tanpa parameter, variabel ``$slug``
+dioper, sehingga akan mengembalikan *item* berita tertentu. Satu-satunya hal
+yang tersisa untuk dilakukan adalah membuat *view* yang sesuai di
+``application/views/news/view.php``. Masukan kode berikut dalam file ini.
 
 ::
 
@@ -200,12 +204,12 @@ The only things left to do is create the corresponding view at
 Routing
 -------
 
-Because of the wildcard routing rule created earlier, you need an extra
-route to view the controller that you just made. Modify your routing file
-(*application/config/routes.php*) so it looks as follows.
-This makes sure the requests reaches the ``News`` controller instead of
-going directly to the ``Pages`` controller. The first line routes URI's
-with a slug to the ``view()`` method in the ``News`` controller.
+Karena *rule routing wildcard* yang kita buat sebelumnya, Anda perlu route*
+ekstra untuk melihat *controller* yang baru saja Anda buat. Modifikasi file
+*routing* (``application/config/routes.php``) sehingga terlihat sebagai berikut.
+Hal ini untuk memastikan permintaan mencapai *controller* ``News`` bukannya
+langsung ke *controller* ``Pages``. *Route* URI baris pertama dengan *slug* ke
+*method* ``view()`` dalam *controller* ``News``.
 
 ::
 
@@ -214,5 +218,5 @@ with a slug to the ``view()`` method in the ``News`` controller.
 	$route['(:any)'] = 'pages/view/$1';
 	$route['default_controller'] = 'pages/view';
 
-Point your browser to your document root, followed by index.php/news and
-watch your news page.
+Arahkan browser Anda ke *root* dokumen Anda, diikuti dengan ``index.php/news``
+dan lihat halaman berita Anda.
