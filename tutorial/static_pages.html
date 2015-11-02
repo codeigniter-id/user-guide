@@ -426,16 +426,16 @@
   <div class="section" id="halaman-statis">
 <h1>Halaman Statis<a class="headerlink" href="#halaman-statis" title="Link permanen untuk headline ini">¶</a></h1>
 <p><strong>Catatan:</strong> Tutorial ini mengasumsikan Anda sudah download CodeIgniter dan
-<em>:doc:`telah terinstall &lt;../installation/index&gt;` di *development environment</em>
+<a class="reference internal" href="../installation/index.html"><em>telah terinstall</em></a> di <em>development environment</em>
 Anda.</p>
-<p>Hal pertama yang akan Anda lakukan adalah membuat <strong>controller</strong> untuk menangani
+<p>Hal pertama yang akan Anda lakukan adalah membuat <em>controller</em> untuk menangani
 halaman statis. Sebuah controller hanyalah sebuah <em>class</em> yang membantu delegasi
 pekerjaan. Ini adalah perekat aplikasi web Anda.</p>
 <p>Sebagai contoh, ketika panggilan dilakukan ke:</p>
 <blockquote>
 <div><a class="reference external" href="http://example.com/news/latest/10">http://example.com/news/latest/10</a></div></blockquote>
 <p>Kita dapat membayangkan bahwa ada <em>controller</em> bernama &#8220;<em>news</em>&#8221;. <em>Method</em> yang
-dipanggil dalam controller* &#8220;<em>news</em>&#8221; adalah &#8220;<em>latest</em>&#8221;. Pekerjaan <em>method</em>
+dipanggil dalam <em>controller</em> &#8220;<em>news</em>&#8221; adalah &#8220;<em>latest</em>&#8221;. Pekerjaan <em>method</em>
 &#8220;<em>latest</em>&#8221; pada <em>controller</em> &#8220;<em>news</em>&#8221; ini bisa untuk mengambil 10 item berita,
 dan memuat mereka ke halaman. Sangat sering di MVC, Anda akan melihat pola URL
 seperti:</p>
@@ -482,7 +482,7 @@ berikut:</p>
 </pre></div>
 </div>
 <p>Header berisi kode HTML dasar yang akan Anda ingin tampilkan sebelum memuat
-view* utama, bersama-sama dengan heading. Ini juga akan menampilkan variabel
+<em>view</em> utama, bersama-sama dengan heading. Ini juga akan menampilkan variabel
 <code class="docutils literal"><span class="pre">$title</span></code>, yang akan kita tentukan kemudian di controller. Sekarang, buat
 footer di <code class="docutils literal"><span class="pre">application/views/templates/footer.php</span></code> yang berisi kode berikut:</p>
 <div class="highlight-ci"><div class="highlight"><pre>                <span class="o">&lt;</span><span class="nx">em</span><span class="o">&gt;&amp;</span><span class="nb">copy</span><span class="p">;</span> <span class="mi">2015</span><span class="o">&lt;/</span><span class="nx">em</span><span class="o">&gt;</span>
@@ -494,7 +494,7 @@ footer di <code class="docutils literal"><span class="pre">application/views/tem
 <h2>Menambahkan logika ke dalam controller<a class="headerlink" href="#menambahkan-logika-ke-dalam-controller" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Sebelumnya Anda mengatur controller dengan <em>method</em> <code class="docutils literal"><span class="pre">view()</span></code>. <em>Method</em> ini
 menerima satu parameter, yang merupakan nama dari halaman yang akan dimuat.
-Template* halaman statis akan ditempatkan di direktori
+<em>Template</em> halaman statis akan ditempatkan di direktori
 <code class="docutils literal"><span class="pre">application/views/pages/</span></code>.</p>
 <p>Dalam direktori tersebut, buat dua file bernama <code class="docutils literal"><span class="pre">home.php</span></code> dan <code class="docutils literal"><span class="pre">about.php</span></code>.
 Dalam file-file tersebut, ketik beberapa teks - apapun yang Anda inginkan - dan
