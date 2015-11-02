@@ -425,21 +425,23 @@
             
   <div class="section" id="bagian-berita">
 <h1>Bagian Berita<a class="headerlink" href="#bagian-berita" title="Link permanen untuk headline ini">¶</a></h1>
-<p>In the last section, we went over some basic concepts of the framework
-by writing a class that includes static pages. We cleaned up the URI by
-adding custom routing rules. Now it&#8217;s time to introduce dynamic content
-and start using a database.</p>
-<div class="section" id="setting-up-your-model">
-<h2>Setting up your model<a class="headerlink" href="#setting-up-your-model" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Instead of writing database operations right in the controller, queries
-should be placed in a model, so they can easily be reused later. Models
-are the place where you retrieve, insert, and update information in your
-database or other data stores. They represent your data.</p>
-<p>Open up the <em>application/models/</em> directory and create a new file called
-<em>News_model.php</em> and add the following code. Make sure you&#8217;ve configured
-your database properly as described <a class="reference internal" href="../database/configuration.html"><em>here</em></a>.</p>
+<p>Pada bagian terakhir, kita mempelajari beberapa konsep dasar dari <em>framework</em>
+dengan menulis sebuah <em>class</em> yang meliputi halaman statis. Kita membersihkan
+URI dengan menambahkan <em>rule</em> routing kustom. Sekarang saatnya untuk mengenal
+konten dinamis dan mulai menggunakan database.</p>
+<div class="section" id="menyiapkan-model-anda">
+<h2>Menyiapkan Model Anda<a class="headerlink" href="#menyiapkan-model-anda" title="Link permanen untuk headline ini">¶</a></h2>
+<p>Alih-alih menulis operasi <em>database</em> di controller, query seharusnya ditempatkan
+dalam model, sehingga mereka dapat dengan mudah digunakan kembali nanti. <em>Model</em>
+adalah tempat di mana Anda mengambil, menambahkan, dan memperbarui informasi
+Anda di <em>database</em> atau menyimpan data lainnya. Mereka mewakili data Anda.</p>
+<p>Buka direktori <code class="docutils literal"><span class="pre">application/models/</span></code> dan buat file baru yang bernama
+<code class="docutils literal"><span class="pre">News_model.php</span></code> dan tambahkan kode berikut. Pastikan Anda sudah
+menkonfigurasi <em>database</em> Anda dengan benar seperti yang dijelaskan
+<a class="reference internal" href="../database/configuration.html"><em>disini</em></a>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
-<span class="k">class</span> <span class="nc">News_model</span> <span class="k">extends</span> <span class="nx">CI_Model</span> <span class="p">{</span>
+<span class="k">class</span> <span class="nc">News_model</span> <span class="k">extends</span> <span class="nx">CI_Model</span>
+<span class="p">{</span>
 
         <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
         <span class="p">{</span>
@@ -448,13 +450,13 @@ your database properly as described <a class="reference internal" href="../datab
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>This code looks similar to the controller code that was used earlier. It
-creates a new model by extending <code class="docutils literal"><span class="pre">CI_Model</span></code> and loads the database
-library. This will make the database class available through the
-<code class="docutils literal"><span class="pre">$this-&gt;db</span></code> object.</p>
-<p>Before querying the database, a database schema has to be created.
-Connect to your database and run the SQL command below (MySQL).
-Also add some seed records.</p>
+<p>Kode ini terlihat mirip dengan kode controller yang digunakan sebelumnya. Kode
+diatas menciptakan model baru dengan memperluas <code class="docutils literal"><span class="pre">CI_Model</span></code> dan memuat
+<em>library database</em>. Ini akan membuat <em>class database</em> yang tersedia melalui
+objek <code class="docutils literal"><span class="pre">$this-&gt;db</span></code>.</p>
+<p>Sebelum melakukan <em>query</em> ke <em>database</em>, skema <em>database</em> harus dibuat terlebih
+dahulu. Hubungkan ke <em>database</em> Anda dan jalankan perintah SQL di bawah ini
+(MySQL). Yang juga akan menambahkan beberapa <em>record</em>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nx">CREATE</span> <span class="nx">TABLE</span> <span class="nx">news</span> <span class="p">(</span>
         <span class="nx">id</span> <span class="nx">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="nx">AUTO_INCREMENT</span><span class="p">,</span>
         <span class="nx">title</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
@@ -465,17 +467,16 @@ Also add some seed records.</p>
 <span class="p">);</span>
 </pre></div>
 </div>
-<p>Now that the database and a model have been set up, you&#8217;ll need a method
-to get all of our posts from our database. To do this, the database
-abstraction layer that is included with CodeIgniter —
-<a class="reference internal" href="../database/query_builder.html"><em>Query Builder</em></a> — is used. This makes it
-possible to write your &#8216;queries&#8217; once and make them work on <a class="reference internal" href="../general/requirements.html"><em>all
-supported database systems</em></a>. Add the
-following code to your model.</p>
+<p>Sekarang <em>database</em> dan <em>model</em> telah diatur, Anda akan memerlukan <em>method</em>
+untuk mendapatkan semua <em>posting</em> kita dari database. Untuk melakukan hal ini,
+<em>database abstraction layer</em> yang disertakan dengan CodeIgniter - <a class="reference internal" href="../database/query_builder.html"><em>Query
+Builder</em></a> - digunakan. Hal ini memungkinkan Anda
+untuk menulis &#8216;<em>query</em>&#8216; sekali dan membuat mereka bekerja pada <a class="reference internal" href="../general/requirements.html"><em>semua
+sistem database didukung</em></a>. Tambahkan kode berikut
+untuk <em>model</em> Anda.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">get_news</span><span class="p">(</span><span class="nv">$slug</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">)</span>
 <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nv">$slug</span> <span class="o">===</span> <span class="k">FALSE</span><span class="p">)</span>
-        <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$slug</span> <span class="o">===</span> <span class="k">FALSE</span><span class="p">)</span> <span class="p">{</span>
                 <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;news&#39;</span><span class="p">);</span>
                 <span class="k">return</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">result_array</span><span class="p">();</span>
         <span class="p">}</span>
@@ -485,20 +486,21 @@ following code to your model.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>With this code you can perform two different queries. You can get all
-news records, or get a news item by its <a class="reference external" href="#">slug</a>. You might have
-noticed that the <code class="docutils literal"><span class="pre">$slug</span></code> variable wasn&#8217;t sanitized before running the
-query; <a class="reference internal" href="../database/query_builder.html"><em>Query Builder</em></a> does this for you.</p>
+<p>Dengan kode ini Anda dapat melakukan dua <em>query</em> yang berbeda. Anda bisa
+mendapatkan semua <em>record</em> berita, atau mendapatkan sebuah berita dengan <a class="reference external" href="#">slug</a>. Anda mungkin melihat bahwa variabel <code class="docutils literal"><span class="pre">$slug</span></code> tidak dibersihkan sebelum
+menjalankan query*. <a class="reference internal" href="../database/query_builder.html"><em>Query Builder</em></a>
+melakukannya untuk anda.</p>
 </div>
-<div class="section" id="display-the-news">
-<h2>Display the news<a class="headerlink" href="#display-the-news" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Now that the queries are written, the model should be tied to the views
-that are going to display the news items to the user. This could be done
-in our <code class="docutils literal"><span class="pre">Pages</span></code> controller created earlier, but for the sake of clarity,
-a new <code class="docutils literal"><span class="pre">News</span></code> controller is defined. Create the new controller at
-<em>application/controllers/News.php</em>.</p>
+<div class="section" id="menampilkan-berita">
+<h2>Menampilkan Berita<a class="headerlink" href="#menampilkan-berita" title="Link permanen untuk headline ini">¶</a></h2>
+<p>Sekarang <em>query</em> sudah ditulis, <em>model</em> harus terikat dengan <em>view</em>
+yang akan menampilkan berita kepada pengguna. Hal ini dapat dilakukan
+di <em>controller</em> <code class="docutils literal"><span class="pre">Pages</span></code> yang kita buat sebelumnya, tapi demi kejelasan,
+<em>controller</em> <code class="docutils literal"><span class="pre">News</span></code> baru telah didefinisikan. Buat <em>controller</em> baru di
+<code class="docutils literal"><span class="pre">application/controllers/News.php</span></code>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
-<span class="k">class</span> <span class="nc">News</span> <span class="k">extends</span> <span class="nx">CI_Controller</span> <span class="p">{</span>
+<span class="k">class</span> <span class="nc">News</span> <span class="k">extends</span> <span class="nx">CI_Controller</span>
+<span class="p">{</span>
 
         <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
         <span class="p">{</span>
@@ -519,19 +521,19 @@ a new <code class="docutils literal"><span class="pre">News</span></code> contro
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Looking at the code, you may see some similarity with the files we
-created earlier. First, the <code class="docutils literal"><span class="pre">__construct()</span></code> method: it calls the
-constructor of its parent class (<code class="docutils literal"><span class="pre">CI_Controller</span></code>) and loads the model,
-so it can be used in all other methods in this controller.
-It also loads a collection of <a class="reference internal" href="../helpers/url_helper.html"><em>URL Helper</em></a>
-functions, because we&#8217;ll use one of them in a view later.</p>
-<p>Next, there are two methods to view all news items and one for a specific
-news item. You can see that the <code class="docutils literal"><span class="pre">$slug</span></code> variable is passed to the model&#8217;s
-method in the second method. The model is using this slug to identify the
-news item to be returned.</p>
-<p>Now the data is retrieved by the controller through our model, but
-nothing is displayed yet. The next thing to do is passing this data to
-the views.</p>
+<p>Melihat kode diatas, Anda dapat melihat beberapa kesamaan dengan file yang kita
+buat sebelumnya. Pertama, <em>method</em> <code class="docutils literal"><span class="pre">__construct()</span></code>: itu memanggil konstruktor
+<em>class</em> induknya (<code class="docutils literal"><span class="pre">CI_Controller</span></code>) dan memuat <em>model</em>, sehingga dapat
+digunakan di semua <em>method</em> di dalam <em>controller</em> ini. Hal ini juga memuat
+<em>collection</em> dari fungsi <a class="reference internal" href="../helpers/url_helper.html"><em>URL Helper</em></a>, karena kita
+akan menggunakan salah satu dari mereka dalam <em>view</em> nanti.</p>
+<p>Berikutnya, ada dua <em>method</em> untuk melihat semua berita dan satu berita untuk
+berita tertentu. Anda dapat melihat bahwa variabel <code class="docutils literal"><span class="pre">$slug</span></code> dilewatkan ke
+<em>method</em> <em>model</em> dalam <em>method</em> kedua. <em>Model</em> ini menggunakan <em>slug</em> untuk
+mengidentifikasi berita yang dikembalikan.</p>
+<p>Sekarang data tersebut diambil oleh <em>controller</em> melalui <em>model</em> kami, tapi
+belum ada yang ditampilkan. Hal berikutnya yang harus dilakukan adalah
+mengoper (<em>passing</em>) data ini ke <em>view</em>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
 <span class="p">{</span>
         <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;news&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">news_model</span><span class="o">-&gt;</span><span class="na">get_news</span><span class="p">();</span>
@@ -543,11 +545,11 @@ the views.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The code above gets all news records from the model and assigns it to a
-variable. The value for the title is also assigned to the <code class="docutils literal"><span class="pre">$data['title']</span></code>
-element and all data is passed to the views. You now need to create a
-view to render the news items. Create <em>application/views/news/index.php</em>
-and add the next piece of code.</p>
+<p>Kode di atas berfungsi untuk mendapat semua <em>record</em> berita dari <em>model</em> dan
+<em>assign</em> ke sebuah variabel. Nilai untuk judul juga di-<em>assign</em> ke elemen
+<code class="docutils literal"><span class="pre">$data['title']</span></code> dan semua data akan dioper ke <em>view</em>. Anda sekarang perlu
+untuk membuat <em>view</em> untuk memuat berita. Buat
+<code class="docutils literal"><span class="pre">application/views/news/index.php</span></code> dan tambahkan potongan kode berikut.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$title</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h2&gt;</span>
 
 <span class="cp">&lt;?php</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$news</span> <span class="k">as</span> <span class="nv">$news_item</span><span class="p">)</span><span class="o">:</span> <span class="cp">?&gt;</span>
@@ -561,15 +563,16 @@ and add the next piece of code.</p>
 <span class="cp">&lt;?php</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span>
 </pre></div>
 </div>
-<p>Here, each news item is looped and displayed to the user. You can see we
-wrote our template in PHP mixed with HTML. If you prefer to use a template
-language, you can use CodeIgniter&#8217;s <a class="reference internal" href="../libraries/parser.html"><em>Template
-Parser</em></a> class or a third party parser.</p>
-<p>The news overview page is now done, but a page to display individual
-news items is still absent. The model created earlier is made in such
-way that it can easily be used for this functionality. You only need to
-add some code to the controller and create a new view. Go back to the
-<code class="docutils literal"><span class="pre">News</span></code> controller and update <code class="docutils literal"><span class="pre">view()</span></code> with the following:</p>
+<p>Di sini, setiap item berita diulang dan ditampilkan kepada pengguna. Anda dapat
+melihat kita menulis <em>template</em> kita di PHP yang dicampur dengan HTML. Jika
+Anda memilih untuk menggunakan <em>template language</em>, Anda dapat menggunakan
+CodeIgniter <em>class</em> <a class="reference internal" href="../libraries/parser.html"><em>Template Parser</em></a> atau
+<em>parser</em> pihak ketiga.</p>
+<p>Halaman ikhtisar berita sekarang selesai, tetapi halaman untuk menampilkan
+berita individu masih belum. <em>Model</em> yang dibuat sebelumnya dibuat sedemikian
+rupa agar mudah digunakan untuk fungsi ini. Anda hanya perlu menambahkan
+beberapa kode untuk <em>controller</em> dan membuat <em>view</em> baru. Kembali ke
+<em>controller</em> <code class="docutils literal"><span class="pre">News</span></code> dan perbaiki <em>method</em> <code class="docutils literal"><span class="pre">view()</span></code> seperti berikut:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">view</span><span class="p">(</span><span class="nv">$slug</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span>
 <span class="p">{</span>
         <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;news_item&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">news_model</span><span class="o">-&gt;</span><span class="na">get_news</span><span class="p">(</span><span class="nv">$slug</span><span class="p">);</span>
@@ -587,10 +590,10 @@ add some code to the controller and create a new view. Go back to the
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Instead of calling the <code class="docutils literal"><span class="pre">get_news()</span></code> method without a parameter, the
-<code class="docutils literal"><span class="pre">$slug</span></code> variable is passed, so it will return the specific news item.
-The only things left to do is create the corresponding view at
-<em>application/views/news/view.php</em>. Put the following code in this file.</p>
+<p>Alih-alih memanggil <em>method</em> <code class="docutils literal"><span class="pre">get_news()</span></code> tanpa parameter, variabel <code class="docutils literal"><span class="pre">$slug</span></code>
+dioper, sehingga akan mengembalikan <em>item</em> berita tertentu. Satu-satunya hal
+yang tersisa untuk dilakukan adalah membuat <em>view</em> yang sesuai di
+<code class="docutils literal"><span class="pre">application/views/news/view.php</span></code>. Masukan kode berikut dalam file ini.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="k">echo</span> <span class="s1">&#39;&lt;h2&gt;&#39;</span><span class="o">.</span><span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;&lt;/h2&gt;&#39;</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">];</span>
@@ -599,20 +602,20 @@ The only things left to do is create the corresponding view at
 </div>
 <div class="section" id="routing">
 <h2>Routing<a class="headerlink" href="#routing" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Because of the wildcard routing rule created earlier, you need an extra
-route to view the controller that you just made. Modify your routing file
-(<em>application/config/routes.php</em>) so it looks as follows.
-This makes sure the requests reaches the <code class="docutils literal"><span class="pre">News</span></code> controller instead of
-going directly to the <code class="docutils literal"><span class="pre">Pages</span></code> controller. The first line routes URI&#8217;s
-with a slug to the <code class="docutils literal"><span class="pre">view()</span></code> method in the <code class="docutils literal"><span class="pre">News</span></code> controller.</p>
+<p>Karena <em>rule routing wildcard</em> yang kita buat sebelumnya, Anda perlu route*
+ekstra untuk melihat <em>controller</em> yang baru saja Anda buat. Modifikasi file
+<em>routing</em> (<code class="docutils literal"><span class="pre">application/config/routes.php</span></code>) sehingga terlihat sebagai berikut.
+Hal ini untuk memastikan permintaan mencapai <em>controller</em> <code class="docutils literal"><span class="pre">News</span></code> bukannya
+langsung ke <em>controller</em> <code class="docutils literal"><span class="pre">Pages</span></code>. <em>Route</em> URI baris pertama dengan <em>slug</em> ke
+<em>method</em> <code class="docutils literal"><span class="pre">view()</span></code> dalam <em>controller</em> <code class="docutils literal"><span class="pre">News</span></code>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news/(:any)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news/view/$1&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;(:any)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pages/view/$1&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;default_controller&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pages/view&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>Point your browser to your document root, followed by index.php/news and
-watch your news page.</p>
+<p>Arahkan browser Anda ke <em>root</em> dokumen Anda, diikuti dengan <code class="docutils literal"><span class="pre">index.php/news</span></code>
+dan lihat halaman berita Anda.</p>
 </div>
 </div>
 
@@ -635,7 +638,7 @@ watch your news page.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Oct 31, 2015.
+      Terakhir diperbarui pada Nov 02, 2015.
     </p>
   </div>
 

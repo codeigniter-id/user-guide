@@ -541,7 +541,7 @@ Jadi nilai <code class="docutils literal"><span class="pre">$data['title']</span
 <code class="docutils literal"><span class="pre">[your-site-url]/index.php/pages/view</span></code> untuk melihat halaman Anda. Ketika
 Anda mengunjungi <code class="docutils literal"><span class="pre">index.php/pages/view/about</span></code> Anda akan melihat halaman
 <em>about</em>, termasuk <em>header</em> dan <em>footer</em>.</p>
-<p>Menggunakan <em>rule</em> routing kustom, Anda memiliki kekuatan untuk
+<p>Menggunakan <em>rule</em> <em>routing</em> kustom, Anda memiliki kekuatan untuk
 memetakan setiap URI ke <em>controller</em> apapun dan <em>method</em>, dan bebas dari
 konvensi yang normal:
 <code class="docutils literal"><span class="pre">http://example.com/[controller-class]/[controller-method]/[arguments]</span></code></p>
@@ -552,13 +552,13 @@ kode lain yang mengatur setiap elemen di <em>array</em> <code class="docutils li
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;(:any)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pages/view/$1&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>CodeIgniter membaca <em>rule</em> routing dari atas ke bawah dan mengarahkan <em>request</em>
+<p>CodeIgniter membaca <em>rule</em> <em>routing</em> dari atas ke bawah dan mengarahkan <em>request</em>
 ke <em>rule</em> pertama yang cocok. Setiap <em>rule</em> adalah <em>regular expression</em> (sisi
 kiri) dipetakan ke <em>controller</em> dan nama <em>method</em> dipisahkan oleh garis miring
 (sisi kanan). Ketika permintaan datang, CodeIgniter mencari <em>rule</em> yang cocok
 pertama kali, dan memanggil <em>controller</em> dan <em>method</em> yang sesuai, memungkinkan
 dengan argumen.</p>
-<p>Informasi lebih lanjut tentang routing dapat ditemukan dalam dokumentasi
+<p>Informasi lebih lanjut tentang <em>routing</em> dapat ditemukan dalam dokumentasi
 <a class="reference internal" href="../general/routing.html"><em>URI Routing</em></a>.</p>
 <p>Di sini, aturan kedua dalam <em>array</em> <code class="docutils literal"><span class="pre">$routes</span></code> cocok dengan <strong>semua</strong>
 <em>request</em> dengan menggunakan <em>wildcard string</em> <code class="docutils literal"><span class="pre">(:any)</span></code> dan mengoper
@@ -587,7 +587,7 @@ benar ke <em>method</em> <code class="docutils literal"><span class="pre">view()
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Oct 31, 2015.
+      Terakhir diperbarui pada Nov 02, 2015.
     </p>
   </div>
 
