@@ -425,17 +425,17 @@
             
   <div class="section" id="membuat-item-berita">
 <h1>Membuat Item Berita<a class="headerlink" href="#membuat-item-berita" title="Link permanen untuk headline ini">¶</a></h1>
-<p>You now know how you can read data from a database using CodeIgniter, but
-you haven&#8217;t written any information to the database yet. In this section
-you&#8217;ll expand your news controller and model created earlier to include
-this functionality.</p>
-<div class="section" id="create-a-form">
-<h2>Create a form<a class="headerlink" href="#create-a-form" title="Link permanen untuk headline ini">¶</a></h2>
-<p>To input data into the database you need to create a form where you can
-input the information to be stored. This means you&#8217;ll be needing a form
-with two fields, one for the title and one for the text. You&#8217;ll derive
-the slug from our title in the model. Create the new view at
-application/views/news/create.php.</p>
+<p>Anda sekarang tahu bagaimana Anda dapat membaca data dari <em>database</em> menggunakan
+CodeIgniter, tapi Anda masih belum menulis informasi ke <em>database</em>. Di bagian
+ini Anda akan memperluas <em>controller</em> <code class="docutils literal"><span class="pre">news</span></code> dan <em>model</em> yang dibuat
+sebelumnya untuk memasukkan fungsi ini.</p>
+<div class="section" id="membuat-form">
+<h2>Membuat Form<a class="headerlink" href="#membuat-form" title="Link permanen untuk headline ini">¶</a></h2>
+<p>Untuk memasukkan data ke dalam <em>database</em> yang Anda butuhkan untuk membuat
+<em>form</em> di mana Anda dapat masukan informasi yang akan disimpan. Ini berarti Anda
+akan membutuhkan <em>form</em> dengan dua <em>field</em>, satu untuk judul dan satu untuk teks.
+Anda akan mendapatkan <em>slug</em> dari judul kita di dalam <em>model</em>. Buat <em>view</em> baru
+di <code class="docutils literal"><span class="pre">application/views/news/create.php</span></code>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$title</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h2&gt;</span>
 
 <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">validation_errors</span><span class="p">();</span> <span class="cp">?&gt;</span>
@@ -453,17 +453,16 @@ application/views/news/create.php.</p>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
-<p>There are only two things here that probably look unfamiliar to you: the
-form_open() function and the validation_errors() function.</p>
-<p>The first function is provided by the <a class="reference internal" href="../helpers/form_helper.html"><em>form
-helper</em></a> and renders the form element and
-adds extra functionality, like adding a hidden <a class="reference internal" href="../libraries/security.html"><em>CSRF prevention
-field</em></a>. The latter is used to report
-errors related to form validation.</p>
-<p>Go back to your news controller. You&#8217;re going to do two things here,
-check whether the form was submitted and whether the submitted data
-passed the validation rules. You&#8217;ll use the <a class="reference internal" href="../libraries/form_validation.html"><em>form
-validation</em></a> library to do this.</p>
+<p>Hanya ada dua hal di sini yang mungkin terlihat asing bagi Anda:
+fungsi <code class="docutils literal"><span class="pre">form_open()</span></code> dan fungsi <code class="docutils literal"><span class="pre">validation_errors()</span></code>.</p>
+<p>Fungsi yang pertama disediakan oleh <a class="reference internal" href="../helpers/form_helper.html"><em>form helper</em></a>
+dan membuat elemen <em>form</em> dan menambahkan fungsi tambahan, seperti menambahkan
+<a class="reference internal" href="../libraries/security.html"><em>field pencegahan CSRF</em></a> yang tersembunyi. Fungsi
+yang terakhir digunakan untuk melaporkan kesalahan terkait dalam validasi
+<em>form</em>.</p>
+<p>Kembali ke <em>controller</em> <code class="docutils literal"><span class="pre">news</span></code> Anda. Anda akan melakukan dua hal di sini,
+memeriksa apakah <em>form</em> tersebut di <em>submit</em> dan apakah data yang di <em>submit</em>
+melewati aturan validasi. Anda akan menggunakan <em>library</em> <a class="reference internal" href="../libraries/form_validation.html"><em>validasi form</em></a> untuk melakukan hal ini.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">create</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;form&#39;</span><span class="p">);</span>
@@ -474,41 +473,38 @@ validation</em></a> library to do this.</p>
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">form_validation</span><span class="o">-&gt;</span><span class="na">set_rules</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;required&#39;</span><span class="p">);</span>
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">form_validation</span><span class="o">-&gt;</span><span class="na">set_rules</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;Text&#39;</span><span class="p">,</span> <span class="s1">&#39;required&#39;</span><span class="p">);</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">form_validation</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">()</span> <span class="o">===</span> <span class="k">FALSE</span><span class="p">)</span>
-    <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">form_validation</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">()</span> <span class="o">===</span> <span class="k">FALSE</span><span class="p">)</span> <span class="p">{</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;templates/header&#39;</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;news/create&#39;</span><span class="p">);</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;templates/footer&#39;</span><span class="p">);</span>
 
-    <span class="p">}</span>
-    <span class="k">else</span>
-    <span class="p">{</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">news_model</span><span class="o">-&gt;</span><span class="na">set_news</span><span class="p">();</span>
         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;news/success&#39;</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The code above adds a lot of functionality. The first few lines load the
-form helper and the form validation library. After that, rules for the
-form validation are set. The set_rules() method takes three arguments;
-the name of the input field, the name to be used in error messages, and
-the rule. In this case the title and text fields are required.</p>
-<p>CodeIgniter has a powerful form validation library as demonstrated
-above. You can read <a class="reference internal" href="../libraries/form_validation.html"><em>more about this library
-here</em></a>.</p>
-<p>Continuing down, you can see a condition that checks whether the form
-validation ran successfully. If it did not, the form is displayed, if it
-was submitted <strong>and</strong> passed all the rules, the model is called. After
-this, a view is loaded to display a success message. Create a view at
-application/views/news/success.php and write a success message.</p>
+<p>Kode di atas menambahkan banyak fungsionalitas. Beberapa baris pertama memuat
+<em>form helper</em> dan <em>library</em> validasi <em>form</em>. Setelah itu, aturan untuk validasi
+<em>form</em> ditetapkan. <em>Method</em> <code class="docutils literal"><span class="pre">set_rules()</span></code> mengambil tiga argumen; nama
+<em>field</em> input, nama yang akan digunakan dalam pesan kesalahan, dan peraturan.
+Dalam hal ini <em>field</em> judul dan teks yang diharuskan.</p>
+<p>CodeIgniter memiliki <em>library</em> validasi <em>form</em> yang kuat seperti yang
+ditunjukkan di atas. Anda dapat membaca <a class="reference internal" href="../libraries/form_validation.html"><em>lebih lanjut tentang library ini
+disini</em></a>.</p>
+<p>Terus turun, Anda dapat melihat kondisi yang memeriksa apakah validasi <em>form</em>
+berhasil. Jika tidak, <em>form</em> yang ditampilkan, jika di <em>submit</em> <strong>dan</strong> berhasil
+melewati semua aturan, <em>model</em> ini dipanggil. Setelah itu, <em>view</em> dimuat untuk
+menampilkan pesan sukses. Buat <em>view</em> di <code class="docutils literal"><span class="pre">application/views/news/success.php</span></code>
+dan tulis pesan sukses.</p>
 </div>
 <div class="section" id="model">
 <h2>Model<a class="headerlink" href="#model" title="Link permanen untuk headline ini">¶</a></h2>
-<p>The only thing that remains is writing a method that writes the data to
-the database. You&#8217;ll use the Query Builder class to insert the
-information and use the input library to get the posted data. Open up
-the model created earlier and add the following:</p>
+<p>Satu-satunya hal yang tersisa adalah menulis sebuah <em>method</em> yang menulis
+data ke database. Anda akan menggunakan <em>class</em> <strong>Query Builder</strong> untuk
+memasukkan informasi dan menggunakan <em>library</em> <strong>Input</strong> untuk mendapatkan data
+yang diposting. Buka <em>model</em> yang dibuat sebelumnya dan tambahkan berikut ini:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">set_news</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">);</span>
@@ -525,27 +521,26 @@ the model created earlier and add the following:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>This new method takes care of inserting the news item into the database.
-The third line contains a new function, url_title(). This function -
-provided by the <a class="reference internal" href="../helpers/url_helper.html"><em>URL helper</em></a> - strips down
-the string you pass it, replacing all spaces by dashes (-) and makes
-sure everything is in lowercase characters. This leaves you with a nice
-slug, perfect for creating URIs.</p>
-<p>Let&#8217;s continue with preparing the record that is going to be inserted
-later, inside the $data array. Each element corresponds with a column in
-the database table created earlier. You might notice a new method here,
-namely the post() method from the <a class="reference internal" href="../libraries/input.html"><em>input
-library</em></a>. This method makes sure the data is
-sanitized, protecting you from nasty attacks from others. The input
-library is loaded by default. At last, you insert our $data array into
-our database.</p>
+<p><em>Method</em> baru ini mengurus memasukkan berita ke dalam database. Baris ketiga
+berisi fungsi baru, <code class="docutils literal"><span class="pre">url_title()</span></code>. Fungsi ini - disediakan oleh <a class="reference internal" href="../helpers/url_helper.html"><em>URL
+helper</em></a> - menghapus string yang Anda oper, mengganti
+semua spasi dengan tanda hubung (-) dan memastikan semuanya dalam huruf kecil.
+Hal ini membuat Anda mendapatkan <em>slug</em> yang bagus, sempurna untuk menciptakan
+URI.</p>
+<p>Mari kita lanjutkan dengan menyiapkan <em>record</em> yang akan dimasukkan
+kemudian, dalam <em>array</em> <code class="docutils literal"><span class="pre">$data</span></code>. Setiap elemen sesuai dengan kolom dalam
+tabel database yang dibuat sebelumnya. Anda mungkin melihat <em>method</em> baru di
+sini, yaitu <em>method</em> <code class="docutils literal"><span class="pre">post()</span></code> <a class="reference internal" href="../libraries/input.html"><em>library Input</em></a>.
+<em>Method</em> ini memastikan data sudah dibersihkan, melindungi Anda dari serangan
+jahat dari orang lain. <em>Library</em> <strong>Input</strong> dimuat secara <em>default</em>. Akhirnya,
+Anda memasukkan <em>array</em> <code class="docutils literal"><span class="pre">$data</span></code> kita ke dalam database kita.</p>
 </div>
 <div class="section" id="routing">
 <h2>Routing<a class="headerlink" href="#routing" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Before you can start adding news items into your CodeIgniter application
-you have to add an extra rule to config/routes.php file. Make sure your
-file contains the following. This makes sure CodeIgniter sees &#8216;create&#8217;
-as a method instead of a news item&#8217;s slug.</p>
+<p>Sebelum Anda dapat mulai menambahkan item berita ke dalam aplikasi CodeIgniter
+Anda, Anda harus menambahkan aturan tambahan di file <code class="docutils literal"><span class="pre">config/routes.php</span></code>.
+Pastikan file Anda berisi seperti berikut ini. Hal ini akan memastikan
+CodeIgniter melihat &#8216;<em>create</em>&#8216; sebagai <em>method</em> bukan sebagai <em>slug</em> berita ini.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news/create&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news/create&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news/(:any)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news/view/$1&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news&#39;</span><span class="p">;</span>
@@ -553,10 +548,10 @@ as a method instead of a news item&#8217;s slug.</p>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;default_controller&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pages/view&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>Now point your browser to your local development environment where you
-installed CodeIgniter and add index.php/news/create to the URL.
-Congratulations, you just created your first CodeIgniter application!
-Add some news and check out the different pages you made.</p>
+<p>Sekarang arahkan browser Anda ke <em>development environment</em> lokal Anda di mana
+Anda menginstall CodeIgniter dan tambahkan <code class="docutils literal"><span class="pre">index.php/news/create</span></code> ke URL.
+Selamat, Anda baru saja membuat aplikasi CodeIgniter pertama Anda!
+Tambahkan beberapa berita dan periksa halaman yang berbeda yang Anda buat.</p>
 </div>
 </div>
 
@@ -579,7 +574,7 @@ Add some news and check out the different pages you made.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 02, 2015.
+      Terakhir diperbarui pada Nov 03, 2015.
     </p>
   </div>
 
