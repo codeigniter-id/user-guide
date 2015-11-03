@@ -2,19 +2,19 @@
 Membuat Item Berita
 ###################
 
-You now know how you can read data from a database using CodeIgniter, but
-you haven't written any information to the database yet. In this section
-you'll expand your news controller and model created earlier to include
-this functionality.
+Anda sekarang tahu bagaimana Anda dapat membaca data dari *database* menggunakan
+CodeIgniter, tapi Anda masih belum menulis informasi ke *database*. Di bagian
+ini Anda akan memperluas *controller* ``news`` dan *model* yang dibuat
+sebelumnya untuk memasukkan fungsi ini.
 
-Create a form
--------------
+Membuat Form
+------------
 
-To input data into the database you need to create a form where you can
-input the information to be stored. This means you'll be needing a form
-with two fields, one for the title and one for the text. You'll derive
-the slug from our title in the model. Create the new view at
-application/views/news/create.php.
+Untuk memasukkan data ke dalam *database* yang Anda butuhkan untuk membuat
+*form* di mana Anda dapat masukan informasi yang akan disimpan. Ini berarti Anda
+akan membutuhkan *form* dengan dua *field*, satu untuk judul dan satu untuk teks.
+Anda akan mendapatkan *slug* dari judul kita di dalam *model*. Buat *view* baru
+di ``application/views/news/create.php``.
 
 ::
 
@@ -34,19 +34,19 @@ application/views/news/create.php.
 
     </form>
 
-There are only two things here that probably look unfamiliar to you: the
-form_open() function and the validation_errors() function.
+Hanya ada dua hal di sini yang mungkin terlihat asing bagi Anda:
+fungsi ``form_open()`` dan fungsi ``validation_errors()``.
 
-The first function is provided by the :doc:`form
-helper <../helpers/form_helper>` and renders the form element and
-adds extra functionality, like adding a hidden :doc:`CSRF prevention
-field <../libraries/security>`. The latter is used to report
-errors related to form validation.
+Fungsi yang pertama disediakan oleh :doc:`form helper <../helpers/form_helper>`
+dan membuat elemen *form* dan menambahkan fungsi tambahan, seperti menambahkan
+:doc:`field pencegahan CSRF <../libraries/security>` yang tersembunyi. Fungsi
+yang terakhir digunakan untuk melaporkan kesalahan terkait dalam validasi
+*form*.
 
-Go back to your news controller. You're going to do two things here,
-check whether the form was submitted and whether the submitted data
-passed the validation rules. You'll use the :doc:`form
-validation <../libraries/form_validation>` library to do this.
+Kembali ke *controller* ``news`` Anda. Anda akan melakukan dua hal di sini,
+memeriksa apakah *form* tersebut di *submit* dan apakah data yang di *submit*
+melewati aturan validasi. Anda akan menggunakan *library* :doc:`validasi form
+<../libraries/form_validation>` untuk melakukan hal ini.
 
 ::
 
@@ -60,43 +60,40 @@ validation <../libraries/form_validation>` library to do this.
         $this->form_validation->set_rules('title', 'Title', 'required');
         $this->form_validation->set_rules('text', 'Text', 'required');
 
-        if ($this->form_validation->run() === FALSE)
-        {
+        if ($this->form_validation->run() === FALSE) {
             $this->load->view('templates/header', $data);
             $this->load->view('news/create');
             $this->load->view('templates/footer');
 
-        }
-        else
-        {
+        } else {
             $this->news_model->set_news();
             $this->load->view('news/success');
         }
     }
 
-The code above adds a lot of functionality. The first few lines load the
-form helper and the form validation library. After that, rules for the
-form validation are set. The set\_rules() method takes three arguments;
-the name of the input field, the name to be used in error messages, and
-the rule. In this case the title and text fields are required.
+Kode di atas menambahkan banyak fungsionalitas. Beberapa baris pertama memuat
+*form helper* dan *library* validasi *form*. Setelah itu, aturan untuk validasi
+*form* ditetapkan. *Method* ``set_rules()`` mengambil tiga argumen; nama
+*field* input, nama yang akan digunakan dalam pesan kesalahan, dan peraturan.
+Dalam hal ini *field* judul dan teks yang diharuskan.
 
-CodeIgniter has a powerful form validation library as demonstrated
-above. You can read :doc:`more about this library
-here <../libraries/form_validation>`.
+CodeIgniter memiliki *library* validasi *form* yang kuat seperti yang
+ditunjukkan di atas. Anda dapat membaca :doc:`lebih lanjut tentang library ini
+disini <../libraries/form_validation>`.
 
-Continuing down, you can see a condition that checks whether the form
-validation ran successfully. If it did not, the form is displayed, if it
-was submitted **and** passed all the rules, the model is called. After
-this, a view is loaded to display a success message. Create a view at
-application/views/news/success.php and write a success message.
+Terus turun, Anda dapat melihat kondisi yang memeriksa apakah validasi *form*
+berhasil. Jika tidak, *form* yang ditampilkan, jika di *submit* **dan** berhasil
+melewati semua aturan, *model* ini dipanggil. Setelah itu, *view* dimuat untuk
+menampilkan pesan sukses. Buat *view* di ``application/views/news/success.php``
+dan tulis pesan sukses.
 
 Model
 -----
 
-The only thing that remains is writing a method that writes the data to
-the database. You'll use the Query Builder class to insert the
-information and use the input library to get the posted data. Open up
-the model created earlier and add the following:
+Satu-satunya hal yang tersisa adalah menulis sebuah *method* yang menulis
+data ke database. Anda akan menggunakan *class* **Query Builder** untuk
+memasukkan informasi dan menggunakan *library* **Input** untuk mendapatkan data
+yang diposting. Buka *model* yang dibuat sebelumnya dan tambahkan berikut ini:
 
 ::
 
@@ -115,29 +112,28 @@ the model created earlier and add the following:
         return $this->db->insert('news', $data);
     }
 
-This new method takes care of inserting the news item into the database.
-The third line contains a new function, url\_title(). This function -
-provided by the :doc:`URL helper <../helpers/url_helper>` - strips down
-the string you pass it, replacing all spaces by dashes (-) and makes
-sure everything is in lowercase characters. This leaves you with a nice
-slug, perfect for creating URIs.
+*Method* baru ini mengurus memasukkan berita ke dalam database. Baris ketiga
+berisi fungsi baru, ``url_title()``. Fungsi ini - disediakan oleh :doc:`URL
+helper <../helpers/url_helper>` - menghapus string yang Anda oper, mengganti
+semua spasi dengan tanda hubung (-) dan memastikan semuanya dalam huruf kecil.
+Hal ini membuat Anda mendapatkan *slug* yang bagus, sempurna untuk menciptakan
+URI.
 
-Let's continue with preparing the record that is going to be inserted
-later, inside the $data array. Each element corresponds with a column in
-the database table created earlier. You might notice a new method here,
-namely the post() method from the :doc:`input
-library <../libraries/input>`. This method makes sure the data is
-sanitized, protecting you from nasty attacks from others. The input
-library is loaded by default. At last, you insert our $data array into
-our database.
+Mari kita lanjutkan dengan menyiapkan *record* yang akan dimasukkan
+kemudian, dalam *array* ``$data``. Setiap elemen sesuai dengan kolom dalam
+tabel database yang dibuat sebelumnya. Anda mungkin melihat *method* baru di
+sini, yaitu *method* ``post()`` :doc:`library Input <../libraries/input>`.
+*Method* ini memastikan data sudah dibersihkan, melindungi Anda dari serangan
+jahat dari orang lain. *Library* **Input** dimuat secara *default*. Akhirnya,
+Anda memasukkan *array* ``$data`` kita ke dalam database kita.
 
 Routing
 -------
 
-Before you can start adding news items into your CodeIgniter application
-you have to add an extra rule to config/routes.php file. Make sure your
-file contains the following. This makes sure CodeIgniter sees 'create'
-as a method instead of a news item's slug.
+Sebelum Anda dapat mulai menambahkan item berita ke dalam aplikasi CodeIgniter
+Anda, Anda harus menambahkan aturan tambahan di file ``config/routes.php``.
+Pastikan file Anda berisi seperti berikut ini. Hal ini akan memastikan
+CodeIgniter melihat '*create*' sebagai *method* bukan sebagai *slug* berita ini.
 
 ::
 
@@ -147,7 +143,7 @@ as a method instead of a news item's slug.
     $route['(:any)'] = 'pages/view/$1';
     $route['default_controller'] = 'pages/view';
 
-Now point your browser to your local development environment where you
-installed CodeIgniter and add index.php/news/create to the URL.
-Congratulations, you just created your first CodeIgniter application!
-Add some news and check out the different pages you made.
+Sekarang arahkan browser Anda ke *development environment* lokal Anda di mana
+Anda menginstall CodeIgniter dan tambahkan ``index.php/news/create`` ke URL.
+Selamat, Anda baru saja membuat aplikasi CodeIgniter pertama Anda!
+Tambahkan beberapa berita dan periksa halaman yang berbeda yang Anda buat.
