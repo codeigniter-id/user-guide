@@ -1,77 +1,74 @@
-######
-Models
-######
+#####
+Model
+#####
 
-Models are **optionally** available for those who want to use a more
-traditional MVC approach.
+Models merupakan suatu *opsi* yang tersedia untuk siapa saja yang ingin menggunakan pendekatan tradisional yang lebih pada MVC.
 
-.. contents:: Page Contents
+.. daftar isi:: Konten Halaman
 
-What is a Model?
-================
+Apa itu model?
+==============
 
-Models are PHP classes that are designed to work with information in
-your database. For example, let's say you use CodeIgniter to manage a
-blog. You might have a model class that contains functions to insert,
-update, and retrieve your blog data. Here is an example of what such a
-model class might look like::
+Model merupakan class PHP yang didesain untuk hal-hal yang terkait dengan informasi basis data.
+Sebagai contoh, katakanlah Anda menggunakan CodeIgniter untuk mengolah sebuah blog.
+Anda mesti memiliki sebuah class model yang berisi beberapa fungsi (metode) untuk menambah, mengedit, atau menampilkan data blog Anda.
+Berikut ini sebuah contoh seperti apa yang dimaksud dengan class model::
 
 	class Blog_model extends CI_Model {
 
-		public $title;
-		public $content;
-		public $date;
+		public $judul;
+		public $konten;
+		public $waktu;
 
 		public function __construct()
 		{
-			// Call the CI_Model constructor
+			// Memanggil konstruktor CI_Model
 			parent::__construct();
 		}
 
-		public function get_last_ten_entries()
+		public function data_sepuluh_artikel_terakhir()
 		{
-			$query = $this->db->get('entries', 10);
+			$query = $this->db->get('artikel', 10);
 			return $query->result();
 		}
 
-		public function insert_entry()
+		public function tambahkan_item()
 		{
-			$this->title	= $_POST['title']; // please read the below note
-			$this->content	= $_POST['content'];
-			$this->date	= time();
+			$this->judul	= $_POST['judul']; // lihat catatan di bawah
+			$this->konten	= $_POST['konten'];
+			$this->waktu	= time();
 
-			$this->db->insert('entries', $this);
+			$this->db->insert('artikel', $this);
 		}
 
-		public function update_entry()
+		public function sunting_artikel()
 		{
-			$this->title	= $_POST['title'];
-			$this->content	= $_POST['content'];
-			$this->date	= time();
+			$this->judul	= $_POST['judul'];
+			$this->konten	= $_POST['konten'];
+			$this->waktu	= time();
 
-			$this->db->update('entries', $this, array('id' => $_POST['id']));
+			$this->db->update('artikel', $this, array('id' => $_POST['id']));
 		}
 
 	}
 
-.. note:: The methods in the above example use the :doc:`Query Builder
-	<../database/query_builder>` database methods.
+.. catatan:: Beberapa metode atau fungsi pada contoh di atas menggunakan metode basis data yang dinamakan :doc:`Query Builder
+	<../database/query_builder>`.
 
-.. note:: For the sake of simplicity in this example we're using ``$_POST``
-	directly. This is generally bad practice, and a more common approach
-	would be to use the :doc:`Input Library <../libraries/input>`
-	``$this->input->post('title')``.
+.. catatan:: Untuk contoh sederhana di sini menggunakan ``$_POST`` secara langsung.
+	Umumnya ini praktek yang buruk untuk dilakukan, mengingat akan timbulnya masalah celah keamanan.
+	Untuk pendekatan yang lebih baik, sebaiknya menggunakan :doc:`Input Library <../libraries/input>`
+	``$this->input->post('judul')`` dan sebagainya.
 
-Anatomy of a Model
-==================
+Susunan sebuah Model
+====================
 
-Model classes are stored in your **application/models/** directory.
-They can be nested within sub-directories if you want this type of
-organization.
+Berkas atau class model berada di direktori **application/models/**.
+Model dapat dikelompokkan di dalam sub-direktori bila model yang Anda inginkan menjadi lebih terorganisir.
 
-The basic prototype for a model class is this::
+Bentuk dasar sebuah model digambarkan seperti berikut ini::
 
-	class Model_name extends CI_Model {
+	class Nama_model extends CI_Model {
 
 		public function __construct()
 		{
@@ -80,11 +77,11 @@ The basic prototype for a model class is this::
 
 	}
 
-Where **Model_name** is the name of your class. Class names **must** have
-the first letter capitalized with the rest of the name lowercase. Make
-sure your class extends the base Model class.
+Dimana **Nama_model** adalah nama class dari class model yang Anda buat.
+Penamaan class **harus** dimulai dengan huruf besar (kapital) pada karakter huruf pertama.
+Pastikan model class Anda merupakan turunan dari base Model (class **CI_Model** atau **MY_Model**). 
 
-The file name must match the class name. For example, if this is your class::
+Antara nama berkas dan nama class harus sama. Sebagai contoh, jika Anda menggunakan model class berikut::
 
 	class User_model extends CI_Model {
 
@@ -95,41 +92,39 @@ The file name must match the class name. For example, if this is your class::
 
 	}
 
-Your file will be this::
+Maka, nama berkasnya harus seperti ini::
 
 	application/models/User_model.php
 
-Loading a Model
-===============
+Menghubungkan sebuah Model
+==========================
 
-Your models will typically be loaded and called from within your
-:doc:`controller <controllers>` methods. To load a model you will use
-the following method::
+Model pada dasarnya akan dimuat dan dipanggil dari metode atau fungsi yang ada pada
+:doc:`controller <controllers>`. Untuk menghubungkan model, Anda harus menggunakan metode berikut ini::
 
-	$this->load->model('model_name');
+	$this->load->model('nama_model');
 
-If your model is located in a sub-directory, include the relative path
-from your models directory. For example, if you have a model located at
-*application/models/blog/Queries.php* you'll load it using::
+Jika model yang Anda buat terletak di dalam sebuah sub-direktori, sertakan alamat relatif (*relative path*) dari model yang Anda buat.
+Sebagai contoh, jika model yang Anda miliki berlokasi di 
+*application/models/blog/Queries.php* Anda akan menghubungkannya dengan cara::
 
 	$this->load->model('blog/queries');
 
-Once loaded, you will access your model methods using an object with the
-same name as your class::
+Ketika terhubung, Anda dapat mengakses metode-metode yang ada pada model menggunakan sebuah objek
+dengan nama yang sama dengan nama model class yang Anda buat sebelumnya::
 
-	$this->load->model('model_name');
+	$this->load->model('nama_model');
 
-	$this->model_name->method();
+	$this->nama_model->metode();
 
-If you would like your model assigned to a different object name you can
-specify it via the second parameter of the loading method::
+Jika Anda ingin menggunakan objek yang berbeda untuk sebuah model, Anda bisa menggunakan penamaan (alias) di parameter kedua::
 
-	$this->load->model('model_name', 'foobar');
+	$this->load->model('nama_model', 'foobar');
 
-	$this->foobar->method();
+	$this->foobar->metode();
 
-Here is an example of a controller, that loads a model, then serves a
-view::
+Berikut adalah contoh sebuah controller yang terhubung dengan sebuah model
+dan menampilkan data hasil olahan model ke view::
 
 	class Blog_controller extends CI_Controller {
 
@@ -137,47 +132,44 @@ view::
 		{
 			$this->load->model('blog');
 
-			$data['query'] = $this->blog->get_last_ten_entries();
+			$data['query'] = $this->blog->data_sepuluh_artikel_terakhir();
 
 			$this->load->view('blog', $data);
 		}
 	}
 	
 
-Auto-loading Models
-===================
+*Auto-loading* Model
+====================
 
-If you find that you need a particular model globally throughout your
-application, you can tell CodeIgniter to auto-load it during system
-initialization. This is done by opening the
-**application/config/autoload.php** file and adding the model to the
-autoload array.
+Auto-loading (menghubungkan secara otomatis) model tertentu secara global bisa Anda lakukan dengan
+menggunakan pengaturan yang ada pada berkas **application/config/autoload.php**. Tambahkan model yang
+ingin Anda hubungkan secara otomatis selama sistem berjalan::
 
-Connecting to your Database
-===========================
+	$autoload['model'] = array('nama_model');
 
-When a model is loaded it does **NOT** connect automatically to your
-database. The following options for connecting are available to you:
+Koneksi ke Basis Data (Database)
+================================
 
--  You can connect using the standard database methods :doc:`described
-   here <../database/connecting>`, either from within your
-   Controller class or your Model class.
--  You can tell the model loading method to auto-connect by passing
-   TRUE (boolean) via the third parameter, and connectivity settings,
-   as defined in your database config file will be used::
+Ketika sebuah model sudah terhubung namun tidak dapat terkoneksi ke basis data secara otomatis,
+beberapa opsi yang bisa digunakan untuk mengatasi masalah ini:
 
-	$this->load->model('model_name', '', TRUE);
+-  Anda dapat meng-koneksikan dengan menggunakan standar metode database (:doc:`penjelasan di sini <../database/connecting>`),
+   antara class Controller atau class Model.
+-  Anda dapat mengatur sebuah model melakukan *auto-connect* dengan menambahkan nilai TRUE (boolean) di parameter ketiga.
+   Atau mengatur konektivitas sebagaimana yang telah didefinisikan di dalam berkas **application/config/database.php**::
 
--  You can manually pass database connectivity settings via the third
-   parameter::
+	$this->load->model('nama_model', '', TRUE);
+
+-  Anda dapat mengatur koneksi secara manual dengan menambahkan item-item berupa array pada parameter ketiga seperti contoh berikut::
 
 	$config['hostname'] = 'localhost';
-	$config['username'] = 'myusername';
-	$config['password'] = 'mypassword';
-	$config['database'] = 'mydatabase';
+	$config['username'] = 'namapengguna';
+	$config['password'] = 'katasandi';
+	$config['database'] = 'nama_database';
 	$config['dbdriver'] = 'mysqli';
 	$config['dbprefix'] = '';
 	$config['pconnect'] = FALSE;
 	$config['db_debug'] = TRUE;
 
-	$this->load->model('model_name', '', $config);
+	$this->load->model('nama_model', '', $config);
