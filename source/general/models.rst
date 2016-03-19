@@ -4,7 +4,7 @@ Model
 
 Models merupakan suatu *opsi* yang tersedia untuk siapa saja yang ingin menggunakan pendekatan tradisional yang lebih pada MVC.
 
-.. daftar isi:: Konten Halaman
+.. contents:: Daftar Isi
 
 Apa itu model?
 ==============
@@ -52,10 +52,10 @@ Berikut ini sebuah contoh seperti apa yang dimaksud dengan class model::
 
 	}
 
-.. catatan:: Beberapa metode atau fungsi pada contoh di atas menggunakan metode basis data yang dinamakan :doc:`Query Builder
+.. note:: Beberapa metode atau fungsi pada contoh di atas menggunakan metode basis data yang dinamakan :doc:`Query Builder
 	<../database/query_builder>`.
 
-.. catatan:: Untuk contoh sederhana di sini menggunakan ``$_POST`` secara langsung.
+.. note:: Untuk contoh sederhana di sini menggunakan ``$_POST`` secara langsung.
 	Umumnya ini praktek yang buruk untuk dilakukan, mengingat akan timbulnya masalah celah keamanan.
 	Untuk pendekatan yang lebih baik, sebaiknya menggunakan :doc:`Input Library <../libraries/input>`
 	``$this->input->post('judul')`` dan sebagainya.
