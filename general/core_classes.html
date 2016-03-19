@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
@@ -462,7 +462,7 @@ time CodeIgniter runs:</p>
 <h2>Replacing Core Classes<a class="headerlink" href="#replacing-core-classes" title="Link permanen untuk headline ini">¶</a></h2>
 <p>To use one of your own system classes instead of a default one simply
 place your version inside your local <em>application/core/</em> directory:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">application</span><span class="o">/</span><span class="nx">core</span><span class="o">/</span><span class="nx">some_class</span><span class="o">.</span><span class="nx">php</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">application</span><span class="o">/</span><span class="nx">core</span><span class="o">/</span><span class="nx">some_class</span><span class="o">.</span><span class="nx">php</span>
 </pre></div>
 </div>
 <p>If this directory does not exist you can create it.</p>
@@ -470,7 +470,7 @@ place your version inside your local <em>application/core/</em> directory:</p>
 instead of the one normally used.</p>
 <p>Please note that your class must use CI as a prefix. For example, if
 your file is named Input.php the class will be named:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">CI_Input</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CI_Input</span> <span class="p">{</span>
 
 <span class="p">}</span>
 </pre></div>
@@ -490,7 +490,7 @@ item is configurable. See below.).</li>
 </ul>
 <p>For example, to extend the native Input class you&#8217;ll create a file named
 application/core/MY_Input.php, and declare your class with:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MY_Input</span> <span class="k">extends</span> <span class="nx">CI_Input</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MY_Input</span> <span class="k">extends</span> <span class="nx">CI_Input</span> <span class="p">{</span>
 
 <span class="p">}</span>
 </pre></div>
@@ -499,7 +499,7 @@ application/core/MY_Input.php, and declare your class with:</p>
 <p class="first admonition-title">Catatan</p>
 <p>If you need to use a constructor in your class make sure you
 extend the parent constructor:</p>
-<div class="last highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MY_Input</span> <span class="k">extends</span> <span class="nx">CI_Input</span> <span class="p">{</span>
+<div class="last highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MY_Input</span> <span class="k">extends</span> <span class="nx">CI_Input</span> <span class="p">{</span>
 
         <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
         <span class="p">{</span>
@@ -515,7 +515,7 @@ methods in the parent class will be used instead of the native ones
 alter the CodeIgniter core.</p>
 <p>If you are extending the Controller core class, then be sure to extend
 your new class in your application controller&#8217;s constructors.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Welcome</span> <span class="k">extends</span> <span class="nx">MY_Controller</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Welcome</span> <span class="k">extends</span> <span class="nx">MY_Controller</span> <span class="p">{</span>
 
         <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
         <span class="p">{</span>
@@ -533,7 +533,7 @@ your new class in your application controller&#8217;s constructors.</p>
 <h3>Setting Your Own Prefix<a class="headerlink" href="#setting-your-own-prefix" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To set your own sub-class prefix, open your
 <em>application/config/config.php</em> file and look for this item:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Please note that all native CodeIgniter libraries are prefixed
@@ -561,7 +561,7 @@ with CI_ so DO NOT use that as your prefix.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

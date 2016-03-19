@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Membuat Library</a></li>
@@ -464,7 +464,7 @@ initialized.</p>
 <div class="section" id="the-class-file">
 <h2>The Class File<a class="headerlink" href="#the-class-file" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Classes should have this basic prototype:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">)</span> <span class="k">OR</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
 
 <span class="k">class</span> <span class="nc">Someclass</span> <span class="p">{</span>
@@ -484,14 +484,14 @@ initialized.</p>
 <h2>Using Your Class<a class="headerlink" href="#using-your-class" title="Link permanen untuk headline ini">¶</a></h2>
 <p>From within any of your <a class="reference internal" href="controllers.html"><em>Controller</em></a> methods you
 can initialize your class using the standard:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;someclass&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;someclass&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Where <em>someclass</em> is the file name, without the &#8221;.php&#8221; file extension.
 You can submit the file name capitalized or lower case. CodeIgniter
 doesn&#8217;t care.</p>
 <p>Once loaded you can access your class using the lower case version:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">someclass</span><span class="o">-&gt;</span><span class="na">some_method</span><span class="p">();</span><span class="nx"> </span> <span class="c1">// Object instances will always be lower case</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">someclass</span><span class="o">-&gt;</span><span class="na">some_method</span><span class="p">();</span><span class="nx"> </span> <span class="c1">// Object instances will always be lower case</span>
 </pre></div>
 </div>
 </div>
@@ -500,14 +500,14 @@ doesn&#8217;t care.</p>
 <p>In the library loading method you can dynamically pass data as an
 array via the second parameter and it will be passed to your class
 constructor:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$params</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;large&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$params</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;large&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;red&#39;</span><span class="p">);</span>
 
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;someclass&#39;</span><span class="p">,</span> <span class="nv">$params</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>If you use this feature you must set up your class constructor to expect
 data:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">)</span> <span class="k">OR</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span> <span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">)</span> <span class="k">OR</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
 
 <span class="k">class</span> <span class="nc">Someclass</span> <span class="p">{</span>
 
@@ -531,7 +531,7 @@ available.</p>
 object.</p>
 <p>Normally from within your controller methods you will call any of the
 available CodeIgniter methods using the <code class="docutils literal"><span class="pre">$this</span></code> construct:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">);</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">);</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">config</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;base_url&#39;</span><span class="p">);</span>
 <span class="c1">// etc.</span>
@@ -541,12 +541,12 @@ available CodeIgniter methods using the <code class="docutils literal"><span cla
 models, or your views. If you would like to use CodeIgniter&#8217;s classes
 from within your own custom classes you can do so as follows:</p>
 <p>First, assign the CodeIgniter object to a variable:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$CI</span> <span class="o">=&amp;</span> <span class="nx">get_instance</span><span class="p">();</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$CI</span> <span class="o">=&amp;</span> <span class="nx">get_instance</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>Once you&#8217;ve assigned the object to a variable, you&#8217;ll use that variable
 <em>instead</em> of <code class="docutils literal"><span class="pre">$this</span></code>:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$CI</span> <span class="o">=&amp;</span> <span class="nx">get_instance</span><span class="p">();</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$CI</span> <span class="o">=&amp;</span> <span class="nx">get_instance</span><span class="p">();</span>
 
 <span class="nv">$CI</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">);</span>
 <span class="nv">$CI</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">);</span>
@@ -558,7 +558,7 @@ from within your own custom classes you can do so as follows:</p>
 <p class="first admonition-title">Catatan</p>
 <p>You&#8217;ll notice that the above <code class="docutils literal"><span class="pre">get_instance()</span></code> function is being
 passed by reference:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$CI</span> <span class="o">=&amp;</span> <span class="nx">get_instance</span><span class="p">();</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$CI</span> <span class="o">=&amp;</span> <span class="nx">get_instance</span><span class="p">();</span>
 </pre></div>
 </div>
 <p class="last">This is very important. Assigning by reference allows you to use the
@@ -568,7 +568,7 @@ original CodeIgniter object rather than creating a copy of it.</p>
 take full advantage of the OOP principles. So, in order to
 be able to use the CodeIgniter super-object in all of the class
 methods, you&#8217;re encouraged to assign it to a property instead:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Example_library</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Example_library</span> <span class="p">{</span>
 
         <span class="k">protected</span> <span class="nv">$CI</span><span class="p">;</span>
 
@@ -603,14 +603,14 @@ feature you must name the file and the class declaration exactly the
 same as the native library. For example, to replace the native Email
 library you&#8217;ll create a file named <em>application/libraries/Email.php</em>,
 and declare your class with:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">CI_Email</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CI_Email</span> <span class="p">{</span>
 
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>Note that most native classes are prefixed with CI_.</p>
 <p>To load your library you&#8217;ll see the standard loading method:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -633,14 +633,14 @@ item is configurable. See below.).</li>
 </ul>
 <p>For example, to extend the native Email class you&#8217;ll create a file named
 <em>application/libraries/MY_Email.php</em>, and declare your class with:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MY_Email</span> <span class="k">extends</span> <span class="nx">CI_Email</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MY_Email</span> <span class="k">extends</span> <span class="nx">CI_Email</span> <span class="p">{</span>
 
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>If you need to use a constructor in your class make sure you
 extend the parent constructor:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MY_Email</span> <span class="k">extends</span> <span class="nx">CI_Email</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MY_Email</span> <span class="k">extends</span> <span class="nx">CI_Email</span> <span class="p">{</span>
 
         <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$config</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span>
         <span class="p">{</span>
@@ -661,13 +661,13 @@ extending first to see how it should be implemented.</p>
 <p>To load your sub-class you&#8217;ll use the standard syntax normally used. DO
 NOT include your prefix. For example, to load the example above, which
 extends the Email class, you will use:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Once loaded you will use the class variable as you normally would for
 the class you are extending. In the case of the email class all calls
 will use:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">some_method</span><span class="p">();</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">some_method</span><span class="p">();</span>
 </pre></div>
 </div>
 </div>
@@ -675,7 +675,7 @@ will use:</p>
 <h3>Setting Your Own Prefix<a class="headerlink" href="#setting-your-own-prefix" title="Link permanen untuk headline ini">¶</a></h3>
 <p>To set your own sub-class prefix, open your
 <em>application/config/config.php</em> file and look for this item:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Please note that all native CodeIgniter libraries are prefixed with CI_
@@ -703,7 +703,7 @@ so DO NOT use that as your prefix.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

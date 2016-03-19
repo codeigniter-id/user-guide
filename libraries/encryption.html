@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -475,11 +475,11 @@ for proper cryptography.</p>
 <p>Like most other classes in CodeIgniter, the Encryption library is
 initialized in your controller using the <code class="docutils literal"><span class="pre">$this-&gt;load-&gt;library()</span></code>
 method:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;encryption&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;encryption&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Once loaded, the Encryption library object will be available using:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span>
 </pre></div>
 </div>
 </div>
@@ -528,7 +528,7 @@ different ciphers.</p>
 <p>The key should be as random as possible and it <strong>must not</strong> be a regular
 text string, nor the output of a hashing function, etc. In order to create
 a proper key, you must use the Encryption library&#8217;s <code class="docutils literal"><span class="pre">create_key()</span></code> method</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// $key will be assigned a 16-byte (128-bit) random key</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// $key will be assigned a 16-byte (128-bit) random key</span>
 <span class="nv">$key</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">create_key</span><span class="p">(</span><span class="mi">16</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -537,14 +537,14 @@ you can design your own storage mechanism and pass the key dynamically
 when encrypting/decrypting.</p>
 <p>To save your key to your <em>application/config/config.php</em>, open the file
 and set:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;encryption_key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;YOUR KEY&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;encryption_key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;YOUR KEY&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>You&#8217;ll notice that the <code class="docutils literal"><span class="pre">create_key()</span></code> method outputs binary data, which
 is hard to deal with (i.e. a copy-paste may damage it), so you may use
 <code class="docutils literal"><span class="pre">bin2hex()</span></code>, <code class="docutils literal"><span class="pre">hex2bin()</span></code> or Base64-encoding to work with the key in
 a more friendly manner. For example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Get a hex-encoded representation of the key:</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Get a hex-encoded representation of the key:</span>
 <span class="nv">$key</span> <span class="o">=</span> <span class="nb">bin2hex</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">create_key</span><span class="p">(</span><span class="mi">16</span><span class="p">));</span>
 
 <span class="c1">// Put the same value in your config with hex2bin(),</span>
@@ -930,7 +930,7 @@ optional:</p>
 </table>
 <p>For example, if you were to change the encryption algorithm and
 mode to AES-256 in CTR mode, this is what you should do:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">initialize</span><span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">initialize</span><span class="p">(</span>
         <span class="k">array</span><span class="p">(</span>
                 <span class="s1">&#39;cipher&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;aes-256&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;mode&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;ctr&#39;</span><span class="p">,</span>
@@ -944,7 +944,7 @@ but we also included a key in the example. As previously noted, it is
 important that you choose a key with a proper size for the used algorithm.</p>
 <p>There&#8217;s also the ability to change the driver, if for some reason you
 have both, but want to use MCrypt instead of OpenSSL:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Switch to the MCrypt driver</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Switch to the MCrypt driver</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">initialize</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;driver&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;mcrypt&#39;</span><span class="p">));</span>
 
 <span class="c1">// Switch back to the OpenSSL driver</span>
@@ -957,7 +957,7 @@ have both, but want to use MCrypt instead of OpenSSL:</p>
 <p>Encrypting and decrypting data with the already configured library
 settings is simple. As simple as just passing the string to the
 <code class="docutils literal"><span class="pre">encrypt()</span></code> and/or <code class="docutils literal"><span class="pre">decrypt()</span></code> methods:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$plain_text</span> <span class="o">=</span> <span class="s1">&#39;This is a plain-text message!&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$plain_text</span> <span class="o">=</span> <span class="s1">&#39;This is a plain-text message!&#39;</span><span class="p">;</span>
 <span class="nv">$ciphertext</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">encrypt</span><span class="p">(</span><span class="nv">$plain_text</span><span class="p">);</span>
 
 <span class="c1">// Outputs: This is a plain-text message!</span>
@@ -1028,7 +1028,7 @@ setting an <em>encryption_key</em> in your configuration file.</p>
 <p>All you have to do is to pass an associative array with a few
 parameters to either the <code class="docutils literal"><span class="pre">encrypt()</span></code> or <code class="docutils literal"><span class="pre">decrypt()</span></code> method.
 Here&#8217;s an example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Assume that we have $ciphertext, $key and $hmac_key</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Assume that we have $ciphertext, $key and $hmac_key</span>
 <span class="c1">// from on outside source</span>
 
 <span class="nv">$message</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">decrypt</span><span class="p">(</span>
@@ -1194,7 +1194,7 @@ appear and become widely available.</p>
 <p>Initializes (configures) the library to use a different
 driver, cipher, mode or key.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">initialize</span><span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">initialize</span><span class="p">(</span>
         <span class="k">array</span><span class="p">(</span><span class="s1">&#39;mode&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;ctr&#39;</span><span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
@@ -1225,7 +1225,7 @@ driver, cipher, mode or key.</p>
 </table>
 <p>Encrypts the input data and returns its ciphertext.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$ciphertext</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">encrypt</span><span class="p">(</span><span class="s1">&#39;My secret message&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$ciphertext</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">encrypt</span><span class="p">(</span><span class="s1">&#39;My secret message&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Please refer to the <a class="reference internal" href="#custom-parameters"><span>Using custom parameters</span></a> section for information
@@ -1255,7 +1255,7 @@ on the optional parameters.</p>
 </table>
 <p>Decrypts the input data and returns it in plain-text.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">decrypt</span><span class="p">(</span><span class="nv">$ciphertext</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">decrypt</span><span class="p">(</span><span class="nv">$ciphertext</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Please refer to the <a class="reference internal" href="#custom-parameters"><span>Using custom parameters</span></a> secrion for information
@@ -1318,7 +1318,7 @@ described in <a class="reference external" href="https://tools.ietf.org/rfc/rfc5
 <p>However, as opposed to the description in RFC 5869, this implementation
 doesn&#8217;t support SHA1.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$hmac_key</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">hkdf</span><span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$hmac_key</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">encryption</span><span class="o">-&gt;</span><span class="na">hkdf</span><span class="p">(</span>
         <span class="nv">$key</span><span class="p">,</span>
         <span class="s1">&#39;sha512&#39;</span><span class="p">,</span>
         <span class="k">NULL</span><span class="p">,</span>
@@ -1355,7 +1355,7 @@ doesn&#8217;t support SHA1.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

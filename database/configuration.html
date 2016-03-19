@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -433,7 +433,7 @@ database connection values for specific
 it the respective environment config folder.</p>
 <p>The config settings are stored in a multi-dimensional array with this
 prototype:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;dsn&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
         <span class="s1">&#39;hostname&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
         <span class="s1">&#39;username&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;root&#39;</span><span class="p">,</span>
@@ -459,7 +459,7 @@ prototype:</p>
 require a full DSN string to be provided. If that is the case, you
 should use the &#8216;dsn&#8217; configuration setting, as if you&#8217;re using the
 driver&#8217;s underlying native PHP extension, like this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// PDO</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// PDO</span>
 <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;dsn&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pgsql:host=localhost;port=5432;dbname=database_name&#39;</span><span class="p">;</span>
 
 <span class="c1">// Oracle</span>
@@ -479,7 +479,7 @@ fields, CodeIgniter will append them.</p>
 </div>
 <p>You can also specify failovers for the situation when the main connection cannot connect for some reason.
 These failovers can be specified by setting the failover for a connection like this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;failover&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;failover&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
                 <span class="k">array</span><span class="p">(</span>
                         <span class="s1">&#39;hostname&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;localhost1&#39;</span><span class="p">,</span>
                         <span class="s1">&#39;username&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
@@ -526,7 +526,7 @@ values. If, for example, you run multiple environments (development,
 production, test, etc.) under a single installation, you can set up a
 connection group for each, then switch between groups as needed. For
 example, to set up a &#8220;test&#8221; environment you would do this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;dsn&#39;</span>   <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
         <span class="s1">&#39;hostname&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
         <span class="s1">&#39;username&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;root&#39;</span><span class="p">,</span>
@@ -550,7 +550,7 @@ example, to set up a &#8220;test&#8221; environment you would do this:</p>
 </div>
 <p>Then, to globally tell the system to use that group you would set this
 variable located in the config file:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$active_group</span> <span class="o">=</span> <span class="s1">&#39;test&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$active_group</span> <span class="o">=</span> <span class="s1">&#39;test&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -567,7 +567,7 @@ configuration file to TRUE/FALSE (boolean). The default setting is TRUE.
 If you are not using the
 query builder class, setting it to FALSE will utilize fewer resources
 when the database classes are initialized.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$query_builder</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$query_builder</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -671,7 +671,7 @@ while developing an application.</td>
 </tr>
 <tr class="row-even"><td><strong>port</strong></td>
 <td><p class="first">The database port number. To use this value you have to add a line to the database config array.</p>
-<div class="last highlight-ci"><div class="highlight"><pre><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;port&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5432</span><span class="p">;</span>
+<div class="last highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;port&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5432</span><span class="p">;</span>
 </pre></div>
 </div>
 </td>
@@ -708,7 +708,7 @@ you are using MySQL.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

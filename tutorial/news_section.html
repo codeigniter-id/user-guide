@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -439,7 +439,7 @@ Anda di <em>database</em> atau menyimpan data lainnya. Mereka mewakili data Anda
 <code class="docutils literal"><span class="pre">News_model.php</span></code> dan tambahkan kode berikut. Pastikan Anda sudah
 menkonfigurasi <em>database</em> Anda dengan benar seperti yang dijelaskan
 <a class="reference internal" href="../database/configuration.html"><em>disini</em></a>.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="k">class</span> <span class="nc">News_model</span> <span class="k">extends</span> <span class="nx">CI_Model</span>
 <span class="p">{</span>
 
@@ -457,7 +457,7 @@ objek <code class="docutils literal"><span class="pre">$this-&gt;db</span></code
 <p>Sebelum melakukan <em>query</em> ke <em>database</em>, skema <em>database</em> harus dibuat terlebih
 dahulu. Hubungkan ke <em>database</em> Anda dan jalankan perintah SQL di bawah ini
 (MySQL). Yang juga akan menambahkan beberapa <em>record</em>.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">CREATE</span> <span class="nx">TABLE</span> <span class="nx">news</span> <span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">CREATE</span> <span class="nx">TABLE</span> <span class="nx">news</span> <span class="p">(</span>
         <span class="nx">id</span> <span class="nx">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="nx">AUTO_INCREMENT</span><span class="p">,</span>
         <span class="nx">title</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
         <span class="nx">slug</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
@@ -474,7 +474,7 @@ Builder</em></a> - digunakan. Hal ini memungkinkan Anda
 untuk menulis &#8216;<em>query</em>&#8216; sekali dan membuat mereka bekerja pada <a class="reference internal" href="../general/requirements.html"><em>semua
 sistem database didukung</em></a>. Tambahkan kode berikut
 untuk <em>model</em> Anda.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">get_news</span><span class="p">(</span><span class="nv">$slug</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">)</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">function</span> <span class="nf">get_news</span><span class="p">(</span><span class="nv">$slug</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">)</span>
 <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="nv">$slug</span> <span class="o">===</span> <span class="k">FALSE</span><span class="p">)</span> <span class="p">{</span>
                 <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;news&#39;</span><span class="p">);</span>
@@ -498,7 +498,7 @@ yang akan menampilkan berita kepada pengguna. Hal ini dapat dilakukan
 di <em>controller</em> <code class="docutils literal"><span class="pre">Pages</span></code> yang kita buat sebelumnya, tapi demi kejelasan,
 <em>controller</em> <code class="docutils literal"><span class="pre">News</span></code> baru telah didefinisikan. Buat <em>controller</em> baru di
 <code class="docutils literal"><span class="pre">application/controllers/News.php</span></code>.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="k">class</span> <span class="nc">News</span> <span class="k">extends</span> <span class="nx">CI_Controller</span>
 <span class="p">{</span>
 
@@ -534,7 +534,7 @@ mengidentifikasi berita yang dikembalikan.</p>
 <p>Sekarang data tersebut diambil oleh <em>controller</em> melalui <em>model</em> kami, tapi
 belum ada yang ditampilkan. Hal berikutnya yang harus dilakukan adalah
 mengoper (<em>passing</em>) data ini ke <em>view</em>.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
 <span class="p">{</span>
         <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;news&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">news_model</span><span class="o">-&gt;</span><span class="na">get_news</span><span class="p">();</span>
         <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;News archive&#39;</span><span class="p">;</span>
@@ -550,15 +550,15 @@ mengoper (<em>passing</em>) data ini ke <em>view</em>.</p>
 <code class="docutils literal"><span class="pre">$data['title']</span></code> dan semua data akan dioper ke <em>view</em>. Anda sekarang perlu
 untuk membuat <em>view</em> untuk memuat berita. Buat
 <code class="docutils literal"><span class="pre">application/views/news/index.php</span></code> dan tambahkan potongan kode berikut.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$title</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h2&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$title</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 
 <span class="cp">&lt;?php</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$news</span> <span class="k">as</span> <span class="nv">$news_item</span><span class="p">)</span><span class="o">:</span> <span class="cp">?&gt;</span>
 
-        <span class="nt">&lt;h3&gt;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">];</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h3&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;main&quot;</span><span class="nt">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">];</span> <span class="cp">?&gt;</span><span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;main&quot;</span><span class="p">&gt;</span>
                 <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">];</span> <span class="cp">?&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">site_url</span><span class="p">(</span><span class="s1">&#39;news/&#39;</span><span class="o">.</span><span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;slug&#39;</span><span class="p">]);</span> <span class="cp">?&gt;</span><span class="s">&quot;</span><span class="nt">&gt;</span>View article<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">site_url</span><span class="p">(</span><span class="s1">&#39;news/&#39;</span><span class="o">.</span><span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;slug&#39;</span><span class="p">]);</span> <span class="cp">?&gt;</span><span class="s">&quot;</span><span class="p">&gt;</span>View article<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
 <span class="cp">&lt;?php</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span>
 </pre></div>
@@ -573,7 +573,7 @@ berita individu masih belum. <em>Model</em> yang dibuat sebelumnya dibuat sedemi
 rupa agar mudah digunakan untuk fungsi ini. Anda hanya perlu menambahkan
 beberapa kode untuk <em>controller</em> dan membuat <em>view</em> baru. Kembali ke
 <em>controller</em> <code class="docutils literal"><span class="pre">News</span></code> dan perbaiki <em>method</em> <code class="docutils literal"><span class="pre">view()</span></code> seperti berikut:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">view</span><span class="p">(</span><span class="nv">$slug</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">function</span> <span class="nf">view</span><span class="p">(</span><span class="nv">$slug</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">)</span>
 <span class="p">{</span>
         <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;news_item&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">news_model</span><span class="o">-&gt;</span><span class="na">get_news</span><span class="p">(</span><span class="nv">$slug</span><span class="p">);</span>
 
@@ -594,7 +594,7 @@ beberapa kode untuk <em>controller</em> dan membuat <em>view</em> baru. Kembali 
 dioper, sehingga akan mengembalikan <em>item</em> berita tertentu. Satu-satunya hal
 yang tersisa untuk dilakukan adalah membuat <em>view</em> yang sesuai di
 <code class="docutils literal"><span class="pre">application/views/news/view.php</span></code>. Masukan kode berikut dalam file ini.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="k">echo</span> <span class="s1">&#39;&lt;h2&gt;&#39;</span><span class="o">.</span><span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;&lt;/h2&gt;&#39;</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nv">$news_item</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">];</span>
 </pre></div>
@@ -608,7 +608,7 @@ ekstra untuk melihat <em>controller</em> yang baru saja Anda buat. Modifikasi fi
 Hal ini untuk memastikan permintaan mencapai <em>controller</em> <code class="docutils literal"><span class="pre">News</span></code> bukannya
 langsung ke <em>controller</em> <code class="docutils literal"><span class="pre">Pages</span></code>. <em>Route</em> URI baris pertama dengan <em>slug</em> ke
 <em>method</em> <code class="docutils literal"><span class="pre">view()</span></code> dalam <em>controller</em> <code class="docutils literal"><span class="pre">News</span></code>.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news/(:any)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news/view/$1&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news/(:any)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news/view/$1&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;news&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;news&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;(:any)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pages/view/$1&#39;</span><span class="p">;</span>
 <span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;default_controller&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;pages/view&#39;</span><span class="p">;</span>
@@ -638,7 +638,7 @@ dan lihat halaman berita Anda.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -463,20 +463,20 @@ your version: language/english/calendar_lang.php</p>
 <h2>Step 5: Edit your config file<a class="headerlink" href="#step-5-edit-your-config-file" title="Link permanen untuk headline ini">¶</a></h2>
 <p>The original application/config/config.php file has a typo in it Open
 the file and look for the items related to cookies:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$conf</span><span class="p">[</span><span class="s1">&#39;cookie_prefix&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$conf</span><span class="p">[</span><span class="s1">&#39;cookie_prefix&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 <span class="nv">$conf</span><span class="p">[</span><span class="s1">&#39;cookie_domain&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 <span class="nv">$conf</span><span class="p">[</span><span class="s1">&#39;cookie_path&#39;</span><span class="p">]</span>    <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Change the array name from $conf to $config, like this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;cookie_prefix&#39;</span><span class="p">]</span>        <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;cookie_prefix&#39;</span><span class="p">]</span>        <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 <span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;cookie_domain&#39;</span><span class="p">]</span>        <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 <span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;cookie_path&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="s2">&quot;/&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Lastly, add the following new item to the config file (and edit the
 option if needed):</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="cm">/*</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">|------------------------------------------------</span>
 <span class="cm">| URI PROTOCOL</span>
 <span class="cm">|------------------------------------------------</span>
@@ -517,7 +517,7 @@ option if needed):</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

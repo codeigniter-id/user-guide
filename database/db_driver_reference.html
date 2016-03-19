@@ -32,7 +32,7 @@
   
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Database" href="index.html"/>
-        <link rel="next" title="Tutorial" href="../tutorial/index.html"/>
+        <link rel="next" title="Referensi Helper" href="../helpers/index.html"/>
         <link rel="prev" title="Database Utility Class" href="utilities.html"/> 
 
   
@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -1364,11 +1364,11 @@ and applies the configured <em>dbprefix</em> to it.</p>
 <p>Some logic is necessary in order to deal with
 column names that include the path.</p>
 <p>Consider a query like this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">SELECT</span> <span class="o">*</span> <span class="nx">FROM</span> <span class="nx">hostname</span><span class="o">.</span><span class="nx">database</span><span class="o">.</span><span class="nx">table</span><span class="o">.</span><span class="nx">column</span> <span class="k">AS</span> <span class="nx">c</span> <span class="nx">FROM</span> <span class="nx">hostname</span><span class="o">.</span><span class="nx">database</span><span class="o">.</span><span class="nx">table</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">SELECT</span> <span class="o">*</span> <span class="nx">FROM</span> <span class="nx">hostname</span><span class="o">.</span><span class="nx">database</span><span class="o">.</span><span class="nx">table</span><span class="o">.</span><span class="nx">column</span> <span class="k">AS</span> <span class="nx">c</span> <span class="nx">FROM</span> <span class="nx">hostname</span><span class="o">.</span><span class="nx">database</span><span class="o">.</span><span class="nx">table</span>
 </pre></div>
 </div>
 <p>Or a query with aliasing:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">SELECT</span> <span class="nx">m</span><span class="o">.</span><span class="nx">member_id</span><span class="p">,</span> <span class="nx">m</span><span class="o">.</span><span class="nx">member_name</span> <span class="nx">FROM</span> <span class="nx">members</span> <span class="k">AS</span> <span class="nx">m</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">SELECT</span> <span class="nx">m</span><span class="o">.</span><span class="nx">member_id</span><span class="p">,</span> <span class="nx">m</span><span class="o">.</span><span class="nx">member_name</span> <span class="nx">FROM</span> <span class="nx">members</span> <span class="k">AS</span> <span class="nx">m</span>
 </pre></div>
 </div>
 <p>Since the column name can include up to four segments
@@ -1389,7 +1389,7 @@ position, and escape only the correct identifiers.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../tutorial/index.html" class="btn btn-neutral float-right" title="Tutorial">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../helpers/index.html" class="btn btn-neutral float-right" title="Referensi Helper">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="utilities.html" class="btn btn-neutral" title="Database Utility Class"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -1402,7 +1402,7 @@ position, and escape only the correct identifiers.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

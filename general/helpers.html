@@ -33,7 +33,7 @@
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Menggunakan Library CodeIgniter" href="libraries.html"/>
-        <link rel="prev" title="Models" href="models.html"/> 
+        <link rel="prev" title="Model" href="models.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">Model</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">Model</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
@@ -447,14 +447,14 @@ global <em>system/helpers/</em> directory.</p>
 <div class="section" id="loading-a-helper">
 <h2>Loading a Helper<a class="headerlink" href="#loading-a-helper" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Loading a helper file is quite simple using the following method:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Where <strong>name</strong> is the file name of the helper, without the .php file
 extension or the &#8220;helper&#8221; part.</p>
 <p>For example, to load the <strong>URL Helper</strong> file, which is named
 <strong>url_helper.php</strong>, you would do this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>A helper can be loaded anywhere within your controller methods (or
@@ -473,7 +473,7 @@ don&#8217;t try to assign it to a variable. Just use it as shown.</p>
 <h2>Loading Multiple Helpers<a class="headerlink" href="#loading-multiple-helpers" title="Link permanen untuk headline ini">¶</a></h2>
 <p>If you need to load more than one helper you can specify them in an
 array, like this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span>
         <span class="k">array</span><span class="p">(</span><span class="s1">&#39;helper1&#39;</span><span class="p">,</span> <span class="s1">&#39;helper2&#39;</span><span class="p">,</span> <span class="s1">&#39;helper3&#39;</span><span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
@@ -492,7 +492,7 @@ file and adding the helper to the autoload array.</p>
 use, you&#8217;ll call it the way you would a standard PHP function.</p>
 <p>For example, to create a link using the <code class="docutils literal"><span class="pre">anchor()</span></code> function in one of
 your view files you would do this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nx">anchor</span><span class="p">(</span><span class="s1">&#39;blog/comments&#39;</span><span class="p">,</span> <span class="s1">&#39;Click Here&#39;</span><span class="p">);</span><span class="cp">?&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nx">anchor</span><span class="p">(</span><span class="s1">&#39;blog/comments&#39;</span><span class="p">,</span> <span class="s1">&#39;Click Here&#39;</span><span class="p">);</span><span class="cp">?&gt;</span>
 </pre></div>
 </div>
 <p>Where &#8220;Click Here&#8221; is the name of the link, and &#8220;blog/comments&#8221; is the
@@ -517,7 +517,7 @@ add to or or to replace the functions a Helper provides.</p>
 <p>For example, to extend the native <strong>Array Helper</strong> you&#8217;ll create a file
 named <strong>application/helpers/MY_array_helper.php</strong>, and add or override
 functions:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// any_in_array() is not in the Array Helper, so it defines a new function</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// any_in_array() is not in the Array Helper, so it defines a new function</span>
 <span class="k">function</span> <span class="nf">any_in_array</span><span class="p">(</span><span class="nv">$needle</span><span class="p">,</span> <span class="nv">$haystack</span><span class="p">)</span>
 <span class="p">{</span>
         <span class="nv">$needle</span> <span class="o">=</span> <span class="nb">is_array</span><span class="p">(</span><span class="nv">$needle</span><span class="p">)</span> <span class="o">?</span> <span class="nv">$needle</span> <span class="o">:</span> <span class="k">array</span><span class="p">(</span><span class="nv">$needle</span><span class="p">);</span>
@@ -546,7 +546,7 @@ functions:</p>
 <p>The filename prefix for &#8220;extending&#8221; Helpers is the same used to extend
 libraries and core classes. To set your own prefix, open your
 <strong>application/config/config.php</strong> file and look for this item:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;subclass_prefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;MY_&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Please note that all native CodeIgniter libraries are prefixed with <strong>CI_</strong>
@@ -569,7 +569,7 @@ Files. Browse each one to see what they do.</p>
         <a href="libraries.html" class="btn btn-neutral float-right" title="Menggunakan Library CodeIgniter">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="models.html" class="btn btn-neutral" title="Models"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="models.html" class="btn btn-neutral" title="Model"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -579,7 +579,7 @@ Files. Browse each one to see what they do.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

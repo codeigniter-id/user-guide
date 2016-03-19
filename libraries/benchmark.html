@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -459,7 +459,7 @@ The process for usage is this:</p>
 <li>Run the &#8220;elapsed time&#8221; function to view the results</li>
 </ol>
 <p>Here&#8217;s an example using real code:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">mark</span><span class="p">(</span><span class="s1">&#39;code_start&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">mark</span><span class="p">(</span><span class="s1">&#39;code_start&#39;</span><span class="p">);</span>
 
 <span class="c1">// Some code happens here</span>
 
@@ -473,7 +473,7 @@ The process for usage is this:</p>
 <p>The words &#8220;code_start&#8221; and &#8220;code_end&#8221; are arbitrary. They
 are simply words used to set two markers. You can use any words you
 want, and you can set multiple sets of markers. Consider this example:</p>
-<div class="last highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">mark</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">);</span>
+<div class="last highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">mark</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">);</span>
 
 <span class="c1">// Some code happens here</span>
 
@@ -495,7 +495,7 @@ want, and you can set multiple sets of markers. Consider this example:</p>
 <a class="reference internal" href="../general/profiling.html"><em>Profiler</em></a> all of your marked points must
 be set up in pairs, and each mark point name must end with _start and
 _end. Each pair of points must otherwise be named identically. Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">mark</span><span class="p">(</span><span class="s1">&#39;my_mark_start&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">mark</span><span class="p">(</span><span class="s1">&#39;my_mark_start&#39;</span><span class="p">);</span>
 
 <span class="c1">// Some code happens here...</span>
 
@@ -516,7 +516,7 @@ information.</p>
 <p>If you would like to display the total elapsed time from the moment
 CodeIgniter starts to the moment the final output is sent to the
 browser, simply place this in one of your view templates:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">elapsed_time</span><span class="p">();</span><span class="cp">?&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">elapsed_time</span><span class="p">();</span><span class="cp">?&gt;</span>
 </pre></div>
 </div>
 <p>You&#8217;ll notice that it&#8217;s the same function used in the examples above to
@@ -527,7 +527,7 @@ browser. It doesn&#8217;t matter where you use the function call, the timer
 will continue to run until the very end.</p>
 <p>An alternate way to show your elapsed time in your view files is to use
 this pseudo-variable, if you prefer not to use the pure PHP:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nx">elapsed_time</span><span class="p">}</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nx">elapsed_time</span><span class="p">}</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -541,7 +541,7 @@ functions you must set your own start/end points.</p>
 <p>If your PHP installation is configured with &#8211;enable-memory-limit, you
 can display the amount of memory consumed by the entire system using the
 following code in one of your view file:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">memory_usage</span><span class="p">();</span><span class="cp">?&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">benchmark</span><span class="o">-&gt;</span><span class="na">memory_usage</span><span class="p">();</span><span class="cp">?&gt;</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -551,7 +551,7 @@ will reflect the total memory used by the entire app.</p>
 </div>
 <p>An alternate way to show your memory usage in your view files is to use
 this pseudo-variable, if you prefer not to use the pure PHP:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="p">{</span><span class="nx">memory_usage</span><span class="p">}</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nx">memory_usage</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -653,7 +653,7 @@ swap the real value for this variable.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

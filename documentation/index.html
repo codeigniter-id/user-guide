@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -432,7 +432,7 @@ on readability and user friendliness.
 While they can be quite technical, we always write for humans!</p>
 <p>A local table of contents should always be included, like the one below.
 It is created automatically by inserting the following:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">..</span> <span class="nx">contents</span><span class="o">::</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="nx">contents</span><span class="o">::</span>
         <span class="o">:</span><span class="nx">local</span><span class="o">:</span>
 
 <span class="o">..</span> <span class="nx">raw</span><span class="o">::</span> <span class="na">html</span>
@@ -456,7 +456,7 @@ contained in the current page.</p>
 along with the PHP domain extension for Sphinx.  The underlying requirement
 is to have Python installed.  Lastly, you will install the CI Lexer for
 Pygments, so that code blocks can be properly highlighted.</p>
-<div class="highlight-bash"><div class="highlight"><pre>easy_install <span class="s2">&quot;sphinx==1.2.3&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>easy_install <span class="s2">&quot;sphinx==1.2.3&quot;</span>
 easy_install sphinxcontrib-phpdomain
 </pre></div>
 </div>
@@ -470,7 +470,7 @@ are used to automatically build both the page and document table of contents.
 Headings are formed by using certain characters as underlines for a bit of
 text.  Major headings, like page titles and section headings also use
 overlines.  Other headings just use underlines, with the following hierarchy:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1"># with overline for page titles</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1"># with overline for page titles</span>
 <span class="o">*</span> <span class="nx">with</span> <span class="nx">overline</span> <span class="k">for</span> <span class="nx">major</span> <span class="nx">sections</span>
 <span class="o">=</span> <span class="k">for</span> <span class="nx">subsections</span>
 <span class="o">-</span> <span class="k">for</span> <span class="nx">subsubsections</span>
@@ -480,7 +480,7 @@ overlines.  Other headings just use underlines, with the following hierarchy:</p
 </div>
 <p>The <a class="reference external" href="http://codeigniter.com/user_guide/_downloads/ELDocs.tmbundle.zip">TextMate ELDocs Bundle</a> can help you
 create these with the following tab triggers:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">title</span><span class="o">-&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">title</span><span class="o">-&gt;</span>
 
         <span class="c1">##########</span>
         <span class="nx">Page</span> <span class="nx">Title</span>
@@ -519,7 +519,7 @@ create these with the following tab triggers:</p>
 <p>When documenting class methods for third party developers, Sphinx provides
 directives to assist and keep things simple.
 For example, consider the following ReST:</p>
-<div class="highlight-rst"><div class="highlight"><pre><span class="p">..</span> <span class="ow">php:class</span><span class="p">::</span> Some_class
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">php:class</span><span class="p">::</span> Some_class
 
 <span class="p">        ..</span> <span class="ow">php:method</span><span class="p">::</span> some_method ( $foo [, $bar [, $bat]])
 
@@ -590,7 +590,7 @@ parameter.</p>
 </tr>
 </tbody>
 </table>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;some_class&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;some_class&#39;</span><span class="p">);</span>
 
 <span class="nv">$bar</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;something&#39;</span>             <span class="o">=&gt;</span> <span class="s1">&#39;Here is this parameter!&#39;</span><span class="p">,</span>
@@ -652,7 +652,7 @@ For real.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

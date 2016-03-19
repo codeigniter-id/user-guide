@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -575,7 +575,7 @@ if your application relies on those values.</p>
 <code class="docutils literal"><span class="pre">'key'</span> <span class="pre">=&gt;</span> <span class="pre">'dummy</span> <span class="pre">value'</span></code> pairs for unsetting multiple keys. That
 however makes no sense and you now have to pass <em>only</em> the keys, as
 the elements of an array.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Old</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">session</span><span class="o">-&gt;</span><span class="na">unset_userdata</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;item&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;item2&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">));</span>
 
 <span class="c1">// New</span>
@@ -594,7 +594,7 @@ it will now also have to be re-factored.</p>
 <p>Due to 3.0.0&#8217;s renaming of Active Record to Query Builder, inside your
 <strong>config/database.php</strong>, you will need to rename the <code class="docutils literal"><span class="pre">$active_record</span></code>
 variable to <code class="docutils literal"><span class="pre">$query_builder</span></code>:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$active_group</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$active_group</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">;</span>
 <span class="c1">// $active_record = TRUE;</span>
 <span class="nv">$query_builder</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
 </pre></div>
@@ -625,7 +625,7 @@ that it will not match a forward slash.</p>
 <p>There are certainly many developers that have utilized this bug as an actual
 feature. If you&#8217;re one of them and want to match a forward slash, please use
 the <strong>.+</strong> regular expression:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="p">(</span><span class="o">.+</span><span class="p">)</span>    <span class="c1">// matches ANYTHING</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">.+</span><span class="p">)</span>    <span class="c1">// matches ANYTHING</span>
 <span class="p">(</span><span class="o">:</span><span class="nx">any</span><span class="p">)</span>  <span class="c1">// matches any character, except for &#39;/&#39;</span>
 </pre></div>
 </div>
@@ -643,7 +643,7 @@ CodeIgniter 3.0.</p>
 <p>Another notable change in version 3 is that &#8216;default_controller&#8217; and
 &#8216;404_override&#8217; are now applied <em>per directory</em>. To explain what this means,
 let&#8217;s take the following example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;default_controller&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;main&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$route</span><span class="p">[</span><span class="s1">&#39;default_controller&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;main&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Now, assuming that your website is located at <em>example.com</em>, you already
@@ -778,7 +778,7 @@ at all with some drivers. In CodeIgniter 3.0, the IF EXISTS condition is no long
 by default and has an optional second parameter that allows that instead and is set to
 FALSE by default.</p>
 <p>If your application relies on IF EXISTS, you&#8217;ll have to change its usage.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Now produces just DROP TABLE `table_name`</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Now produces just DROP TABLE `table_name`</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">dbforge</span><span class="o">-&gt;</span><span class="na">drop_table</span><span class="p">(</span><span class="s1">&#39;table_name&#39;</span><span class="p">);</span>
 
 <span class="c1">// Produces DROP TABLE IF EXISTS `table_name`</span>
@@ -796,7 +796,7 @@ all drivers with the exception of ODBC.</p>
 <p>The <a class="reference internal" href="../libraries/email.html"><em>Email Library</em></a> will automatically clear the
 set parameters after successfully sending emails. To override this behaviour,
 pass FALSE as the first parameter in the <code class="docutils literal"><span class="pre">send()</span></code> method:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="k">FALSE</span><span class="p">))</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="k">FALSE</span><span class="p">))</span>
 <span class="p">{</span>
         <span class="c1">// Parameters won&#39;t be cleared</span>
 <span class="p">}</span>
@@ -811,7 +811,7 @@ files and error messages format:</p>
 <div><ul>
 <li><p class="first"><a class="reference internal" href="../libraries/language.html"><em>Language Library</em></a> line keys now must be
 prefixed with <strong>form_validation_</strong> in order to avoid collisions:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Old</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old</span>
 <span class="nv">$lang</span><span class="p">[</span><span class="s1">&#39;rule&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span>
 
 <span class="c1">// New</span>
@@ -821,7 +821,7 @@ prefixed with <strong>form_validation_</strong> in order to avoid collisions:</p
 </li>
 <li><p class="first">The error messages format has been changed to use named parameters, to
 allow more flexibility than what <cite>sprintf()</cite> offers:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Old</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old</span>
 <span class="s1">&#39;The %s field does not match the %s field.&#39;</span>
 
 <span class="c1">// New</span>
@@ -1004,7 +1004,7 @@ to the availability of native PHP <a class="reference external" href="http://php
 which when combined with <code class="docutils literal"><span class="pre">date()</span></code> provide the same functionality. Furthermore, they have the
 exact same names as the ones supported by <code class="docutils literal"><span class="pre">standard_date()</span></code>. Here are examples of how to replace
 its usage:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Old way</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old way</span>
 <span class="nx">standard_date</span><span class="p">();</span> <span class="c1">// defaults to standard_date(&#39;DATE_RFC822&#39;, now());</span>
 
 <span class="c1">// Replacement</span>
@@ -1078,7 +1078,7 @@ sooner rather than later.</p>
 <h3>Session Library method all_userdata()<a class="headerlink" href="#session-library-method-all-userdata" title="Link permanen untuk headline ini">¶</a></h3>
 <p>As seen in the <a class="reference internal" href="../changelog.html"><em>Change Log</em></a>, <a class="reference internal" href="../libraries/sessions.html"><em>Session Library</em></a>
 method <code class="docutils literal"><span class="pre">userdata()</span></code> now allows you to fetch all userdata by simply omitting its parameter:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">session</span><span class="o">-&gt;</span><span class="na">userdata</span><span class="p">();</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">session</span><span class="o">-&gt;</span><span class="na">userdata</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>This makes the <code class="docutils literal"><span class="pre">all_userdata()</span></code> method redudant and therefore it is now just an alias for
@@ -1096,7 +1096,7 @@ sooner rather than later.</p>
 <code class="docutils literal"><span class="pre">add_column()</span></code> to add a field for an AFTER clause, then you should change its usage.</p>
 <p>That third parameter has been deprecated and scheduled for removal in CodeIgniter 3.1+.</p>
 <p>You should now put AFTER clause field names in the field definition array instead:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Old usage:</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old usage:</span>
 <span class="nv">$field</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;new_field&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;TEXT&#39;</span><span class="p">)</span>
 <span class="p">);</span>
@@ -1130,7 +1130,7 @@ the properties - it doesn&#8217;t make sense to keep them.</p>
 <p>Those are all internal, undocumented methods, but we&#8217;ve opted to deprecate them for now
 in order to maintain backwards-compatibility just in case. If some of you have utilized them,
 then you can now just access the properties instead:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">router</span><span class="o">-&gt;</span><span class="na">directory</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">router</span><span class="o">-&gt;</span><span class="na">directory</span><span class="p">;</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">router</span><span class="o">-&gt;</span><span class="na">class</span><span class="p">;</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">router</span><span class="o">-&gt;</span><span class="na">method</span><span class="p">;</span>
 </pre></div>
@@ -1147,7 +1147,7 @@ sooner rather than later.</p>
 in the CodeIgniter internals and this is often before the <a class="reference internal" href="../libraries/input.html"><em>Input Library</em></a> is loaded. Because of that, it is being replaced by a common
 function named <a class="reference internal" href="../general/common_functions.html#is_cli" title="is_cli"><code class="xref php php-func docutils literal"><span class="pre">is_cli()</span></code></a> and this method is now just an alias.</p>
 <p>The new function is both available at all times for you to use and shorter to type.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Old</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">input</span><span class="o">-&gt;</span><span class="na">is_cli_request</span><span class="p">();</span>
 
 <span class="c1">// New</span>
@@ -1196,7 +1196,7 @@ tag <code class="docutils literal"><span class="pre">&lt;mark&gt;</span></code>.
 for your visitors who use older web browsers such as Internet Explorer 8.
 We therefore suggest that you add the following code to your CSS files
 in order to avoid backwards compatibility with old browsers:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">mark</span> <span class="p">{</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">mark</span> <span class="p">{</span>
         <span class="nx">background</span><span class="o">:</span> <span class="c1">#ff0;</span>
         <span class="nx">color</span><span class="o">:</span> <span class="c1">#000;</span>
 <span class="p">};</span>
@@ -1224,7 +1224,7 @@ in order to avoid backwards compatibility with old browsers:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

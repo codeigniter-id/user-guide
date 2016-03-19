@@ -32,7 +32,7 @@
   
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Helper" href="index.html"/>
-        <link rel="next" title="Referensi Database" href="../database/index.html"/>
+        <link rel="next" title="Change Log" href="../changelog.html"/>
         <link rel="prev" title="URL Helper" href="url_helper.html"/> 
 
   
@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -436,7 +436,7 @@ data.</p>
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
 <h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This helper is loaded using the following code</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;xml&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;xml&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -476,13 +476,13 @@ characters to entities:</p>
 </div></blockquote>
 <p>This function ignores ampersands if they are part of existing numbered
 character entities, e.g. &amp;#123;. Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$string</span> <span class="o">=</span> <span class="s1">&#39;&lt;p&gt;Here is a paragraph &amp; an entity (&amp;#123;).&lt;/p&gt;&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$string</span> <span class="o">=</span> <span class="s1">&#39;&lt;p&gt;Here is a paragraph &amp; an entity (&amp;#123;).&lt;/p&gt;&#39;</span><span class="p">;</span>
 <span class="nv">$string</span> <span class="o">=</span> <span class="nx">xml_convert</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$string</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>outputs:</p>
-<div class="highlight-html"><div class="highlight"><pre><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Here is a paragraph <span class="ni">&amp;amp;</span> an entity (<span class="ni">&amp;#123;</span>).<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Here is a paragraph <span class="ni">&amp;amp;</span> an entity (<span class="ni">&amp;#123;</span>).<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -496,7 +496,7 @@ character entities, e.g. &amp;#123;. Example:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../database/index.html" class="btn btn-neutral float-right" title="Referensi Database">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../changelog.html" class="btn btn-neutral float-right" title="Change Log">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="url_helper.html" class="btn btn-neutral" title="URL Helper"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -509,7 +509,7 @@ character entities, e.g. &amp;#123;. Example:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

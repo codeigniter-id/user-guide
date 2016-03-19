@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -464,7 +464,7 @@ detail pada halamannya sendiri.</p>
 <p>URL yang dihasilkan oleh CodeIgniter bersih dan <em>search-engine friendly</em>.
 Daripada menggunakan standar &#8220;query string&#8221; pendekatan ke URL yang
 identik dengan sistem dinamis, CodeIgniter menggunakan pendekatan <em>segment-based</em>:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">news</span><span class="o">/</span><span class="nx">article</span><span class="o">/</span><span class="mi">345</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">news</span><span class="o">/</span><span class="nx">article</span><span class="o">/</span><span class="mi">345</span>
 </pre></div>
 </div>
 <p>Catatan: Secara default file <code class="docutils literal"><span class="pre">index.php</span></code> disertakan dalam URL tetapi bisa
@@ -489,15 +489,15 @@ digunakan secara opsional, ia tidak memaksa Anda untuk menggunakannya.
 <em>Template engine</em> tidak bisa menyamai kinerja <em>native</em> PHP, dan sintaks yang
 harus dipelajari untuk menggunakan <em>template engine</em> biasanya hanya sedikit
 lebih mudah daripada belajar dasar-dasar PHP. Pertimbangkan blok kode PHP berikut:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
 <span class="o">&lt;?</span><span class="nx">php</span> <span class="k">foreach</span> <span class="p">(</span><span class="nv">$addressbook</span> <span class="k">as</span> <span class="nv">$name</span><span class="p">)</span><span class="o">:</span><span class="cp">?&gt;</span>
-        <span class="nt">&lt;li&gt;</span><span class="cp">&lt;?</span><span class="o">=</span><span class="nv">$name</span><span class="cp">?&gt;</span><span class="nt">&lt;/li&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="cp">&lt;?</span><span class="o">=</span><span class="nv">$name</span><span class="cp">?&gt;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 <span class="cp">&lt;?php</span> <span class="k">endforeach</span><span class="p">;</span> <span class="cp">?&gt;</span>
-<span class="nt">&lt;/ul&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>Kontras ini dengan <em>pseudo-code</em> yang digunakan oleh <em>template engine</em>:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
 <span class="p">{</span><span class="k">foreach</span> <span class="nx">from</span><span class="o">=</span><span class="nv">$addressbook</span> <span class="nx">item</span><span class="o">=</span><span class="s2">&quot;name&quot;</span><span class="p">}</span>
         <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="p">{</span><span class="nv">$name</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
 <span class="p">{</span><span class="o">/</span><span class="k">foreach</span><span class="p">}</span>
@@ -542,7 +542,7 @@ bersih dan mempunyai komentar yang baik juga.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

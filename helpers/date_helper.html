@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -436,7 +436,7 @@
 <div class="custom-index container"></div><div class="section" id="loading-this-helper">
 <h2><a class="toc-backref" href="#id1">Loading this Helper</a><a class="headerlink" href="#loading-this-helper" title="Link permanen untuk headline ini">¶</a></h2>
 <p>This helper is loaded using the following code:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -469,7 +469,7 @@ in your config file. If you do not intend to set your master time reference to
 any other PHP supported timezone (which you&#8217;ll typically do if you run a site
 that lets each user set their own timezone settings) there is no benefit to using
 this function over PHP&#8217;s <code class="docutils literal"><span class="pre">time()</span></code> function.</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">now</span><span class="p">(</span><span class="s1">&#39;Australia/Victoria&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">now</span><span class="p">(</span><span class="s1">&#39;Australia/Victoria&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>If a timezone is not provided, it will return <code class="docutils literal"><span class="pre">time()</span></code> based on the
@@ -504,7 +504,7 @@ code letter is preceded with a percent sign, e.g. <cite>%Y %m %d</cite></p>
 about escaping any characters that are not date codes, as you would
 normally have to do with the <code class="docutils literal"><span class="pre">date()</span></code> function.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$datestring</span> <span class="o">=</span> <span class="s1">&#39;Year: %Y Month: %m Day: %d - %h:%i %a&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$datestring</span> <span class="o">=</span> <span class="s1">&#39;Year: %Y Month: %m Day: %d - %h:%i %a&#39;</span><span class="p">;</span>
 <span class="nv">$time</span> <span class="o">=</span> <span class="nb">time</span><span class="p">();</span>
 <span class="k">echo</span> <span class="nx">mdate</span><span class="p">(</span><span class="nv">$datestring</span><span class="p">,</span> <span class="nv">$time</span><span class="p">);</span>
 </pre></div>
@@ -536,7 +536,7 @@ will be used.</p>
 </table>
 <p>Lets you generate a date string in one of several standardized formats.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$format</span> <span class="o">=</span> <span class="s1">&#39;DATE_RFC822&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$format</span> <span class="o">=</span> <span class="s1">&#39;DATE_RFC822&#39;</span><span class="p">;</span>
 <span class="nv">$time</span> <span class="o">=</span> <span class="nb">time</span><span class="p">();</span>
 <span class="k">echo</span> <span class="nx">standard_date</span><span class="p">(</span><span class="nv">$format</span><span class="p">,</span> <span class="nv">$time</span><span class="p">);</span>
 </pre></div>
@@ -546,7 +546,7 @@ will be used.</p>
 <p>This function is DEPRECATED. Use the native <code class="docutils literal"><span class="pre">date()</span></code> combined with
 <a class="reference external" href="http://php.net/manual/en/class.datetime.php#datetime.constants.types">DateTime&#8217;s format constants</a>
 instead:</p>
-<div class="last highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nb">date</span><span class="p">(</span><span class="nx">DATE_RFC822</span><span class="p">,</span> <span class="nb">time</span><span class="p">());</span>
+<div class="last highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nb">date</span><span class="p">(</span><span class="nx">DATE_RFC822</span><span class="p">,</span> <span class="nb">time</span><span class="p">());</span>
 </pre></div>
 </div>
 </div>
@@ -630,7 +630,7 @@ instead:</p>
 </table>
 <p>Takes a UNIX timestamp as input and returns it as GMT.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$gmt</span> <span class="o">=</span> <span class="nx">local_to_gmt</span><span class="p">(</span><span class="nb">time</span><span class="p">());</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$gmt</span> <span class="o">=</span> <span class="nx">local_to_gmt</span><span class="p">(</span><span class="nb">time</span><span class="p">());</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -661,7 +661,7 @@ instead:</p>
 a localized timestamp based on the timezone and Daylight Saving Time
 submitted.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$timestamp</span> <span class="o">=</span> <span class="mi">1140153693</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$timestamp</span> <span class="o">=</span> <span class="mi">1140153693</span><span class="p">;</span>
 <span class="nv">$timezone</span>  <span class="o">=</span> <span class="s1">&#39;UM8&#39;</span><span class="p">;</span>
 <span class="nv">$daylight_saving</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nx">gmt_to_local</span><span class="p">(</span><span class="nv">$timestamp</span><span class="p">,</span> <span class="nv">$timezone</span><span class="p">,</span> <span class="nv">$daylight_saving</span><span class="p">);</span>
@@ -695,7 +695,7 @@ submitted.</p>
 </table>
 <p>Takes a MySQL Timestamp as input and returns it as a UNIX timestamp.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$unix</span> <span class="o">=</span> <span class="nx">mysql_to_unix</span><span class="p">(</span><span class="s1">&#39;20061124092345&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$unix</span> <span class="o">=</span> <span class="nx">mysql_to_unix</span><span class="p">(</span><span class="s1">&#39;20061124092345&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -724,7 +724,7 @@ submitted.</p>
 </table>
 <p>Takes a UNIX timestamp as input and returns it in a human readable
 format with this prototype:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">YYYY</span><span class="o">-</span><span class="nx">MM</span><span class="o">-</span><span class="nx">DD</span> <span class="nx">HH</span><span class="o">:</span><span class="nx">MM</span><span class="o">:</span><span class="nx">SS</span> <span class="nx">AM</span><span class="o">/</span><span class="nx">PM</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">YYYY</span><span class="o">-</span><span class="nx">MM</span><span class="o">-</span><span class="nx">DD</span> <span class="nx">HH</span><span class="o">:</span><span class="nx">MM</span><span class="o">:</span><span class="nx">SS</span> <span class="nx">AM</span><span class="o">/</span><span class="nx">PM</span>
 </pre></div>
 </div>
 <p>This can be useful if you need to display a date in a form field for
@@ -733,7 +733,7 @@ submission.</p>
 European or US format. If only the timestamp is submitted it will return
 the time without seconds formatted for the U.S.</p>
 <p>Examples:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$now</span> <span class="o">=</span> <span class="nb">time</span><span class="p">();</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$now</span> <span class="o">=</span> <span class="nb">time</span><span class="p">();</span>
 <span class="k">echo</span> <span class="nx">unix_to_human</span><span class="p">(</span><span class="nv">$now</span><span class="p">);</span> <span class="c1">// U.S. time, no seconds</span>
 <span class="k">echo</span> <span class="nx">unix_to_human</span><span class="p">(</span><span class="nv">$now</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">,</span> <span class="s1">&#39;us&#39;</span><span class="p">);</span> <span class="c1">// U.S. time with seconds</span>
 <span class="k">echo</span> <span class="nx">unix_to_human</span><span class="p">(</span><span class="nv">$now</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">,</span> <span class="s1">&#39;eu&#39;</span><span class="p">);</span> <span class="c1">// Euro time with seconds</span>
@@ -766,7 +766,7 @@ time as input and returns it as a UNIX timestamp. This is useful if you
 accept &#8220;human&#8221; formatted dates submitted via a form. Returns boolean FALSE
 date string passed to it is not formatted as indicated above.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$now</span> <span class="o">=</span> <span class="nb">time</span><span class="p">();</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$now</span> <span class="o">=</span> <span class="nb">time</span><span class="p">();</span>
 <span class="nv">$human</span> <span class="o">=</span> <span class="nx">unix_to_human</span><span class="p">(</span><span class="nv">$now</span><span class="p">);</span>
 <span class="nv">$unix</span> <span class="o">=</span> <span class="nx">human_to_unix</span><span class="p">(</span><span class="nv">$human</span><span class="p">);</span>
 </pre></div>
@@ -800,7 +800,7 @@ them into something useful. It also accepts well-formed dates.</p>
 pass a format string (the same type as the PHP <code class="docutils literal"><span class="pre">date()</span></code> function accepts)
 as the second parameter.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$bad_date</span> <span class="o">=</span> <span class="s1">&#39;199605&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$bad_date</span> <span class="o">=</span> <span class="s1">&#39;199605&#39;</span><span class="p">;</span>
 <span class="c1">// Should Produce: 1996-05-01</span>
 <span class="nv">$better_date</span> <span class="o">=</span> <span class="nx">nice_date</span><span class="p">(</span><span class="nv">$bad_date</span><span class="p">,</span> <span class="s1">&#39;Y-m-d&#39;</span><span class="p">);</span>
 
@@ -834,7 +834,7 @@ as the second parameter.</p>
 </tbody>
 </table>
 <p>Formats a UNIX timestamp so that is appears similar to this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="mi">1</span> <span class="nx">Year</span><span class="p">,</span> <span class="mi">10</span> <span class="nx">Months</span><span class="p">,</span> <span class="mi">2</span> <span class="nx">Weeks</span><span class="p">,</span> <span class="mi">5</span> <span class="nx">Days</span><span class="p">,</span> <span class="mi">10</span> <span class="nx">Hours</span><span class="p">,</span> <span class="mi">16</span> <span class="nx">Minutes</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="nx">Year</span><span class="p">,</span> <span class="mi">10</span> <span class="nx">Months</span><span class="p">,</span> <span class="mi">2</span> <span class="nx">Weeks</span><span class="p">,</span> <span class="mi">5</span> <span class="nx">Days</span><span class="p">,</span> <span class="mi">10</span> <span class="nx">Hours</span><span class="p">,</span> <span class="mi">16</span> <span class="nx">Minutes</span>
 </pre></div>
 </div>
 <p>The first parameter must contain a UNIX timestamp.
@@ -845,7 +845,7 @@ The thirdparameter is optional and limits the number of time units to display.</
 <p>The most common purpose for this function is to show how much time has
 elapsed from some point in time in the past to now.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$post_date</span> <span class="o">=</span> <span class="s1">&#39;1079621429&#39;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$post_date</span> <span class="o">=</span> <span class="s1">&#39;1079621429&#39;</span><span class="p">;</span>
 <span class="nv">$now</span> <span class="o">=</span> <span class="nb">time</span><span class="p">();</span>
 <span class="nv">$units</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="k">echo</span> <span class="nx">timespan</span><span class="p">(</span><span class="nv">$post_date</span><span class="p">,</span> <span class="nv">$now</span><span class="p">,</span> <span class="nv">$units</span><span class="p">);</span>
@@ -882,7 +882,7 @@ file: <cite>language/&lt;your_lang&gt;/date_lang.php</cite></p>
 <p>Returns the number of days in a given month/year. Takes leap years into
 account.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">days_in_month</span><span class="p">(</span><span class="mo">06</span><span class="p">,</span> <span class="mi">2005</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">days_in_month</span><span class="p">(</span><span class="mo">06</span><span class="p">,</span> <span class="mi">2005</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>If the second parameter is empty, the current year will be used.</p>
@@ -918,7 +918,7 @@ it is available.</p>
 </table>
 <p>Returns a list of dates within a specified period.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$range</span> <span class="o">=</span> <span class="nx">date_range</span><span class="p">(</span><span class="s1">&#39;2012-01-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2012-01-15&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$range</span> <span class="o">=</span> <span class="nx">date_range</span><span class="p">(</span><span class="s1">&#39;2012-01-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2012-01-15&#39;</span><span class="p">);</span>
 <span class="k">echo</span> <span class="s2">&quot;First 15 days of 2012:&quot;</span><span class="p">;</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$range</span> <span class="k">as</span> <span class="nv">$date</span><span class="p">)</span>
 <span class="p">{</span>
@@ -952,7 +952,7 @@ it is available.</p>
 &#8220;Timezone Reference&#8221; below) and returns the number of hours offset from
 UTC.</p>
 <p>Example:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">timezones</span><span class="p">(</span><span class="s1">&#39;UM5&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">timezones</span><span class="p">(</span><span class="s1">&#39;UM5&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>This function is useful when used with <a class="reference internal" href="#timezone_menu" title="timezone_menu"><code class="xref php php-func docutils literal"><span class="pre">timezone_menu()</span></code></a>.</p>
@@ -1029,7 +1029,7 @@ UTC.</p>
 allowed to set their local timezone value.</p>
 <p>The first parameter lets you set the &#8220;selected&#8221; state of the menu. For
 example, to set Pacific time as the default you will do this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">timezone_menu</span><span class="p">(</span><span class="s1">&#39;UM8&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">timezone_menu</span><span class="p">(</span><span class="s1">&#39;UM8&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Please see the timezone reference below to see the values of this menu.</p>
@@ -1202,7 +1202,7 @@ language file: <cite>language/&lt;your_lang&gt;/date_lang.php</cite></p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

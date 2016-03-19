@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -452,11 +452,11 @@ used to be to post to the default controller, but it will now just leave
 an empty action=&#8221;&#8221; meaning the form will submit to the current URL. If
 submitting to the default controller was the expected behavior it will
 need to be changed from:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">form_open</span><span class="p">();</span> <span class="c1">//&lt;form action=&quot;&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot;&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">form_open</span><span class="p">();</span> <span class="c1">//&lt;form action=&quot;&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot;&gt;</span>
 </pre></div>
 </div>
 <p>to use either a / or base_url():</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="k">echo</span> <span class="nx">form_open</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">);</span> <span class="c1">//&lt;form action=&quot;http://example.com/index.php/&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot;&gt;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">echo</span> <span class="nx">form_open</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">);</span> <span class="c1">//&lt;form action=&quot;http://example.com/index.php/&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot;&gt;</span>
 <span class="k">echo</span> <span class="nx">form_open</span><span class="p">(</span><span class="nx">base_url</span><span class="p">());</span> <span class="c1">//&lt;form action=&quot;http://example.com/&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot;&gt;</span>
 </pre></div>
 </div>
@@ -482,7 +482,7 @@ need to be changed from:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

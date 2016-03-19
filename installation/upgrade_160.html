@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -451,14 +451,14 @@ make copies of them first.</p>
 <h2>Step 2: Add time_to_update to your config.php<a class="headerlink" href="#step-2-add-time-to-update-to-your-config-php" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Add the following to application/config/config.php with the other
 session configuration options</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;sess_time_to_update&#39;</span><span class="p">]</span>         <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;sess_time_to_update&#39;</span><span class="p">]</span>         <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="step-3-add-autoload-model">
 <h2>Step 3: Add $autoload[&#8216;model&#8217;]<a class="headerlink" href="#step-3-add-autoload-model" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Add the following to application/config/autoload.php</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="cm">/*</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">| -------------------------------------------------------------------</span>
 <span class="cm">| Auto-load Model files</span>
 <span class="cm">| -------------------------------------------------------------------</span>
@@ -477,15 +477,15 @@ session configuration options</p>
 <p>Make the following changes to your application/config/database.php file:</p>
 <p>Add the following variable above the database configuration options,
 with $active_group</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$active_record</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$active_record</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Remove the following from your database configuration options</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;active_r&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;active_r&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Add the following to your database configuration options</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;char_set&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;utf8&quot;</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;char_set&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;utf8&quot;</span><span class="p">;</span>
 <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;dbcollat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;utf8_general_ci&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
@@ -516,7 +516,7 @@ version.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 

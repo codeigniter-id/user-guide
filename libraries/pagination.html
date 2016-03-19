@@ -95,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -281,7 +281,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../general/controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/views.html">Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general/models.html">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/creating_libraries.html">Membuat Library</a></li>
@@ -450,14 +450,14 @@ customizable, either dynamically or via stored preferences.</p>
 </div>
 <div class="custom-index container"></div><p>If you are not familiar with the term &#8220;pagination&#8221;, it refers to links
 that allows you to navigate from page to page, like this:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">«</span> <span class="nx">First  </span><span class="o">&lt;</span><span class="nx"> 1 2 3 4 5 </span><span class="o">&gt;</span><span class="nx">  Last</span> <span class="nx">»</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">«</span> <span class="nx">First  </span><span class="o">&lt;</span><span class="nx"> 1 2 3 4 5 </span><span class="o">&gt;</span><span class="nx">  Last</span> <span class="nx">»</span>
 </pre></div>
 </div>
 <div class="section" id="example">
 <h2><a class="toc-backref" href="#id1">Example</a><a class="headerlink" href="#example" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Here is a simple example showing how to create pagination in one of your
 <a class="reference internal" href="../general/controllers.html"><em>controller</em></a> methods:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;pagination&#39;</span><span class="p">);</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;pagination&#39;</span><span class="p">);</span>
 
 <span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;base_url&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;http://example.com/index.php/test/page/&#39;</span><span class="p">;</span>
 <span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;total_rows&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
@@ -519,14 +519,14 @@ set this to TRUE.</p>
 <p>By default, the pagination library assume you are using <a class="reference internal" href="../general/urls.html"><em>URI
 Segments</em></a>, and constructs your links something
 like:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">http</span><span class="o">://</span><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">/</span><span class="nx">test</span><span class="o">/</span><span class="nx">page</span><span class="o">/</span><span class="mi">20</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">http</span><span class="o">://</span><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">/</span><span class="nx">test</span><span class="o">/</span><span class="nx">page</span><span class="o">/</span><span class="mi">20</span>
 </pre></div>
 </div>
 <p>If you have <code class="docutils literal"><span class="pre">$config['enable_query_strings']</span></code> set to TRUE your links
 will automatically be re-written using Query Strings. This option can
 also be explictly set. Using <code class="docutils literal"><span class="pre">$config['page_query_string']</span></code> set to TRUE,
 the pagination link will become:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">http</span><span class="o">://</span><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">?</span><span class="nx">c</span><span class="o">=</span><span class="nx">test</span><span class="o">&amp;</span><span class="nx">m</span><span class="o">=</span><span class="nx">page</span><span class="o">&amp;</span><span class="nx">per_page</span><span class="o">=</span><span class="mi">20</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">http</span><span class="o">://</span><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">?</span><span class="nx">c</span><span class="o">=</span><span class="nx">test</span><span class="o">&amp;</span><span class="nx">m</span><span class="o">=</span><span class="nx">page</span><span class="o">&amp;</span><span class="nx">per_page</span><span class="o">=</span><span class="mi">20</span>
 </pre></div>
 </div>
 <p>Note that &#8220;per_page&#8221; is the default query string passed, however can be
@@ -536,7 +536,7 @@ configured using <code class="docutils literal"><span class="pre">$config['query
 query string options) will be ignored. Setting this config to
 TRUE will add existing query string arguments back into the
 URL after the URI segment and before the suffix.:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nx">http</span><span class="o">://</span><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">/</span><span class="nx">test</span><span class="o">/</span><span class="nx">page</span><span class="o">/</span><span class="mi">20</span><span class="o">?</span><span class="nx">query</span><span class="o">=</span><span class="nx">search</span><span class="o">%</span><span class="nx">term</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nx">http</span><span class="o">://</span><span class="nx">example</span><span class="o">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">/</span><span class="nx">test</span><span class="o">/</span><span class="nx">page</span><span class="o">/</span><span class="mi">20</span><span class="o">?</span><span class="nx">query</span><span class="o">=</span><span class="nx">search</span><span class="o">%</span><span class="nx">term</span>
 </pre></div>
 </div>
 <p>This helps you mix together normal <a class="reference internal" href="../general/urls.html"><em>URI Segments</em></a>
@@ -638,7 +638,7 @@ want this link rendered, you can set its value to FALSE.</p>
 <p>If you wanted to not list the specific pages (for example, you only want
 &#8220;next&#8221; and &#8220;previous&#8221; links), you can suppress their rendering by
 adding:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;display_pages&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;display_pages&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -647,7 +647,7 @@ adding:</p>
 <p>If you want to add an extra attribute to be added to every link rendered
 by the pagination class, you can set them as key/value pairs in the
 &#8220;attributes&#8221; config:</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="c1">// Produces: class=&quot;myclass&quot;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Produces: class=&quot;myclass&quot;</span>
 <span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;attributes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;class&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;myclass&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -662,7 +662,7 @@ is deprecated.</p>
 <p>By default the rel attribute is dynamically generated and appended to
 the appropriate anchors. If for some reason you want to turn it off,
 you can pass boolean FALSE as a regular attribute</p>
-<div class="highlight-ci"><div class="highlight"><pre><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;attributes&#39;</span><span class="p">][</span><span class="s1">&#39;rel&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
+<div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;attributes&#39;</span><span class="p">][</span><span class="s1">&#39;rel&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -734,7 +734,7 @@ you can pass boolean FALSE as a regular attribute</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Nov 03, 2015.
+      Terakhir diperbarui pada Mar 19, 2016.
     </p>
   </div>
 
