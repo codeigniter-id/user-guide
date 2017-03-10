@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Tutorial" href="index.html"/>
         <link rel="next" title="Membuat Item Berita" href="create_news_items.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -76,7 +77,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="static_pages.html">Halaman Statis</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Bagian Berita</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Bagian Berita</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_news_items.html">Membuat Item Berita</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conclusion.html">Kesimpulan</a></li>
 </ul>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -262,7 +261,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="static_pages.html">Halaman Statis</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Bagian Berita</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Bagian Berita</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_news_items.html">Membuat Item Berita</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conclusion.html">Kesimpulan</a></li>
 </ul>
@@ -438,12 +437,12 @@ Anda di <em>database</em> atau menyimpan data lainnya. Mereka mewakili data Anda
 <p>Buka direktori <code class="docutils literal"><span class="pre">application/models/</span></code> dan buat file baru yang bernama
 <code class="docutils literal"><span class="pre">News_model.php</span></code> dan tambahkan kode berikut. Pastikan Anda sudah
 menkonfigurasi <em>database</em> Anda dengan benar seperti yang dijelaskan
-<a class="reference internal" href="../database/configuration.html"><em>disini</em></a>.</p>
+<a class="reference internal" href="../database/configuration.html"><span class="doc">disini</span></a>.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
 <span class="k">class</span> <span class="nc">News_model</span> <span class="k">extends</span> <span class="nx">CI_Model</span>
 <span class="p">{</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
         <span class="p">{</span>
                 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">database</span><span class="p">();</span>
         <span class="p">}</span>
@@ -469,10 +468,10 @@ dahulu. Hubungkan ke <em>database</em> Anda dan jalankan perintah SQL di bawah i
 </div>
 <p>Sekarang <em>database</em> dan <em>model</em> telah diatur, Anda akan memerlukan <em>method</em>
 untuk mendapatkan semua <em>posting</em> kita dari database. Untuk melakukan hal ini,
-<em>database abstraction layer</em> yang disertakan dengan CodeIgniter - <a class="reference internal" href="../database/query_builder.html"><em>Query
-Builder</em></a> - digunakan. Hal ini memungkinkan Anda
-untuk menulis &#8216;<em>query</em>&#8216; sekali dan membuat mereka bekerja pada <a class="reference internal" href="../general/requirements.html"><em>semua
-sistem database didukung</em></a>. Tambahkan kode berikut
+<em>database abstraction layer</em> yang disertakan dengan CodeIgniter - <a class="reference internal" href="../database/query_builder.html"><span class="doc">Query
+Builder</span></a> - digunakan. Hal ini memungkinkan Anda
+untuk menulis &#8216;<em>query</em>&#8216; sekali dan membuat mereka bekerja pada <a class="reference internal" href="../general/requirements.html"><span class="doc">semua
+sistem database didukung</span></a>. Tambahkan kode berikut
 untuk <em>model</em> Anda.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">function</span> <span class="nf">get_news</span><span class="p">(</span><span class="nv">$slug</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">)</span>
 <span class="p">{</span>
@@ -488,7 +487,7 @@ untuk <em>model</em> Anda.</p>
 </div>
 <p>Dengan kode ini Anda dapat melakukan dua <em>query</em> yang berbeda. Anda bisa
 mendapatkan semua <em>record</em> berita, atau mendapatkan sebuah berita dengan <a class="reference external" href="#">slug</a>. Anda mungkin melihat bahwa variabel <code class="docutils literal"><span class="pre">$slug</span></code> tidak dibersihkan sebelum
-menjalankan <em>query</em>. <a class="reference internal" href="../database/query_builder.html"><em>Query Builder</em></a>
+menjalankan <em>query</em>. <a class="reference internal" href="../database/query_builder.html"><span class="doc">Query Builder</span></a>
 melakukannya untuk anda.</p>
 </div>
 <div class="section" id="menampilkan-berita">
@@ -502,7 +501,7 @@ di <em>controller</em> <code class="docutils literal"><span class="pre">Pages</s
 <span class="k">class</span> <span class="nc">News</span> <span class="k">extends</span> <span class="nx">CI_Controller</span>
 <span class="p">{</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
         <span class="p">{</span>
                 <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
                 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">model</span><span class="p">(</span><span class="s1">&#39;news_model&#39;</span><span class="p">);</span>
@@ -525,7 +524,7 @@ di <em>controller</em> <code class="docutils literal"><span class="pre">Pages</s
 buat sebelumnya. Pertama, <em>method</em> <code class="docutils literal"><span class="pre">__construct()</span></code>: itu memanggil konstruktor
 <em>class</em> induknya (<code class="docutils literal"><span class="pre">CI_Controller</span></code>) dan memuat <em>model</em>, sehingga dapat
 digunakan di semua <em>method</em> di dalam <em>controller</em> ini. Hal ini juga memuat
-<em>collection</em> dari fungsi <a class="reference internal" href="../helpers/url_helper.html"><em>URL Helper</em></a>, karena kita
+<em>collection</em> dari fungsi <a class="reference internal" href="../helpers/url_helper.html"><span class="doc">URL Helper</span></a>, karena kita
 akan menggunakan salah satu dari mereka dalam <em>view</em> nanti.</p>
 <p>Berikutnya, ada dua <em>method</em> untuk melihat semua berita dan satu berita untuk
 berita tertentu. Anda dapat melihat bahwa variabel <code class="docutils literal"><span class="pre">$slug</span></code> dilewatkan ke
@@ -566,7 +565,7 @@ untuk membuat <em>view</em> untuk memuat berita. Buat
 <p>Di sini, setiap item berita diulang dan ditampilkan kepada pengguna. Anda dapat
 melihat kita menulis <em>template</em> kita di PHP yang dicampur dengan HTML. Jika
 Anda memilih untuk menggunakan <em>template language</em>, Anda dapat menggunakan
-CodeIgniter <em>class</em> <a class="reference internal" href="../libraries/parser.html"><em>Template Parser</em></a> atau
+CodeIgniter <em>class</em> <a class="reference internal" href="../libraries/parser.html"><span class="doc">Template Parser</span></a> atau
 <em>parser</em> pihak ketiga.</p>
 <p>Halaman ikhtisar berita sekarang selesai, tetapi halaman untuk menampilkan
 berita individu masih belum. <em>Model</em> yang dibuat sebelumnya dibuat sedemikian
@@ -638,7 +637,7 @@ dan lihat halaman berita Anda.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

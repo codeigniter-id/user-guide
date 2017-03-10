@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Upgrade Dari Versi Sebelumnya" href="upgrading.html"/>
         <link rel="next" title="Upgrading from 1.7.1 to 1.7.2" href="upgrade_172.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Panduan Instalasi</a><ul class="current">
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Panduan Instalasi</a><ul class="current">
@@ -444,8 +443,8 @@ make copies of them first.</p>
 <div class="section" id="step-2-adjust-get-dir-file-info-where-necessary">
 <h3>Step 2: Adjust get_dir_file_info() where necessary<a class="headerlink" href="#step-2-adjust-get-dir-file-info-where-necessary" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Version 2.0.0 brings a non-backwards compatible change to
-get_dir_file_info() in the <a class="reference internal" href="../helpers/file_helper.html"><em>File
-Helper</em></a>. Non-backwards compatible changes
+get_dir_file_info() in the <a class="reference internal" href="../helpers/file_helper.html"><span class="doc">File
+Helper</span></a>. Non-backwards compatible changes
 are extremely rare in CodeIgniter, but this one we feel was warranted
 due to how easy it was to create serious server performance issues. If
 you <em>need</em> recursiveness where you are using this helper function,
@@ -486,8 +485,8 @@ will decode the data with the original algorithm and return a re-encoded
 string using the improved methods. This will enable you to easily
 replace stale encrypted data with fresh in your applications, either on
 the fly or en masse.</p>
-<p>Please read <a class="reference internal" href="../libraries/encrypt.html"><em>how to use this
-method</em></a> in the Encrypt library
+<p>Please read <a class="reference internal" href="../libraries/encrypt.html"><span class="doc">how to use this
+method</span></a> in the Encrypt library
 documentation.</p>
 </div>
 <div class="section" id="step-5-remove-loading-calls-for-the-compatibility-helper">
@@ -520,28 +519,28 @@ including the image files.</p>
 </div>
 <div class="section" id="update-notes">
 <h2>Update Notes<a class="headerlink" href="#update-notes" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Please refer to the <a class="reference internal" href="../changelog.html#changelog"><span>2.0.0 Change Log</span></a> for full
+<p>Please refer to the <a class="reference internal" href="../changelog.html#changelog"><span class="std std-ref">2.0.0 Change Log</span></a> for full
 details, but here are some of the larger changes that are more likely to
 impact your code:</p>
 <ul class="simple">
 <li>Scaffolding has been removed.</li>
-<li>The CAPTCHA plugin in now a <a class="reference internal" href="../helpers/captcha_helper.html"><em>helper</em></a>.</li>
+<li>The CAPTCHA plugin in now a <a class="reference internal" href="../helpers/captcha_helper.html"><span class="doc">helper</span></a>.</li>
 <li>The JavaScript calendar plugin was removed.</li>
 <li>The <em>system/cache</em> and <em>system/logs</em> directories are now in the application
 directory.</li>
 <li>The Validation class has been removed.  Please see the
-<a class="reference internal" href="../libraries/form_validation.html"><em>Form Validation library</em></a></li>
+<a class="reference internal" href="../libraries/form_validation.html"><span class="doc">Form Validation library</span></a></li>
 <li>&#8220;default&#8221; is now a reserved name.</li>
-<li>The xss_clean() function has moved to the <a class="reference internal" href="../libraries/security.html"><em>Security Class</em></a>.</li>
+<li>The xss_clean() function has moved to the <a class="reference internal" href="../libraries/security.html"><span class="doc">Security Class</span></a>.</li>
 <li>do_xss_clean() now returns FALSE if the uploaded file fails XSS checks.</li>
-<li>The <a class="reference internal" href="../libraries/sessions.html"><em>Session Class</em></a> requires now the use of an
+<li>The <a class="reference internal" href="../libraries/sessions.html"><span class="doc">Session Class</span></a> requires now the use of an
 encryption key set in the config file.</li>
 <li>The following deprecated Active Record functions have been removed:
 <code class="docutils literal"><span class="pre">orwhere</span></code>, <code class="docutils literal"><span class="pre">orlike</span></code>, <code class="docutils literal"><span class="pre">groupby</span></code>, <code class="docutils literal"><span class="pre">orhaving</span></code>, <code class="docutils literal"><span class="pre">orderby</span></code>,
 <code class="docutils literal"><span class="pre">getwhere</span></code>.</li>
 <li><code class="docutils literal"><span class="pre">_drop_database()</span></code> and <code class="docutils literal"><span class="pre">_create_database()</span></code> functions have been removed
 from the db utility drivers.</li>
-<li>The <code class="docutils literal"><span class="pre">dohash()</span></code> function of the <a class="reference internal" href="../helpers/security_helper.html"><em>Security helper</em></a>
+<li>The <code class="docutils literal"><span class="pre">dohash()</span></code> function of the <a class="reference internal" href="../helpers/security_helper.html"><span class="doc">Security helper</span></a>
 has been renamed to <code class="docutils literal"><span class="pre">do_hash()</span></code> for naming consistency.</li>
 </ul>
 <div class="section" id="the-config-folder">
@@ -582,7 +581,7 @@ has been renamed to <code class="docutils literal"><span class="pre">do_hash()</
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

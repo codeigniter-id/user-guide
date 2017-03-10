@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Menjalankan dengan CLI" href="cli.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -110,7 +111,7 @@
 <li class="toctree-l2"><a class="reference internal" href="routing.html">URI Routing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="errors.html">Penanganan Error</a></li>
 <li class="toctree-l2"><a class="reference internal" href="caching.html">Caching</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Profiling Aplikasi Anda</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Profiling Aplikasi Anda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cli.html">Menjalankan dengan CLI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="managing_apps.html">Mengelola Aplikasi Anda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="environments.html">Handling Multiple Environments</a></li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -296,7 +295,7 @@
 <li class="toctree-l2"><a class="reference internal" href="routing.html">URI Routing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="errors.html">Penanganan Error</a></li>
 <li class="toctree-l2"><a class="reference internal" href="caching.html">Caching</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Profiling Aplikasi Anda</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Profiling Aplikasi Anda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cli.html">Menjalankan dengan CLI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="managing_apps.html">Mengelola Aplikasi Anda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="environments.html">Handling Multiple Environments</a></li>
@@ -434,14 +433,14 @@ optimization.</p>
 <div class="admonition important">
 <p class="first admonition-title">Penting</p>
 <p class="last">This class does NOT need to be initialized. It is loaded
-automatically by the <a class="reference internal" href="../libraries/output.html"><em>Output Library</em></a>
+automatically by the <a class="reference internal" href="../libraries/output.html"><span class="doc">Output Library</span></a>
 if profiling is enabled as shown below.</p>
 </div>
 </div>
 <div class="section" id="enabling-the-profiler">
 <h2>Enabling the Profiler<a class="headerlink" href="#enabling-the-profiler" title="Link permanen untuk headline ini">¶</a></h2>
 <p>To enable the profiler place the following line anywhere within your
-<a class="reference internal" href="controllers.html"><em>Controller</em></a> methods:</p>
+<a class="reference internal" href="controllers.html"><span class="doc">Controller</span></a> methods:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">output</span><span class="o">-&gt;</span><span class="na">enable_profiler</span><span class="p">(</span><span class="k">TRUE</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -457,7 +456,7 @@ your pages.</p>
 <p>In order for the Profiler to compile and display your benchmark data you
 must name your mark points using specific syntax.</p>
 <p>Please read the information on setting Benchmark points in the
-<a class="reference internal" href="../libraries/benchmark.html"><em>Benchmark Library</em></a> page.</p>
+<a class="reference internal" href="../libraries/benchmark.html"><span class="doc">Benchmark Library</span></a> page.</p>
 </div>
 <div class="section" id="enabling-and-disabling-profiler-sections">
 <h2>Enabling and Disabling Profiler Sections<a class="headerlink" href="#enabling-and-disabling-profiler-sections" title="Link permanen untuk headline ini">¶</a></h2>
@@ -472,7 +471,7 @@ two ways. First, you can set application wide defaults with the
 </div>
 <p>In your controllers, you can override the defaults and config file
 values by calling the <code class="docutils literal"><span class="pre">set_profiler_sections()</span></code> method of the
-<a class="reference internal" href="../libraries/output.html"><em>Output Library</em></a>:</p>
+<a class="reference internal" href="../libraries/output.html"><span class="doc">Output Library</span></a>:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$sections</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
         <span class="s1">&#39;config&#39;</span>  <span class="o">=&gt;</span> <span class="k">TRUE</span><span class="p">,</span>
         <span class="s1">&#39;queries&#39;</span> <span class="o">=&gt;</span> <span class="k">TRUE</span>
@@ -545,7 +544,7 @@ hidden.</td>
 </table>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
-<p class="last">Disabling the <a class="reference internal" href="../database/configuration.html"><em>save_queries</em></a> setting in
+<p class="last">Disabling the <a class="reference internal" href="../database/configuration.html"><span class="doc">save_queries</span></a> setting in
 your database configuration will also effectively disable profiling for
 database queries and render the &#8216;queries&#8217; setting above useless. You can
 optionally override this setting with <code class="docutils literal"><span class="pre">$this-&gt;db-&gt;save_queries</span> <span class="pre">=</span> <span class="pre">TRUE;</span></code>.
@@ -574,7 +573,7 @@ Without this setting you won&#8217;t be able to view the queries or the
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

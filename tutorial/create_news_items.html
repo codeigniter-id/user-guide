@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Tutorial" href="index.html"/>
         <link rel="next" title="Kesimpulan" href="conclusion.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -77,7 +78,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="static_pages.html">Halaman Statis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="news_section.html">Bagian Berita</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Membuat Item Berita</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Membuat Item Berita</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conclusion.html">Kesimpulan</a></li>
 </ul>
 </li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -263,7 +262,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorial</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="static_pages.html">Halaman Statis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="news_section.html">Bagian Berita</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Membuat Item Berita</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Membuat Item Berita</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conclusion.html">Kesimpulan</a></li>
 </ul>
 </li>
@@ -455,14 +454,14 @@ di <code class="docutils literal"><span class="pre">application/views/news/creat
 </div>
 <p>Hanya ada dua hal di sini yang mungkin terlihat asing bagi Anda:
 fungsi <code class="docutils literal"><span class="pre">form_open()</span></code> dan fungsi <code class="docutils literal"><span class="pre">validation_errors()</span></code>.</p>
-<p>Fungsi yang pertama disediakan oleh <a class="reference internal" href="../helpers/form_helper.html"><em>form helper</em></a>
+<p>Fungsi yang pertama disediakan oleh <a class="reference internal" href="../helpers/form_helper.html"><span class="doc">form helper</span></a>
 dan membuat elemen <em>form</em> dan menambahkan fungsi tambahan, seperti menambahkan
-<a class="reference internal" href="../libraries/security.html"><em>field pencegahan CSRF</em></a> yang tersembunyi. Fungsi
+<a class="reference internal" href="../libraries/security.html"><span class="doc">field pencegahan CSRF</span></a> yang tersembunyi. Fungsi
 yang terakhir digunakan untuk melaporkan kesalahan terkait dalam validasi
 <em>form</em>.</p>
 <p>Kembali ke <em>controller</em> <code class="docutils literal"><span class="pre">news</span></code> Anda. Anda akan melakukan dua hal di sini,
 memeriksa apakah <em>form</em> tersebut di <em>submit</em> dan apakah data yang di <em>submit</em>
-melewati aturan validasi. Anda akan menggunakan <em>library</em> <a class="reference internal" href="../libraries/form_validation.html"><em>validasi form</em></a> untuk melakukan hal ini.</p>
+melewati aturan validasi. Anda akan menggunakan <em>library</em> <a class="reference internal" href="../libraries/form_validation.html"><span class="doc">validasi form</span></a> untuk melakukan hal ini.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">function</span> <span class="nf">create</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">helper</span><span class="p">(</span><span class="s1">&#39;form&#39;</span><span class="p">);</span>
@@ -491,8 +490,8 @@ melewati aturan validasi. Anda akan menggunakan <em>library</em> <a class="refer
 <em>field</em> input, nama yang akan digunakan dalam pesan kesalahan, dan peraturan.
 Dalam hal ini <em>field</em> judul dan teks yang diharuskan.</p>
 <p>CodeIgniter memiliki <em>library</em> validasi <em>form</em> yang kuat seperti yang
-ditunjukkan di atas. Anda dapat membaca <a class="reference internal" href="../libraries/form_validation.html"><em>lebih lanjut tentang library ini
-disini</em></a>.</p>
+ditunjukkan di atas. Anda dapat membaca <a class="reference internal" href="../libraries/form_validation.html"><span class="doc">lebih lanjut tentang library ini
+disini</span></a>.</p>
 <p>Terus turun, Anda dapat melihat kondisi yang memeriksa apakah validasi <em>form</em>
 berhasil. Jika tidak, <em>form</em> yang ditampilkan, jika di <em>submit</em> <strong>dan</strong> berhasil
 melewati semua aturan, <em>model</em> ini dipanggil. Setelah itu, <em>view</em> dimuat untuk
@@ -522,15 +521,15 @@ yang diposting. Buka <em>model</em> yang dibuat sebelumnya dan tambahkan berikut
 </pre></div>
 </div>
 <p><em>Method</em> baru ini mengurus memasukkan berita ke dalam database. Baris ketiga
-berisi fungsi baru, <code class="docutils literal"><span class="pre">url_title()</span></code>. Fungsi ini - disediakan oleh <a class="reference internal" href="../helpers/url_helper.html"><em>URL
-helper</em></a> - menghapus string yang Anda oper, mengganti
+berisi fungsi baru, <code class="docutils literal"><span class="pre">url_title()</span></code>. Fungsi ini - disediakan oleh <a class="reference internal" href="../helpers/url_helper.html"><span class="doc">URL
+helper</span></a> - menghapus string yang Anda oper, mengganti
 semua spasi dengan tanda hubung (-) dan memastikan semuanya dalam huruf kecil.
 Hal ini membuat Anda mendapatkan <em>slug</em> yang bagus, sempurna untuk menciptakan
 URI.</p>
 <p>Mari kita lanjutkan dengan menyiapkan <em>record</em> yang akan dimasukkan
 kemudian, dalam <em>array</em> <code class="docutils literal"><span class="pre">$data</span></code>. Setiap elemen sesuai dengan kolom dalam
 tabel database yang dibuat sebelumnya. Anda mungkin melihat <em>method</em> baru di
-sini, yaitu <em>method</em> <code class="docutils literal"><span class="pre">post()</span></code> <a class="reference internal" href="../libraries/input.html"><em>library Input</em></a>.
+sini, yaitu <em>method</em> <code class="docutils literal"><span class="pre">post()</span></code> <a class="reference internal" href="../libraries/input.html"><span class="doc">library Input</span></a>.
 <em>Method</em> ini memastikan data sudah dibersihkan, melindungi Anda dari serangan
 jahat dari orang lain. <em>Library</em> <strong>Input</strong> dimuat secara <em>default</em>. Akhirnya,
 Anda memasukkan <em>array</em> <code class="docutils literal"><span class="pre">$data</span></code> kita ke dalam database kita.</p>
@@ -574,7 +573,7 @@ Tambahkan beberapa berita dan periksa halaman yang berbeda yang Anda buat.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

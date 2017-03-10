@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Migrations Class" href="migration.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -137,7 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="input.html">Input Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="javascript.html">Javascript Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language.html">Language Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Loader Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Loader Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="migration.html">Migrations Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="output.html">Output Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pagination.html">Pagination Class</a></li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -323,7 +322,7 @@
 <li class="toctree-l2"><a class="reference internal" href="input.html">Input Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="javascript.html">Javascript Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language.html">Language Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Loader Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Loader Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="migration.html">Migrations Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="output.html">Output Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pagination.html">Pagination Class</a></li>
@@ -426,10 +425,10 @@
   <div class="section" id="loader-class">
 <h1>Loader Class<a class="headerlink" href="#loader-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>Loader, as the name suggests, is used to load elements. These elements
-can be libraries (classes) <a class="reference internal" href="../general/views.html"><em>View files</em></a>,
-<a class="reference internal" href="../general/drivers.html"><em>Drivers</em></a>,
-<a class="reference internal" href="../general/helpers.html"><em>Helpers</em></a>,
-<a class="reference internal" href="../general/models.html"><em>Models</em></a>, or your own files.</p>
+can be libraries (classes) <a class="reference internal" href="../general/views.html"><span class="doc">View files</span></a>,
+<a class="reference internal" href="../general/drivers.html"><span class="doc">Drivers</span></a>,
+<a class="reference internal" href="../general/helpers.html"><span class="doc">Helpers</span></a>,
+<a class="reference internal" href="../general/models.html"><span class="doc">Models</span></a>, or your own files.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
 <p class="last">This class is initialized automatically by the system so there
@@ -614,7 +613,7 @@ step is to load the session driver within your controller:</p>
 <p>Driver files must be stored in a subdirectory within the main
 &#8220;libraries&#8221; directory, or within your personal <em>application/libraries</em>
 directory. The subdirectory must match the parent class name. Read the
-<a class="reference internal" href="../general/drivers.html"><em>Drivers</em></a> description for details.</p>
+<a class="reference internal" href="../general/drivers.html"><span class="doc">Drivers</span></a> description for details.</p>
 <p>Additionally, multiple driver libraries can be loaded at the same time by
 passing an array of drivers to the load method.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">driver</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;session&#39;</span><span class="p">,</span> <span class="s1">&#39;cache&#39;</span><span class="p">));</span>
@@ -673,7 +672,7 @@ third parameter:</p>
 </tbody>
 </table>
 <p>This method is used to load your View files. If you haven&#8217;t read the
-<a class="reference internal" href="../general/views.html"><em>Views</em></a> section of the user guide it is
+<a class="reference internal" href="../general/views.html"><span class="doc">Views</span></a> section of the user guide it is
 recommended that you do since it shows you how this method is
 typically used.</p>
 <p>The first parameter is required. It is the name of the view file you
@@ -687,7 +686,7 @@ you use something other than .php.</p>
 object as input, which it runs through the PHP
 <a class="reference external" href="http://php.net/extract">extract()</a> function to convert to variables
 that can be used in your view files. Again, read the
-<a class="reference internal" href="../general/views.html"><em>Views</em></a> page to learn how this might be useful.</p>
+<a class="reference internal" href="../general/views.html"><span class="doc">Views</span></a> page to learn how this might be useful.</p>
 <p>The third <strong>optional</strong> parameter lets you change the behavior of the
 method so that it returns data as a string rather than sending it to
 your browser. This can be useful if you want to process the data in some
@@ -850,7 +849,7 @@ specify it via the second parameter of the loading method:</p>
 </tbody>
 </table>
 <p>This method lets you load the database class. The two parameters are
-<strong>optional</strong>. Please see the <a class="reference internal" href="../database/index.html"><em>database</em></a>
+<strong>optional</strong>. Please see the <a class="reference internal" href="../database/index.html"><span class="doc">database</span></a>
 section for more info.</p>
 </dd></dl>
 
@@ -875,7 +874,7 @@ section for more info.</p>
 </tr>
 </tbody>
 </table>
-<p>Loads the <a class="reference internal" href="../database/forge.html"><em>Database Forge</em></a> class, please refer
+<p>Loads the <a class="reference internal" href="../database/forge.html"><span class="doc">Database Forge</span></a> class, please refer
 to that manual for more info.</p>
 </dd></dl>
 
@@ -900,7 +899,7 @@ to that manual for more info.</p>
 </tr>
 </tbody>
 </table>
-<p>Loads the <a class="reference internal" href="../database/utilities.html"><em>Database Utilities</em></a> class, please
+<p>Loads the <a class="reference internal" href="../database/utilities.html"><span class="doc">Database Utilities</span></a> class, please
 refer to that manual for more info.</p>
 </dd></dl>
 
@@ -977,8 +976,8 @@ string.</p>
 </tr>
 </tbody>
 </table>
-<p>This method is an alias of the <a class="reference internal" href="language.html"><em>language loading
-method</em></a>: <code class="docutils literal"><span class="pre">$this-&gt;lang-&gt;load()</span></code>.</p>
+<p>This method is an alias of the <a class="reference internal" href="language.html"><span class="doc">language loading
+method</span></a>: <code class="docutils literal"><span class="pre">$this-&gt;lang-&gt;load()</span></code>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -1003,8 +1002,8 @@ method</em></a>: <code class="docutils literal"><span class="pre">$this-&gt;lang
 </tr>
 </tbody>
 </table>
-<p>This method is an alias of the <a class="reference internal" href="config.html"><em>config file loading
-method</em></a>: <code class="docutils literal"><span class="pre">$this-&gt;config-&gt;load()</span></code></p>
+<p>This method is an alias of the <a class="reference internal" href="config.html"><span class="doc">config file loading
+method</span></a>: <code class="docutils literal"><span class="pre">$this-&gt;config-&gt;load()</span></code></p>
 </dd></dl>
 
 <dl class="method">
@@ -1163,7 +1162,7 @@ given to <code class="docutils literal"><span class="pre">add_package_path()</sp
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

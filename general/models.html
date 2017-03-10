@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Helper Functions" href="helpers.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -95,7 +96,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Model</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -281,7 +280,7 @@
 <li class="toctree-l2"><a class="reference internal" href="controllers.html">Controllers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reserved_names.html">Reserved Names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="views.html">Views</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Model</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helpers.html">Helpers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libraries.html">Menggunakan Library CodeIgniter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
@@ -451,7 +450,7 @@ Berikut ini sebuah contoh seperti apa yang dimaksud dengan class model:</p>
         <span class="k">public</span> <span class="nv">$konten</span><span class="p">;</span>
         <span class="k">public</span> <span class="nv">$waktu</span><span class="p">;</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
         <span class="p">{</span>
                 <span class="c1">// Memanggil konstruktor CI_Model</span>
                 <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
@@ -486,13 +485,13 @@ Berikut ini sebuah contoh seperti apa yang dimaksud dengan class model:</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
-<p class="last">Beberapa metode atau fungsi pada contoh di atas menggunakan metode basis data yang dinamakan <a class="reference internal" href="../database/query_builder.html"><em>Query Builder</em></a>.</p>
+<p class="last">Beberapa metode atau fungsi pada contoh di atas menggunakan metode basis data yang dinamakan <a class="reference internal" href="../database/query_builder.html"><span class="doc">Query Builder</span></a>.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
 <p class="last">Untuk contoh sederhana di sini menggunakan <code class="docutils literal"><span class="pre">$_POST</span></code> secara langsung.
 Umumnya ini praktek yang buruk untuk dilakukan, mengingat akan timbulnya masalah celah keamanan.
-Untuk pendekatan yang lebih baik, sebaiknya menggunakan <a class="reference internal" href="../libraries/input.html"><em>Input Library</em></a>
+Untuk pendekatan yang lebih baik, sebaiknya menggunakan <a class="reference internal" href="../libraries/input.html"><span class="doc">Input Library</span></a>
 <code class="docutils literal"><span class="pre">$this-&gt;input-&gt;post('judul')</span></code> dan sebagainya.</p>
 </div>
 </div>
@@ -503,7 +502,7 @@ Model dapat dikelompokkan di dalam sub-direktori bila model yang Anda inginkan m
 <p>Bentuk dasar sebuah model digambarkan seperti berikut ini:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Nama_model</span> <span class="k">extends</span> <span class="nx">CI_Model</span> <span class="p">{</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
         <span class="p">{</span>
                 <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
         <span class="p">}</span>
@@ -517,7 +516,7 @@ Pastikan model class Anda merupakan turunan dari base Model (class <strong>CI_Mo
 <p>Antara nama berkas dan nama class harus sama. Sebagai contoh, jika Anda menggunakan model class berikut:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">User_model</span> <span class="k">extends</span> <span class="nx">CI_Model</span> <span class="p">{</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
         <span class="p">{</span>
                 <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
         <span class="p">}</span>
@@ -533,7 +532,7 @@ Pastikan model class Anda merupakan turunan dari base Model (class <strong>CI_Mo
 <div class="section" id="menghubungkan-sebuah-model">
 <h2><a class="toc-backref" href="#id4">Menghubungkan sebuah Model</a><a class="headerlink" href="#menghubungkan-sebuah-model" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Model pada dasarnya akan dimuat dan dipanggil dari metode atau fungsi yang ada pada
-<a class="reference internal" href="controllers.html"><em>controller</em></a>. Untuk menghubungkan model, Anda harus menggunakan metode berikut ini:</p>
+<a class="reference internal" href="controllers.html"><span class="doc">controller</span></a>. Untuk menghubungkan model, Anda harus menggunakan metode berikut ini:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">model</span><span class="p">(</span><span class="s1">&#39;nama_model&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -586,7 +585,7 @@ ingin Anda hubungkan secara otomatis selama sistem berjalan:</p>
 <p>Ketika sebuah model sudah terhubung namun tidak dapat terkoneksi ke basis data secara otomatis,
 beberapa opsi yang bisa digunakan untuk mengatasi masalah ini:</p>
 <ul>
-<li><p class="first">Anda dapat meng-koneksikan dengan menggunakan standar metode database (<a class="reference internal" href="../database/connecting.html"><em>penjelasan di sini</em></a>),
+<li><p class="first">Anda dapat meng-koneksikan dengan menggunakan standar metode database (<a class="reference internal" href="../database/connecting.html"><span class="doc">penjelasan di sini</span></a>),
 antara class Controller atau class Model.</p>
 </li>
 <li><p class="first">Anda dapat mengatur sebuah model melakukan <em>auto-connect</em> dengan menambahkan nilai TRUE (boolean) di parameter ketiga.
@@ -632,7 +631,7 @@ Atau mengatur konektivitas sebagaimana yang telah didefinisikan di dalam berkas 
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

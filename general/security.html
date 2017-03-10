@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Panduan Penggaya PHP" href="styleguide.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -115,7 +116,7 @@
 <li class="toctree-l2"><a class="reference internal" href="managing_apps.html">Mengelola Aplikasi Anda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="environments.html">Handling Multiple Environments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alternative_php.html">Alternatif Syntax PHP untuk File View</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Keamanan</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Keamanan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="styleguide.html">PHP Style Guide</a></li>
 </ul>
 </li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -301,7 +300,7 @@
 <li class="toctree-l2"><a class="reference internal" href="managing_apps.html">Mengelola Aplikasi Anda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="environments.html">Handling Multiple Environments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alternative_php.html">Alternatif Syntax PHP untuk File View</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Keamanan</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Keamanan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="styleguide.html">PHP Style Guide</a></li>
 </ul>
 </li>
@@ -460,7 +459,7 @@ which may potentially contain sensitive information.</p>
 <strong>&#8216;production&#8217;</strong> will turn off these errors. In development mode, it is
 recommended that a value of &#8216;development&#8217; is used. More information
 about differentiating between environments can be found on the
-<a class="reference internal" href="environments.html"><em>Handling Environments</em></a> page.</p>
+<a class="reference internal" href="environments.html"><span class="doc">Handling Environments</span></a> page.</p>
 </div>
 <div class="section" id="magic-quotes-runtime">
 <h2>magic_quotes_runtime<a class="headerlink" href="#magic-quotes-runtime" title="Link permanen untuk headline ini">¶</a></h2>
@@ -490,7 +489,7 @@ in this process:</p>
 looks for commonly used techniques to embed malicious JavaScript into
 your data, or other types of code that attempt to hijack cookies or
 do other malicious things. The XSS Filter is described
-<a class="reference internal" href="../libraries/security.html"><em>here</em></a>.</p>
+<a class="reference internal" href="../libraries/security.html"><span class="doc">here</span></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
 <p class="last">XSS filtering should <em>only be performed on output</em>. Filtering
@@ -506,7 +505,7 @@ attacker tricking their victim into unknowingly submitting a request.</p>
 <p>CodeIgniter provides CSRF protection out of the box, which will get
 automatically triggered for every non-GET HTTP request, but also needs
 you to create your submit forms in a certain way. This is explained in
-the <a class="reference internal" href="../libraries/security.html"><em>Security Library</em></a> documentation.</p>
+the <a class="reference internal" href="../libraries/security.html"><span class="doc">Security Library</span></a> documentation.</p>
 </div>
 <div class="section" id="password-handling">
 <h2>Password handling<a class="headerlink" href="#password-handling" title="Link permanen untuk headline ini">¶</a></h2>
@@ -560,7 +559,7 @@ no (practical) storage constraints apply once you&#8217;ve hashed them, none!</p
 </div>
 <div class="section" id="validate-input-data">
 <h2>Validate input data<a class="headerlink" href="#validate-input-data" title="Link permanen untuk headline ini">¶</a></h2>
-<p>CodeIgniter has a <a class="reference internal" href="../libraries/form_validation.html"><em>Form Validation Library</em></a> that assists you in
+<p>CodeIgniter has a <a class="reference internal" href="../libraries/form_validation.html"><span class="doc">Form Validation Library</span></a> that assists you in
 validating, filtering, and prepping your data.</p>
 <p>Even if that doesn&#8217;t work for your use case however, be sure to always
 validate and sanitize all input data. For example, if you expect a numeric
@@ -574,7 +573,7 @@ variables, but also cookies, the user-agent string and basically
 <div class="section" id="escape-all-data-before-database-insertion">
 <h2>Escape all data before database insertion<a class="headerlink" href="#escape-all-data-before-database-insertion" title="Link permanen untuk headline ini">¶</a></h2>
 <p>Never insert information into your database without escaping it.
-Please see the section that discusses <a class="reference internal" href="../database/queries.html"><em>database queries</em></a> for more information.</p>
+Please see the section that discusses <a class="reference internal" href="../database/queries.html"><span class="doc">database queries</span></a> for more information.</p>
 </div>
 <div class="section" id="hide-your-files">
 <h2>Hide your files<a class="headerlink" href="#hide-your-files" title="Link permanen untuk headline ini">¶</a></h2>
@@ -612,7 +611,7 @@ attacker.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

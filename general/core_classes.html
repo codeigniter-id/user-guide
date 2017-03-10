@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Pembahasan Umum" href="index.html"/>
         <link rel="next" title="Membuat Class Tambahan" href="ancillary_classes.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -101,7 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="drivers.html">Using CodeIgniter Drivers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_drivers.html">Membuat Driver</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Membuat Class Inti Sistem</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Membuat Class Inti Sistem</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ancillary_classes.html">Membuat Class Tambahan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hooks.html">Hooks - Mengembangkan Inti Framework</a></li>
 <li class="toctree-l2"><a class="reference internal" href="autoloader.html">Auto-loading Resources</a></li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -287,7 +286,7 @@
 <li class="toctree-l2"><a class="reference internal" href="creating_libraries.html">Membuat Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="drivers.html">Using CodeIgniter Drivers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="creating_drivers.html">Membuat Driver</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Membuat Class Inti Sistem</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Membuat Class Inti Sistem</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ancillary_classes.html">Membuat Class Tambahan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hooks.html">Hooks - Mengembangkan Inti Framework</a></li>
 <li class="toctree-l2"><a class="reference internal" href="autoloader.html">Auto-loading Resources</a></li>
@@ -501,7 +500,7 @@ application/core/MY_Input.php, and declare your class with:</p>
 extend the parent constructor:</p>
 <div class="last highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MY_Input</span> <span class="k">extends</span> <span class="nx">CI_Input</span> <span class="p">{</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
         <span class="p">{</span>
                 <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
         <span class="p">}</span>
@@ -517,7 +516,7 @@ alter the CodeIgniter core.</p>
 your new class in your application controller&#8217;s constructors.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Welcome</span> <span class="k">extends</span> <span class="nx">MY_Controller</span> <span class="p">{</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
         <span class="p">{</span>
                 <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
         <span class="p">}</span>
@@ -561,7 +560,7 @@ with CI_ so DO NOT use that as your prefix.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

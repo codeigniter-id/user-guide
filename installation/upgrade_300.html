@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Upgrade Dari Versi Sebelumnya" href="upgrading.html"/>
         <link rel="next" title="Upgrading from 2.2.2 to 2.2.3" href="upgrade_223.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Panduan Instalasi</a><ul class="current">
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Panduan Instalasi</a><ul class="current">
@@ -497,7 +496,7 @@ application/libraries/MY_Log.php -&gt; application/core/MY_Log.php</div></blockq
 </div>
 <div class="section" id="step-6-update-your-session-library-usage">
 <h2>Step 6: Update your Session library usage<a class="headerlink" href="#step-6-update-your-session-library-usage" title="Link permanen untuk headline ini">¶</a></h2>
-<p>The <a class="reference internal" href="../libraries/sessions.html"><em>Session Library</em></a> has been completely
+<p>The <a class="reference internal" href="../libraries/sessions.html"><span class="doc">Session Library</span></a> has been completely
 re-written in CodeIgniter 3 and now comes with a bunch of new features,
 but that also means that there are changes that you should make ...</p>
 <p>Most notably, the library now uses separate storage drivers instead of
@@ -510,7 +509,7 @@ session handlers, which also means that your session data is now
 accessible via the <code class="docutils literal"><span class="pre">$_SESSION</span></code> superglobal (though, we&#8217;ve kept the
 possibility to use it as &#8220;userdata&#8221;, like you&#8217;ve done until now).</p>
 <p>A few configuration options have been removed and a few have been added.
-You should really read the whole <a class="reference internal" href="../libraries/sessions.html"><em>Session library manual</em></a> for the details, but here&#8217;s a short list of changes
+You should really read the whole <a class="reference internal" href="../libraries/sessions.html"><span class="doc">Session library manual</span></a> for the details, but here&#8217;s a short list of changes
 that you should make:</p>
 <blockquote>
 <div><ul>
@@ -661,16 +660,16 @@ admin/ directory as well. If not found, a Not Found (404) will be triggered.</p>
 <p>Many methods and functions now return NULL instead of FALSE when the required items don&#8217;t exist:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="../general/common_functions.html"><em>Common functions</em></a><ul>
+<li><a class="reference internal" href="../general/common_functions.html"><span class="doc">Common functions</span></a><ul>
 <li>config_item()</li>
 </ul>
 </li>
-<li><a class="reference internal" href="../libraries/config.html"><em>Config Class</em></a><ul>
+<li><a class="reference internal" href="../libraries/config.html"><span class="doc">Config Class</span></a><ul>
 <li>config-&gt;item()</li>
 <li>config-&gt;slash_item()</li>
 </ul>
 </li>
-<li><a class="reference internal" href="../libraries/input.html"><em>Input Class</em></a><ul>
+<li><a class="reference internal" href="../libraries/input.html"><span class="doc">Input Class</span></a><ul>
 <li>input-&gt;get()</li>
 <li>input-&gt;post()</li>
 <li>input-&gt;get_post()</li>
@@ -680,17 +679,17 @@ admin/ directory as well. If not found, a Not Found (404) will be triggered.</p>
 <li>input-&gt;get_request_header()</li>
 </ul>
 </li>
-<li><a class="reference internal" href="../libraries/sessions.html"><em>Session Class</em></a><ul>
+<li><a class="reference internal" href="../libraries/sessions.html"><span class="doc">Session Class</span></a><ul>
 <li>session-&gt;userdata()</li>
 <li>session-&gt;flashdata()</li>
 </ul>
 </li>
-<li><a class="reference internal" href="../libraries/uri.html"><em>URI Class</em></a><ul>
+<li><a class="reference internal" href="../libraries/uri.html"><span class="doc">URI Class</span></a><ul>
 <li>uri-&gt;segment()</li>
 <li>uri-&gt;rsegment()</li>
 </ul>
 </li>
-<li><a class="reference internal" href="../helpers/array_helper.html"><em>Array Helper</em></a><ul>
+<li><a class="reference internal" href="../helpers/array_helper.html"><span class="doc">Array Helper</span></a><ul>
 <li>element()</li>
 <li>elements()</li>
 </ul>
@@ -711,7 +710,7 @@ to FALSE, then this change doesn&#8217;t concern you.</p>
 <p>Otherwise however, please review your usage of the following functions:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="../libraries/input.html"><em>Input Library</em></a><ul>
+<li><a class="reference internal" href="../libraries/input.html"><span class="doc">Input Library</span></a><ul>
 <li>input-&gt;get()</li>
 <li>input-&gt;post()</li>
 <li>input-&gt;get_post()</li>
@@ -720,7 +719,7 @@ to FALSE, then this change doesn&#8217;t concern you.</p>
 <li>input-&gt;input_stream()</li>
 </ul>
 </li>
-<li><a class="reference internal" href="../helpers/cookie_helper.html"><em>Cookie Helper</em></a> <code class="xref php php-func docutils literal"><span class="pre">get_cookie()</span></code></li>
+<li><a class="reference internal" href="../helpers/cookie_helper.html"><span class="doc">Cookie Helper</span></a> <a class="reference internal" href="../helpers/cookie_helper.html#get_cookie" title="get_cookie"><code class="xref php php-func docutils literal"><span class="pre">get_cookie()</span></code></a></li>
 </ul>
 </div></blockquote>
 <div class="admonition important">
@@ -732,7 +731,7 @@ automatically overwritten when global XSS filtering is turned on.</p>
 </div>
 <div class="section" id="step-12-check-for-potential-xss-issues-with-uris">
 <h2>Step 12: Check for potential XSS issues with URIs<a class="headerlink" href="#step-12-check-for-potential-xss-issues-with-uris" title="Link permanen untuk headline ini">¶</a></h2>
-<p>The <a class="reference internal" href="../libraries/uri.html"><em>URI Library</em></a> used to automatically convert
+<p>The <a class="reference internal" href="../libraries/uri.html"><span class="doc">URI Library</span></a> used to automatically convert
 a certain set of &#8220;programmatic characters&#8221; to HTML entities when they
 are encountered in a URI segment.</p>
 <p>This was aimed at providing some automatic XSS protection, in addition
@@ -749,18 +748,18 @@ applied to output</em>, as opposed to input data.</p>
 <p>We&#8217;ve made that mistake ourselves with our automatic and global XSS cleaning
 feature (see previous step about XSS above), so now in an effort to discourage that
 practice, we&#8217;re also removing &#8216;xss_clean&#8217; from the officially supported
-list of <a class="reference internal" href="../libraries/form_validation.html"><em>form validation</em></a> rules.</p>
-<p>Because the <a class="reference internal" href="../libraries/form_validation.html"><em>Form Validation library</em></a>
+list of <a class="reference internal" href="../libraries/form_validation.html"><span class="doc">form validation</span></a> rules.</p>
+<p>Because the <a class="reference internal" href="../libraries/form_validation.html"><span class="doc">Form Validation library</span></a>
 generally validates <em>input</em> data, the &#8216;xss_clean&#8217; rule simply doesn&#8217;t
 belong in it.</p>
 <p>If you really, really need to apply that rule, you should now also load the
-<a class="reference internal" href="../helpers/security_helper.html"><em>Security Helper</em></a>, which contains
+<a class="reference internal" href="../helpers/security_helper.html"><span class="doc">Security Helper</span></a>, which contains
 <code class="docutils literal"><span class="pre">xss_clean()</span></code> as a regular function and therefore can be also used as
 a validation rule.</p>
 </div>
 <div class="section" id="step-14-update-usage-of-input-class-s-get-post-method">
 <h2>Step 14: Update usage of Input Class&#8217;s get_post() method<a class="headerlink" href="#step-14-update-usage-of-input-class-s-get-post-method" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Previously, the <a class="reference internal" href="../libraries/input.html"><em>Input Class</em></a> method <code class="docutils literal"><span class="pre">get_post()</span></code>
+<p>Previously, the <a class="reference internal" href="../libraries/input.html"><span class="doc">Input Class</span></a> method <code class="docutils literal"><span class="pre">get_post()</span></code>
 was searching first in POST data, then in GET data. This method has been
 modified so that it searches in GET then in POST, as its name suggests.</p>
 <p>A method has been added, <code class="docutils literal"><span class="pre">post_get()</span></code>, which searches in POST then in GET, as
@@ -793,7 +792,7 @@ all drivers with the exception of ODBC.</p>
 </div>
 <div class="section" id="step-17-change-usage-of-email-library-with-multiple-emails">
 <h2>Step 17: Change usage of Email library with multiple emails<a class="headerlink" href="#step-17-change-usage-of-email-library-with-multiple-emails" title="Link permanen untuk headline ini">¶</a></h2>
-<p>The <a class="reference internal" href="../libraries/email.html"><em>Email Library</em></a> will automatically clear the
+<p>The <a class="reference internal" href="../libraries/email.html"><span class="doc">Email Library</span></a> will automatically clear the
 set parameters after successfully sending emails. To override this behaviour,
 pass FALSE as the first parameter in the <code class="docutils literal"><span class="pre">send()</span></code> method:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="k">FALSE</span><span class="p">))</span>
@@ -805,11 +804,11 @@ pass FALSE as the first parameter in the <code class="docutils literal"><span cl
 </div>
 <div class="section" id="step-18-update-your-form-validation-language-lines">
 <h2>Step 18: Update your Form_validation language lines<a class="headerlink" href="#step-18-update-your-form-validation-language-lines" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Two improvements have been made to the <a class="reference internal" href="../libraries/form_validation.html"><em>Form Validation Library</em></a>&#8216;s <a class="reference internal" href="../libraries/language.html"><em>language</em></a>
+<p>Two improvements have been made to the <a class="reference internal" href="../libraries/form_validation.html"><span class="doc">Form Validation Library</span></a>&#8216;s <a class="reference internal" href="../libraries/language.html"><span class="doc">language</span></a>
 files and error messages format:</p>
 <blockquote>
 <div><ul>
-<li><p class="first"><a class="reference internal" href="../libraries/language.html"><em>Language Library</em></a> line keys now must be
+<li><p class="first"><a class="reference internal" href="../libraries/language.html"><span class="doc">Language Library</span></a> line keys now must be
 prefixed with <strong>form_validation_</strong> in order to avoid collisions:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old</span>
 <span class="nv">$lang</span><span class="p">[</span><span class="s1">&#39;rule&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span>
@@ -847,7 +846,7 @@ number of other functionalities that have been removed in CodeIgniter 3.0.0:</p>
 <h3>The SHA1 library<a class="headerlink" href="#the-sha1-library" title="Link permanen untuk headline ini">¶</a></h3>
 <p>The previously deprecated SHA1 library has been removed, alter your code to use PHP&#8217;s native
 <code class="docutils literal"><span class="pre">sha1()</span></code> function to generate a SHA1 hash.</p>
-<p>Additionally, the <code class="docutils literal"><span class="pre">sha1()</span></code> method in the <a class="reference internal" href="../libraries/encrypt.html"><em>Encrypt Library</em></a> has been removed.</p>
+<p>Additionally, the <code class="docutils literal"><span class="pre">sha1()</span></code> method in the <a class="reference internal" href="../libraries/encrypt.html"><span class="doc">Encrypt Library</span></a> has been removed.</p>
 </div>
 <div class="section" id="the-ext-constant">
 <h3>The EXT constant<a class="headerlink" href="#the-ext-constant" title="Link permanen untuk headline ini">¶</a></h3>
@@ -857,15 +856,15 @@ the <code class="docutils literal"><span class="pre">EXT</span></code> constant 
 </div>
 <div class="section" id="smiley-helper">
 <h3>Smiley helper<a class="headerlink" href="#smiley-helper" title="Link permanen untuk headline ini">¶</a></h3>
-<p>The <a class="reference internal" href="../helpers/smiley_helper.html"><em>Smiley Helper</em></a> is a legacy feature from EllisLab&#8217;s
+<p>The <a class="reference internal" href="../helpers/smiley_helper.html"><span class="doc">Smiley Helper</span></a> is a legacy feature from EllisLab&#8217;s
 ExpressionEngine product. However, it is too specific for a general purpose framework like
 CodeIgniter and as such it is now deprecated.</p>
 <p>Also, the previously deprecated <code class="docutils literal"><span class="pre">js_insert_smiley()</span></code> (since version 1.7.2) is now removed.</p>
 </div>
 <div class="section" id="the-encrypt-library">
 <h3>The Encrypt library<a class="headerlink" href="#the-encrypt-library" title="Link permanen untuk headline ini">¶</a></h3>
-<p>Following numerous vulnerability reports, the <a class="reference internal" href="../libraries/encrypt.html"><em>Encrypt Library</em></a> has
-been deprecated and a new, <a class="reference internal" href="../libraries/encryption.html"><em>Encryption Library</em></a> is added to take
+<p>Following numerous vulnerability reports, the <a class="reference internal" href="../libraries/encrypt.html"><span class="doc">Encrypt Library</span></a> has
+been deprecated and a new, <a class="reference internal" href="../libraries/encryption.html"><span class="doc">Encryption Library</span></a> is added to take
 its place.</p>
 <p>The new library requires either the <a class="reference external" href="http://php.net/mcrypt">MCrypt extension</a> (and /dev/urandom
 availability) or PHP 5.3.3 and the <a class="reference external" href="http://php.net/openssl">OpenSSL extension</a>.
@@ -873,17 +872,17 @@ While this might be rather inconvenient, it is a requirement that allows us to h
 implemented cryptographic functions.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
-<p class="last">The <a class="reference internal" href="../libraries/encrypt.html"><em>Encrypt Library</em></a> is still available for the purpose
+<p class="last">The <a class="reference internal" href="../libraries/encrypt.html"><span class="doc">Encrypt Library</span></a> is still available for the purpose
 of keeping backwards compatibility.</p>
 </div>
 <div class="admonition important">
 <p class="first admonition-title">Penting</p>
-<p class="last">You are strongly encouraged to switch to the new <a class="reference internal" href="../libraries/encryption.html"><em>Encryption Library</em></a> as soon as possible!</p>
+<p class="last">You are strongly encouraged to switch to the new <a class="reference internal" href="../libraries/encryption.html"><span class="doc">Encryption Library</span></a> as soon as possible!</p>
 </div>
 </div>
 <div class="section" id="the-cart-library">
 <h3>The Cart library<a class="headerlink" href="#the-cart-library" title="Link permanen untuk headline ini">¶</a></h3>
-<p>The <a class="reference internal" href="../libraries/cart.html"><em>Cart Library</em></a>, similarly to the <a class="reference internal" href="../helpers/smiley_helper.html"><em>Smiley Helper</em></a> is too specific for CodeIgniter. It is now deprecated
+<p>The <a class="reference internal" href="../libraries/cart.html"><span class="doc">Cart Library</span></a>, similarly to the <a class="reference internal" href="../helpers/smiley_helper.html"><span class="doc">Smiley Helper</span></a> is too specific for CodeIgniter. It is now deprecated
 and scheduled for removal in CodeIgniter 3.1+.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
@@ -911,7 +910,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="security-helper-do-hash">
 <h3>Security helper do_hash()<a class="headerlink" href="#security-helper-do-hash" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/security_helper.html"><em>Security Helper</em></a> function <code class="docutils literal"><span class="pre">do_hash()</span></code> is now just an alias for
+<p><a class="reference internal" href="../helpers/security_helper.html"><span class="doc">Security Helper</span></a> function <code class="docutils literal"><span class="pre">do_hash()</span></code> is now just an alias for
 PHP&#8217;s native <code class="docutils literal"><span class="pre">hash()</span></code> function. It is deprecated and scheduled for removal in CodeIgniter 3.1+.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
@@ -937,7 +936,7 @@ remove its usage sooner rather than later.</p>
 </div>
 <div class="section" id="file-helper-read-file">
 <h3>File helper read_file()<a class="headerlink" href="#file-helper-read-file" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/file_helper.html"><em>File Helper</em></a> function <code class="docutils literal"><span class="pre">read_file()</span></code> is now just an alias for
+<p><a class="reference internal" href="../helpers/file_helper.html"><span class="doc">File Helper</span></a> function <code class="docutils literal"><span class="pre">read_file()</span></code> is now just an alias for
 PHP&#8217;s native <code class="docutils literal"><span class="pre">file_get_contents()</span></code> function. It is deprecated and scheduled for removal in
 CodeIgniter 3.1+.</p>
 <div class="admonition note">
@@ -948,7 +947,7 @@ rather than later.</p>
 </div>
 <div class="section" id="string-helper-repeater">
 <h3>String helper repeater()<a class="headerlink" href="#string-helper-repeater" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/string_helper.html"><em>String Helper</em></a> function <a class="reference internal" href="../helpers/string_helper.html#repeater" title="repeater"><code class="xref php php-func docutils literal"><span class="pre">repeater()</span></code></a> is now just an alias for
+<p><a class="reference internal" href="../helpers/string_helper.html"><span class="doc">String Helper</span></a> function <a class="reference internal" href="../helpers/string_helper.html#repeater" title="repeater"><code class="xref php php-func docutils literal"><span class="pre">repeater()</span></code></a> is now just an alias for
 PHP&#8217;s native <code class="docutils literal"><span class="pre">str_repeat()</span></code> function. It is deprecated and scheduled for removal in CodeIgniter 3.1+.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
@@ -958,7 +957,7 @@ rather than later.</p>
 </div>
 <div class="section" id="string-helper-trim-slashes">
 <h3>String helper trim_slashes()<a class="headerlink" href="#string-helper-trim-slashes" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/string_helper.html"><em>String Helper</em></a> function <a class="reference internal" href="../helpers/string_helper.html#trim_slashes" title="trim_slashes"><code class="xref php php-func docutils literal"><span class="pre">trim_slashes()</span></code></a> is now just an alias
+<p><a class="reference internal" href="../helpers/string_helper.html"><span class="doc">String Helper</span></a> function <a class="reference internal" href="../helpers/string_helper.html#trim_slashes" title="trim_slashes"><code class="xref php php-func docutils literal"><span class="pre">trim_slashes()</span></code></a> is now just an alias
 for PHP&#8217;s native <code class="docutils literal"><span class="pre">trim()</span></code> function (with a slash passed as its second argument). It is deprecated and
 scheduled for removal in CodeIgniter 3.1+.</p>
 <div class="admonition note">
@@ -969,8 +968,8 @@ rather than later.</p>
 </div>
 <div class="section" id="form-helper-form-prep">
 <h3>Form helper form_prep()<a class="headerlink" href="#form-helper-form-prep" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/form_helper.html"><em>Form Helper</em></a> function <a class="reference internal" href="../helpers/form_helper.html#form_prep" title="form_prep"><code class="xref php php-func docutils literal"><span class="pre">form_prep()</span></code></a>
-is now just an alias for <a class="reference internal" href="../general/common_functions.html"><em>common function</em></a>
+<p><a class="reference internal" href="../helpers/form_helper.html"><span class="doc">Form Helper</span></a> function <a class="reference internal" href="../helpers/form_helper.html#form_prep" title="form_prep"><code class="xref php php-func docutils literal"><span class="pre">form_prep()</span></code></a>
+is now just an alias for <a class="reference internal" href="../general/common_functions.html"><span class="doc">common function</span></a>
 <code class="xref py py-func docutils literal"><span class="pre">html_escape()</span></code>. It is deprecated and will be removed in the future.</p>
 <p>Please use <a class="reference internal" href="../general/common_functions.html#html_escape" title="html_escape"><code class="xref php php-func docutils literal"><span class="pre">html_escape()</span></code></a> instead.</p>
 <div class="admonition note">
@@ -981,7 +980,7 @@ to remove its usage sooner rather than later.</p>
 </div>
 <div class="section" id="email-helper-functions">
 <h3>Email helper functions<a class="headerlink" href="#email-helper-functions" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/email_helper.html"><em>Email Helper</em></a> only has two functions</p>
+<p><a class="reference internal" href="../helpers/email_helper.html"><span class="doc">Email Helper</span></a> only has two functions</p>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference internal" href="../helpers/email_helper.html#valid_email" title="valid_email"><code class="xref php php-func docutils literal"><span class="pre">valid_email()</span></code></a></li>
@@ -989,7 +988,7 @@ to remove its usage sooner rather than later.</p>
 </ul>
 </div></blockquote>
 <p>Both of them are now aliases for PHP&#8217;s native <code class="docutils literal"><span class="pre">filter_var()</span></code> and <code class="docutils literal"><span class="pre">mail()</span></code> functions, respectively.
-Therefore the <a class="reference internal" href="../helpers/email_helper.html"><em>Email Helper</em></a> altogether is being deprecated and
+Therefore the <a class="reference internal" href="../helpers/email_helper.html"><span class="doc">Email Helper</span></a> altogether is being deprecated and
 is scheduled for removal in CodeIgniter 3.1+.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
@@ -999,7 +998,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="date-helper-standard-date">
 <h3>Date helper standard_date()<a class="headerlink" href="#date-helper-standard-date" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/date_helper.html"><em>Date Helper</em></a> function <code class="docutils literal"><span class="pre">standard_date()</span></code> is being deprecated due
+<p><a class="reference internal" href="../helpers/date_helper.html"><span class="doc">Date Helper</span></a> function <code class="docutils literal"><span class="pre">standard_date()</span></code> is being deprecated due
 to the availability of native PHP <a class="reference external" href="http://php.net/manual/en/class.datetime.php#datetime.constants.types">constants</a>,
 which when combined with <code class="docutils literal"><span class="pre">date()</span></code> provide the same functionality. Furthermore, they have the
 exact same names as the ones supported by <code class="docutils literal"><span class="pre">standard_date()</span></code>. Here are examples of how to replace
@@ -1025,7 +1024,7 @@ rather than later as it is scheduled for removal in CodeIgniter 3.1+.</p>
 </div>
 <div class="section" id="html-helpers-nbs-br">
 <h3>HTML helpers nbs(), br()<a class="headerlink" href="#html-helpers-nbs-br" title="Link permanen untuk headline ini">¶</a></h3>
-<p><a class="reference internal" href="../helpers/html_helper.html"><em>HTML Helper</em></a> functions <code class="docutils literal"><span class="pre">nbs()</span></code> and <code class="docutils literal"><span class="pre">br()</span></code> are just aliases
+<p><a class="reference internal" href="../helpers/html_helper.html"><span class="doc">HTML Helper</span></a> functions <code class="docutils literal"><span class="pre">nbs()</span></code> and <code class="docutils literal"><span class="pre">br()</span></code> are just aliases
 for the native <code class="docutils literal"><span class="pre">str_repeat()</span></code> function used with <code class="docutils literal"><span class="pre">&amp;nbsp;</span></code> and <code class="docutils literal"><span class="pre">&lt;br</span> <span class="pre">&gt;</span></code> respectively.</p>
 <p>Because there&#8217;s no point in just aliasing native PHP functions, they are now deprecated and
 scheduled for removal in CodeIgniter 3.1+.</p>
@@ -1037,7 +1036,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="pagination-library-anchor-class-setting">
 <h3>Pagination library &#8216;anchor_class&#8217; setting<a class="headerlink" href="#pagination-library-anchor-class-setting" title="Link permanen untuk headline ini">¶</a></h3>
-<p>The <a class="reference internal" href="../libraries/pagination.html"><em>Pagination Library</em></a> now supports adding pretty much any HTML
+<p>The <a class="reference internal" href="../libraries/pagination.html"><span class="doc">Pagination Library</span></a> now supports adding pretty much any HTML
 attribute to your anchors via the &#8216;attributes&#8217; configuration setting. This includes passing the
 &#8216;class&#8217; attribute and using the separate &#8216;anchor_class&#8217; setting no longer makes sense.
 As a result of that, the &#8216;anchor_class&#8217; setting is now deprecated and scheduled for removal in
@@ -1050,7 +1049,7 @@ rather than later.</p>
 </div>
 <div class="section" id="string-helper-random-string-types-unique-and-encrypt">
 <h3>String helper random_string() types &#8216;unique&#8217; and &#8216;encrypt&#8217;<a class="headerlink" href="#string-helper-random-string-types-unique-and-encrypt" title="Link permanen untuk headline ini">¶</a></h3>
-<p>When using the <a class="reference internal" href="../helpers/string_helper.html"><em>String Helper</em></a> function <a class="reference internal" href="../helpers/string_helper.html#random_string" title="random_string"><code class="xref php php-func docutils literal"><span class="pre">random_string()</span></code></a>,
+<p>When using the <a class="reference internal" href="../helpers/string_helper.html"><span class="doc">String Helper</span></a> function <a class="reference internal" href="../helpers/string_helper.html#random_string" title="random_string"><code class="xref php php-func docutils literal"><span class="pre">random_string()</span></code></a>,
 you should no longer pass the <strong>unique</strong> and <strong>encrypt</strong> randomization types. They are only
 aliases for <strong>md5</strong> and <strong>sha1</strong> respectively and are now deprecated and scheduled for removal
 in CodeIgniter 3.1+.</p>
@@ -1062,7 +1061,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="url-helper-url-title-separators-dash-and-underscore">
 <h3>URL helper url_title() separators &#8216;dash&#8217; and &#8216;underscore&#8217;<a class="headerlink" href="#url-helper-url-title-separators-dash-and-underscore" title="Link permanen untuk headline ini">¶</a></h3>
-<p>When using the <a class="reference internal" href="../helpers/url_helper.html"><em>URL Helper</em></a> function <a class="reference internal" href="../helpers/url_helper.html#url_title" title="url_title"><code class="xref php php-func docutils literal"><span class="pre">url_title()</span></code></a>, you
+<p>When using the <a class="reference internal" href="../helpers/url_helper.html"><span class="doc">URL Helper</span></a> function <a class="reference internal" href="../helpers/url_helper.html#url_title" title="url_title"><code class="xref php php-func docutils literal"><span class="pre">url_title()</span></code></a>, you
 should no longer pass <strong>dash</strong> or <strong>underscore</strong> as the word separator. This function will
 now accept any character and you should just pass the chosen character directly, so you
 should write &#8216;-&#8216; instead of &#8216;dash&#8217; and &#8216;_&#8217; instead of &#8216;underscore&#8217;.</p>
@@ -1076,7 +1075,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="session-library-method-all-userdata">
 <h3>Session Library method all_userdata()<a class="headerlink" href="#session-library-method-all-userdata" title="Link permanen untuk headline ini">¶</a></h3>
-<p>As seen in the <a class="reference internal" href="../changelog.html"><em>Change Log</em></a>, <a class="reference internal" href="../libraries/sessions.html"><em>Session Library</em></a>
+<p>As seen in the <a class="reference internal" href="../changelog.html"><span class="doc">Change Log</span></a>, <a class="reference internal" href="../libraries/sessions.html"><span class="doc">Session Library</span></a>
 method <code class="docutils literal"><span class="pre">userdata()</span></code> now allows you to fetch all userdata by simply omitting its parameter:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">session</span><span class="o">-&gt;</span><span class="na">userdata</span><span class="p">();</span>
 </pre></div>
@@ -1092,7 +1091,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="database-forge-method-add-column-with-an-after-clause">
 <h3>Database Forge method add_column() with an AFTER clause<a class="headerlink" href="#database-forge-method-add-column-with-an-after-clause" title="Link permanen untuk headline ini">¶</a></h3>
-<p>If you have used the <strong>third parameter</strong> for <a class="reference internal" href="../database/forge.html"><em>Database Forge</em></a> method
+<p>If you have used the <strong>third parameter</strong> for <a class="reference internal" href="../database/forge.html"><span class="doc">Database Forge</span></a> method
 <code class="docutils literal"><span class="pre">add_column()</span></code> to add a field for an AFTER clause, then you should change its usage.</p>
 <p>That third parameter has been deprecated and scheduled for removal in CodeIgniter 3.1+.</p>
 <p>You should now put AFTER clause field names in the field definition array instead:</p>
@@ -1144,7 +1143,7 @@ sooner rather than later.</p>
 <div class="section" id="input-library-method-is-cli-request">
 <h3>Input library method is_cli_request()<a class="headerlink" href="#input-library-method-is-cli-request" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Calls to the <code class="docutils literal"><span class="pre">CI_Input::is_cli_request()</span></code> method are necessary at many places
-in the CodeIgniter internals and this is often before the <a class="reference internal" href="../libraries/input.html"><em>Input Library</em></a> is loaded. Because of that, it is being replaced by a common
+in the CodeIgniter internals and this is often before the <a class="reference internal" href="../libraries/input.html"><span class="doc">Input Library</span></a> is loaded. Because of that, it is being replaced by a common
 function named <a class="reference internal" href="../general/common_functions.html#is_cli" title="is_cli"><code class="xref php php-func docutils literal"><span class="pre">is_cli()</span></code></a> and this method is now just an alias.</p>
 <p>The new function is both available at all times for you to use and shorter to type.</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="c1">// Old</span>
@@ -1176,7 +1175,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="the-javascript-library">
 <h4>The Javascript library<a class="headerlink" href="#the-javascript-library" title="Link permanen untuk headline ini">¶</a></h4>
-<p>The <a class="reference internal" href="../libraries/javascript.html"><em>Javascript Library</em></a> has always had an
+<p>The <a class="reference internal" href="../libraries/javascript.html"><span class="doc">Javascript Library</span></a> has always had an
 &#8216;experimental&#8217; status and was never really useful, nor a proper solution.</p>
 <p>It is now deprecated and scheduled for removal in CodeIgniter 3.1+.</p>
 <div class="admonition note">
@@ -1189,7 +1188,7 @@ sooner rather than later.</p>
 </div>
 <div class="section" id="step-20-check-your-usage-of-text-helper-highlight-phrase">
 <h2>Step 20: Check your usage of Text helper highlight_phrase()<a class="headerlink" href="#step-20-check-your-usage-of-text-helper-highlight-phrase" title="Link permanen untuk headline ini">¶</a></h2>
-<p>The default HTML tag used by <a class="reference internal" href="../helpers/text_helper.html"><em>Text Helper</em></a> function
+<p>The default HTML tag used by <a class="reference internal" href="../helpers/text_helper.html"><span class="doc">Text Helper</span></a> function
 <code class="xref py py-func docutils literal"><span class="pre">highlight_phrase()</span></code> has been changed from <code class="docutils literal"><span class="pre">&lt;strong&gt;</span></code> to the new HTML5
 tag <code class="docutils literal"><span class="pre">&lt;mark&gt;</span></code>.</p>
 <p>Unless you&#8217;ve used your own highlighting tags, this might cause trouble
@@ -1224,7 +1223,7 @@ in order to avoid backwards compatibility with old browsers:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

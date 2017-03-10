@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="HTML Table Class" href="table.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -143,7 +144,7 @@
 <li class="toctree-l2"><a class="reference internal" href="pagination.html">Pagination Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parser.html">Template Parser Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Security Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Session Library</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Session Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="table.html">HTML Table Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="trackback.html">Trackback Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="typography.html">Typography Class</a></li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -329,7 +328,7 @@
 <li class="toctree-l2"><a class="reference internal" href="pagination.html">Pagination Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parser.html">Template Parser Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Security Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Session Library</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Session Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="table.html">HTML Table Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="trackback.html">Trackback Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="typography.html">Typography Class</a></li>
@@ -480,7 +479,7 @@ Session class.</p>
 <div class="section" id="initializing-a-session">
 <h3><a class="toc-backref" href="#id4">Initializing a Session</a><a class="headerlink" href="#initializing-a-session" title="Link permanen untuk headline ini">¶</a></h3>
 <p>Sessions will typically run globally with each page load, so the Session
-class should either be initialized in your <a class="reference internal" href="../general/controllers.html"><em>controller</em></a> constructors, or it can be <a class="reference internal" href="../general/autoloader.html"><em>auto-loaded</em></a> by the system.
+class should either be initialized in your <a class="reference internal" href="../general/controllers.html"><span class="doc">controller</span></a> constructors, or it can be <a class="reference internal" href="../general/autoloader.html"><span class="doc">auto-loaded</span></a> by the system.
 For the most part the session class will run unattended in the background,
 so simply initializing the class will cause it to read, create, and update
 sessions when necessary.</p>
@@ -495,7 +494,7 @@ use the <code class="docutils literal"><span class="pre">$this-&gt;load-&gt;libr
 </div>
 <div class="admonition important">
 <p class="first admonition-title">Penting</p>
-<p class="last">Because the <a class="reference internal" href="loader.html"><em>Loader Class</em></a> is instantiated
+<p class="last">Because the <a class="reference internal" href="loader.html"><span class="doc">Loader Class</span></a> is instantiated
 by CodeIgniter&#8217;s base controller, make sure to call
 <code class="docutils literal"><span class="pre">parent::__construct()</span></code> before trying to load a library from
 inside a controller constructor.</p>
@@ -943,8 +942,8 @@ unexpected results or be changed in the future. Please configure
 everything properly.</p>
 </div>
 <p>In addition to the values above, the cookie and native drivers apply the
-following configuration values shared by the <a class="reference internal" href="input.html"><em>Input</em></a> and
-<a class="reference internal" href="security.html"><em>Security</em></a> classes:</p>
+following configuration values shared by the <a class="reference internal" href="input.html"><span class="doc">Input</span></a> and
+<a class="reference internal" href="security.html"><span class="doc">Security</span></a> classes:</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="17%" />
@@ -1064,7 +1063,7 @@ an application - it is just another table in your database.</p>
 <div><ul class="simple">
 <li>Only your <strong>default</strong> database connection (or the one that you access
 as <code class="docutils literal"><span class="pre">$this-&gt;db</span></code> from your controllers) can be used.</li>
-<li>You must have the <a class="reference internal" href="../database/query_builder.html"><em>Query Builder</em></a>
+<li>You must have the <a class="reference internal" href="../database/query_builder.html"><span class="doc">Query Builder</span></a>
 enabled.</li>
 <li>You can NOT use a persistent connection.</li>
 <li>You can NOT use a connection with the <em>cache_on</em> setting enabled.</li>
@@ -1224,7 +1223,7 @@ you shouldn&#8217;t be trying to do it within CodeIgniter either. You&#8217;ve b
 warned.</p>
 <p>If you only want to add some extra functionality to your sessions, just
 extend the base Session class, which is a lot more easier. Read the
-<a class="reference internal" href="../general/creating_libraries.html"><em>Creating Libraries</em></a> article to
+<a class="reference internal" href="../general/creating_libraries.html"><span class="doc">Creating Libraries</span></a> article to
 learn how to do that.</p>
 <p>Now, to the point - there are three general rules that you must follow
 when creating a session driver for CodeIgniter:</p>
@@ -1261,7 +1260,7 @@ like this:</p>
 <span class="k">class</span> <span class="nc">CI_Session_dummy_driver</span> <span class="k">extends</span> <span class="nx">CI_Session_driver</span> <span class="k">implements</span> <span class="nx">SessionHandlerInterface</span>
 <span class="p">{</span>
 
-        <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$params</span><span class="p">)</span>
+        <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$params</span><span class="p">)</span>
         <span class="p">{</span>
                 <span class="c1">// DO NOT forget this</span>
                 <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">(</span><span class="nv">$params</span><span class="p">);</span>
@@ -1872,7 +1871,7 @@ properties:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

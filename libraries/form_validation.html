@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="FTP Class" href="ftp.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -131,7 +132,7 @@
 <li class="toctree-l2"><a class="reference internal" href="encrypt.html">Encrypt Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="encryption.html">Encryption Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file_uploading.html">File Uploading Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Form Validation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Form Validation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ftp.html">FTP Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="image_lib.html">Image Manipulation Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="input.html">Input Class</a></li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -317,7 +316,7 @@
 <li class="toctree-l2"><a class="reference internal" href="encrypt.html">Encrypt Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="encryption.html">Encryption Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file_uploading.html">File Uploading Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Form Validation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Form Validation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ftp.html">FTP Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="image_lib.html">Image Manipulation Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="input.html">Input Class</a></li>
@@ -506,10 +505,10 @@ and tedious to implement.</p>
 Validation.</p>
 <p>In order to implement form validation you&#8217;ll need three things:</p>
 <ol class="arabic simple">
-<li>A <a class="reference internal" href="../general/views.html"><em>View</em></a> file containing a form.</li>
+<li>A <a class="reference internal" href="../general/views.html"><span class="doc">View</span></a> file containing a form.</li>
 <li>A View file containing a &#8220;success&#8221; message to be displayed upon
 successful submission.</li>
-<li>A <a class="reference internal" href="../general/controllers.html"><em>controller</em></a> method to receive and
+<li>A <a class="reference internal" href="../general/controllers.html"><span class="doc">controller</span></a> method to receive and
 process the submitted data.</li>
 </ol>
 <p>Let&#8217;s create those three things, using a member sign-up form as the
@@ -654,7 +653,7 @@ a human name of &#8220;Username&#8221;.</li>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
 <p class="last">If you would like the field name to be stored in a language
-file, please see <a class="reference internal" href="#translating-field-names"><span>Translating Field Names</span></a>.</p>
+file, please see <a class="reference internal" href="#translating-field-names"><span class="std std-ref">Translating Field Names</span></a>.</p>
 </div>
 <p>Here is an example. In your controller (form.php), add this code just
 below the validation initialization method:</p>
@@ -843,7 +842,7 @@ function calls!</strong></p>
 Your form fields should now be re-populated</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
-<p class="last">The <a class="reference internal" href="#class-reference"><span>Class Reference</span></a> section below
+<p class="last">The <a class="reference internal" href="#class-reference"><span class="std std-ref">Class Reference</span></a> section below
 contains methods that permit you to re-populate &lt;select&gt; menus,
 radio buttons, and checkboxes.</p>
 </div>
@@ -855,7 +854,7 @@ must supply it as an array to the function. Example:</p>
 </pre></div>
 </div>
 </div>
-<p>For more info please see the <a class="reference internal" href="#using-arrays-as-field-names"><span>Using Arrays as Field Names</span></a> section below.</p>
+<p>For more info please see the <a class="reference internal" href="#using-arrays-as-field-names"><span class="std std-ref">Using Arrays as Field Names</span></a> section below.</p>
 </div>
 <div class="section" id="callbacks-your-own-validation-methods">
 <h3><a class="toc-backref" href="#id19">Callbacks: Your own Validation Methods</a><a class="headerlink" href="#callbacks-your-own-validation-methods" title="Link permanen untuk headline ini">¶</a></h3>
@@ -997,7 +996,7 @@ file: <strong>system/language/english/form_validation_lang.php</strong></p>
 <p>To set your own global custom message for a rule, you can either
 extend/override the language file by creating your own in
 <strong>application/language/english/form_validation_lang.php</strong> (read more
-about this in the <a class="reference internal" href="language.html"><em>Language Class</em></a> documentation),
+about this in the <a class="reference internal" href="language.html"><span class="doc">Language Class</span></a> documentation),
 or use the following method:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">form_validation</span><span class="o">-&gt;</span><span class="na">set_message</span><span class="p">(</span><span class="s1">&#39;rule&#39;</span><span class="p">,</span> <span class="s1">&#39;Error Message&#39;</span><span class="p">);</span>
 </pre></div>
@@ -1054,7 +1053,7 @@ controller using:</p>
 </pre></div>
 </div>
 </div>
-<p>See the <a class="reference internal" href="language.html"><em>Language Class</em></a> page for more info regarding
+<p>See the <a class="reference internal" href="language.html"><span class="doc">Language Class</span></a> page for more info regarding
 language files.</p>
 </div>
 <div class="section" id="changing-the-error-delimiters">
@@ -1124,7 +1123,7 @@ must supply it as an array to the function. Example:</p>
 </pre></div>
 </div>
 </div>
-<p>For more info please see the <a class="reference internal" href="#using-arrays-as-field-names"><span>Using Arrays as Field Names</span></a> section below.</p>
+<p>For more info please see the <a class="reference internal" href="#using-arrays-as-field-names"><span class="std std-ref">Using Arrays as Field Names</span></a> section below.</p>
 </div>
 <div class="section" id="validating-an-array-other-than-post">
 <h3><a class="toc-backref" href="#id25">Validating an Array (other than $_POST)</a><a class="headerlink" href="#validating-an-array-other-than-post" title="Link permanen untuk headline ini">¶</a></h3>
@@ -1153,7 +1152,7 @@ any validation rules.</p>
 execution, then you should call the <code class="docutils literal"><span class="pre">reset_validation()</span></code> method
 before setting up rules and validating the new array.</p>
 </div>
-<p>For more info please see the <a class="reference internal" href="#class-reference"><span>Class Reference</span></a> section below.</p>
+<p>For more info please see the <a class="reference internal" href="#class-reference"><span class="std std-ref">Class Reference</span></a> section below.</p>
 </div>
 </div>
 <div class="section" id="saving-sets-of-validation-rules-to-a-config-file">
@@ -1334,7 +1333,7 @@ Consider this example:</p>
 </pre></div>
 </div>
 <p>If you do use an array as a field name, you must use the EXACT array
-name in the <a class="reference internal" href="#helper-functions"><span>Helper Functions</span></a> that require the
+name in the <a class="reference internal" href="#helper-functions"><span class="std std-ref">Helper Functions</span></a> that require the
 field name, and as your Validation Rule field name.</p>
 <p>For example, to set a rule for the above field you would use:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">form_validation</span><span class="o">-&gt;</span><span class="na">set_rules</span><span class="p">(</span><span class="s1">&#39;options[]&#39;</span><span class="p">,</span> <span class="s1">&#39;Options&#39;</span><span class="p">,</span> <span class="s1">&#39;required&#39;</span><span class="p">);</span>
@@ -1402,7 +1401,7 @@ use:</p>
 <tr class="row-even"><td><strong>required</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element is empty.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td><strong>matches</strong></td>
 <td>Yes</td>
@@ -1422,7 +1421,7 @@ use:</p>
 <tr class="row-even"><td><strong>is_unique</strong></td>
 <td>Yes</td>
 <td>Returns FALSE if the form element is not unique to the table and field name in the
-parameter. Note: This rule requires <a class="reference internal" href="../database/query_builder.html"><em>Query Builder</em></a> to be
+parameter. Note: This rule requires <a class="reference internal" href="../database/query_builder.html"><span class="doc">Query Builder</span></a> to be
 enabled in order to work.</td>
 <td>is_unique[table.field]</td>
 </tr>
@@ -1473,77 +1472,77 @@ or not numeric.</td>
 <tr class="row-odd"><td><strong>alpha</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than alphabetical characters.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td><strong>alpha_numeric</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than alpha-numeric characters.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td><strong>alpha_numeric_spaces</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than alpha-numeric characters
 or spaces.  Should be used after trim to avoid spaces at the beginning or end.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td><strong>alpha_dash</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than alpha-numeric characters,
 underscores or dashes.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td><strong>numeric</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than numeric characters.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td><strong>integer</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than an integer.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td><strong>decimal</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than a decimal number.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td><strong>is_natural</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than a natural number:
 0, 1, 2, 3, etc.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td><strong>is_natural_no_zero</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element contains anything other than a natural
 number, but not zero: 1, 2, 3, etc.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td><strong>valid_url</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element does not contain a valid URL.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td><strong>valid_email</strong></td>
 <td>No</td>
 <td>Returns FALSE if the form element does not contain a valid email address.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td><strong>valid_emails</strong></td>
 <td>No</td>
 <td>Returns FALSE if any value provided in a comma separated list is not a valid email.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td><strong>valid_ip</strong></td>
 <td>No</td>
 <td>Returns FALSE if the supplied IP is not valid.
 Accepts an optional parameter of &#8216;ipv4&#8217; or &#8216;ipv6&#8217; to specify an IP format.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td><strong>valid_base64</strong></td>
 <td>No</td>
 <td>Returns FALSE if the supplied string contains anything other than valid Base64 characters.</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
 </tbody>
 </table>
@@ -1634,8 +1633,8 @@ etc.</p>
 <p>Permits you to set validation rules, as described in the tutorial
 sections above:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#setting-validation-rules"><span>Setting Validation Rules</span></a></li>
-<li><a class="reference internal" href="#saving-groups"><span>Saving Sets of Validation Rules to a Config File</span></a></li>
+<li><a class="reference internal" href="#setting-validation-rules"><span class="std std-ref">Setting Validation Rules</span></a></li>
+<li><a class="reference internal" href="#saving-groups"><span class="std std-ref">Saving Sets of Validation Rules to a Config File</span></a></li>
 </ul>
 </dd></dl>
 
@@ -1661,7 +1660,7 @@ sections above:</p>
 </table>
 <p>Runs the validation routines. Returns boolean TRUE on success and FALSE
 on failure. You can optionally pass the name of the validation group via
-the method, as described in: <a class="reference internal" href="#saving-groups"><span>Saving Sets of Validation Rules to a Config File</span></a></p>
+the method, as described in: <a class="reference internal" href="#saving-groups"><span class="std std-ref">Saving Sets of Validation Rules to a Config File</span></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -1685,7 +1684,7 @@ the method, as described in: <a class="reference internal" href="#saving-groups"
 </tr>
 </tbody>
 </table>
-<p>Permits you to set custom error messages. See <a class="reference internal" href="#setting-error-messages"><span>Setting Error Messages</span></a></p>
+<p>Permits you to set custom error messages. See <a class="reference internal" href="#setting-error-messages"><span class="std std-ref">Setting Error Messages</span></a></p>
 </dd></dl>
 
 <dl class="method">
@@ -1848,7 +1847,7 @@ prefix and/or suffix to it (usually HTML tags).</p>
 </div>
 <div class="section" id="helper-reference">
 <span id="helper-functions"></span><h2><a class="toc-backref" href="#id35">Helper Reference</a><a class="headerlink" href="#helper-reference" title="Link permanen untuk headline ini">¶</a></h2>
-<p>Please refer to the <a class="reference internal" href="../helpers/form_helper.html"><em>Form Helper</em></a> manual for
+<p>Please refer to the <a class="reference internal" href="../helpers/form_helper.html"><span class="doc">Form Helper</span></a> manual for
 the following functions:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../helpers/form_helper.html#form_error" title="form_error"><code class="xref php php-func docutils literal"><span class="pre">form_error()</span></code></a></li>
@@ -1882,7 +1881,7 @@ to prepend them with <code class="docutils literal"><span class="pre">$this-&gt;
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 

@@ -30,6 +30,9 @@
   
 
   
+        <link rel="index" title="Indeks"
+              href="../genindex.html"/>
+        <link rel="search" title="Pencarian" href="../search.html"/>
     <link rel="top" title="dokumentasi CodeIgniter 3.0.3-dev" href="../index.html"/>
         <link rel="up" title="Referensi Library" href="index.html"/>
         <link rel="next" title="Pagination Class" href="pagination.html"/>
@@ -49,9 +52,7 @@
     
       <div id="pulldown-menu" class="ciNav">
         <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -139,7 +140,7 @@
 <li class="toctree-l2"><a class="reference internal" href="language.html">Language Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="loader.html">Loader Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="migration.html">Migrations Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Output Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Output Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pagination.html">Pagination Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parser.html">Template Parser Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Security Class</a></li>
@@ -235,9 +236,7 @@
           
           
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../general/welcome.html">Selamat datang di CodeIgniter</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Panduan Instalasi</a><ul>
@@ -325,7 +324,7 @@
 <li class="toctree-l2"><a class="reference internal" href="language.html">Language Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="loader.html">Loader Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="migration.html">Migrations Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Output Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Output Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pagination.html">Pagination Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parser.html">Template Parser Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Security Class</a></li>
@@ -427,7 +426,7 @@
 <h1>Output Class<a class="headerlink" href="#output-class" title="Link permanen untuk headline ini">¶</a></h1>
 <p>The Output class is a core class with one main function: To send the
 finalized web page to the requesting browser. It is also responsible for
-<a class="reference internal" href="../general/caching.html"><em>caching</em></a> your web pages, if you use that
+<a class="reference internal" href="../general/caching.html"><span class="doc">caching</span></a> your web pages, if you use that
 feature.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
@@ -436,7 +435,7 @@ is no need to do it manually.</p>
 </div>
 <p>Under normal circumstances you won&#8217;t even notice the Output class since
 it works transparently without your intervention. For example, when you
-use the <a class="reference internal" href="loader.html"><em>Loader</em></a> class to load a view file,
+use the <a class="reference internal" href="loader.html"><span class="doc">Loader</span></a> class to load a view file,
 it&#8217;s automatically passed to the Output class, which will be called
 automatically by CodeIgniter at the end of system execution. It is
 possible, however, for you to manually intervene with the output if you
@@ -707,7 +706,7 @@ send for you when outputting the final rendered display. Example:</p>
 <p><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">See here</a> for a full list of headers.</p>
 <div class="admonition note">
 <p class="first admonition-title">Catatan</p>
-<p class="last">This method is an alias for <a class="reference internal" href="../general/common_functions.html"><em>Common function</em></a>
+<p class="last">This method is an alias for <a class="reference internal" href="../general/common_functions.html"><span class="doc">Common function</span></a>
 <code class="xref py py-func docutils literal"><span class="pre">set_status_header()</span></code>.</p>
 </div>
 </dd></dl>
@@ -732,10 +731,10 @@ send for you when outputting the final rendered display. Example:</p>
 </tr>
 </tbody>
 </table>
-<p>Permits you to enable/disable the <a class="reference internal" href="../general/profiling.html"><em>Profiler</em></a>, which will display benchmark
+<p>Permits you to enable/disable the <a class="reference internal" href="../general/profiling.html"><span class="doc">Profiler</span></a>, which will display benchmark
 and other data at the bottom of your pages for debugging and optimization purposes.</p>
 <p>To enable the profiler place the following line anywhere within your
-<a class="reference internal" href="../general/controllers.html"><em>Controller</em></a> methods:</p>
+<a class="reference internal" href="../general/controllers.html"><span class="doc">Controller</span></a> methods:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">output</span><span class="o">-&gt;</span><span class="na">enable_profiler</span><span class="p">(</span><span class="k">TRUE</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -767,7 +766,7 @@ and other data at the bottom of your pages for debugging and optimization purpos
 </tbody>
 </table>
 <p>Permits you to enable/disable specific sections of the Profiler when it is enabled.
-Please refer to the <a class="reference internal" href="../general/profiling.html"><em>Profiler</em></a> documentation for further information.</p>
+Please refer to the <a class="reference internal" href="../general/profiling.html"><span class="doc">Profiler</span></a> documentation for further information.</p>
 </dd></dl>
 
 <dl class="method">
@@ -791,7 +790,7 @@ Please refer to the <a class="reference internal" href="../general/profiling.htm
 </tbody>
 </table>
 <p>Caches the current page for the specified amount of seconds.</p>
-<p>For more information, please see the <a class="reference internal" href="../general/caching.html"><em>caching documentation</em></a>.</p>
+<p>For more information, please see the <a class="reference internal" href="../general/caching.html"><span class="doc">caching documentation</span></a>.</p>
 </dd></dl>
 
 <dl class="method">
@@ -862,7 +861,7 @@ call it manually unless you are aborting script execution using <code class="doc
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2015, British Columbia Institute of Technology.
-      Terakhir diperbarui pada Mar 19, 2016.
+      Terakhir diperbarui pada Mar 10, 2017.
     </p>
   </div>
 
